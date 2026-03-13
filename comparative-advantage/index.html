@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comparative Advantage Practice</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">SBU Econ · Trade theory</p>
+          <h1>Comparative Advantage Practice</h1>
+          <p class="intro">
+            Practice two-producer, two-good trade problems and check your reasoning step by step.
+          </p>
+          <p><a class="back-link" href="../">← Back to SBU Econ</a></p>
+        </div>
+        <div class="hero-note">
+          Comparative advantage depends on opportunity cost, not just who can produce more.
+        </div>
+      </header>
+
+      <section class="controls card">
+        <div class="control-group">
+          <label for="entityMode">Entity mode</label>
+          <select id="entityMode">
+            <option value="people">People</option>
+            <option value="countries">Countries</option>
+          </select>
+        </div>
+        <div class="button-row">
+          <button id="newProblemBtn" type="button">Generate New Problem</button>
+          <button id="exampleBtn" type="button" class="secondary">Use Example Problem</button>
+          <button id="showAnswerBtn" type="button" class="secondary">Show Answer</button>
+          <button id="resetBtn" type="button" class="ghost">Reset</button>
+        </div>
+      </section>
+
+      <section class="problem card">
+        <div class="section-heading">
+          <h2>Current Problem</h2>
+          <p id="problemSummary" class="supporting-text"></p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Producer</th>
+                <th id="good1Header">Good 1</th>
+                <th id="good2Header">Good 2</th>
+              </tr>
+            </thead>
+            <tbody id="problemTableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="practice-layout">
+        <section class="card">
+          <div class="section-heading">
+            <h2>Practice Prompts</h2>
+            <p class="supporting-text">Try these on paper before revealing the answer.</p>
+          </div>
+          <ol class="prompt-list">
+            <li>Who has the absolute advantage in each good?</li>
+            <li>What is the opportunity cost of each good for each producer?</li>
+            <li>Who has the comparative advantage in each good?</li>
+            <li>Who should specialize in what?</li>
+            <li>What trade ratio between the two goods would be plausible, and why?</li>
+          </ol>
+        </section>
+
+        <section id="answerCard" class="card hidden">
+          <div class="section-heading">
+            <h2>Answer Key</h2>
+            <p class="supporting-text">Use this to compare your work and trace the logic.</p>
+          </div>
+
+          <div id="answerContent" class="answer-content"></div>
+        </section>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <h2>Check My Work</h2>
+          <p class="supporting-text">
+            Enter your opportunity costs and comparative advantage choices, then check for mistakes.
+          </p>
+        </div>
+
+        <form id="checkForm" novalidate>
+          <div class="check-grid">
+            <div class="input-block">
+              <h3 id="producerOneLabel">Producer 1</h3>
+              <label for="ocAGood1">
+                Opportunity cost of <span class="good1-label"></span> (in <span class="good2-label"></span>)
+              </label>
+              <input id="ocAGood1" name="ocAGood1" type="text" inputmode="decimal" placeholder="Example: 0.5 or 1/2" />
+
+              <label for="ocAGood2">
+                Opportunity cost of <span class="good2-label"></span> (in <span class="good1-label"></span>)
+              </label>
+              <input id="ocAGood2" name="ocAGood2" type="text" inputmode="decimal" placeholder="Example: 2 or 3/2" />
+            </div>
+
+            <div class="input-block">
+              <h3 id="producerTwoLabel">Producer 2</h3>
+              <label for="ocBGood1">
+                Opportunity cost of <span class="good1-label"></span> (in <span class="good2-label"></span>)
+              </label>
+              <input id="ocBGood1" name="ocBGood1" type="text" inputmode="decimal" placeholder="Example: 1.5 or 3/2" />
+
+              <label for="ocBGood2">
+                Opportunity cost of <span class="good2-label"></span> (in <span class="good1-label"></span>)
+              </label>
+              <input id="ocBGood2" name="ocBGood2" type="text" inputmode="decimal" placeholder="Example: 0.67 or 2/3" />
+            </div>
+          </div>
+
+          <div class="check-grid compact">
+            <div class="input-block">
+              <label for="caGood1">
+                Comparative advantage in <span class="good1-label"></span>
+              </label>
+              <select id="caGood1" name="caGood1"></select>
+            </div>
+
+            <div class="input-block">
+              <label for="caGood2">
+                Comparative advantage in <span class="good2-label"></span>
+              </label>
+              <select id="caGood2" name="caGood2"></select>
+            </div>
+
+            <div class="input-block">
+              <label for="tradeRatio">
+                Plausible trade ratio for 1 <span class="good1-label"></span> (in <span class="good2-label"></span>)
+              </label>
+              <input id="tradeRatio" name="tradeRatio" type="text" inputmode="decimal" placeholder="Optional: 1 or 3/4" />
+            </div>
+          </div>
+
+          <div class="button-row">
+            <button id="checkWorkBtn" type="submit">Check My Work</button>
+          </div>
+        </form>
+
+        <div id="feedbackPanel" class="feedback-panel hidden"></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
