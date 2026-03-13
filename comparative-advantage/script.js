@@ -27,23 +27,24 @@ const COUNTRY_NAMES = [
 ];
 
 const GOODS = [
-  ["burgers", "fries"],
-  ["coffee", "muffins"],
-  ["shirts", "shoes"],
-  ["wheat", "cloth"],
-  ["cars", "computers"],
-  ["wine", "cheese"],
-  ["bananas", "rice"],
-  ["tables", "chairs"]
+  { good1: { name: "meat", unit: "oz" }, good2: { name: "potatoes", unit: "oz" } },
+  { good1: { name: "coffee", unit: "cups" }, good2: { name: "muffins", unit: "muffins" } },
+  { good1: { name: "shirts", unit: "shirts" }, good2: { name: "shoes", unit: "pairs" } },
+  { good1: { name: "wheat", unit: "bushels" }, good2: { name: "cloth", unit: "yards" } },
+  { good1: { name: "cars", unit: "cars" }, good2: { name: "computers", unit: "computers" } },
+  { good1: { name: "wine", unit: "bottles" }, good2: { name: "cheese", unit: "lbs" } },
+  { good1: { name: "bananas", unit: "lbs" }, good2: { name: "rice", unit: "lbs" } },
+  { good1: { name: "tables", unit: "tables" }, good2: { name: "chairs", unit: "chairs" } }
 ];
 
 const EXAMPLE_PROBLEM = {
   mode: "people",
-  names: ["Mia", "Carlos"],
-  goods: ["coffee", "muffins"],
+  names: ["Frank", "Ruby"],
+  goods: { good1: { name: "meat", unit: "oz" }, good2: { name: "potatoes", unit: "oz" } },
+  minutesBudget: 480,
   production: {
-    A: { good1: 8, good2: 16 },
-    B: { good1: 12, good2: 12 }
+    A: { good1: 8, good2: 32 },
+    B: { good1: 24, good2: 48 }
   }
 };
 
@@ -61,7 +62,12 @@ const elements = {
   problemSummary: document.getElementById("problemSummary"),
   good1Header: document.getElementById("good1Header"),
   good2Header: document.getElementById("good2Header"),
+  outputGood1Header: document.getElementById("outputGood1Header"),
+  outputGood2Header: document.getElementById("outputGood2Header"),
+  timeTableTitle: document.getElementById("timeTableTitle"),
+  productionTableTitle: document.getElementById("productionTableTitle"),
   problemTableBody: document.getElementById("problemTableBody"),
+  outputTableBody: document.getElementById("outputTableBody"),
   answerCard: document.getElementById("answerCard"),
   answerContent: document.getElementById("answerContent"),
   checkForm: document.getElementById("checkForm"),
@@ -149,20 +155,16 @@ function decimalFromInput(raw) {
 
 function formatRatio(value) {
   const fraction = toFractionString(value);
-  const decimal = value.toFixed(value < 1 ? 2 : 2).replace(/0+$/, "").replace(/\.$/, "");
+  const decimal = value.toFixed(2).replace(/0+$/, "").replace(/\.$/, "");
   return fraction === decimal ? fraction : `${fraction} (${decimal})`;
 }
 
 function chooseTradeRatio(low, high) {
-  const niceValues = [
-    0.25, 1 / 3, 0.5, 2 / 3, 0.75, 1, 1.25, 1.5, 2, 2.5, 3, 4
-  ];
-
+  const niceValues = [0.25, 1 / 3, 0.5, 2 / 3, 0.75, 1, 1.25, 1.5, 2, 2.5, 3, 4];
   const candidate = niceValues.find((value) => value > low && value < high);
   if (candidate !== undefined) {
     return candidate;
   }
-
   return Number(((low + high) / 2).toFixed(2));
 }
 
@@ -180,13 +182,35 @@ function lowerCostWinner(valueA, valueB, nameA, nameB) {
   return valueA < valueB ? nameA : nameB;
 }
 
+function formatTime(minutes) {
+  if (minutes >= 960 && minutes % 480 === 0) {
+    const days = minutes / 480;
+    return `${days} day${days === 1 ? "" : "s"}`;
+  }
+
+  if (minutes >= 120 && minutes % 60 === 0) {
+    const hours = minutes / 60;
+    return `${hours} hr`;
+  }
+
+  return `${Math.round(minutes)} min`;
+}
+
+function formatOutput(amount, unit) {
+  const rounded = amount % 1 === 0 ? String(amount) : amount.toFixed(1).replace(/\.0$/, "");
+  return `${rounded} ${unit}`;
+}
+
 function buildProblem(mode) {
   const names = samplePair(mode === "countries" ? COUNTRY_NAMES : PEOPLE_NAMES);
   const goods = GOODS[randInt(0, GOODS.length - 1)];
+  const minutesBudget = 480;
 
-  for (let attempt = 0; attempt < 400; attempt += 1) {
-    const values = [randInt(3, 18), randInt(3, 18), randInt(3, 18), randInt(3, 18)];
-    const [a1, a2, b1, b2] = values;
+  for (let attempt = 0; attempt < 500; attempt += 1) {
+    const a1 = randInt(4, 32);
+    const a2 = randInt(4, 32);
+    const b1 = randInt(4, 32);
+    const b2 = randInt(4, 32);
 
     if (a1 === b1 || a2 === b2) {
       continue;
@@ -194,20 +218,7 @@ function buildProblem(mode) {
 
     const ocA1 = a2 / a1;
     const ocB1 = b2 / b1;
-    const difference = Math.abs(ocA1 - ocB1);
-
-    if (difference < 0.18) {
-      continue;
-    }
-
-    const ocA2 = a1 / a2;
-    const ocB2 = b1 / b2;
-    const simpleEnough = [ocA1, ocB1, ocA2, ocB2].every((value) => {
-      const display = toFractionString(value);
-      return display.length <= 5 || /^\d(\.\d{1,2})?$/.test(display);
-    });
-
-    if (!simpleEnough) {
+    if (Math.abs(ocA1 - ocB1) < 0.18) {
       continue;
     }
 
@@ -215,6 +226,7 @@ function buildProblem(mode) {
       mode,
       names,
       goods,
+      minutesBudget,
       production: {
         A: { good1: a1, good2: a2 },
         B: { good1: b1, good2: b2 }
@@ -226,7 +238,7 @@ function buildProblem(mode) {
 }
 
 function calculateAdvantages(problem) {
-  const { names, goods, production } = problem;
+  const { names, goods, production, minutesBudget } = problem;
   const producerA = production.A;
   const producerB = production.B;
 
@@ -246,14 +258,25 @@ function calculateAdvantages(problem) {
     }
   };
 
+  const timeNeeded = {
+    A: {
+      good1: minutesBudget / producerA.good1,
+      good2: minutesBudget / producerA.good2
+    },
+    B: {
+      good1: minutesBudget / producerB.good1,
+      good2: minutesBudget / producerB.good2
+    }
+  };
+
   const comparativeAdvantage = {
     good1: lowerCostWinner(opportunityCosts.A.good1, opportunityCosts.B.good1, names[0], names[1]),
     good2: lowerCostWinner(opportunityCosts.A.good2, opportunityCosts.B.good2, names[0], names[1])
   };
 
   const specialization = {
-    [names[0]]: comparativeAdvantage.good1 === "Neither / Tie" ? "no clear specialization" : comparativeAdvantage.good1 === names[0] ? goods[0] : goods[1],
-    [names[1]]: comparativeAdvantage.good1 === "Neither / Tie" ? "no clear specialization" : comparativeAdvantage.good1 === names[1] ? goods[0] : goods[1]
+    [names[0]]: comparativeAdvantage.good1 === "Neither / Tie" ? "no clear specialization" : comparativeAdvantage.good1 === names[0] ? goods.good1.name : goods.good2.name,
+    [names[1]]: comparativeAdvantage.good1 === "Neither / Tie" ? "no clear specialization" : comparativeAdvantage.good1 === names[1] ? goods.good1.name : goods.good2.name
   };
 
   const trade = calculateTradeDetails(problem, opportunityCosts, comparativeAdvantage);
@@ -261,6 +284,7 @@ function calculateAdvantages(problem) {
   return {
     absoluteAdvantage,
     opportunityCosts,
+    timeNeeded,
     comparativeAdvantage,
     specialization,
     trade
@@ -277,7 +301,7 @@ function calculateTradeDetails(problem, opportunityCosts, comparativeAdvantage) 
     return {
       ratio: null,
       ratioText: "No meaningful interval",
-      explanation: `Both ${names[0]} and ${names[1]} face the same opportunity cost for ${goods[0]}. When opportunity costs are equal, comparative advantage is absent, so there is little or no special gain from trade based on specialization.`
+      explanation: `Both ${names[0]} and ${names[1]} face the same opportunity cost for ${goods.good1.name}. When opportunity costs are equal, comparative advantage is absent, so there is little or no special gain from trade based on specialization.`
     };
   }
 
@@ -286,38 +310,38 @@ function calculateTradeDetails(problem, opportunityCosts, comparativeAdvantage) 
   const importer = exporter === names[0] ? names[1] : names[0];
   const exporterKey = exporter === names[0] ? "A" : "B";
   const importerKey = exporterKey === "A" ? "B" : "A";
-
   const exporterCost = opportunityCosts[exporterKey].good1;
   const importerCost = opportunityCosts[importerKey].good1;
 
   return {
     ratio,
-    ratioText: `1 ${goods[0]} trades for ${formatRatio(ratio)} ${goods[1]}`,
-    explanation: `${exporter} has the comparative advantage in ${goods[0]} because its opportunity cost is lower: ${formatRatio(exporterCost)} ${goods[1]} for 1 ${goods[0]}, compared with ${formatRatio(importerCost)} for ${importer}. A trade price of ${formatRatio(ratio)} ${goods[1]} for 1 ${goods[0]} is plausible because it lies between those two opportunity costs. ${exporter} can export ${goods[0]} at a rate better than its own domestic trade-off, and ${importer} can import ${goods[0]} at a cost lower than producing it alone. That is why both sides can gain from trade at that rate.`
+    ratioText: `1 ${goods.good1.name} trades for ${formatRatio(ratio)} ${goods.good2.name}`,
+    explanation: `${exporter} has the comparative advantage in ${goods.good1.name} because its opportunity cost is lower: ${formatRatio(exporterCost)} ${goods.good2.name} for 1 ${goods.good1.name}, compared with ${formatRatio(importerCost)} for ${importer}. A trade price of ${formatRatio(ratio)} ${goods.good2.name} for 1 ${goods.good1.name} is plausible because it lies between those two opportunity costs.`
   };
 }
 
 function buildAnswerMarkup(problem, solution) {
   const [producerA, producerB] = problem.names;
-  const [good1, good2] = problem.goods;
+  const good1 = problem.goods.good1;
+  const good2 = problem.goods.good2;
 
   return `
     <div class="answer-block">
       <h3>Absolute Advantage</h3>
-      <p><strong>${good1}:</strong> ${solution.absoluteAdvantage.good1}</p>
-      <p><strong>${good2}:</strong> ${solution.absoluteAdvantage.good2}</p>
-      <p class="supporting-text">Absolute advantage means producing more output with the same resources.</p>
+      <p><strong>${good1.name}:</strong> ${solution.absoluteAdvantage.good1}</p>
+      <p><strong>${good2.name}:</strong> ${solution.absoluteAdvantage.good2}</p>
+      <p class="supporting-text">Absolute advantage means producing more output in the same time period.</p>
     </div>
     <div class="answer-block">
       <h3>Opportunity Costs</h3>
-      <p class="equation">${producerA}: 1 ${good1} costs ${formatRatio(solution.opportunityCosts.A.good1)} ${good2}; 1 ${good2} costs ${formatRatio(solution.opportunityCosts.A.good2)} ${good1}</p>
-      <p class="equation">${producerB}: 1 ${good1} costs ${formatRatio(solution.opportunityCosts.B.good1)} ${good2}; 1 ${good2} costs ${formatRatio(solution.opportunityCosts.B.good2)} ${good1}</p>
+      <p class="equation">${producerA}: 1 ${good1.name} costs ${formatRatio(solution.opportunityCosts.A.good1)} ${good2.name}; 1 ${good2.name} costs ${formatRatio(solution.opportunityCosts.A.good2)} ${good1.name}</p>
+      <p class="equation">${producerB}: 1 ${good1.name} costs ${formatRatio(solution.opportunityCosts.B.good1)} ${good2.name}; 1 ${good2.name} costs ${formatRatio(solution.opportunityCosts.B.good2)} ${good1.name}</p>
       <p class="supporting-text">To find opportunity cost, divide the other good by the good you are producing.</p>
     </div>
     <div class="answer-block">
       <h3>Comparative Advantage</h3>
-      <p><strong>${good1}:</strong> ${solution.comparativeAdvantage.good1}</p>
-      <p><strong>${good2}:</strong> ${solution.comparativeAdvantage.good2}</p>
+      <p><strong>${good1.name}:</strong> ${solution.comparativeAdvantage.good1}</p>
+      <p><strong>${good2.name}:</strong> ${solution.comparativeAdvantage.good2}</p>
       <p class="supporting-text">Comparative advantage goes to the producer with the lower opportunity cost.</p>
     </div>
     <div class="answer-block">
@@ -335,31 +359,53 @@ function buildAnswerMarkup(problem, solution) {
 
 function renderProblem(problem) {
   const [producerA, producerB] = problem.names;
-  const [good1, good2] = problem.goods;
+  const good1 = problem.goods.good1;
+  const good2 = problem.goods.good2;
+  const timeA1 = problem.minutesBudget / problem.production.A.good1;
+  const timeA2 = problem.minutesBudget / problem.production.A.good2;
+  const timeB1 = problem.minutesBudget / problem.production.B.good1;
+  const timeB2 = problem.minutesBudget / problem.production.B.good2;
 
-  elements.problemSummary.textContent = `${producerA} and ${producerB} can each produce ${good1} or ${good2} with the same amount of time or resources.`;
-  elements.good1Header.textContent = good1;
-  elements.good2Header.textContent = good2;
+  elements.problemSummary.textContent = `${producerA} and ${producerB} each have the same 8-hour workday. Compare how much time they need to make one unit and how much they can produce in a full day.`;
+  elements.timeTableTitle.textContent = `Time Needed to Make 1 ${good1.unit === good2.unit ? good1.unit : "Unit"} of Each Good`;
+  elements.productionTableTitle.textContent = "Amount Produced in 8 Hours";
+  elements.good1Header.textContent = good1.name;
+  elements.good2Header.textContent = good2.name;
+  elements.outputGood1Header.textContent = good1.name;
+  elements.outputGood2Header.textContent = good2.name;
 
   elements.problemTableBody.innerHTML = `
     <tr>
       <td>${producerA}</td>
-      <td>${problem.production.A.good1}</td>
-      <td>${problem.production.A.good2}</td>
+      <td>${formatTime(timeA1)}</td>
+      <td>${formatTime(timeA2)}</td>
     </tr>
     <tr>
       <td>${producerB}</td>
-      <td>${problem.production.B.good1}</td>
-      <td>${problem.production.B.good2}</td>
+      <td>${formatTime(timeB1)}</td>
+      <td>${formatTime(timeB2)}</td>
+    </tr>
+  `;
+
+  elements.outputTableBody.innerHTML = `
+    <tr>
+      <td>${producerA}</td>
+      <td>${formatOutput(problem.production.A.good1, good1.unit)}</td>
+      <td>${formatOutput(problem.production.A.good2, good2.unit)}</td>
+    </tr>
+    <tr>
+      <td>${producerB}</td>
+      <td>${formatOutput(problem.production.B.good1, good1.unit)}</td>
+      <td>${formatOutput(problem.production.B.good2, good2.unit)}</td>
     </tr>
   `;
 
   document.querySelectorAll(".good1-label").forEach((node) => {
-    node.textContent = good1;
+    node.textContent = good1.name;
   });
 
   document.querySelectorAll(".good2-label").forEach((node) => {
-    node.textContent = good2;
+    node.textContent = good2.name;
   });
 
   elements.producerOneLabel.textContent = producerA;
@@ -369,7 +415,7 @@ function renderProblem(problem) {
     <option value="">Choose one</option>
     <option value="${producerA}">${producerA}</option>
     <option value="${producerB}">${producerB}</option>
-    <option value="Neither">Neither / Tie</option>
+    <option value="Neither / Tie">Neither / Tie</option>
   `;
 
   elements.caGood1.innerHTML = optionsMarkup;
@@ -418,7 +464,8 @@ function checkStudentWork(event) {
 
   const { problem, solution } = appState;
   const [producerA, producerB] = problem.names;
-  const [good1, good2] = problem.goods;
+  const good1 = problem.goods.good1;
+  const good2 = problem.goods.good2;
 
   const submissions = {
     ocAGood1: decimalFromInput(document.getElementById("ocAGood1").value),
@@ -432,35 +479,35 @@ function checkStudentWork(event) {
 
   const checks = [
     {
-      label: `${producerA}'s opportunity cost of ${good1}`,
+      label: `${producerA}'s opportunity cost of ${good1.name}`,
       result: compareValue(submissions.ocAGood1, solution.opportunityCosts.A.good1),
-      correctText: `${formatRatio(solution.opportunityCosts.A.good1)} ${good2}`
+      correctText: `${formatRatio(solution.opportunityCosts.A.good1)} ${good2.name}`
     },
     {
-      label: `${producerA}'s opportunity cost of ${good2}`,
+      label: `${producerA}'s opportunity cost of ${good2.name}`,
       result: compareValue(submissions.ocAGood2, solution.opportunityCosts.A.good2),
-      correctText: `${formatRatio(solution.opportunityCosts.A.good2)} ${good1}`
+      correctText: `${formatRatio(solution.opportunityCosts.A.good2)} ${good1.name}`
     },
     {
-      label: `${producerB}'s opportunity cost of ${good1}`,
+      label: `${producerB}'s opportunity cost of ${good1.name}`,
       result: compareValue(submissions.ocBGood1, solution.opportunityCosts.B.good1),
-      correctText: `${formatRatio(solution.opportunityCosts.B.good1)} ${good2}`
+      correctText: `${formatRatio(solution.opportunityCosts.B.good1)} ${good2.name}`
     },
     {
-      label: `${producerB}'s opportunity cost of ${good2}`,
+      label: `${producerB}'s opportunity cost of ${good2.name}`,
       result: compareValue(submissions.ocBGood2, solution.opportunityCosts.B.good2),
-      correctText: `${formatRatio(solution.opportunityCosts.B.good2)} ${good1}`
+      correctText: `${formatRatio(solution.opportunityCosts.B.good2)} ${good1.name}`
     }
   ];
 
   const caChecks = [
     {
-      label: `Comparative advantage in ${good1}`,
+      label: `Comparative advantage in ${good1.name}`,
       result: submissions.caGood1 === solution.comparativeAdvantage.good1 ? "correct" : submissions.caGood1 ? "incorrect" : "blank",
       correctText: solution.comparativeAdvantage.good1
     },
     {
-      label: `Comparative advantage in ${good2}`,
+      label: `Comparative advantage in ${good2.name}`,
       result: submissions.caGood2 === solution.comparativeAdvantage.good2 ? "correct" : submissions.caGood2 ? "incorrect" : "blank",
       correctText: solution.comparativeAdvantage.good2
     }
@@ -515,7 +562,7 @@ function checkStudentWork(event) {
   } else if (tradeResult === "invalid") {
     feedback.push(buildFeedbackItem("incorrect", `Trade ratio: that entry could not be read. Use a decimal or simple fraction.`));
   } else if (tradeResult === "incorrect") {
-    feedback.push(buildFeedbackItem("incorrect", `Trade ratio: not plausible for this problem. A workable price for 1 ${good1} must lie between the two opportunity costs, such as ${tradeText}.`));
+    feedback.push(buildFeedbackItem("incorrect", `Trade ratio: not plausible for this problem. A workable price for 1 ${good1.name} must lie between the two opportunity costs, such as ${tradeText}.`));
   } else {
     feedback.push(buildFeedbackItem("partial", `Trade ratio: optional. One plausible answer is ${tradeText}.`));
   }
