@@ -403,6 +403,11 @@ function sample(list) {
   return list[Math.floor(Math.random() * list.length)];
 }
 
+function sampleFiltered(list, predicate) {
+  const filtered = list.filter(predicate);
+  return filtered.length > 0 ? sample(filtered) : sample(list);
+}
+
 function fillTemplate(text, market) {
   return text.replaceAll("{market}", market);
 }
@@ -446,6 +451,39 @@ export function createTwoEventProblem() {
     market,
     demandEvent,
     supplyEvent
+  };
+}
+
+export function createOneEventProblemLike(problem) {
+  const market = sample(MARKETS);
+  const sourceEvent = problem?.event;
+  const base = sourceEvent
+    ? (sourceEvent.affectedCurve === "demand"
+        ? sampleFiltered(DEMAND_EVENTS, (item) => item.category === sourceEvent.category)
+        : sampleFiltered(SUPPLY_EVENTS, (item) => item.category === sourceEvent.category))
+    : (Math.random() < 0.5 ? sample(DEMAND_EVENTS) : sample(SUPPLY_EVENTS));
+
+  return {
+    mode: "one",
+    market,
+    event: instantiateEvent(base, market)
+  };
+}
+
+export function createTwoEventProblemLike(problem) {
+  const market = sample(MARKETS);
+  const demandBase = problem?.demandEvent
+    ? sampleFiltered(DEMAND_EVENTS, (item) => item.category === problem.demandEvent.category)
+    : sample(DEMAND_EVENTS);
+  const supplyBase = problem?.supplyEvent
+    ? sampleFiltered(SUPPLY_EVENTS, (item) => item.category === problem.supplyEvent.category)
+    : sample(SUPPLY_EVENTS);
+
+  return {
+    mode: "two",
+    market,
+    demandEvent: instantiateEvent(demandBase, market),
+    supplyEvent: instantiateEvent(supplyBase, market)
   };
 }
 

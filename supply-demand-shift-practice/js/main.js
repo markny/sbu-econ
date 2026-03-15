@@ -425,7 +425,8 @@
 
   const appState = {
     problem: null,
-    solution: null
+    solution: null,
+    whyVisible: false
   };
 
   const elements = {
@@ -442,6 +443,10 @@
     feedbackPanel: document.getElementById("feedbackPanel"),
     answerSection: document.getElementById("answerSection"),
     answerContent: document.getElementById("answerContent"),
+    answerActions: document.getElementById("answerActions"),
+    whyToggleBtn: document.getElementById("whyToggleBtn"),
+    similarProblemBtn: document.getElementById("similarProblemBtn"),
+    whyPanel: document.getElementById("whyPanel"),
     diagramArea: document.getElementById("diagramArea")
   };
 
@@ -475,6 +480,11 @@
 
   function sample(list) {
     return list[Math.floor(Math.random() * list.length)];
+  }
+
+  function sampleFiltered(list, predicate) {
+    const filtered = list.filter(predicate);
+    return filtered.length > 0 ? sample(filtered) : sample(list);
   }
 
   function fillTemplate(text, market) {
@@ -518,6 +528,39 @@
       market,
       demandEvent: instantiateEvent(sample(DEMAND_EVENTS), market),
       supplyEvent: instantiateEvent(sample(SUPPLY_EVENTS), market)
+    };
+  }
+
+  function createOneEventProblemLike(problem) {
+    const market = sample(MARKETS);
+    const sourceEvent = problem && problem.event;
+    const base = sourceEvent
+      ? (sourceEvent.affectedCurve === "demand"
+          ? sampleFiltered(DEMAND_EVENTS, function (item) { return item.category === sourceEvent.category; })
+          : sampleFiltered(SUPPLY_EVENTS, function (item) { return item.category === sourceEvent.category; }))
+      : (Math.random() < 0.5 ? sample(DEMAND_EVENTS) : sample(SUPPLY_EVENTS));
+
+    return {
+      mode: "one",
+      market,
+      event: instantiateEvent(base, market)
+    };
+  }
+
+  function createTwoEventProblemLike(problem) {
+    const market = sample(MARKETS);
+    const demandBase = problem && problem.demandEvent
+      ? sampleFiltered(DEMAND_EVENTS, function (item) { return item.category === problem.demandEvent.category; })
+      : sample(DEMAND_EVENTS);
+    const supplyBase = problem && problem.supplyEvent
+      ? sampleFiltered(SUPPLY_EVENTS, function (item) { return item.category === problem.supplyEvent.category; })
+      : sample(SUPPLY_EVENTS);
+
+    return {
+      mode: "two",
+      market,
+      demandEvent: instantiateEvent(demandBase, market),
+      supplyEvent: instantiateEvent(supplyBase, market)
     };
   }
 
@@ -865,6 +908,76 @@
     });
   }
 
+
+  function buildWhyMarkup(problem, solution) {
+    if (problem.mode === "one") {
+      return `
+        <p>${problem.event.prompt}</p>
+        <p>→ ${solution.correctAnswers.curve} shifts ${solution.correctAnswers.shift}</p>
+        <p>→ equilibrium price ${solution.correctAnswers.price}s</p>
+        <p>→ equilibrium quantity ${solution.correctAnswers.quantity}s</p>
+      `;
+    }
+
+    return `
+      <p>Event 1: demand shifts ${problem.demandEvent.shiftDirection}</p>
+      <p>Event 2: supply shifts ${problem.supplyEvent.shiftDirection}</p>
+      <p>Price: ${solution.combined.price === "ambiguous" ? "one effect pushes price up and the other pushes it down" : `both effects push price ${solution.combined.price}`}</p>
+      <p>→ price is ${prettyValue(solution.correctAnswers.combinedPrice).toLowerCase()}</p>
+      <p>Quantity: ${solution.combined.quantity === "ambiguous" ? "one effect pushes quantity up and the other pushes it down" : `both effects push quantity ${solution.combined.quantity}`}</p>
+      <p>→ quantity is ${prettyValue(solution.correctAnswers.combinedQuantity).toLowerCase()}</p>
+    `;
+  }
+
+  function hideWhyPanel() {
+    appState.whyVisible = false;
+    elements.whyPanel.classList.add("hidden");
+    elements.whyToggleBtn.textContent = "Show why";
+  }
+
+  function showFollowupControls() {
+    elements.answerActions.classList.remove("hidden");
+    hideWhyPanel();
+  }
+
+  function toggleWhyPanel() {
+    if (!appState.problem || !appState.solution) {
+      return;
+    }
+
+    if (appState.whyVisible) {
+      hideWhyPanel();
+      return;
+    }
+
+    elements.whyPanel.innerHTML = buildWhyMarkup(appState.problem, appState.solution);
+    elements.whyPanel.classList.remove("hidden");
+    elements.whyToggleBtn.textContent = "Hide why";
+    appState.whyVisible = true;
+  }
+
+  function generateSimilarProblem() {
+    if (!appState.problem) {
+      return;
+    }
+
+    appState.problem = appState.problem.mode === "one"
+      ? createOneEventProblemLike(appState.problem)
+      : createTwoEventProblemLike(appState.problem);
+    appState.solution = appState.problem.mode === "one" ? solveOneEvent(appState.problem) : solveTwoEvent(appState.problem);
+
+    renderInputs(appState.problem.mode);
+    renderScenario(appState.problem);
+    elements.answerSection.classList.add("hidden");
+    elements.answerContent.innerHTML = "";
+    elements.answerActions.classList.add("hidden");
+    hideWhyPanel();
+    elements.feedbackPanel.className = "feedback-panel hidden";
+    elements.feedbackPanel.innerHTML = "";
+    elements.diagramArea.className = "diagram-grid empty";
+    elements.diagramArea.innerHTML = '<p class="placeholder">Use Show Answer or Check My Work to reveal the matching diagram.</p>';
+  }
+
   function showAnswer() {
     if (!appState.problem || !appState.solution) {
       return;
@@ -878,6 +991,7 @@
 
     renderDiagrams(appState.problem, appState.solution);
     elements.answerSection.classList.remove("hidden");
+    showFollowupControls();
   }
 
   function collectAnswers() {
@@ -894,6 +1008,8 @@
     renderScenario(appState.problem);
     elements.answerSection.classList.add("hidden");
     elements.answerContent.innerHTML = "";
+    elements.answerActions.classList.add("hidden");
+    hideWhyPanel();
     elements.feedbackPanel.className = "feedback-panel hidden";
     elements.feedbackPanel.innerHTML = "";
     elements.diagramArea.className = "diagram-grid empty";
@@ -912,6 +1028,8 @@
     elements.feedbackPanel.innerHTML = "";
     elements.answerSection.classList.add("hidden");
     elements.answerContent.innerHTML = "";
+    elements.answerActions.classList.add("hidden");
+    hideWhyPanel();
     elements.diagramArea.className = "diagram-grid empty";
     elements.diagramArea.innerHTML =
       '<p class="placeholder">The matching diagram will appear here after you generate a problem.</p>';
@@ -924,6 +1042,8 @@
   elements.modeSelect.addEventListener("change", resetApp);
   elements.newProblemBtn.addEventListener("click", generateProblem);
   elements.showAnswerBtn.addEventListener("click", showAnswer);
+  elements.whyToggleBtn.addEventListener("click", toggleWhyPanel);
+  elements.similarProblemBtn.addEventListener("click", generateSimilarProblem);
   elements.studyToggleBtn.addEventListener("click", toggleStudyPanel);
   elements.resetBtn.addEventListener("click", resetApp);
 
@@ -934,7 +1054,7 @@
     }
 
     renderFeedback(compareAnswers(appState.solution.correctAnswers, collectAnswers()));
-    renderDiagrams(appState.problem, appState.solution);
+    showAnswer();
   });
 
   renderInputs(getCurrentMode());

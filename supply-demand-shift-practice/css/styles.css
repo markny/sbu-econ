@@ -318,6 +318,18 @@ button.ghost {
   gap: 1rem;
 }
 
+.answer-actions {
+  margin-top: 1rem;
+}
+
+.why-panel {
+  margin-top: 0.9rem;
+}
+
+.why-panel p:last-child {
+  margin-bottom: 0;
+}
+
 .answer-item strong {
   color: var(--accent-deep);
 }
