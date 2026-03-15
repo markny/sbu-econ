@@ -45,6 +45,30 @@
 
   // ---------- ISO Numeric to Alpha-3 ----------
   var numericToIso = {};
+  var nameToIso = {
+    "Argentina": "ARG",
+    "Australia": "AUS",
+    "Brazil": "BRA",
+    "United States of America": "USA",
+    "United States": "USA",
+    "South Korea": "KOR",
+    "North Korea": "PRK",
+    "Czechia": "CZE",
+    "Russia": "RUS",
+    "Vietnam": "VNM",
+    "Iran": "IRN",
+    "Syria": "SYR",
+    "United Kingdom": "GBR",
+    "Bolivia": "BOL",
+    "Venezuela": "VEN",
+    "Tanzania": "TZA",
+    "Laos": "LAO",
+    "Moldova": "MDA",
+    "Brunei": "BRN",
+    "Macedonia": "MKD",
+    "eSwatini": "SWZ",
+    "Swaziland": "SWZ"
+  };
   function buildIdToIso() {
     var mapping = {
       4:"AFG",8:"ALB",12:"DZA",20:"AND",24:"AGO",28:"ATG",32:"ARG",36:"AUS",40:"AUT",
@@ -77,8 +101,14 @@
   }
 
   function getIsoFromFeature(f) {
-    if (f == null || f.id == null) return null;
-    return numericToIso[f.id] || numericToIso[String(parseInt(f.id, 10))] || null;
+    if (!f) return null;
+    var iso = null;
+    if (f.id != null) {
+      iso = numericToIso[f.id] || numericToIso[String(parseInt(f.id, 10))] || null;
+    }
+    if (iso) return iso;
+    var name = f.properties && f.properties.name;
+    return nameToIso[name] || null;
   }
 
   function getDataForIso(iso, year) {
