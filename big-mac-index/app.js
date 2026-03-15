@@ -77,7 +77,8 @@
   }
 
   function getIsoFromFeature(f) {
-    return numericToIso[f.id] || null;
+    if (f == null || f.id == null) return null;
+    return numericToIso[f.id] || numericToIso[String(parseInt(f.id, 10))] || null;
   }
 
   function getDataForIso(iso, year) {
