@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supply and Demand Shift Practice</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero card">
+        <div>
+          <p class="eyebrow">Economics Practice App</p>
+          <h1>Supply and Demand Shift Practice</h1>
+          <p class="intro">
+            Practice identifying which curve shifts, the direction of the shift, and the effect on
+            equilibrium price and quantity.
+          </p>
+        </div>
+        <div class="hero-note">
+          Think in two steps: first identify the curve shift, then trace what happens to equilibrium.
+        </div>
+      </header>
+
+      <section class="controls card">
+        <div class="control-group">
+          <label for="modeSelect">Mode</label>
+          <select id="modeSelect">
+            <option value="one">One Event</option>
+            <option value="two">Two Events</option>
+          </select>
+        </div>
+        <div class="button-row">
+          <button id="newProblemBtn" type="button">Generate New Problem</button>
+          <button id="showAnswerBtn" type="button" class="secondary">Show Answer</button>
+          <button id="studyToggleBtn" type="button" class="secondary">Study Shift Variables</button>
+          <button id="resetBtn" type="button" class="ghost">Reset</button>
+        </div>
+      </section>
+
+      <section id="studyPanel" class="card hidden">
+        <div class="section-heading">
+          <h2>Review Demand and Supply Shifters</h2>
+          <p class="supporting-text">
+            If you know the main shifters, the equilibrium predictions become much easier.
+          </p>
+        </div>
+
+        <div class="study-grid">
+          <article class="study-card">
+            <h3>Demand Shifters</h3>
+            <ul class="study-list">
+              <li>Price of substitutes</li>
+              <li>Price of complements</li>
+              <li>Income for a normal good</li>
+              <li>Income for an inferior good</li>
+              <li>Tastes and preferences</li>
+              <li>Expectations of future prices</li>
+              <li>Expectations of future income</li>
+              <li>Market size</li>
+            </ul>
+          </article>
+
+          <article class="study-card">
+            <h3>Supply Shifters</h3>
+            <ul class="study-list">
+              <li>Input prices</li>
+              <li>Technology</li>
+              <li>Expectations of future prices</li>
+              <li>Market size / number of firms</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="problem-grid">
+        <section class="card">
+          <div class="section-heading">
+            <h2>Current Problem</h2>
+            <p id="problemLead" class="supporting-text">
+              Choose a mode and generate a practice problem.
+            </p>
+          </div>
+
+          <div id="scenarioPanel" class="scenario-panel empty">
+            <p class="placeholder">Your scenario will appear here.</p>
+          </div>
+        </section>
+
+        <section class="card">
+          <div class="section-heading">
+            <h2>Your Predictions</h2>
+            <p class="supporting-text">Make your best prediction before revealing the answer.</p>
+          </div>
+
+          <form id="answerForm" novalidate>
+            <div id="inputsContainer"></div>
+            <div class="button-row">
+              <button id="checkWorkBtn" type="submit">Check My Work</button>
+            </div>
+          </form>
+
+          <div id="feedbackPanel" class="feedback-panel hidden"></div>
+        </section>
+      </section>
+
+      <section id="answerSection" class="card hidden">
+        <div class="section-heading">
+          <h2>Answer and Explanation</h2>
+          <p class="supporting-text">Compare your reasoning to the economics logic step by step.</p>
+        </div>
+        <div id="answerContent" class="answer-content"></div>
+      </section>
+
+      <section class="card">
+        <div class="section-heading">
+          <h2>Diagram Area</h2>
+          <p class="supporting-text">Use the graph to connect the story to the model.</p>
+        </div>
+        <div id="diagramArea" class="diagram-grid empty">
+          <p class="placeholder">The matching diagram will appear here after you generate a problem.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

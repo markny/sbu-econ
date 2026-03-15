@@ -1,0 +1,387 @@
+:root {
+  --bg: #edf3f6;
+  --card: #fffdfa;
+  --card-border: #cfd9df;
+  --text: #1f2f36;
+  --muted: #5d6b73;
+  --accent: #0b6ba8;
+  --accent-soft: #d9ecf7;
+  --accent-deep: #094e79;
+  --success: #1d6c43;
+  --success-soft: #dcf2e5;
+  --error: #8e3340;
+  --error-soft: #f8dfe3;
+  --warning: #8b5f18;
+  --shadow: 0 14px 30px rgba(24, 42, 51, 0.08);
+  --radius: 18px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir Next", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(217, 236, 247, 0.95), transparent 28%),
+    linear-gradient(180deg, #f8fbfc 0%, var(--bg) 100%);
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+.app-shell {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 1.5rem 0 3rem;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 1.25rem;
+  align-items: start;
+  margin-bottom: 1.25rem;
+}
+
+.eyebrow {
+  margin-bottom: 0.45rem;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  font-size: clamp(2rem, 4vw, 3.1rem);
+  line-height: 1.02;
+}
+
+h2 {
+  margin-bottom: 0.35rem;
+  font-size: 1.35rem;
+}
+
+h3 {
+  margin-bottom: 0.65rem;
+  font-size: 1rem;
+}
+
+.intro,
+.supporting-text,
+.subtle,
+.placeholder {
+  color: var(--muted);
+}
+
+.hero-note {
+  padding: 1rem 1.1rem;
+  border-radius: 16px;
+  border: 1px solid #c7d9e4;
+  background: linear-gradient(135deg, #e5f3fb, #f7fbfe);
+  color: #234352;
+  font-weight: 600;
+}
+
+.controls,
+.button-row,
+.control-group,
+.section-heading,
+.study-card,
+.answer-item,
+.feedback-panel,
+.analysis-block,
+.diagram-card,
+.diagram-copy,
+.select-block,
+.prompt-callout {
+  display: flex;
+}
+
+.controls {
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.study-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.study-card {
+  gap: 0.65rem;
+  padding: 1rem;
+  border: 1px solid #d7e1e6;
+  border-radius: 16px;
+  background: #fcfefd;
+}
+
+.study-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  line-height: 1.7;
+}
+
+.button-row {
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.control-group,
+.section-heading,
+.answer-item,
+.feedback-panel,
+.analysis-block,
+.diagram-card,
+.diagram-copy,
+.select-block {
+  flex-direction: column;
+}
+
+.control-group label,
+.select-block label {
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+}
+
+select,
+button {
+  border-radius: 12px;
+}
+
+select,
+input {
+  width: 100%;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid #bfcbd2;
+  background: #fff;
+  color: var(--text);
+  border-radius: 12px;
+}
+
+select:focus,
+input:focus,
+button:focus {
+  outline: 3px solid rgba(11, 107, 168, 0.18);
+  outline-offset: 2px;
+}
+
+button {
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  padding: 0.82rem 1.15rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 160ms ease, opacity 160ms ease, background 160ms ease;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+button.secondary {
+  background: #e5f0f7;
+  color: var(--text);
+  border-color: #c8d7e0;
+}
+
+button.ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: #bdc8ce;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1.02fr 0.98fr;
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.scenario-panel,
+.diagram-grid {
+  min-height: 180px;
+}
+
+.scenario-panel.empty,
+.diagram-grid.empty {
+  display: grid;
+  place-items: center;
+}
+
+.event-list,
+.prompt-grid,
+.analysis-grid,
+.diagram-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.event-card,
+.prompt-callout,
+.analysis-block,
+.answer-item,
+.diagram-card {
+  border: 1px solid #d7e1e6;
+  border-radius: 16px;
+  background: #fcfefd;
+}
+
+.event-card,
+.analysis-block,
+.answer-item,
+.diagram-card {
+  padding: 1rem;
+}
+
+.event-kicker {
+  margin-bottom: 0.35rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.event-card p:last-child,
+.answer-item p:last-child,
+.analysis-block p:last-child,
+.diagram-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.prompt-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.select-block {
+  gap: 0.2rem;
+}
+
+.feedback-panel {
+  gap: 0.6rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 14px;
+  border: 1px solid #d4dee5;
+  background: #f8fbfd;
+}
+
+.feedback-panel.success {
+  background: var(--success-soft);
+  border-color: #b8dfc9;
+}
+
+.feedback-panel.warning {
+  background: #faf5e8;
+  border-color: #e8d7a8;
+}
+
+.feedback-panel.error {
+  background: var(--error-soft);
+  border-color: #e7b6bd;
+}
+
+.feedback-list {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.answer-content,
+.analysis-grid {
+  gap: 1rem;
+}
+
+.answer-item strong {
+  color: var(--accent-deep);
+}
+
+.callout {
+  margin: 0;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  border: 1px solid #c0ddeb;
+  color: #1d4358;
+}
+
+.diagram-grid {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.diagram-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #dce6ec;
+  background: #f7fbfd;
+}
+
+.diagram-title {
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.9rem;
+}
+
+.tag {
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: #ebf5fb;
+  border: 1px solid #cde2ef;
+  color: #24526a;
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .hero,
+  .problem-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .study-grid,
+  .prompt-grid {
+    grid-template-columns: 1fr;
+  }
+}
