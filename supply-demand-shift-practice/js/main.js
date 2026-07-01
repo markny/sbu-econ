@@ -247,32 +247,32 @@
     }),
     createEvent({
       id: "demand-market-size-rise",
-      category: "market size",
+      category: "number of buyers",
       affectedCurve: "demand",
       shiftDirection: "right",
       priceEffect: "increase",
       quantityEffect: "increase",
-      explanation: "A larger market brings in more buyers, so demand increases.",
+      explanation: "More buyers enter the market, so demand increases.",
       alternatePrompts: [
         "Population in the market for {market} increases.",
         "More consumers enter the market for {market}.",
         "The number of buyers in the market for {market} grows.",
-        "Market size increases for {market}."
+        "The number of buyers for {market} increases."
       ]
     }),
     createEvent({
       id: "demand-market-size-fall",
-      category: "market size",
+      category: "number of buyers",
       affectedCurve: "demand",
       shiftDirection: "left",
       priceEffect: "decrease",
       quantityEffect: "decrease",
-      explanation: "A smaller market means fewer buyers, so demand decreases.",
+      explanation: "Fewer buyers remain in the market, so demand decreases.",
       alternatePrompts: [
         "Population in the market for {market} decreases.",
         "Fewer consumers remain in the market for {market}.",
         "The number of buyers in the market for {market} shrinks.",
-        "Market size decreases for {market}."
+        "The number of buyers for {market} decreases."
       ]
     })
   ];
@@ -370,7 +370,7 @@
     }),
     createEvent({
       id: "supply-market-size-rise",
-      category: "market size / number of firms",
+      category: "number of sellers",
       affectedCurve: "supply",
       shiftDirection: "right",
       priceEffect: "decrease",
@@ -379,13 +379,13 @@
       alternatePrompts: [
         "More firms enter the market for {market}.",
         "The number of sellers in the market for {market} increases.",
-        "Market size expands on the seller side for {market}.",
+        "The number of sellers increases in the market for {market}.",
         "New firms begin producing and selling {market}."
       ]
     }),
     createEvent({
       id: "supply-market-size-fall",
-      category: "market size / number of firms",
+      category: "number of sellers",
       affectedCurve: "supply",
       shiftDirection: "left",
       priceEffect: "increase",
@@ -394,8 +394,68 @@
       alternatePrompts: [
         "Firms leave the market for {market}.",
         "The number of sellers in the market for {market} decreases.",
-        "Market size shrinks on the seller side for {market}.",
+        "The number of sellers decreases in the market for {market}.",
         "Several producers stop making and selling {market}."
+      ]
+    }),
+    createEvent({
+      id: "supply-weather-improves",
+      category: "weather or production shocks",
+      affectedCurve: "supply",
+      shiftDirection: "right",
+      priceEffect: "decrease",
+      quantityEffect: "increase",
+      explanation: "Better production conditions make it easier or cheaper to supply the good, so supply increases.",
+      alternatePrompts: [
+        "Excellent weather improves production conditions for {market}.",
+        "A favorable production shock makes {market} easier to produce.",
+        "Production conditions improve for firms supplying {market}.",
+        "A good harvest or similar production improvement increases output of {market}."
+      ]
+    }),
+    createEvent({
+      id: "supply-weather-worsens",
+      category: "weather or production shocks",
+      affectedCurve: "supply",
+      shiftDirection: "left",
+      priceEffect: "increase",
+      quantityEffect: "decrease",
+      explanation: "Worse production conditions make it harder or more costly to supply the good, so supply decreases.",
+      alternatePrompts: [
+        "Bad weather disrupts production of {market}.",
+        "A negative production shock makes {market} harder to produce.",
+        "Production conditions worsen for firms supplying {market}.",
+        "A drought, storm, or similar production problem reduces output of {market}."
+      ]
+    }),
+    createEvent({
+      id: "supply-policy-cost-rise",
+      category: "government policy and production costs",
+      affectedCurve: "supply",
+      shiftDirection: "left",
+      priceEffect: "increase",
+      quantityEffect: "decrease",
+      explanation: "A tax, fee, or costly regulation raises sellers' cost of supplying the good, so supply decreases.",
+      alternatePrompts: [
+        "A new tax raises the cost of producing {market}.",
+        "A costly regulation increases firms' cost of supplying {market}.",
+        "Government policy raises production costs for sellers of {market}.",
+        "A new compliance cost makes it more expensive for firms to supply {market}."
+      ]
+    }),
+    createEvent({
+      id: "supply-policy-cost-fall",
+      category: "government policy and production costs",
+      affectedCurve: "supply",
+      shiftDirection: "right",
+      priceEffect: "decrease",
+      quantityEffect: "increase",
+      explanation: "A subsidy or cost-reducing policy lowers sellers' cost of supplying the good, so supply increases.",
+      alternatePrompts: [
+        "A subsidy lowers the cost of producing {market}.",
+        "A tax credit reduces firms' cost of supplying {market}.",
+        "Government policy lowers production costs for sellers of {market}.",
+        "A subsidy makes it less expensive for firms to supply {market}."
       ]
     })
   ];
@@ -764,20 +824,20 @@
     elements.scenarioPanel.classList.remove("empty");
 
     if (problem.mode === "one") {
-      elements.problemLead.textContent = `Market: ${problem.market}. Analyze the event and predict the new equilibrium.`;
+      elements.problemLead.textContent = `Market: ${problem.market}. Identify the shifter first, then predict the new equilibrium.`;
 
       const card = document.createElement("article");
       card.className = "event-card";
       card.innerHTML = `
         <p class="event-kicker">Single Market Event</p>
         <p>${problem.event.prompt}</p>
-        <p class="subtle">Decide whether this changes demand or supply, which way the curve shifts, and what happens to equilibrium price and quantity.</p>
+        <p class="subtle">Ask whether the event affects buyers or sellers. These prompts use non-price shifters, so choose the curve, choose the direction, then predict price and quantity.</p>
       `;
       elements.scenarioPanel.append(card);
       return;
     }
 
-    elements.problemLead.textContent = `Market: ${problem.market}. Analyze each event separately first, then combine them.`;
+    elements.problemLead.textContent = `Market: ${problem.market}. Identify each shift separately first, then combine them.`;
 
     const list = document.createElement("div");
     list.className = "event-list";
@@ -792,7 +852,7 @@
       </article>
       <div class="prompt-callout callout">
         <strong>How to think about it:</strong>
-        <span>Look at the demand diagram and the supply diagram separately, then combine the directional effects on price and quantity.</span>
+        <span>For each event, identify the shifter, choose the curve, choose the direction, then combine the effects on price and quantity.</span>
       </div>
     `;
     elements.scenarioPanel.append(list);

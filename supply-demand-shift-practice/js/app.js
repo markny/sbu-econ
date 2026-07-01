@@ -109,20 +109,20 @@ function renderScenario(problem) {
   elements.scenarioPanel.classList.remove("empty");
 
   if (problem.mode === "one") {
-    elements.problemLead.textContent = `Market: ${problem.market}. Analyze the event and predict the new equilibrium.`;
+    elements.problemLead.textContent = `Market: ${problem.market}. Identify the shifter first, then predict the new equilibrium.`;
 
     const card = document.createElement("article");
     card.className = "event-card";
     card.innerHTML = `
       <p class="event-kicker">Single Market Event</p>
       <p>${problem.event.prompt}</p>
-      <p class="subtle">Decide whether this changes demand or supply, which way the curve shifts, and what happens to equilibrium price and quantity.</p>
+      <p class="subtle">Ask whether the event affects buyers or sellers. These prompts use non-price shifters, so choose the curve, choose the direction, then predict price and quantity.</p>
     `;
     elements.scenarioPanel.append(card);
     return;
   }
 
-  elements.problemLead.textContent = `Market: ${problem.market}. Analyze each event separately first, then combine them.`;
+  elements.problemLead.textContent = `Market: ${problem.market}. Identify each shift separately first, then combine them.`;
 
   const list = document.createElement("div");
   list.className = "event-list";
@@ -137,7 +137,7 @@ function renderScenario(problem) {
     </article>
     <div class="prompt-callout callout">
       <strong>How to think about it:</strong>
-      <span>Look at the demand diagram and the supply diagram separately, then combine the directional effects on price and quantity.</span>
+      <span>For each event, identify the shifter, choose the curve, choose the direction, then combine the effects on price and quantity.</span>
     </div>
   `;
   elements.scenarioPanel.append(list);

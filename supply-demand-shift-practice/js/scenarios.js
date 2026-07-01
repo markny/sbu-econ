@@ -246,32 +246,32 @@ const DEMAND_EVENTS = [
   }),
   createEvent({
     id: "demand-market-size-rise",
-    category: "market size",
+    category: "number of buyers",
     affectedCurve: "demand",
     shiftDirection: "right",
     priceEffect: "increase",
     quantityEffect: "increase",
-    explanation: "A larger market brings in more buyers, so demand increases.",
+    explanation: "More buyers enter the market, so demand increases.",
     alternatePrompts: [
       "Population in the market for {market} increases.",
       "More consumers enter the market for {market}.",
       "The number of buyers in the market for {market} grows.",
-      "Market size increases for {market}."
+      "The number of buyers for {market} increases."
     ]
   }),
   createEvent({
     id: "demand-market-size-fall",
-    category: "market size",
+    category: "number of buyers",
     affectedCurve: "demand",
     shiftDirection: "left",
     priceEffect: "decrease",
     quantityEffect: "decrease",
-    explanation: "A smaller market means fewer buyers, so demand decreases.",
+    explanation: "Fewer buyers remain in the market, so demand decreases.",
     alternatePrompts: [
       "Population in the market for {market} decreases.",
       "Fewer consumers remain in the market for {market}.",
       "The number of buyers in the market for {market} shrinks.",
-      "Market size decreases for {market}."
+      "The number of buyers for {market} decreases."
     ]
   })
 ];
@@ -369,7 +369,7 @@ const SUPPLY_EVENTS = [
   }),
   createEvent({
     id: "supply-market-size-rise",
-    category: "market size / number of firms",
+    category: "number of sellers",
     affectedCurve: "supply",
     shiftDirection: "right",
     priceEffect: "decrease",
@@ -378,13 +378,13 @@ const SUPPLY_EVENTS = [
     alternatePrompts: [
       "More firms enter the market for {market}.",
       "The number of sellers in the market for {market} increases.",
-      "Market size expands on the seller side for {market}.",
+      "The number of sellers increases in the market for {market}.",
       "New firms begin producing and selling {market}."
     ]
   }),
   createEvent({
     id: "supply-market-size-fall",
-    category: "market size / number of firms",
+    category: "number of sellers",
     affectedCurve: "supply",
     shiftDirection: "left",
     priceEffect: "increase",
@@ -393,8 +393,68 @@ const SUPPLY_EVENTS = [
     alternatePrompts: [
       "Firms leave the market for {market}.",
       "The number of sellers in the market for {market} decreases.",
-      "Market size shrinks on the seller side for {market}.",
+      "The number of sellers decreases in the market for {market}.",
       "Several producers stop making and selling {market}."
+    ]
+  }),
+  createEvent({
+    id: "supply-weather-improves",
+    category: "weather or production shocks",
+    affectedCurve: "supply",
+    shiftDirection: "right",
+    priceEffect: "decrease",
+    quantityEffect: "increase",
+    explanation: "Better production conditions make it easier or cheaper to supply the good, so supply increases.",
+    alternatePrompts: [
+      "Excellent weather improves production conditions for {market}.",
+      "A favorable production shock makes {market} easier to produce.",
+      "Production conditions improve for firms supplying {market}.",
+      "A good harvest or similar production improvement increases output of {market}."
+    ]
+  }),
+  createEvent({
+    id: "supply-weather-worsens",
+    category: "weather or production shocks",
+    affectedCurve: "supply",
+    shiftDirection: "left",
+    priceEffect: "increase",
+    quantityEffect: "decrease",
+    explanation: "Worse production conditions make it harder or more costly to supply the good, so supply decreases.",
+    alternatePrompts: [
+      "Bad weather disrupts production of {market}.",
+      "A negative production shock makes {market} harder to produce.",
+      "Production conditions worsen for firms supplying {market}.",
+      "A drought, storm, or similar production problem reduces output of {market}."
+    ]
+  }),
+  createEvent({
+    id: "supply-policy-cost-rise",
+    category: "government policy and production costs",
+    affectedCurve: "supply",
+    shiftDirection: "left",
+    priceEffect: "increase",
+    quantityEffect: "decrease",
+    explanation: "A tax, fee, or costly regulation raises sellers' cost of supplying the good, so supply decreases.",
+    alternatePrompts: [
+      "A new tax raises the cost of producing {market}.",
+      "A costly regulation increases firms' cost of supplying {market}.",
+      "Government policy raises production costs for sellers of {market}.",
+      "A new compliance cost makes it more expensive for firms to supply {market}."
+    ]
+  }),
+  createEvent({
+    id: "supply-policy-cost-fall",
+    category: "government policy and production costs",
+    affectedCurve: "supply",
+    shiftDirection: "right",
+    priceEffect: "decrease",
+    quantityEffect: "increase",
+    explanation: "A subsidy or cost-reducing policy lowers sellers' cost of supplying the good, so supply increases.",
+    alternatePrompts: [
+      "A subsidy lowers the cost of producing {market}.",
+      "A tax credit reduces firms' cost of supplying {market}.",
+      "Government policy lowers production costs for sellers of {market}.",
+      "A subsidy makes it less expensive for firms to supply {market}."
     ]
   })
 ];
