@@ -4,95 +4,103 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SBU Econ</title>
-  <meta name="description" content="Economics teaching site for Mark Wilson with course pages and interactive tools.">
+  <meta name="description" content="Economics course materials and interactive tools from St. Bonaventure University.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero">
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="./">SBU Econ</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="./micro/">Microeconomics</a>
+        <a href="#other-tools">Other tools</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero wrap">
       <p class="eyebrow">St. Bonaventure University</p>
       <h1>SBU Econ</h1>
-      <p class="muted lead">A home for economics teaching materials, course pages, and interactive classroom tools.</p>
-      <p class="muted">This site is set up to grow into separate course pages, class demos, and applets that students can use outside class.</p>
+      <p class="lead">Course companions and interactive economics tools built for class, practice, and review.</p>
     </section>
 
-    <section>
+    <section class="course-section">
+      <div class="wrap course-layout">
+        <div>
+          <p class="eyebrow">Course companion</p>
+          <h2>Principles of Microeconomics</h2>
+          <p class="section-copy">Practice the central models of the course with short, focused applets arranged in the same order as the textbook.</p>
+          <a class="btn" href="./micro/">Explore Microeconomics</a>
+        </div>
+
+        <ol class="chapter-preview" aria-label="Available Microeconomics practice">
+          <li>
+            <span class="chapter-number">02</span>
+            <span><strong>Comparative advantage</strong><small>Opportunity cost and gains from trade</small></span>
+          </li>
+          <li>
+            <span class="chapter-number">03</span>
+            <span><strong>Supply and demand shifts</strong><small>Shifters and equilibrium direction</small></span>
+          </li>
+          <li>
+            <span class="chapter-number">05</span>
+            <span><strong>Elasticity</strong><small>Responsiveness, classification, and revenue</small></span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="wrap tools-section" id="other-tools">
       <div class="section-head">
         <div>
-          <p class="eyebrow">Interactive tools</p>
-          <h2>Classroom applets</h2>
+          <p class="eyebrow">Beyond Micro Principles</p>
+          <h2>Other interactive tools</h2>
         </div>
-        <p class="muted section-copy">Quick access to interactive demos and teaching tools.</p>
+        <p class="section-copy">Explorers and classroom applications from across economics.</p>
       </div>
 
-      <section class="grid">
-        <article class="card featured-card">
-          <p class="eyebrow">Featured tool</p>
+      <div class="grid">
+        <article class="card">
+          <p class="card-label">International economics</p>
           <h3>Big Mac Index Explorer</h3>
-          <p class="muted">An interactive currency valuation explorer based on The Economist's Big Mac Index dataset. Great for exchange rates, PPP, and over/undervaluation discussion.</p>
-          <a class="btn" href="./big-mac-index/">Open tool</a>
+          <p>Explore currency valuation, purchasing-power parity, and over- or undervaluation using The Economist's Big Mac Index.</p>
+          <a class="text-link" href="./big-mac-index/">Open explorer</a>
         </article>
 
         <article class="card">
-          <p class="eyebrow">Trade theory</p>
-          <h3>Comparative Advantage Practice</h3>
-          <p class="muted">Practice two-producer, two-good trade problems, calculate opportunity cost, and check comparative advantage logic step by step.</p>
-          <a class="btn" href="./comparative-advantage/">Open tool</a>
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">Supply and demand</p>
-          <h3>Supply-Demand Shift Practice</h3>
-          <p class="muted">Work through demand and supply shift scenarios, interpret equilibrium changes, and reinforce graph-reading intuition.</p>
-          <a class="btn" href="./supply-demand-shift-practice/">Open tool</a>
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">Micro principles</p>
-          <h3>Elasticity Practice</h3>
-          <p class="muted">Practice elasticity as a ratio of percent changes, classify responsiveness, and connect demand elasticity to total revenue.</p>
-          <a class="btn" href="./elasticity-practice/">Open tool</a>
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">Sports economics</p>
+          <p class="card-label">Sports economics</p>
           <h3>Fourth-Down Simulator</h3>
-          <p class="muted">Test go-for-it, punt, and field-goal decisions using a stronger cfb4th-aligned win-probability model in an easy classroom-facing interface.</p>
-          <a class="btn" href="./fourth-down-simulator/">Open tool</a>
+          <p>Compare go-for-it, punt, and field-goal decisions using a classroom-facing win-probability model.</p>
+          <a class="text-link" href="./fourth-down-simulator/">Open simulator</a>
         </article>
 
         <article class="card">
-          <p class="eyebrow">Political economy</p>
+          <p class="card-label">Information and markets</p>
           <h3>Polymarket Intelligence</h3>
-          <p class="muted">Explore political betting-market probabilities and compare market-implied expectations with conventional forecasting.</p>
-          <p class="muted">Prediction markets can be useful because prices aggregate many participants' beliefs and often adjust quickly as new information arrives.</p>
-          <a class="btn" href="./polymarket-intelligence/">Open tool</a>
+          <p>Explore political betting-market probabilities and how prices aggregate participants' beliefs.</p>
+          <a class="text-link" href="./polymarket-intelligence/">Open explorer</a>
         </article>
+      </div>
 
-        <article class="card">
-          <p class="eyebrow">More tools</p>
-          <h3>Additional applets</h3>
-          <ul class="tool-list muted">
-            <li><a href="./us-presidential-elections/">US Presidential Elections 1789–2024</a> — long-run election exploration and historical context.</li>
-            <li><a href="./federal-workforce-reduction-impact-map/">Federal Workforce Reduction Impact Map</a> — geographic view of workforce reduction effects.</li>
-            <li><a href="./megacap-50-beyond-the-balance-sheet/">MegaCap 50: Beyond the Balance Sheet</a> — a corporate/markets applet for broader economics discussion.</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <p class="eyebrow">Courses</p>
-          <h3>Course pages coming soon</h3>
-          <p class="muted">This shell is ready for subpages by course, with readings, links, assignments, and interactive examples.</p>
-        </article>
-      </section>
+      <div class="more-tools">
+        <h3>More tools</h3>
+        <ul class="link-list">
+          <li><a href="./us-presidential-elections/">US Presidential Elections, 1789-2024</a></li>
+          <li><a href="./federal-workforce-reduction-impact-map/">Federal Workforce Reduction Impact Map</a></li>
+          <li><a href="./megacap-50-beyond-the-balance-sheet/">MegaCap 50: Beyond the Balance Sheet</a></li>
+        </ul>
+      </div>
     </section>
-
-    <footer class="footer">
-      <p>Initial shell site for economics course materials and interactive applets.</p>
-    </footer>
   </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>Economics teaching materials from St. Bonaventure University.</p>
+    </div>
+  </footer>
 </body>
 </html>

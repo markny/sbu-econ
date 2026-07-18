@@ -96,6 +96,12 @@ h3 {
   color: var(--muted);
 }
 
+.back-link {
+  color: var(--accent-deep);
+  font-weight: 700;
+  text-underline-offset: 0.18em;
+}
+
 .hero-note {
   padding: 1rem 1.1rem;
   border-radius: 16px;
