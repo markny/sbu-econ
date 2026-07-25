@@ -307,7 +307,6 @@ input[type="range"] {
 
 .interpretation,
 .revenue-panel,
-.shortcut,
 .feedback {
   border-radius: var(--radius);
   background: #101722;
@@ -330,12 +329,6 @@ input[type="range"] {
 
 .revenue-panel p {
   margin-bottom: 0;
-}
-
-.shortcut {
-  margin-top: 0.7rem;
-  padding: 0.8rem;
-  color: #fde68a;
 }
 
 .hidden {

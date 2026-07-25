@@ -134,9 +134,6 @@ const el = {
   interpretationText: document.getElementById("interpretationText"),
   revenuePanel: document.getElementById("revenuePanel"),
   revenueText: document.getElementById("revenueText"),
-  shortcutToggle: document.getElementById("shortcutToggle"),
-  shortcutPanel: document.getElementById("shortcutPanel"),
-  shortcutValue: document.getElementById("shortcutValue"),
   practicePrompt: document.getElementById("practicePrompt"),
   practiceAnswer: document.getElementById("practiceAnswer"),
   checkPractice: document.getElementById("checkPractice"),
@@ -240,15 +237,23 @@ function setBar(bar, value) {
   }
 }
 
-function revenueDirection(price, quantity) {
-  const approx = price + quantity;
-  if (Math.abs(approx) < 0.5) {
-    return "Revenue is roughly unchanged because the price and quantity changes offset each other.";
+function revenueDirection(price, elasticity) {
+  const magnitude = Math.abs(elasticity);
+  if (!Number.isFinite(price) || !Number.isFinite(magnitude)) {
+    return "Total revenue cannot be classified from the current values.";
   }
-  if (approx > 0) {
-    return "Revenue rises because the positive percent change is larger in this approximation.";
+  if (price === 0) {
+    return "Total revenue is unchanged because price does not change.";
   }
-  return "Revenue falls because the negative percent change is larger in this approximation.";
+  if (Math.abs(magnitude - 1) < 0.05) {
+    return "Total revenue is roughly unchanged because demand is unit elastic.";
+  }
+
+  const priceRises = price > 0;
+  const demandIsElastic = magnitude > 1;
+  const revenueRises = demandIsElastic ? !priceRises : priceRises;
+  const responseSize = demandIsElastic ? "larger" : "smaller";
+  return `Total revenue tends to ${revenueRises ? "rise" : "fall"} because quantity demanded changes by a ${responseSize} percentage than price.`;
 }
 
 function interpretation(mode, driver, response, elasticity) {
@@ -300,10 +305,8 @@ function render() {
 
   const isDemand = state.mode === "demand";
   el.revenuePanel.classList.toggle("hidden", !isDemand);
-  el.shortcutPanel.classList.toggle("hidden", !isDemand || el.shortcutPanel.dataset.open !== "true");
   if (isDemand) {
-    el.revenueText.textContent = revenueDirection(values.driver, values.response);
-    el.shortcutValue.textContent = formatPercent(values.driver + values.response);
+    el.revenueText.textContent = revenueDirection(values.driver, values.elasticity);
   }
 }
 
@@ -361,12 +364,6 @@ el.tabs.forEach((tab) => {
 });
 
 el.solveFor.addEventListener("change", render);
-el.shortcutToggle.addEventListener("click", () => {
-  const isOpen = el.shortcutPanel.dataset.open === "true";
-  el.shortcutPanel.dataset.open = isOpen ? "false" : "true";
-  el.shortcutToggle.textContent = isOpen ? "Show TR shortcut" : "Hide TR shortcut";
-  render();
-});
 el.checkPractice.addEventListener("click", checkPracticeAnswer);
 el.newPractice.addEventListener("click", () => choosePracticeForMode(state.mode));
 
