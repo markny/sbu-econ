@@ -1,0 +1,95 @@
+.chapter-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--rule);
+}
+
+.chapter-nav ul ul {
+  display: none;
+}
+
+.chapter-nav li {
+  border-bottom: 1px solid var(--rule);
+}
+
+.chapter > section:first-of-type {
+  margin-top: 0;
+}
+
+.chapter section[role="doc-endnotes"] {
+  font-family: var(--font-ui);
+  font-size: .82rem;
+  line-height: 1.55;
+}
+
+.chapter section[role="doc-endnotes"] ol {
+  padding-left: 1.25rem;
+}
+
+.chapter section[role="doc-endnotes"] li {
+  margin-bottom: .75rem;
+}
+
+.chapter section[role="doc-endnotes"] a {
+  overflow-wrap: anywhere;
+}
+
+.chapter .econ-figure {
+  margin: 2.25rem auto;
+}
+
+.chapter .econ-figure > p:last-child {
+  margin-top: .75rem;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: .84rem;
+  line-height: 1.5;
+}
+
+.chapter img.economist-portrait {
+  display: block;
+  width: min(11rem, 42%);
+  height: auto;
+  margin: .5rem 0 1rem;
+  border: 1px solid var(--rule);
+}
+
+@media (min-width: 901px) {
+  .chapter .econ-figure.wide-figure {
+    width: calc(100% + 8rem);
+    max-width: calc(100% + 8rem);
+    margin-left: -4rem;
+    margin-right: -4rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .chapter [id^="tbl:"] {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chapter [id^="tbl:"] table {
+    display: table;
+    width: 42rem;
+    max-width: none;
+  }
+
+  .chapter .econ-figure {
+    margin-inline: 0;
+  }
+
+  .chapter .econ-figure.wide-figure {
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chapter .econ-figure.wide-figure > p:first-child,
+  .chapter .econ-figure.wide-figure img {
+    width: 42rem;
+    max-width: none;
+  }
+}
