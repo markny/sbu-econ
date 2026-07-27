@@ -130,6 +130,14 @@ td {
 }
 
 @media (max-width: 700px) {
+  .chapter {
+    padding: 2.75rem 1.25rem 2.5rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
   .semantic-block {
     display: block;
   }

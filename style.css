@@ -8,6 +8,7 @@
   --green-dark: #173d37;
   --gold: #d8a62f;
   --rust: #a94f37;
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
 }
 
 * {
@@ -86,6 +87,7 @@ a:hover {
 .hero h1 {
   max-width: 850px;
   margin: 0;
+  font-family: var(--serif);
   font-size: clamp(3rem, 8vw, 5.8rem);
   line-height: 0.98;
   letter-spacing: 0;
@@ -153,6 +155,7 @@ a:hover {
 .course-section h2,
 .section-head h2 {
   margin: 0;
+  font-family: var(--serif);
   font-size: clamp(1.9rem, 4vw, 2.7rem);
   line-height: 1.15;
   letter-spacing: 0;
@@ -186,6 +189,18 @@ a:hover {
   background: #f4d176;
   border-color: #f4d176;
   color: var(--ink);
+}
+
+.btn.btn-primary {
+  background: var(--green);
+  border-color: var(--green);
+  color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  background: var(--green-dark);
+  border-color: var(--green-dark);
+  color: #ffffff;
 }
 
 .chapter-preview {
@@ -308,7 +323,32 @@ a:hover {
 }
 
 .micro-hero {
-  padding-bottom: 54px;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  padding: 70px 0 64px;
+  overflow: hidden;
+  background-color: #f5f6f2;
+  background-image: url("./micro/book/chapters/ch04-market-equilibrium-and-market-adjustment/figures/ch04_market_equilibrium.svg");
+  background-repeat: no-repeat;
+  background-position: calc(100% - 5vw) center;
+  background-size: min(45vw, 560px) auto;
+}
+
+.micro-hero-layout {
+  width: min(1180px, calc(100% - 40px));
+}
+
+.micro-hero-copy {
+  width: min(52%, 610px);
+}
+
+.micro-hero h1 {
+  font-size: clamp(3rem, 6vw, 5rem);
+}
+
+.micro-hero .lead {
+  max-width: 590px;
 }
 
 .book-intro {
@@ -332,6 +372,7 @@ a:hover {
 .book-intro h2 {
   max-width: 640px;
   margin: 0;
+  font-family: var(--serif);
   font-size: clamp(1.9rem, 4vw, 2.7rem);
   line-height: 1.15;
   letter-spacing: 0;
@@ -369,6 +410,7 @@ a:hover {
 
 .applet-copy h3 {
   margin: 0;
+  font-family: var(--serif);
   font-size: 1.45rem;
   line-height: 1.25;
   letter-spacing: 0;
@@ -394,6 +436,75 @@ a:hover {
   display: block;
 }
 
+.chapter-desk {
+  padding: 68px 0 74px;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.chapter-desk-head {
+  margin-bottom: 28px;
+}
+
+.course-map {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 42px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 2px solid var(--ink);
+}
+
+.course-map li {
+  min-width: 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.course-map a {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) max-content;
+  gap: 12px;
+  align-items: baseline;
+  min-height: 68px;
+  padding: 17px 0;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.course-map a:hover strong {
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-color: var(--rust);
+  text-underline-offset: 4px;
+}
+
+.course-map span {
+  color: var(--rust);
+  font-size: .76rem;
+  font-weight: 700;
+}
+
+.course-map strong {
+  min-width: 0;
+  font-family: var(--serif);
+  font-size: 1.04rem;
+  line-height: 1.28;
+}
+
+.course-map small {
+  color: var(--muted);
+  font-size: .72rem;
+  font-weight: 600;
+}
+
+.course-map-link {
+  display: inline-flex;
+  min-height: 44px;
+  align-items: center;
+  margin-top: 22px;
+}
+
 @media (max-width: 820px) {
   .course-layout,
   .book-intro-layout,
@@ -414,6 +525,23 @@ a:hover {
     min-height: 220px;
     border-top: 1px solid var(--line);
     border-left: 0;
+  }
+
+  .micro-hero {
+    min-height: 0;
+    align-items: start;
+    padding-top: 54px;
+    padding-bottom: 280px;
+    background-position: center calc(100% - 32px);
+    background-size: min(88vw, 420px) auto;
+  }
+
+  .micro-hero-copy {
+    width: 100%;
+  }
+
+  .course-map {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -441,6 +569,28 @@ a:hover {
 
   .hero {
     padding: 54px 0 48px;
+  }
+
+  .micro-hero {
+    padding-bottom: 240px;
+    background-size: min(92vw, 350px) auto;
+  }
+
+  .micro-hero-layout {
+    width: min(100% - 28px, 1080px);
+  }
+
+  .chapter-desk {
+    padding: 48px 0 54px;
+  }
+
+  .course-map a {
+    grid-template-columns: 30px minmax(0, 1fr);
+    gap: 10px;
+  }
+
+  .course-map small {
+    grid-column: 2;
   }
 
     .course-layout,

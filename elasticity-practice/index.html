@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elasticity Practice</title>
+    <link rel="icon" href="data:," />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -20,18 +21,18 @@
         </div>
         <div class="formula-card" aria-live="polite">
           <p class="formula-label" id="formulaLabel">Price elasticity of demand</p>
-          <p class="formula" id="formulaText">epsilon_d = %Delta Qd / %Delta P</p>
+          <p class="formula" id="formulaText">εd = %ΔQd / %ΔP</p>
           <p class="formula-note" id="formulaNote">
-            Demand elasticity is usually negative because price and quantity demanded move in opposite directions.
+            Demand elasticity is negative because price and quantity demanded move in opposite directions. An own-price change causes movement along the demand curve, not a shift of demand.
           </p>
         </div>
       </header>
 
       <section class="mode-tabs" aria-label="Elasticity modes">
-        <button class="tab is-active" type="button" data-mode="demand">Price Elasticity of Demand</button>
-        <button class="tab" type="button" data-mode="supply">Price Elasticity of Supply</button>
-        <button class="tab" type="button" data-mode="income">Income Elasticity</button>
-        <button class="tab" type="button" data-mode="cross">Cross-Price Elasticity</button>
+        <button class="tab is-active" type="button" data-mode="demand" aria-pressed="true">Price Elasticity of Demand</button>
+        <button class="tab" type="button" data-mode="supply" aria-pressed="false">Price Elasticity of Supply</button>
+        <button class="tab" type="button" data-mode="income" aria-pressed="false">Income Elasticity</button>
+        <button class="tab" type="button" data-mode="cross" aria-pressed="false">Cross-Price Elasticity</button>
       </section>
 
       <section class="workspace">
@@ -39,37 +40,37 @@
           <div class="section-heading">
             <h2 id="modeTitle">Price Elasticity of Demand</h2>
             <p class="supporting-text" id="modeSummary">
-              Change any two values and solve for the third. For demand, the sign matters for direction, and the absolute value matters for elastic/unit/inelastic classification.
+              Change any two values and solve for the third. For demand, the sign matters for direction, and the absolute value matters for elastic, unit elastic, or inelastic classification.
             </p>
           </div>
 
           <div class="solve-row">
             <label for="solveFor">Solve for</label>
             <select id="solveFor">
-              <option value="quantity">Percent quantity change</option>
-              <option value="elasticity">Elasticity</option>
-              <option value="price">Percent price change</option>
+              <option value="quantity">%ΔQd</option>
+              <option value="elasticity">εd</option>
+              <option value="price">%ΔP</option>
             </select>
           </div>
 
           <div class="input-grid">
-            <label class="input-card" id="priceGroup" for="priceChange">
-              <span id="priceLabel">%Delta P</span>
-              <input id="priceChange" type="number" step="1" value="10" />
-              <input id="priceSlider" type="range" min="-40" max="40" step="1" value="10" />
-            </label>
+            <div class="input-card" id="priceGroup">
+              <label id="priceLabel" for="priceChange">%ΔP</label>
+              <input id="priceChange" type="number" step="0.1" value="10" />
+              <input id="priceSlider" type="range" min="-40" max="40" step="0.1" value="10" aria-labelledby="priceLabel" />
+            </div>
 
-            <label class="input-card" id="quantityGroup" for="quantityChange">
-              <span id="quantityLabel">%Delta Qd</span>
-              <input id="quantityChange" type="number" step="1" value="-15" />
-              <input id="quantitySlider" type="range" min="-60" max="60" step="1" value="-15" />
-            </label>
+            <div class="input-card" id="quantityGroup">
+              <label id="quantityLabel" for="quantityChange">%ΔQd</label>
+              <input id="quantityChange" type="number" step="0.1" value="-15" />
+              <input id="quantitySlider" type="range" min="-60" max="60" step="0.1" value="-15" aria-labelledby="quantityLabel" />
+            </div>
 
-            <label class="input-card" id="elasticityGroup" for="elasticityValue">
-              <span id="elasticityLabel">epsilon_d</span>
-              <input id="elasticityValue" type="number" step="0.1" value="-1.5" />
-              <input id="elasticitySlider" type="range" min="-4" max="4" step="0.1" value="-1.5" />
-            </label>
+            <div class="input-card" id="elasticityGroup">
+              <label id="elasticityLabel" for="elasticityValue">εd</label>
+              <input id="elasticityValue" type="number" step="0.01" value="-1.5" />
+              <input id="elasticitySlider" type="range" min="-4" max="4" step="0.01" value="-1.5" aria-labelledby="elasticityLabel" />
+            </div>
           </div>
         </section>
 
@@ -82,7 +83,7 @@
           <div class="metric-grid">
             <div class="metric">
               <span class="metric-label">Elasticity</span>
-              <strong id="elasticityMetric">epsilon_d = -1.50</strong>
+              <strong id="elasticityMetric">εd = -1.50</strong>
             </div>
             <div class="metric">
               <span class="metric-label">Classification</span>
@@ -92,7 +93,7 @@
 
           <div class="bars" aria-hidden="true">
             <div>
-              <div class="bar-label"><span id="driverBarLabel">Price</span><span id="driverBarValue">+10%</span></div>
+              <div class="bar-label"><span id="driverBarLabel">%ΔP</span><span id="driverBarValue">+10%</span></div>
               <div class="bar-track"><div class="bar driver" id="driverBar"></div></div>
             </div>
             <div>
@@ -102,7 +103,7 @@
           </div>
 
           <div class="interpretation" id="interpretationText">
-            A 10% price increase predicts a 15% decrease in quantity demanded. Since |epsilon_d| is greater than 1, demand is elastic.
+            A 10% price increase predicts a 15% decrease in quantity demanded. Since |εd| is greater than 1, demand is elastic.
           </div>
 
           <div class="revenue-panel" id="revenuePanel">
@@ -123,9 +124,9 @@
             </p>
           </div>
           <div class="triangle">
-            <span>%Delta P</span>
-            <span>%Delta Q</span>
-            <span>epsilon</span>
+            <span>%ΔP</span>
+            <span>%ΔQ</span>
+            <span>ε</span>
           </div>
           <p class="small-note">
             Keep signs when solving. Use the absolute value only when classifying elastic, unit elastic, or inelastic.
@@ -135,14 +136,15 @@
         <section class="card practice-card">
           <div class="section-heading">
             <h2>Practice</h2>
-            <p class="supporting-text" id="practicePrompt">A 10% price increase causes quantity demanded to fall by 20%. What is epsilon_d?</p>
+            <p class="supporting-text" id="practicePrompt">A 10% price increase causes quantity demanded to fall by 20%. What is εd?</p>
           </div>
-          <div class="answer-row">
+          <form class="answer-row" id="practiceForm">
+            <label class="sr-only" for="practiceAnswer">Practice answer</label>
             <input id="practiceAnswer" type="number" step="0.1" placeholder="Enter answer" />
-            <button id="checkPractice" type="button">Check</button>
+            <button id="checkPractice" type="submit">Check</button>
             <button id="newPractice" type="button" class="secondary">New</button>
-          </div>
-          <div class="feedback hidden" id="practiceFeedback"></div>
+          </form>
+          <div class="feedback hidden" id="practiceFeedback" role="status" aria-live="polite"></div>
         </section>
       </section>
     </main>

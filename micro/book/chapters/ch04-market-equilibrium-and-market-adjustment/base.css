@@ -198,6 +198,73 @@ main {
   margin-bottom: 4.25rem;
 }
 
+.chapter-opening-layout {
+  display: block;
+}
+
+.chapter-header--visual .chapter-opening-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(15rem, .85fr);
+  gap: 2.4rem;
+  align-items: center;
+}
+
+.chapter-heading {
+  min-width: 0;
+}
+
+.chapter-opening-visual {
+  position: relative;
+  display: grid;
+  min-width: 0;
+  min-height: 14.5rem;
+  place-items: center;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+  background: #f7f8f7;
+}
+
+.chapter-opening-visual .opening-grid {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--rule);
+  opacity: .55;
+}
+
+.chapter-opening-visual .opening-grid path {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.chapter-opening-visual img {
+  position: relative;
+  z-index: 1;
+  width: calc(100% - 2.2rem);
+  height: 11.6rem;
+  object-fit: contain;
+  padding: .6rem;
+  background: rgb(255 255 255 / 94%);
+}
+
+.chapter-opening-visual figcaption {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  margin: 0;
+  padding: .55rem .75rem;
+  border-top: 1px solid var(--rule);
+  background: var(--page-bg);
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: .7rem;
+  line-height: 1.35;
+}
+
 .chapter-number {
   margin: 0 0 .7rem;
   color: var(--accent);
@@ -507,6 +574,19 @@ tbody th {
   .chapter-meta {
     grid-template-columns: 1fr;
     gap: .9rem;
+  }
+
+  .chapter-header--visual .chapter-opening-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .chapter-opening-visual {
+    min-height: 12.5rem;
+  }
+
+  .chapter-opening-visual img {
+    height: 10rem;
   }
 
   .equation {

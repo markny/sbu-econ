@@ -2,12 +2,13 @@ const MODES = {
   demand: {
     title: "Price Elasticity of Demand",
     formulaLabel: "Price elasticity of demand",
-    formula: "epsilon_d = %Delta Qd / %Delta P",
-    note: "Demand elasticity is usually negative because price and quantity demanded move in opposite directions.",
-    summary: "Change any two values and solve for the third. For demand, the sign matters for direction, and the absolute value matters for elastic/unit/inelastic classification.",
-    driverLabel: "%Delta P",
-    responseLabel: "%Delta Qd",
-    elasticityLabel: "epsilon_d",
+    formula: "εd = %ΔQd / %ΔP",
+    note: "Demand elasticity is negative because price and quantity demanded move in opposite directions. An own-price change causes movement along the demand curve, not a shift of demand.",
+    summary: "Change any two values and solve for the third. For demand, the sign matters for direction, and the absolute value matters for elastic, unit elastic, or inelastic classification.",
+    driverLabel: "%ΔP",
+    responseLabel: "%ΔQd",
+    elasticityLabel: "εd",
+    driverName: "price",
     responseName: "quantity demanded",
     defaultPrice: 10,
     defaultQuantity: -15,
@@ -16,12 +17,13 @@ const MODES = {
   supply: {
     title: "Price Elasticity of Supply",
     formulaLabel: "Price elasticity of supply",
-    formula: "epsilon_s = %Delta Qs / %Delta P",
-    note: "Supply elasticity is positive when price and quantity supplied move in the same direction. Longer runs are usually more elastic because sellers have more time to adjust.",
+    formula: "εs = %ΔQs / %ΔP",
+    note: "Supply elasticity is positive when price and quantity supplied move in the same direction. An own-price change causes movement along the supply curve, not a shift of supply. Longer runs are usually more elastic because sellers have more time to adjust.",
     summary: "Focus on responsiveness: in the short run firms may be less flexible, while in the long run entry, exit, and capacity changes can make supply more elastic.",
-    driverLabel: "%Delta P",
-    responseLabel: "%Delta Qs",
-    elasticityLabel: "epsilon_s",
+    driverLabel: "%ΔP",
+    responseLabel: "%ΔQs",
+    elasticityLabel: "εs",
+    driverName: "price",
     responseName: "quantity supplied",
     defaultPrice: 10,
     defaultQuantity: 8,
@@ -30,12 +32,13 @@ const MODES = {
   income: {
     title: "Income Elasticity",
     formulaLabel: "Income elasticity",
-    formula: "epsilon_I = %Delta Qd / %Delta I",
-    note: "Positive income elasticity means a normal good; negative income elasticity means an inferior good.",
-    summary: "Use the sign of epsilon_I to classify normal and inferior goods. The size tells how responsive quantity demanded is to income changes.",
-    driverLabel: "%Delta I",
-    responseLabel: "%Delta Qd",
-    elasticityLabel: "epsilon_I",
+    formula: "εI = %ΔQd / %ΔI",
+    note: "Positive income elasticity means a normal good; negative income elasticity means an inferior good. An income change shifts demand rather than causing movement along a demand curve.",
+    summary: "Use the sign of εI to classify normal and inferior goods. The size tells how responsive quantity demanded is to income changes.",
+    driverLabel: "%ΔI",
+    responseLabel: "%ΔQd",
+    elasticityLabel: "εI",
+    driverName: "income",
     responseName: "quantity demanded",
     defaultPrice: 10,
     defaultQuantity: 12,
@@ -44,12 +47,13 @@ const MODES = {
   cross: {
     title: "Cross-Price Elasticity",
     formulaLabel: "Cross-price elasticity",
-    formula: "epsilon_xy = %Delta Qx / %Delta Py",
-    note: "Positive cross-price elasticity suggests substitutes; negative cross-price elasticity suggests complements.",
-    summary: "Use the sign of epsilon_xy to classify substitutes and complements. The size tells how closely related the goods are.",
-    driverLabel: "%Delta Py",
-    responseLabel: "%Delta Qx",
-    elasticityLabel: "epsilon_xy",
+    formula: "εxy = %ΔQx / %ΔPy",
+    note: "Positive cross-price elasticity suggests substitutes; negative cross-price elasticity suggests complements. A change in the price of good y shifts demand for good x.",
+    summary: "Use the sign of εxy to classify substitutes and complements. The size tells how closely related the goods are.",
+    driverLabel: "%ΔPy",
+    responseLabel: "%ΔQx",
+    elasticityLabel: "εxy",
+    driverName: "the price of good y",
     responseName: "quantity demanded of good x",
     defaultPrice: 10,
     defaultQuantity: 6,
@@ -60,39 +64,39 @@ const MODES = {
 const PRACTICE = [
   {
     mode: "demand",
-    prompt: "A 10% price increase causes quantity demanded to fall by 20%. What is epsilon_d?",
+    prompt: "A 10% price increase causes quantity demanded to fall by 20%. What is εd?",
     answer: -2,
-    explanation: "epsilon_d = -20 / 10 = -2. Demand is elastic because |epsilon_d| is greater than 1."
+    explanation: "εd = -20 / 10 = -2. Demand is elastic because |εd| is greater than 1."
   },
   {
     mode: "demand",
-    prompt: "epsilon_d is -0.5 and price rises by 8%. What is the predicted %Delta Qd?",
+    prompt: "εd is -0.5 and price rises by 8%. What is the predicted %ΔQd?",
     answer: -4,
-    explanation: "%Delta Qd = epsilon_d x %Delta P = -0.5 x 8 = -4%."
+    explanation: "%ΔQd = εd × %ΔP = -0.5 × 8 = -4%."
   },
   {
     mode: "supply",
-    prompt: "A 12% price increase causes quantity supplied to rise by 18%. What is epsilon_s?",
+    prompt: "A 12% price increase causes quantity supplied to rise by 18%. What is εs?",
     answer: 1.5,
-    explanation: "epsilon_s = 18 / 12 = 1.5. Supply is elastic."
+    explanation: "εs = 18 / 12 = 1.5. Supply is elastic."
   },
   {
     mode: "income",
-    prompt: "Income rises by 10% and quantity demanded falls by 5%. What is epsilon_I?",
+    prompt: "Income rises by 10% and quantity demanded falls by 5%. What is εI?",
     answer: -0.5,
-    explanation: "epsilon_I = -5 / 10 = -0.5, so the good is inferior."
+    explanation: "εI = -5 / 10 = -0.5, so the good is inferior."
   },
   {
     mode: "cross",
-    prompt: "The price of good y rises by 10%, and demand for good x rises by 15%. What is epsilon_xy?",
+    prompt: "The price of good y rises by 10%, and demand for good x rises by 15%. What is εxy?",
     answer: 1.5,
-    explanation: "epsilon_xy = 15 / 10 = 1.5, so the goods are substitutes."
+    explanation: "εxy = 15 / 10 = 1.5, so the goods are substitutes."
   },
   {
     mode: "cross",
-    prompt: "The price of good y rises by 20%, and demand for good x falls by 10%. What is epsilon_xy?",
+    prompt: "The price of good y rises by 20%, and demand for good x falls by 10%. What is εxy?",
     answer: -0.5,
-    explanation: "epsilon_xy = -10 / 20 = -0.5, so the goods are complements."
+    explanation: "εxy = -10 / 20 = -0.5, so the goods are complements."
   }
 ];
 
@@ -135,6 +139,7 @@ const el = {
   revenuePanel: document.getElementById("revenuePanel"),
   revenueText: document.getElementById("revenueText"),
   practicePrompt: document.getElementById("practicePrompt"),
+  practiceForm: document.getElementById("practiceForm"),
   practiceAnswer: document.getElementById("practiceAnswer"),
   checkPractice: document.getElementById("checkPractice"),
   newPractice: document.getElementById("newPractice"),
@@ -150,7 +155,12 @@ function roundOne(value) {
   return Math.round(value * 10) / 10;
 }
 
+function roundTwo(value) {
+  return Math.round(value * 100) / 100;
+}
+
 function formatPercent(value) {
+  if (!Number.isFinite(value)) return "undefined";
   const rounded = roundOne(value);
   const sign = rounded > 0 ? "+" : "";
   return `${sign}${rounded}%`;
@@ -178,7 +188,7 @@ function classifyElasticity(value, mode) {
   }
 
   const magnitude = Math.abs(value);
-  if (Math.abs(magnitude - 1) < 0.05) return "Unit elastic";
+  if (Math.abs(magnitude - 1) < Number.EPSILON * 10) return "Unit elastic";
   if (magnitude > 1) return "Elastic";
   return "Inelastic";
 }
@@ -188,6 +198,17 @@ function setSolvedStyles() {
   el.priceGroup.classList.toggle("is-solved", solved === "price");
   el.quantityGroup.classList.toggle("is-solved", solved === "quantity");
   el.elasticityGroup.classList.toggle("is-solved", solved === "elasticity");
+
+  [
+    ["price", el.priceChange, el.priceSlider],
+    ["quantity", el.quantityChange, el.quantitySlider],
+    ["elasticity", el.elasticityValue, el.elasticitySlider]
+  ].forEach(([value, input, slider]) => {
+    const isSolved = solved === value;
+    input.readOnly = isSolved;
+    input.setAttribute("aria-readonly", String(isSolved));
+    slider.disabled = isSolved;
+  });
 }
 
 function syncPair(input, slider, source) {
@@ -211,14 +232,14 @@ function solveValues() {
   }
 
   if (solved === "elasticity") {
-    elasticity = driver === 0 ? Number.NaN : response / driver;
-    el.elasticityValue.value = Number.isFinite(elasticity) ? roundOne(elasticity) : "";
+    elasticity = driver === 0 ? Number.NaN : roundTwo(response / driver);
+    el.elasticityValue.value = Number.isFinite(elasticity) ? elasticity : "";
     el.elasticitySlider.value = Number.isFinite(elasticity) ? Math.max(-4, Math.min(4, elasticity)) : 0;
   }
 
   if (solved === "price") {
-    driver = elasticity === 0 ? Number.NaN : response / elasticity;
-    el.priceChange.value = Number.isFinite(driver) ? roundOne(driver) : "";
+    driver = elasticity === 0 ? Number.NaN : roundOne(response / elasticity);
+    el.priceChange.value = Number.isFinite(driver) ? driver : "";
     el.priceSlider.value = Number.isFinite(driver) ? Math.max(-40, Math.min(40, driver)) : 0;
   }
 
@@ -226,6 +247,13 @@ function solveValues() {
 }
 
 function setBar(bar, value) {
+  if (!Number.isFinite(value)) {
+    bar.style.width = "0";
+    bar.style.left = "50%";
+    bar.style.right = "auto";
+    return;
+  }
+
   const width = Math.min(50, Math.abs(value) * 1.2);
   bar.style.width = `${width}%`;
   if (value >= 0) {
@@ -245,7 +273,10 @@ function revenueDirection(price, elasticity) {
   if (price === 0) {
     return "Total revenue is unchanged because price does not change.";
   }
-  if (Math.abs(magnitude - 1) < 0.05) {
+  if (elasticity > 0) {
+    return "The usual total revenue test does not apply because these values make price and quantity demanded move in the same direction.";
+  }
+  if (Math.abs(magnitude - 1) < Number.EPSILON * 10) {
     return "Total revenue is roughly unchanged because demand is unit elastic.";
   }
 
@@ -258,7 +289,14 @@ function revenueDirection(price, elasticity) {
 
 function interpretation(mode, driver, response, elasticity) {
   const config = MODES[mode];
-  const base = `A ${formatPercent(driver)} change in ${config.driverLabel.replace("%Delta ", "")} predicts a ${formatPercent(response)} change in ${config.responseName}.`;
+  if (!Number.isFinite(elasticity)) {
+    return `Elasticity is undefined because the percent change in ${config.driverName} is zero.`;
+  }
+  if (!Number.isFinite(driver)) {
+    return `The required percent change in ${config.driverName} is undefined because elasticity is zero.`;
+  }
+
+  const base = `A ${formatPercent(driver)} change in ${config.driverName} predicts a ${formatPercent(response)} change in ${config.responseName}.`;
   const classification = classifyElasticity(elasticity, mode);
 
   if (mode === "demand" || mode === "supply") {
@@ -290,7 +328,10 @@ function render() {
   el.priceLabel.textContent = config.driverLabel;
   el.quantityLabel.textContent = config.responseLabel;
   el.elasticityLabel.textContent = config.elasticityLabel;
-  el.driverBarLabel.textContent = config.driverLabel.replace("%Delta ", "");
+  el.priceSlider.setAttribute("aria-label", `Adjust ${config.driverLabel}`);
+  el.quantitySlider.setAttribute("aria-label", `Adjust ${config.responseLabel}`);
+  el.elasticitySlider.setAttribute("aria-label", `Adjust ${config.elasticityLabel}`);
+  el.driverBarLabel.textContent = config.driverLabel;
   el.responseBarLabel.textContent = config.responseName;
   el.driverBarValue.textContent = formatPercent(values.driver);
   el.responseBarValue.textContent = formatPercent(values.response);
@@ -319,16 +360,24 @@ function setMode(mode) {
   el.quantitySlider.value = config.defaultQuantity;
   el.elasticityValue.value = config.defaultElasticity;
   el.elasticitySlider.value = config.defaultElasticity;
-  el.tabs.forEach((tab) => tab.classList.toggle("is-active", tab.dataset.mode === mode));
+  el.tabs.forEach((tab) => {
+    const isActive = tab.dataset.mode === mode;
+    tab.classList.toggle("is-active", isActive);
+    tab.setAttribute("aria-pressed", String(isActive));
+  });
   choosePracticeForMode(mode);
   render();
 }
 
-function choosePracticeForMode(mode) {
+function choosePracticeForMode(mode, chooseDifferent = false) {
   const indexes = PRACTICE.map((item, index) => ({ item, index })).filter(({ item }) => item.mode === mode);
-  const selected = indexes[Math.floor(Math.random() * indexes.length)] || { index: 0 };
+  const candidates = chooseDifferent && indexes.length > 1
+    ? indexes.filter(({ index }) => index !== state.practiceIndex)
+    : indexes;
+  const selected = candidates[Math.floor(Math.random() * candidates.length)] || { index: 0 };
   state.practiceIndex = selected.index;
   el.practicePrompt.textContent = PRACTICE[state.practiceIndex].prompt;
+  el.newPractice.textContent = indexes.length > 1 ? "New" : "Reset";
   el.practiceAnswer.value = "";
   el.practiceFeedback.className = "feedback hidden";
   el.practiceFeedback.textContent = "";
@@ -336,6 +385,11 @@ function choosePracticeForMode(mode) {
 
 function checkPracticeAnswer() {
   const current = PRACTICE[state.practiceIndex];
+  if (el.practiceAnswer.value.trim() === "") {
+    el.practiceFeedback.className = "feedback incorrect";
+    el.practiceFeedback.textContent = "Enter an answer before checking.";
+    return;
+  }
   const answer = Number(el.practiceAnswer.value);
   const correct = Number.isFinite(answer) && Math.abs(answer - current.answer) <= 0.05;
   el.practiceFeedback.className = `feedback ${correct ? "correct" : "incorrect"}`;
@@ -364,7 +418,13 @@ el.tabs.forEach((tab) => {
 });
 
 el.solveFor.addEventListener("change", render);
-el.checkPractice.addEventListener("click", checkPracticeAnswer);
-el.newPractice.addEventListener("click", () => choosePracticeForMode(state.mode));
+el.practiceForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  checkPracticeAnswer();
+});
+el.newPractice.addEventListener("click", () => {
+  choosePracticeForMode(state.mode, true);
+  el.practiceAnswer.focus();
+});
 
 setMode("demand");
