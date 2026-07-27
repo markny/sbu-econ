@@ -1,0 +1,45 @@
+:root {
+  --font-body: Georgia, "Times New Roman", serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --page-width: 49rem;
+  --body-size: 1.08rem;
+  --body-line: 1.72;
+  --section-space: 3.75rem;
+  --reader-bg: #edf0f2;
+  --page-bg: #ffffff;
+  --ink: #202326;
+  --muted: #5d666c;
+  --rule: #cbd1d5;
+  --accent: #8b3042;
+  --accent-dark: #632131;
+  --link: #166a70;
+  --radius: 3px;
+}
+
+.chapter-header {
+  padding-bottom: 1.6rem;
+  border-bottom: 4px double var(--rule);
+}
+
+.chapter-number {
+  color: var(--accent);
+}
+
+h2 {
+  border-bottom-width: 1px;
+}
+
+.semantic-block {
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.semantic-block .block-label {
+  font-size: .65rem;
+}
+
+tbody tr:nth-child(even) {
+  background: #f7f8f8;
+}
