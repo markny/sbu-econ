@@ -329,18 +329,18 @@ a:hover {
   padding: 70px 0 64px;
   overflow: hidden;
   background-color: #f5f6f2;
-  background-image: url("./micro/book/chapters/ch04-market-equilibrium-and-market-adjustment/figures/ch04_market_equilibrium.svg");
-  background-repeat: no-repeat;
-  background-position: calc(100% - 5vw) center;
-  background-size: min(45vw, 560px) auto;
 }
 
 .micro-hero-layout {
   width: min(1180px, calc(100% - 40px));
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 340px);
+  gap: 72px;
+  align-items: center;
 }
 
 .micro-hero-copy {
-  width: min(52%, 610px);
+  max-width: 650px;
 }
 
 .micro-hero h1 {
@@ -349,6 +349,30 @@ a:hover {
 
 .micro-hero .lead {
   max-width: 590px;
+}
+
+.micro-cover-link {
+  width: 100%;
+  justify-self: end;
+  line-height: 0;
+  box-shadow: 0 22px 54px rgb(23 33 31 / 20%);
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.micro-cover-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 27px 62px rgb(23 33 31 / 24%);
+}
+
+.micro-cover-link:focus-visible {
+  outline: 3px solid var(--rust);
+  outline-offset: 5px;
+}
+
+.micro-cover-link img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .book-intro {
@@ -531,13 +555,16 @@ a:hover {
     min-height: 0;
     align-items: start;
     padding-top: 54px;
-    padding-bottom: 280px;
-    background-position: center calc(100% - 32px);
-    background-size: min(88vw, 420px) auto;
+    padding-bottom: 54px;
+  }
+
+  .micro-hero-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(180px, 220px);
+    gap: 36px;
   }
 
   .micro-hero-copy {
-    width: 100%;
+    max-width: none;
   }
 
   .course-map {
@@ -572,12 +599,19 @@ a:hover {
   }
 
   .micro-hero {
-    padding-bottom: 240px;
-    background-size: min(92vw, 350px) auto;
+    padding-top: 40px;
+    padding-bottom: 30px;
   }
 
   .micro-hero-layout {
     width: min(100% - 28px, 1080px);
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .micro-cover-link {
+    width: 138px;
+    justify-self: start;
   }
 
   .chapter-desk {
