@@ -1,0 +1,106 @@
+{
+  "source_repository": "markny/micro-principles",
+  "source_commit": "42e3135c712caa9644d13c6ec27d519234229850",
+  "chapters": [
+    {
+      "number": 1,
+      "title": "Thinking Like an Economist",
+      "slug": "ch01_thinking_like_an_economist"
+    },
+    {
+      "number": 2,
+      "title": "Opportunity Cost, Trade, and Coordination",
+      "slug": "ch02_opportunity_cost_trade_and_coordination"
+    },
+    {
+      "number": 3,
+      "title": "Demand and Supply",
+      "slug": "ch03_demand_and_supply"
+    },
+    {
+      "number": 4,
+      "title": "Market Equilibrium and Market Adjustment",
+      "slug": "ch04_market_equilibrium_and_market_adjustment"
+    },
+    {
+      "number": 5,
+      "title": "Elasticity and Market Responsiveness",
+      "slug": "ch05_elasticity_and_market_responsiveness"
+    },
+    {
+      "number": 6,
+      "title": "Consumer Surplus, Producer Surplus, and Market Efficiency",
+      "slug": "ch06_consumer_surplus_producer_surplus_and_market_efficiency"
+    },
+    {
+      "number": 7,
+      "title": "Taxes and Deadweight Loss",
+      "slug": "ch07_taxes_and_deadweight_loss"
+    },
+    {
+      "number": 8,
+      "title": "Price Controls and Regulation",
+      "slug": "ch08_price_controls_and_regulation"
+    },
+    {
+      "number": 9,
+      "title": "International Trade and Trade Policy",
+      "slug": "ch09_international_trade_and_trade_policy"
+    },
+    {
+      "number": 10,
+      "title": "Externalities and Property Rights",
+      "slug": "ch10_externalities_and_property_rights"
+    },
+    {
+      "number": 11,
+      "title": "Public Goods and Common Resources",
+      "slug": "ch11_public_goods_and_common_resources"
+    },
+    {
+      "number": 12,
+      "title": "Information, Uncertainty, and Market Design",
+      "slug": "ch12_information_uncertainty_and_market_design"
+    },
+    {
+      "number": 13,
+      "title": "Costs and Production",
+      "slug": "ch13_costs_and_production"
+    },
+    {
+      "number": 14,
+      "title": "Perfect Competition",
+      "slug": "ch14_perfect_competition"
+    },
+    {
+      "number": 15,
+      "title": "Monopoly",
+      "slug": "ch15_monopoly"
+    },
+    {
+      "number": 16,
+      "title": "Monopolistic Competition, Product Differentiation, and Advertising",
+      "slug": "ch16_monopolistic_competition_product_differentiation_and_advertising"
+    },
+    {
+      "number": 17,
+      "title": "Oligopoly and Strategic Behavior",
+      "slug": "ch17_oligopoly_and_strategic_behavior"
+    },
+    {
+      "number": 18,
+      "title": "Factor Markets, Labor, and Income Distribution",
+      "slug": "ch18_factor_markets_labor_and_income_distribution"
+    },
+    {
+      "number": 19,
+      "title": "Health, Medical Care, and Insurance",
+      "slug": "ch19_health_medical_care_and_insurance"
+    },
+    {
+      "number": 20,
+      "title": "Firms, Contracts, and Coordination",
+      "slug": "ch20_firms_contracts_and_coordination"
+    }
+  ]
+}
