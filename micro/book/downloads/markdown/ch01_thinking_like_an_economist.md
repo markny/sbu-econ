@@ -306,6 +306,20 @@ Models and evidence do different jobs. A model gives a reason why a result might
 
 This relationship will recur throughout the book. A model may tell us that a tax discourages an activity, but evidence is needed to estimate how much. A price ceiling may create waiting, but the result depends on the rules in place. A model may show how market power could cause harm, but industry evidence is needed to learn whether the harm is large. Economic analysis is strongest when clear reasoning and good evidence work together.
 
+::: sideline
+**Does Studying Economics Pay?**
+
+A recent calculation using American Community Survey data ranked economics first among college majors in estimated work-life earnings. For full-time workers ages 25 through 64, the estimate was about **$6.9 million** in 2024 dollars. Chemical engineering followed at $6.68 million and finance at $6.58 million. The estimate for workers without a college degree was $2.64 million.[^waldron-majors]
+
+That headline is striking, but it needs interpretation. The calculation is **synthetic**: it combines the earnings of different people at different ages to create a picture of a working life rather than following the same graduates for forty years. It also includes only full-time workers. Most important, it does not prove that choosing economics caused the higher earnings.
+
+Students who choose economics may differ in ability, ambition, family background, or career plans. School mix matters too. Some highly selective universities, including several Ivy League schools, do not offer an undergraduate business major. Students interested in finance, consulting, or management may choose economics instead. Part of the earnings difference may therefore reflect who studies economics and where they study it.
+
+But that is not the whole story. Zachary Bleemer and Aashish Mehta studied a university rule that allowed students just above a grade cutoff to enter the economics major while otherwise similar students just below it could not. Students who gained access to the major later earned about $22,000 more per year early in their careers than they would have earned with their second-choice majors. About half of the gain came from entering higher-paying business and finance industries.[^bleemer-mehta]
+
+The careful conclusion is not that an economics major guarantees a $6.9 million career. The ranking may reflect both what students learn and the kinds of students who choose economics. The cutoff study suggests that the major itself can matter. Just as important, economics teaches us how to ask what a striking chart does and does not prove.
+:::
+
 ## Positive Analysis And Normative Judgment
 
 Evidence can help us learn what a policy is likely to do. It cannot, by itself, tell us whether the policy should be adopted. That requires a second kind of reasoning.
@@ -487,3 +501,7 @@ This method does not guarantee one policy conclusion. It can reveal gains from t
 [^sfpark-study]: Farzad Alemi, Caroline J. Rodier, and Christiana Drake, "Cruising and On-Street Parking Pricing: A Difference-in-Difference Analysis of Measured Parking Search Time and Distance in San Francisco," *Transportation Research Part A* 111 (2018): 187-198, [https://doi.org/10.1016/j.tra.2018.03.007](https://doi.org/10.1016/j.tra.2018.03.007).
 
 [^bastiat]: Frédéric Bastiat, "What Is Seen and What Is Not Seen" (1850), in *Selected Essays on Political Economy*, Seymour Cain, trans., George B. de Huszar, ed. (Van Nostrand, 1964), [Online Library of Liberty edition](https://oll.libertyfund.org/titles/bastiat-selected-essays-on-political-economy). The chapter paraphrases Bastiat's seen/unseen distinction rather than quoting it.
+
+[^waldron-majors]: David Waldron, "The Highest- and Lowest-Paid College Majors," calculation using IPUMS-USA American Community Survey data for 2020-2024, circulated in Crémieux, ["Majors, stratified by highest and lowest lifetime earnings!"](https://x.com/cremieuxrecueil/status/2084314749651599433), August 3, 2026. The chart reports synthetic work-life earnings for full-time workers ages 25-64 in 2024 dollars. The project has verified the reported chart and its stated data source but has not independently reproduced the calculation.
+
+[^bleemer-mehta]: Zachary Bleemer and Aashish Mehta, "Will Studying Economics Make You Rich? A Regression Discontinuity Analysis of the Returns to College Major," *American Economic Journal: Applied Economics* 14, no. 2 (2022): 1-22, [https://doi.org/10.1257/app.20200447](https://doi.org/10.1257/app.20200447).
