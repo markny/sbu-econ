@@ -1,0 +1,24 @@
+{
+  "source_repository": "markny/sports-econ-v2",
+  "source_revision": {
+    "commit": "1db74633c5c4f30e554ac79ed711cffd86da99da",
+    "dirty": true
+  },
+  "chapters": [
+    {
+      "number": 2,
+      "slug": "the-supply-and-demand-playbook",
+      "title": "The Supply and Demand Playbook"
+    },
+    {
+      "number": 3,
+      "slug": "market-outcomes-and-policy",
+      "title": "Market Outcomes and Policy"
+    },
+    {
+      "number": 4,
+      "slug": "ticket-pricing-and-attendance",
+      "title": "Ticket Pricing and Attendance"
+    }
+  ]
+}
