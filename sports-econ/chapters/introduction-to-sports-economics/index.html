@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Introduction to Sports Economics | Sports Economics</title>
+  <meta name="description" content="How constraints, incentives, institutions, counterfactuals, evidence, and data turn sports headlines into economic questions.">
+  <link rel="canonical" href="https://sbu-econ.org/sports-econ/chapters/introduction-to-sports-economics/">
+  <meta property="og:title" content="Introduction to Sports Economics | Sports Economics">
+  <meta property="og:description" content="How constraints, incentives, institutions, counterfactuals, evidence, and data turn sports headlines into economic questions.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://sbu-econ.org/sports-econ/chapters/introduction-to-sports-economics/">
+  <meta property="og:image" content="https://sbu-econ.org/sports-econ/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/sports-econ/katex/katex.min.css">
+  <link rel="stylesheet" href="/sports-econ/book.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="book-name" href="/sports-econ/">Sports Economics</a>
+    <p>Markets, institutions, strategy, evidence, and policy</p>
+    <span class="preview-badge">Review draft</span>
+  </header>
+
+  <div class="reader-layout">
+    <aside class="reader-sidebar">
+      <div class="sidebar-inner">
+        <p class="sidebar-kicker">Available now</p>
+        <p class="sidebar-chapter">Chapter 1 of 17</p>
+
+        <nav class="chapter-list" aria-label="Available chapters">
+          <p class="nav-heading">Draft chapters</p>
+          <ol>
+                  <li>
+                    <a aria-current="page" href="/sports-econ/chapters/introduction-to-sports-economics/">
+                      <span>1</span>
+                      Introduction to Sports Economics
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sports-econ/chapters/the-supply-and-demand-playbook/">
+                      <span>2</span>
+                      The Supply and Demand Playbook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sports-econ/chapters/market-outcomes-and-policy/">
+                      <span>3</span>
+                      Market Outcomes and Policy
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sports-econ/chapters/ticket-pricing-and-attendance/">
+                      <span>4</span>
+                      Ticket Pricing and Attendance
+                    </a>
+                  </li>
+          </ol>
+        </nav>
+
+        <nav class="contents-nav" aria-label="Chapter contents">
+          <p class="nav-heading">In this chapter</p>
+          <ol>
+                  <li><a href="#learning-goals">Learning Goals</a></li>
+                  <li><a href="#what-is-sports-economics">What Is Sports Economics?</a></li>
+                  <li><a href="#why-sports-are-a-useful-economic-laboratory">Why Sports Are A Useful Economic Laboratory</a></li>
+                  <li><a href="#the-economists-method">The Economist&#39;s Method</a></li>
+                  <li><a href="#the-economic-questions-behind-sports-headlines">The Economic Questions Behind Sports Headlines</a></li>
+                  <li><a href="#using-ai-to-learn-economics">Using AI To Learn Economics</a></li>
+                  <li><a href="#big-picture">Big Picture</a></li>
+                  <li><a href="#review-questions">Review Questions</a></li>
+                  <li><a href="#applications">Applications</a></li>
+                  <li><a href="#optional-appendix-a-practical-introduction-to-regression-with-sports-data">Optional Appendix: A Practical Introduction To Regression With Sports Data</a></li>
+                  <li><a href="#source-notes">Source Notes</a></li>
+          </ol>
+        </nav>
+
+        <a class="download-link" href="/sports-econ/downloads/chapter-1-introduction-to-sports-economics.md" download>Download chapter Markdown</a>
+      </div>
+    </aside>
+
+    <main id="main-content">
+      <header class="chapter-header">
+        <p class="chapter-number">Chapter 1</p>
+        <h1 id="chapter-title">Introduction to Sports Economics</h1>
+        <p class="chapter-deck">How constraints, incentives, institutions, counterfactuals, evidence, and data turn sports headlines into economic questions.</p>
+        <div class="chapter-meta" aria-label="Chapter information">
+          <span>Undergraduate level</span>
+          <span>6,540 words</span>
+          <span>Work in progress</span>
+        </div>
+      </header>
+
+      <article class="chapter-body">
+<p>When the Los Angeles Dodgers signed Shohei Ohtani to a ten-year, $700 million contract, it was easy to ask whether any athlete could possibly be “worth” that much. But <em>worth it</em> is not yet an economic question. Worth it to whom? Measured by wins, ticket demand, media attention, sponsorships, long-run brand value, or profit? Compared with signing which other players—or keeping the money available for later? And how should we treat a contract that deferred $680 million until after its ten-year playing term?<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<p>Those questions move us from a headline to economics. The headline supplies a number. Economics asks about the decision maker, objective, constraints, alternatives, timing, incentives, and evidence. It also asks for a <strong>counterfactual</strong>: what would likely have happened if the Dodgers had made a different choice?</p>
+<p>The same method applies throughout sports. Did a stadium create local economic growth, or did it move spending from one part of the region to another? Does a salary cap improve competitive balance? Does lowering a ticket price cause attendance to rise? Does a statistic predict performance, and is prediction the same as causation? Sports economics supplies a disciplined way to investigate these questions.</p>
+<h2 id="learning-goals">Learning Goals</h2>
+<p>After reading this chapter, you should be able to:</p>
+<ul>
+<li>define sports economics as applied microeconomics</li>
+<li>identify the main economic decision makers in sports and the constraints they face</li>
+<li>explain how incentives, models, institutions, counterfactuals, and evidence fit together</li>
+<li>distinguish an economic question from a factual, accounting, or prediction question</li>
+<li>explain why sports provide an unusually visible setting for economic analysis</li>
+<li>recognize the difference between association, prediction, and causation</li>
+<li>improve an AI explanation by specifying the audience, context, task, and constraints</li>
+<li>use an uploaded chapter as the source for AI-generated tutoring and practice</li>
+<li>if completing the optional appendix, interpret a scatterplot, regression slope, fitted value, residual, <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq>, and confidence interval</li>
+<li>if completing the optional appendix, reproduce a small sports-data analysis with Codex and R while checking the generated work</li>
+</ul>
+<h2 id="what-is-sports-economics">What Is Sports Economics?</h2>
+<p><strong>Sports economics is the application of economic reasoning and evidence to decisions made by athletes, fans, teams, leagues, media companies, sponsors, venues, and governments.</strong> It studies sports, but its subject is broader than sports business or sports trivia. It asks the same questions economists ask in other settings:</p>
+<ul>
+<li>How do people choose when time, money, talent, and other resources are limited?</li>
+<li>How do prices and rules change behavior?</li>
+<li>How do firms with market power choose prices and products?</li>
+<li>How are workers paid, and how do restrictions affect their bargaining power?</li>
+<li>How do organizations cooperate when they also compete?</li>
+<li>When does a private decision affect people outside the transaction?</li>
+<li>How can data help distinguish a plausible story from a supported conclusion?</li>
+</ul>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Applied Microeconomics</strong></p>
+<p>Applied microeconomics uses economic models and data to explain decisions by individuals, firms, teams, leagues, and institutions. The goal is not to make sports fit a diagram. It is to use a model when it clarifies an actual choice or mechanism.</p>
+</aside>
+<p>Microeconomics begins with individual decision makers and the institutions connecting them. A fan chooses whether to attend, watch, buy merchandise, or spend time elsewhere. An athlete chooses among contracts, training, risk, and career opportunities. A team decides how to assemble a roster, price tickets, sell media content, and invest in facilities. A league writes rules that shape competition among teams whose products depend on one another. Governments make decisions about taxes, land, regulation, public funding, gambling, health, and education.</p>
+<p>These choices are connected. A rule governing player movement affects bargaining power, team payrolls, and possibly competitive balance. A media agreement affects league revenue, broadcast access, scheduling, and the value of audience attention. A stadium decision affects fans, taxpayers, nearby residents, workers, and businesses. Sports economics studies both the individual choices and the institutional system in which they occur.</p>
+<figure class="chapter-figure" id="fig:ch01-sports-economics-map">
+<p><img src="/sports-econ/figures/ch01-introduction/ch01-sports-economics-map.svg" alt="A central teams and leagues box connects athletes, fans, media and sponsors, and venues and governments through labor, tickets and attention, content and rights, and facilities and rules."></p>
+<p><strong>Figure 1.1: The sports-economics system.</strong> Teams and leagues connect labor, consumer, media, and public-policy decisions. Each relationship includes flows in both directions and is shaped by rules and institutions.</p>
+</figure>
+<h2 id="why-sports-are-a-useful-economic-laboratory">Why Sports Are A Useful Economic Laboratory</h2>
+<p>Sports make many economic relationships unusually visible. League rules are published. Player movement and compensation receive extensive coverage. Games produce repeated outcomes. Attendance, prices, television audiences, standings, and performance statistics can often be measured. Rules sometimes change at identifiable dates, and teams face similar problems under different institutions.</p>
+<p>That visibility creates strong teaching examples and valuable research settings. In many industries, it is difficult to observe a worker’s output, the exact rules connecting competing firms, or repeated competition under stable conditions. Sports provide imperfect but unusually rich measures of all three.</p>
+<p>The Super Bowl illustrates the value of attention. The game is free to viewers with the relevant broadcast access, yet advertisers compete intensely for limited commercial time. NBCUniversal reported that advertising inventory for Super Bowl LX sold out early, and the broadcast later averaged 125.6 million viewers across its measured platforms.<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup> The economic product sold to advertisers was not football itself. It was access to a massive audience at a particular moment.</p>
+<p>Salary caps illustrate institutions and constraints. A roster is not simply a list of the best available players. Teams must choose positions, contract lengths, present and future payroll commitments, injury risks, and replacement options under league rules. Changing the rules can change bargaining, timing, and roster construction even when the athletes’ physical abilities remain the same.</p>
+<p>Sports are not automatically perfect experiments. A visible event can still have many causes. Teams raise prices for games they already expect to be popular. Successful teams may attract more fans and earn more revenue, but greater revenue may also help teams acquire talent. Cities that host major events differ from cities that do not. Measurement makes analysis possible; it does not eliminate the need for careful reasoning.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>A Laboratory Is Not Automatically An Experiment</strong></p>
+<p>Sports produce abundant data and clearly defined rules, but a comparison becomes a credible experiment only when the research design supports the causal claim. A large dataset cannot by itself separate cause from selection, reverse causality, or omitted factors.</p>
+</aside>
+<h2 id="the-economists-method">The Economist’s Method</h2>
+<p>Economics is not a collection of conclusions about whether owners, players, fans, or governments are good or bad. It is a method for analyzing choices and consequences. Six ideas will recur throughout this book.</p>
+<h3 id="constraints-and-trade-offs">Constraints And Trade-Offs</h3>
+<p>Every decision maker faces constraints. A student has limited income and time. A team has a limited roster, schedule, and budget. A stadium has a fixed number of seats on game day. A broadcaster has limited programming time. A city cannot spend the same dollar on a stadium, school, road, and tax reduction simultaneously.</p>
+<p>A constraint creates a trade-off. Choosing one option means giving up another. Economists call the value of the best forgone alternative the <strong>opportunity cost</strong>. Chapter 2 develops this logic and connects it to demand and supply. For now, the important habit is to ask what alternative disappears when a choice is made.</p>
+<p>The Ohtani contract provides an example. The relevant cost to the Dodgers was not merely the dollars written in the contract. It also included the alternative players, financial flexibility, and future commitments associated with a different roster plan. Deferral changed the timing of payments and the competitive-balance-tax calculation; it did not make the commitment costless.</p>
+<h3 id="incentives-and-behavioral-response">Incentives And Behavioral Response</h3>
+<p>An <strong>incentive</strong> is a change in the expected benefit or cost of an action. Ticket prices affect the cost of attending. Bonuses affect the payoff to measured performance. Draft rules affect the value of winning and losing at different points in a season. Transfer restrictions affect the alternatives available to athletes and teams.</p>
+<p>People respond to incentives, but that statement is not a claim that everyone responds identically or perfectly. Fans differ in loyalty and income. Athletes differ in preferences, health, and career stage. Organizations may have several objectives. Rules may be misunderstood or difficult to enforce. The economic task is to identify the likely margin of adjustment and then examine the evidence.</p>
+<h3 id="models">Models</h3>
+<p>A <strong>model</strong> is a deliberate simplification. A demand curve holds many conditions fixed so we can isolate how quantity demanded changes with price. A competitive-market model asks what happens when buyers and sellers take price as given. A game-theory model focuses on how one decision maker’s best choice depends on another’s response.</p>
+<p>All models omit details. That is their purpose, but it is also their danger. A model is useful when the omitted details do not overturn the mechanism we are studying. A stadium-capacity model can clarify scarcity for one game. It would be a poor complete model of a team’s long-run stadium, seating, and pricing decisions.</p>
+<p>A good user of economics can do three things: state the model’s assumptions, follow its logic, and recognize where the real institution requires an extension.</p>
+<h3 id="institutions">Institutions</h3>
+<p><strong>Institutions</strong> are the formal and informal rules that organize interaction. Salary caps, drafts, free agency, transfer windows, revenue sharing, playoff formats, eligibility rules, broadcasting agreements, ticket-resale restrictions, and collective bargaining all shape the choices people can make.</p>
+<p>The institutional detail is often the economic mechanism. Suppose a league caps one ticket price. The effect depends on who receives the low-price tickets and whether they can be resold. Suppose player rights move from teams to players. The effect on talent allocation may differ from the effect on who receives the income. A rule’s name is not enough; we must trace how it changes feasible choices and bargaining positions.</p>
+<h3 id="counterfactuals">Counterfactuals</h3>
+<p>Imagine that a city builds a new stadium and restaurant spending near the venue rises. Did the stadium create the spending? We cannot answer by comparing the new spending with zero. Some customers would have spent money at other restaurants, in other neighborhoods, or on other entertainment. The relevant comparison is what would likely have occurred without the stadium.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Counterfactual</strong></p>
+<p>A counterfactual is what would likely have happened under a different choice, policy, or set of conditions. Economic and causal claims compare what happened with this relevant alternative—not with zero and not with an imagined perfect outcome.</p>
+</aside>
+<p>Counterfactuals can be difficult because we observe the path that occurred, not every path that could have occurred. Economists therefore look for useful comparison groups, changes in rules, controlled variation, or models that make the alternative explicit. Even when a precise causal estimate is impossible, stating the counterfactual improves the question.</p>
+<h3 id="evidence">Evidence</h3>
+<p>Evidence must match the claim. A contract document can establish payment terms. An attendance series can describe what happened. A fan survey can measure reported preferences. A regression can summarize a relationship after accounting for measured variables. A well-designed experiment or natural experiment may support a causal conclusion.</p>
+<p>These sources are not interchangeable. A team executive’s explanation can document the organization’s stated rationale, but it does not prove the policy produced the claimed effect. A correlation can be useful for prediction without revealing causation. A model can clarify a mechanism without proving its empirical importance.</p>
+<p>A disciplined economic argument identifies which parts are:</p>
+<ul>
+<li><strong>theoretical:</strong> what follows from stated assumptions</li>
+<li><strong>descriptive:</strong> what the data show in a defined sample</li>
+<li><strong>predictive:</strong> what information helps forecast an outcome</li>
+<li><strong>causal:</strong> what would change if one factor were changed while the relevant alternatives were held fixed</li>
+</ul>
+<h2 id="the-economic-questions-behind-sports-headlines">The Economic Questions Behind Sports Headlines</h2>
+<p>The rest of this book develops specific models, but most sports-economic questions fit into a few recurring families.</p>
+<h3 id="prices-products-and-attention">Prices, Products, And Attention</h3>
+<p>Why do ticket prices vary across seats and games? Why can a smaller stadium support higher prices for some events? Why is a short Super Bowl advertisement so valuable? Why do leagues sell media rights in large packages?</p>
+<p>These are questions about demand, scarcity, product design, market power, and the value of attention. Chapters 2 through 5 build the main tools. The central lesson is that a visible price is an outcome of choices and constraints, not simply a markup placed on an accounting cost.</p>
+<h3 id="labor-rosters-and-bargaining">Labor, Rosters, And Bargaining</h3>
+<p>Why do teams pay some athletes far more than others? How do free agency, drafts, salary caps, transfer rules, and unions affect compensation and movement? When does a performance statistic measure an athlete’s contribution, and when does it reflect teammates, role, or opportunity?</p>
+<p>These are questions about productivity, labor demand, bargaining power, restrictions on competition, and measurement. The athlete is a worker, but sports labor markets have unusually visible contracts and unusually detailed rules.</p>
+<h3 id="competition-and-cooperation">Competition And Cooperation</h3>
+<p>Teams want to defeat one another, yet they also need opponents, common rules, officials, schedules, and a credible championship. A league is therefore neither an ordinary single firm nor a collection of completely independent competitors.</p>
+<p>That joint production creates questions about revenue sharing, competitive balance, league governance, collusion, and antitrust. Strategic interaction matters because a rule that benefits one team can change the choices of every other team.</p>
+<h3 id="policy-and-public-claims">Policy And Public Claims</h3>
+<p>Should a city subsidize a stadium? Should sports gambling face special regulation? What external costs and benefits accompany major events? How should college sports balance education, compensation, and competition? Do participation programs create public-health benefits?</p>
+<p>Policy analysis requires more than adding visible spending. It asks how behavior changes, who receives the benefits, who bears the costs, what alternatives are displaced, and what evidence supports the claimed effect. Chapters 3, 9, 12, 13, 14, and 17 return repeatedly to those questions.</p>
+<h3 id="data-prediction-and-decisions">Data, Prediction, And Decisions</h3>
+<p>Teams and fans have always used information, but the cost of analyzing it has fallen dramatically. A student can now begin with a plain-language question, ask an AI coding agent to inspect a dataset and write a script, run the analysis, and preserve the data, code, figure, and results for review.</p>
+<p>That change makes statistical tools more accessible. It does not make judgment obsolete. A polished chart can use the wrong variable. A regression can answer the wrong question. Generated code can contain an error. A predictive relationship can be described as causal without justification. Chapter 15 examines analytics and organizational adoption in depth. The optional appendix to this chapter supplies the basic vocabulary needed to read empirical evidence throughout the book.</p>
+<h2 id="using-ai-to-learn-economics">Using AI To Learn Economics</h2>
+<p>An AI assistant can explain the same idea at different levels, generate practice questions, respond to a student’s attempt, and connect an unfamiliar concept to a familiar sport. The quality of that interaction depends partly on how clearly the task is specified.</p>
+<p>Compare these requests:</p>
+<blockquote>
+<p>Explain sports economics.</p>
+</blockquote>
+<p>and</p>
+<blockquote>
+<p>Explain sports economics to a first-year college student who follows baseball but has never taken economics. Use Shohei Ohtani’s Dodgers contract to illustrate constraints, opportunity cost, incentives, and a counterfactual. Distinguish facts from economic interpretation, avoid unexplained jargon, and keep the explanation under 250 words.</p>
+</blockquote>
+<p>The first request invites a generic definition. The second identifies an audience, example, concepts, evidence boundary, and length. It does not guarantee a correct answer, but it makes the output easier to evaluate.</p>
+<aside class="semantic-block semantic-sideline"><p class="semantic-label">Sideline</p>
+<p><strong>Using AI To Explain A Concept</strong></p>
+<p>A useful learning prompt normally specifies:</p>
+<ol>
+<li><strong>Source:</strong> Which chapter, notes, or data should the answer use?</li>
+<li><strong>Audience:</strong> What does the learner already know?</li>
+<li><strong>Task:</strong> Explain, compare, quiz, diagnose, or create an example?</li>
+<li><strong>Constraints:</strong> Desired length, difficulty, notation, and format.</li>
+<li><strong>Verification:</strong> Which facts, calculations, or assumptions should be checked?</li>
+</ol>
+<p>Then continue the conversation. Ask what part of the explanation is an observed fact, what part is an economic model, and what evidence would change the conclusion.</p>
+</aside>
+<p>This book is designed to be uploaded chapter by chapter. The downloadable Markdown contains the visible text plus hidden figure descriptions and tutoring guidance. Those hidden descriptions help an AI tutor reason about diagrams even when it cannot see the rendered SVG. They are not substitutes for inspecting the actual figure, and they do not appear in the normal HTML presentation.</p>
+<aside class="semantic-block semantic-studyandlearn"><p class="semantic-label">Study and Learn</p>
+<p><strong>Use The Chapter As An AI Tutor</strong></p>
+<p>Upload this chapter’s Markdown and begin with:</p>
+<blockquote>
+<p>Tutor me on Chapter 1 using only the uploaded chapter. First ask whether I want a concise explanation, conceptual practice, counterfactual practice, or the optional regression appendix. Ask one question at a time and wait for my answer. If I am wrong, give one hint before explaining. Identify whether each claim is theoretical, descriptive, predictive, or causal.</p>
+</blockquote>
+<p>The phrase “using only the uploaded chapter” gives the tutor a source boundary. If you want outside examples, ask for them separately and require links and dates.</p>
+</aside>
+<h2 id="big-picture">Big Picture</h2>
+<p>Sports economics begins by changing the questions we ask.</p>
+<p>Instead of asking only how much a contract pays, ask what the parties were trying to accomplish, what alternatives they faced, and how timing and rules changed the bargain. Instead of assuming a stadium created every dollar spent nearby, ask what would have happened otherwise. Instead of treating a high ticket price as proof of high cost, trace demand, scarcity, market power, and product design. Instead of treating a correlation as a cause, identify the counterfactual and the factors that may affect both variables.</p>
+<p>The recurring method is:</p>
+<ol>
+<li>Identify the decision maker and objective.</li>
+<li>Identify the relevant constraints and alternatives.</li>
+<li>Trace the incentive and likely behavioral response.</li>
+<li>Specify the institution and rules.</li>
+<li>State the relevant counterfactual.</li>
+<li>Match the evidence to the claim.</li>
+</ol>
+<p>Chapter 2 turns this method into the demand-and-supply toolkit. Later chapters apply it to policy, ticketing, media, league behavior, competitive balance, stadiums, labor, college sports, gambling, mega-events, analytics, fandom, and participation.</p>
+<h2 id="review-questions">Review Questions</h2>
+<ol>
+<li>What makes sports economics a branch of applied microeconomics?</li>
+<li>Why can sports be a useful laboratory without every sports comparison being an experiment?</li>
+<li>Identify three constraints faced by a professional team and three faced by a fan.</li>
+<li>What is an incentive? Why does “people respond to incentives” not imply that everyone responds identically?</li>
+<li>What is a model, and why can simplification be both useful and dangerous?</li>
+<li>Give four examples of sports institutions.</li>
+<li>Define a counterfactual in plain language.</li>
+<li>Distinguish theoretical, descriptive, predictive, and causal claims.</li>
+<li>Why is “Was Ohtani worth $700 million?” incomplete as an economic question?</li>
+<li>What information should a strong AI-learning prompt provide?</li>
+</ol>
+<h2 id="applications">Applications</h2>
+<ol>
+<li>A team signs a veteran player and wins five more games the following season. State the causal claim someone might make. Then identify at least three alternative explanations and the relevant counterfactual.</li>
+<li>A city reports $200 million of spending near a newly opened stadium. Explain why $200 million is not automatically the stadium’s economic impact.</li>
+<li>A league changes a draft rule. Identify the decision makers whose incentives might change and one behavioral response for each.</li>
+<li>A broadcaster pays a large amount for media rights. Identify the products or services flowing in both directions between the league, broadcaster, advertisers, and viewers.</li>
+<li>Rewrite the question “Are salary caps good?” as two answerable economic questions with specified objectives and evidence.</li>
+<li>Ask an AI assistant to explain one concept from this chapter using a sport you follow. Then revise the prompt to add an audience, source boundary, format, and verification requirement. Compare the two answers.</li>
+</ol>
+<h2 id="optional-appendix-a-practical-introduction-to-regression-with-sports-data">Optional Appendix: A Practical Introduction To Regression With Sports Data</h2>
+<p>You may have completed one or two statistics courses and remember very little. That is common. This appendix starts from the beginning and focuses on interpretation rather than derivation. Its goal is to help you read empirical claims, reproduce one small analysis, and recognize what a regression does not prove.</p>
+<p>If your course omits the appendix, the main chapters still stand on their own. If you complete it, later empirical sections will be easier to evaluate.</p>
+<h3 id="start-with-the-data">Start With The Data</h3>
+<p>A dataset is an organized collection of observations and variables. In the 2025 Major League Baseball team dataset used here, each row is one team and each column records a characteristic of that team’s regular season.</p>
+<div class="anchored-table" id="tab:ch01-data-anatomy">
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Term</th>
+<th>Meaning in this dataset</th>
+<th>Question to ask</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Observation</td>
+<td>One MLB team in the 2025 regular season</td>
+<td>What does one row represent?</td>
+</tr>
+<tr>
+<td>Variable</td>
+<td>A recorded characteristic such as runs, games, batting average, or OPS</td>
+<td>What does the column measure?</td>
+</tr>
+<tr>
+<td>Outcome</td>
+<td>Runs scored per game</td>
+<td>What are we trying to describe or predict?</td>
+</tr>
+<tr>
+<td>Predictor</td>
+<td>Batting average or OPS</td>
+<td>Which variable is used to explain variation in the outcome?</td>
+</tr>
+<tr>
+<td>Unit</td>
+<td>Runs per game or a proportion-based batting measure</td>
+<td>What does a one-unit or 0.010 change mean?</td>
+</tr>
+<tr>
+<td>Missing value</td>
+<td>An observation for which a required value is unavailable</td>
+<td>Is the value absent, or is it actually zero?</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 1.1: Data anatomy.</strong> Interpretation begins by defining rows, columns, and units before running a model.</p>
+</div>
+<p>Here are three rows from the bundled dataset, rounded for display:</p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Team</th>
+<th style="text-align:right">Runs per game</th>
+<th style="text-align:right">Batting average</th>
+<th style="text-align:right">OPS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Arizona Diamondbacks</td>
+<td style="text-align:right">4.883</td>
+<td style="text-align:right">0.251</td>
+<td style="text-align:right">0.757</td>
+</tr>
+<tr>
+<td>Boston Red Sox</td>
+<td style="text-align:right">4.852</td>
+<td style="text-align:right">0.254</td>
+<td style="text-align:right">0.745</td>
+</tr>
+<tr>
+<td>Colorado Rockies</td>
+<td style="text-align:right">3.685</td>
+<td style="text-align:right">0.237</td>
+<td style="text-align:right">0.679</td>
+</tr>
+</tbody>
+</table></div><p>The complete dataset contains all 30 teams. Runs per game equals total runs divided by games played. Batting average equals hits divided by at-bats. OPS adds on-base percentage and slugging percentage. The analysis script calculates batting average and OPS from official component totals and checks them against MLB’s rounded published measures.<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup></p>
+<p>Before modeling, inspect the data:</p>
+<ul>
+<li>Are there 30 unique teams?</li>
+<li>Does each team have 162 games?</li>
+<li>Are required values missing?</li>
+<li>Are batting measures in plausible ranges?</li>
+<li>Do calculated values reconcile with the source?</li>
+<li>Are the units consistent across observations?</li>
+</ul>
+<p>This step is not clerical busywork. If one row represents a player while another represents a team, or runs means total runs in one file and runs per game in another, a perfectly executed regression will answer a meaningless question.</p>
+<h3 id="describe-before-you-model">Describe Before You Model</h3>
+<p>The <strong>mean</strong> is the sum of the observations divided by the number of observations. It describes the center of a variable. The <strong>standard deviation</strong> describes how dispersed observations are around their mean. Neither tells the whole story. Two variables can have the same mean and standard deviation but very different shapes or unusual observations.</p>
+<p>When the question involves two quantitative variables, begin with a <strong>scatterplot</strong>. Each point represents one observation. Its horizontal position records the predictor; its vertical position records the outcome.</p>
+<p>Read the plot before looking at a regression table:</p>
+<ol>
+<li><strong>Direction:</strong> Do larger values of the predictor tend to accompany larger or smaller outcomes?</li>
+<li><strong>Strength:</strong> Do the points cluster closely around a pattern or scatter widely?</li>
+<li><strong>Shape:</strong> Is a straight-line summary plausible, or does the relationship curve?</li>
+<li><strong>Unusual observations:</strong> Are there teams far from the main pattern?</li>
+<li><strong>Range:</strong> Does the figure support conclusions outside the observed values?</li>
+</ol>
+<h3 id="a-line-through-the-points">A Line Through The Points</h3>
+<p>A simple linear regression summarizes the average linear relationship between an outcome <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></eq> and a predictor <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></eq>:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><msub><mi>β</mi><mn>1</mn></msub><msub><mi>X</mi><mi>i</mi></msub><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+Y_i=\beta_0+\beta_1X_i+u_i.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>The subscript <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq> identifies an observation—in this case, a team. The terms have distinct jobs:</p>
+<ul>
+<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is the observed outcome.</li>
+<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is the observed predictor.</li>
+<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\beta_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is the intercept.</li>
+<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>β</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\beta_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is the slope.</li>
+<li><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>u</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">u_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> collects the difference between the line and the observed outcome, along with influences omitted from this simple equation.</li>
+</ul>
+<p>The fitted regression uses estimated values, usually written <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">b_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>b</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">b_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> or <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>β</mi><mo>^</mo></mover><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\hat\beta_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>β</mi><mo>^</mo></mover><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">\hat\beta_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.1523em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.9579em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.0528em;">β</span></span><span style="top:-3.2634em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.1667em;"><span class="mord">^</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1944em;"><span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mi>i</mi></msub><mo>=</mo><msub><mi>b</mi><mn>0</mn></msub><mo>+</mo><msub><mi>b</mi><mn>1</mn></msub><msub><mi>X</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+\hat Y_i=b_0+b_1X_i.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0968em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">b</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>The <strong>slope</strong> is the predicted change in <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></eq> associated with a one-unit increase in <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></eq>. Units matter. If <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></eq> is runs per game and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi></mrow><annotation encoding="application/x-tex">X</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span></span></span></span></eq> is batting average, the raw coefficient describes a full 1.000 increase in batting average—far outside the relevant range. Reporting the effect for a 0.010 increase makes the result interpretable.</p>
+<p>The <strong>intercept</strong> is the predicted value of <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></eq> when <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>X</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">X=0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0</span></span></span></span></eq>. It is needed to position the line, but it may have no useful substantive interpretation when zero lies far outside the observed data. A model can be useful even when its intercept is not a realistic sports scenario.</p>
+<h3 id="predicted-values-and-residuals">Predicted Values And Residuals</h3>
+<p>The fitted value <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\hat Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0968em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is the outcome predicted by the line for observation <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>i</mi></mrow><annotation encoding="application/x-tex">i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6595em;"></span><span class="mord mathnormal">i</span></span></span></span></eq>. The <strong>residual</strong> is the vertical difference between the observed and fitted values:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>e</mi><mi>i</mi></msub><mo>=</mo><msub><mi>Y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+e_i=Y_i-\hat Y_i.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0968em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>A positive residual means the observed outcome lies above the line. A negative residual means it lies below. Residuals show what the model misses for individual observations; they are not proof that the observation or model is “wrong.”</p>
+<figure class="chapter-figure" id="fig:ch01-prediction-and-residual">
+<p><img src="/sports-econ/figures/ch01-introduction/ch01-prediction-and-residual.svg" alt="A scatterplot and fitted line identify one observation, its predicted value on the line, and the vertical residual between them."></p>
+<p><strong>Figure 1.2: An observed value, prediction, and residual.</strong> At the selected value of <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>, the fitted line supplies <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">\hat Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.0968em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>. The observed point is <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>, and the residual is the signed vertical gap <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub><mo>−</mo><msub><mover accent="true"><mi>Y</mi><mo>^</mo></mover><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">Y_i-\hat Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1.0968em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.9468em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span><span style="top:-3.2523em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mord">^</span></span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>.</p>
+</figure>
+<h3 id="the-2025-mlb-comparison">The 2025 MLB Comparison</h3>
+<p>For decades, batting average was one of baseball’s dominant measures of hitting. It records hits per at-bat, but it omits walks and does not distinguish a single from an extra-base hit. OPS combines on-base percentage and slugging percentage, so it captures more ways a hitter reaches base and more of the power associated with advancing runners and scoring.</p>
+<p>We can ask a narrow descriptive question: across MLB teams in the 2025 regular season, which measure had the stronger linear relationship with runs scored per game?</p>
+<figure class="chapter-figure" id="fig:ch01-runs-vs-ba-ops-2025">
+<p><img src="/sports-econ/figures/ch01-introduction/ch01-runs-vs-ba-ops-2025.svg" alt="Paired scatterplots compare 2025 MLB team runs per game with batting average and OPS. OPS points lie substantially closer to their fitted line."></p>
+<p><strong>Figure 1.3: Runs per game, batting average, and OPS in 2025.</strong> Each point is one MLB team. Both relationships slope upward, but the OPS model fits the cross-team scoring variation much more closely in this sample.</p>
+</figure>
+<p>The numerical results are:</p>
+<div class="anchored-table" id="tab:ch01-regression-results">
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Predictor</th>
+<th style="text-align:right">Associated change in runs per game for a 0.010 increase</th>
+<th style="text-align:right">95% confidence interval</th>
+<th style="text-align:right"><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq></th>
+<th style="text-align:right">Teams</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Batting average</td>
+<td style="text-align:right">0.304</td>
+<td style="text-align:right">0.195 to 0.414</td>
+<td style="text-align:right">0.536</td>
+<td style="text-align:right">30</td>
+</tr>
+<tr>
+<td>OPS</td>
+<td style="text-align:right">0.116</td>
+<td style="text-align:right">0.100 to 0.133</td>
+<td style="text-align:right">0.881</td>
+<td style="text-align:right">30</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 1.2: Predicting team runs per game, MLB 2025.</strong> Separate ordinary-least-squares regressions use the same 30-team sample. The slopes use different predictor scales; compare fit rather than raw coefficient size.</p>
+</div>
+<p>The batting-average result says that teams with a batting average 0.010 higher were predicted to score about 0.304 additional runs per game, on average, in this sample. The OPS result says that teams with OPS 0.010 higher were predicted to score about 0.116 additional runs per game.</p>
+<p>It would be a mistake to say 0.304 is “larger” and therefore batting average matters more. A 0.010 change represents different movement relative to the observed distributions of BA and OPS. Coefficient comparisons require attention to scale. The clearer introductory comparison is <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq> and the scatterplots.</p>
+<h3 id="interpreting-r2">Interpreting <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq></h3>
+<p><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq> measures how much of the observed variation in the outcome is accounted for by the fitted regression in the sample. An <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq> of 0.536 means the batting-average line accounts for about 53.6 percent of the cross-team variation in runs per game. The OPS line accounts for about 88.1 percent.</p>
+<p>A higher <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq> does not prove that a model is correct, causal, or useful for every decision. It can rise when irrelevant variables are added. A model can fit historical data and predict poorly in a new season. A low <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq> does not make a causal estimate unimportant when the outcome is naturally noisy. Here, with the same outcome, sample, and model form, the large difference supports the limited statement that OPS had the stronger linear fit with team scoring in 2025.</p>
+<div class="anchored-table" id="tab:ch01-reading-output">
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Term</th>
+<th>Plain-language interpretation</th>
+<th>Common mistake</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intercept</td>
+<td>Predicted outcome when every predictor equals zero</td>
+<td>Giving it a sports meaning when zero is outside the data</td>
+</tr>
+<tr>
+<td>Slope</td>
+<td>Associated change in the outcome for a stated change in the predictor</td>
+<td>Omitting units or calling association causation</td>
+</tr>
+<tr>
+<td>Fitted value</td>
+<td>Outcome predicted by the regression for one observation</td>
+<td>Treating it as the observed outcome</td>
+</tr>
+<tr>
+<td>Residual</td>
+<td>Observed outcome minus fitted value</td>
+<td>Treating every large residual as bad data</td>
+</tr>
+<tr>
+<td><eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq></td>
+<td>Share of sample outcome variation accounted for by the fitted model</td>
+<td>Treating fit as proof of causation or model correctness</td>
+</tr>
+<tr>
+<td>Confidence interval</td>
+<td>Range reflecting sampling uncertainty under the model’s assumptions</td>
+<td>Treating the endpoints as certain boundaries</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 1.3: Reading regression output.</strong> Every statistic should be translated into the variables, units, sample, and limits of the analysis.</p>
+</div>
+<h3 id="estimates-are-uncertain">Estimates Are Uncertain</h3>
+<p>The fitted slope is an estimate based on a sample and a model. Another season would produce somewhat different teams, performances, and estimates. A <strong>standard error</strong> summarizes the estimated sampling uncertainty surrounding a coefficient. A <strong>confidence interval</strong> uses that uncertainty to report a range of values compatible with the data and assumptions of the model.</p>
+<p>For batting average, the estimated effect per 0.010 is 0.304 runs per game, with a 95 percent confidence interval from about 0.195 to 0.414. For OPS, the corresponding estimate is 0.116, with an interval from about 0.100 to 0.133.</p>
+<p>The interval is not a magic truth detector. It does not capture omitted-variable bias, measurement error, an inappropriate model, or the difference between association and causation. It addresses one kind of uncertainty under stated assumptions.</p>
+<h3 id="multiple-regression-holding-measured-factors-fixed">Multiple Regression: Holding Measured Factors Fixed</h3>
+<p>A simple regression uses one predictor. A <strong>multiple regression</strong> adds others:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><msub><mi>β</mi><mn>1</mn></msub><msub><mi>X</mi><mrow><mn>1</mn><mi>i</mi></mrow></msub><mo>+</mo><msub><mi>β</mi><mn>2</mn></msub><msub><mi>X</mi><mrow><mn>2</mn><mi>i</mi></mrow></msub><mo>+</mo><mo>⋯</mo><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+Y_i=\beta_0+\beta_1X_{1i}+\beta_2X_{2i}+\cdots+u_i.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.2222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0528em;">β</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0528em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span><span class="mord mathnormal mtight">i</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6667em;vertical-align:-0.0833em;"></span><span class="minner">⋯</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">u</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">.</span></span></span></span></span></eqn></section><p>The coefficient on <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">X_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq> is interpreted as the associated change in <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi></mrow><annotation encoding="application/x-tex">Y</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.2222em;">Y</span></span></span></span></eq> for a change in <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>X</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">X_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0785em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0785em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></eq>, <strong>holding the included predictors fixed</strong>. The word <em>included</em> matters. A regression cannot hold an unmeasured or omitted factor fixed merely because we want it to.</p>
+<p>Suppose we regress game attendance on ticket price. High-demand games often have higher prices because teams anticipate a rivalry, a strong opponent, favorable timing, scarce inventory, or unusual interest. Those same conditions can increase attendance. A simple comparison may therefore show higher prices accompanying higher attendance even though raising the price for an otherwise identical offer would reduce quantity demanded.</p>
+<figure class="chapter-figure" id="fig:ch01-attendance-price-confounding">
+<p><img src="/sports-econ/figures/ch01-introduction/ch01-attendance-price-confounding.svg" alt="Expected game demand raises both the selected ticket price and attendance, while ticket price also has its own causal effect on attendance."></p>
+<p><strong>Figure 1.4: Why price and attendance can move together.</strong> Expected game demand influences both the price selected and attendance. The raw association between price and attendance therefore mixes the causal price response with demand conditions.</p>
+</figure>
+<p>Multiple regression can account for measured conditions such as opponent, day, seat section, team performance, or weather. It cannot guarantee that all relevant demand conditions were measured correctly. Better evidence might also come from a controlled promotion, a narrowly targeted price experiment, or a rule change that creates plausibly independent variation.</p>
+<p>Two other problems deserve names:</p>
+<ul>
+<li><strong>Omitted-variable bias:</strong> an excluded factor affects both the predictor and outcome, distorting the estimated relationship.</li>
+<li><strong>Reverse causality:</strong> the proposed outcome also affects the proposed predictor. Expected attendance can influence the price a team chooses, not only the other way around.</li>
+</ul>
+<h3 id="prediction-association-and-causation">Prediction, Association, And Causation</h3>
+<p>These goals overlap but are not identical.</p>
+<ul>
+<li><strong>Association:</strong> Which variables move together in the observed data?</li>
+<li><strong>Prediction:</strong> Which information helps forecast an outcome for new observations?</li>
+<li><strong>Causation:</strong> What would happen to the outcome if we changed one factor relative to a relevant counterfactual?</li>
+</ul>
+<p>OPS can be a better predictor of team scoring than batting average without the simple regression revealing the causal effect of mechanically changing OPS. OPS is constructed from events—reaching base and accumulating total bases—that are closely connected to scoring. Team quality, lineup composition, ballparks, strategy, and other factors also matter. The regression is useful because its descriptive question is clear and its causal claims are modest.</p>
+<h3 id="codex-plus-r-from-a-question-to-a-reproducible-analysis">Codex Plus R: From A Question To A Reproducible Analysis</h3>
+<p>R is a free statistical programming environment. A few years ago, using R required a student to know enough commands to import data, fit models, produce figures, and debug the inevitable mistakes. An AI coding agent can now handle much of that mechanical burden from a plain-language specification. Official OpenAI documentation describes using the integrated terminal to run and validate project scripts and shows AI-assisted workflows that inspect data, build interpretable models, create charts, preserve artifacts, and state caveats.<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></p>
+<p>That does not mean a student can safely request “analyze this” and accept whatever appears. The student still owns the question, definitions, source choice, model, interpretation, and verification.</p>
+<aside class="semantic-block semantic-sideline"><p class="semantic-label">Sideline</p>
+<p><strong>What Changed Between Editions?</strong></p>
+<p>A few years ago, I would have treated this as an Excel project. For this edition, I told Codex the question I wanted to answer: find official 2025 MLB team data, compare runs per game with batting average and OPS, run the regressions in R, and produce a readable figure.</p>
+<p>Codex located the data, wrote and ran the R script, checked the 30-team dataset, and generated the table and chart. I did not have to know the R commands in advance. But I still had to decide what question mattered, examine the source, check the variables and units, inspect the graph, and decide what the results did—and did not—show.</p>
+<p>The important change is not that statistical knowledge has become unnecessary. It is that the cost of turning a well-specified question into a reproducible analysis has fallen dramatically.</p>
+</aside>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>Generated Analysis Still Requires Judgment</strong></p>
+<p>Codex can help inspect data, write and run R code, explain an error, and preserve the results. It cannot make an ambiguous question precise without assumptions, guarantee that a source is appropriate, detect every data problem, or turn an observational regression into a causal design. Always inspect the inputs, code, graph, units, output, and interpretation.</p>
+</aside>
+<p>The repository for this chapter preserves:</p>
+<ul>
+<li>the cached official data</li>
+<li>a data dictionary defining every column</li>
+<li>the R script that retrieves or reuses the data</li>
+<li>the fitted model results</li>
+<li>the figure in SVG, PDF, and PNG formats</li>
+<li>session information recording software versions</li>
+<li>an automated test that checks the sample and reported results</li>
+</ul>
+<p>This artifact chain allows someone else to inspect and rerun the work. Reproducibility does not guarantee a good question or causal design, but it makes errors easier to find and corrections easier to verify.</p>
+<h3 id="a-guided-lab">A Guided Lab</h3>
+<p>If you have the chapter repository, open the project and give Codex this prompt:</p>
+<blockquote>
+<p>Inspect <code>data/ch01/mlb-team-batting-2025.csv</code> and its data dictionary. Confirm the number of teams, uniqueness of team identifiers, season, games played, missing values, variable units, and plausible ranges. Do not change the source file. Then inspect <code>scripts/ch01-build-regression-example.R</code>. Explain in plain language how it calculates batting average, OPS, and runs per game; how it reconciles calculated measures with MLB’s rounded values; and how it fits separate regressions of runs per game on batting average and OPS. Run the offline script and <code>tests/ch01-regression-example.R</code>. Report the coefficient for a 0.010 change, 95% confidence interval, <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">R^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></eq>, and sample size for each model. Check that the table matches the figure. Explain what the results show, what they do not establish, and save any proposed changes separately rather than overwriting the source.</p>
+</blockquote>
+<p>Notice what the prompt specifies: files, checks, variables, models, units, outputs, causal limits, and a non-destructive workflow.</p>
+<p>The central R commands are short:</p>
+<pre><code class="language-r">team_data &lt;- read.csv(&quot;data/ch01/mlb-team-batting-2025.csv&quot;)
+model_ba &lt;- lm(runs_per_game ~ batting_average, data = team_data)
+model_ops &lt;- lm(runs_per_game ~ ops, data = team_data)
+summary(model_ba)
+summary(model_ops)
+</code></pre>
+<p>You do not need to memorize these commands to understand the results. You should be able to explain what each model treats as the outcome, what it treats as the predictor, what one observation represents, and why the results are descriptive.</p>
+<h3 id="appendix-review-and-practice">Appendix Review And Practice</h3>
+<ol>
+<li>In the MLB dataset, what does one observation represent?</li>
+<li>Distinguish an outcome from a predictor.</li>
+<li>What four features should you inspect in a scatterplot before reading regression output?</li>
+<li>Interpret a regression slope in words and units.</li>
+<li>Why might the intercept lack a useful sports interpretation?</li>
+<li>If a team’s observed runs per game is 4.8 and its fitted value is 4.5, calculate and interpret the residual.</li>
+<li>What does <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mi>R</mi><mn>2</mn></msup><mo>=</mo><mn>0.881</mn></mrow><annotation encoding="application/x-tex">R^2=0.881</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0077em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">0.881</span></span></span></span></eq> mean in the OPS regression? What does it not mean?</li>
+<li>Why should the BA and OPS coefficient magnitudes not be compared directly?</li>
+<li>Explain in plain language what a confidence interval adds to a point estimate.</li>
+<li>Why can higher ticket prices be positively associated with attendance even if the causal price response is negative?</li>
+<li>Distinguish omitted-variable bias from reverse causality.</li>
+<li>Give one question for which prediction is sufficient and one that requires a causal estimate.</li>
+<li>List five checks a student should perform before accepting AI-generated statistical analysis.</li>
+<li>Reproduce the bundled analysis, save the output, and ask an AI assistant to identify one result that is descriptive, one step that is computational, and one claim that would require a stronger causal design.</li>
+</ol>
+<h2 id="source-notes">Source Notes</h2>
+<section class="source-notes-list" aria-label="Source notes">
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>Sarah Wexler, “$700M Stunner: Ohtani to Dodgers on Biggest Deal in Sports History,” <a href="http://MLB.com">MLB.com</a>, December 12, 2023, <a href="https://www.mlb.com/dodgers/news/shohei-ohtani-contract-with-dodgers">https://www.mlb.com/dodgers/news/shohei-ohtani-contract-with-dodgers</a>; Anthony Castrovince, “Explaining the Unprecedented Deferrals in Ohtani’s Dodgers Deal,” <a href="http://MLB.com">MLB.com</a>, December 12, 2023, <a href="https://www.mlb.com/news/shohei-ohtani-dodgers-deal-deferrals-explained">https://www.mlb.com/news/shohei-ohtani-dodgers-deal-deferrals-explained</a>, accessed August 12, 2026. MLB reported a ten-year, $700 million agreement and $680 million in deferred compensation beginning after the playing term. The chapter uses the contract to frame objectives, constraints, timing, and counterfactuals; it does not estimate the contract’s profitability. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>NBCUniversal, “NBCUniversal Sells Out of Milan Cortina 2026 Olympic Winter Games With One Month to Go,” January 6, 2026, <a href="https://www.nbcsports.com/pressbox/press-releases/nbcuniversal-sells-out-of-milan-cortina-2026-olympic-winter-games-with-one-month-to-go">https://www.nbcsports.com/pressbox/press-releases/nbcuniversal-sells-out-of-milan-cortina-2026-olympic-winter-games-with-one-month-to-go</a>; NBC Sports, “Super Bowl LX Is Second Most-Watched All-Time With 125.6 Million Viewers,” updated February 19, 2026, <a href="https://www.nbcsports.com/pressbox/press-releases/super-bowl-lx-is-second-most-watched-all-time-with-nearly-125-million-viewers-peaking-at-all-time-u-s-record-137-8-million-viewers-across-nbc-peacock-and-telemundo">https://www.nbcsports.com/pressbox/press-releases/super-bowl-lx-is-second-most-watched-all-time-with-nearly-125-million-viewers-peaking-at-all-time-u-s-record-137-8-million-viewers-across-nbc-peacock-and-telemundo</a>, accessed August 12, 2026. These company sources support the sold-out advertising inventory and reported cross-platform audience. They do not establish any individual advertisement’s causal return. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>Major League Baseball Stats API, 2025 team season hitting statistics, <a href="https://statsapi.mlb.com/api/v1/teams/stats?stats=season&amp;group=hitting&amp;season=2025&amp;sportIds=1">https://statsapi.mlb.com/api/v1/teams/stats?stats=season&amp;group=hitting&amp;season=2025&amp;sportIds=1</a>; Major League Baseball, “2025 MLB Team Hitting Statistics,” <a href="https://www.mlb.com/stats/team/ops/2025">https://www.mlb.com/stats/team/ops/2025</a>, accessed August 2, 2026. The bundled script uses official component totals, checks the 30-team structure, reconciles calculated BA and OPS with MLB’s rounded measures, and reproduces every reported coefficient and figure. The regressions are descriptive team-level comparisons. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn4" class="footnote-item"><p>OpenAI, “Integrated Terminal,” <a href="https://learn.chatgpt.com/docs/integrated-terminal">https://learn.chatgpt.com/docs/integrated-terminal</a>; OpenAI, “Analyze Datasets and Ship Reports,” <a href="https://learn.chatgpt.com/use-cases/datasets-and-reports">https://learn.chatgpt.com/use-cases/datasets-and-reports</a>, accessed August 12, 2026. The documentation supports running and validating project scripts, inspecting data, using interpretable models, creating charts, preserving reproducible artifacts, and reporting caveats. Actual availability can depend on the user’s product, environment, permissions, and installed software. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</section>
+
+      </article>
+
+      <footer class="chapter-footer">
+        <p>End of Chapter 1</p>
+        <p>Generated from canonical Markdown. Draft content may change during review.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

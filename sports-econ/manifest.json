@@ -1,10 +1,15 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "b7dd422f9c532221ef580e3ea3ce070b98603d15",
+    "commit": "b47427bcefa99a70e6a9c943ce42d8f62995b6a4",
     "dirty": false
   },
   "chapters": [
+    {
+      "number": 1,
+      "slug": "introduction-to-sports-economics",
+      "title": "Introduction to Sports Economics"
+    },
     {
       "number": 2,
       "slug": "the-supply-and-demand-playbook",
