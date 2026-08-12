@@ -1,2 +1,5 @@
 .DS_Store
 .playwright-cli/
+
+# iCloud conflict copies recreated inside the generated textbook target
+sports-econ/**/* [0-9].*
