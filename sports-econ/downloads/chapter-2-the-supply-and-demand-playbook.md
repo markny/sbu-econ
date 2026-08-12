@@ -1,5 +1,3 @@
-<!-- Goal-first draft. V1 coverage review completed 2026-08-02. -->
-
 # The Supply and Demand Playbook
 
 A team signs a superstar. Interest surges. Ticket prices rise, and more fans attend.
@@ -219,7 +217,7 @@ $$
 Q_d=Q_s.
 $$
 
-At that price, buyers' and sellers' plans are mutually consistent. Equilibrium does not mean that everyone receives everything desired, that the outcome is fair, or that the market never changes. It means there is no imbalance between the quantities buyers and sellers plan to exchange under the model's assumptions.
+At that price, buyers can purchase the amount they plan to buy and sellers can sell the amount they plan to offer. There is no shortage or excess supply pushing the market price to change. If demand or supply shifts, the equilibrium changes with it.
 
 Consider the hypothetical curves
 
@@ -239,7 +237,25 @@ $$
 100-5Q=20+5Q,
 $$
 
-so $Q^*=8$ and $P^*=60$.
+Subtracting 20 from both sides and adding $5Q$ to both sides gives
+
+$$
+80=10Q,
+$$
+
+so
+
+$$
+Q^*=8.
+$$
+
+Substituting 8 into either original curve gives
+
+$$
+P^*=100-5(8)=60.
+$$
+
+The algebra locates the same market-clearing point shown by the intersection of the two curves.
 
 ### Prices Above And Below Equilibrium
 

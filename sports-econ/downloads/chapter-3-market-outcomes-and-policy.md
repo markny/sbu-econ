@@ -1,5 +1,3 @@
-<!-- Goal-first draft and V1 coverage review completed 2026-08-03. Figure production and final review remain pending. -->
-
 # Market Outcomes and Policy
 
 In March 2026, Premier League clubs extended their £30 cap on away-ticket prices for another two seasons. The rule had begun in 2016, so the extension would take it through twelve consecutive seasons. The league also reported that away attendance had increased from 82 percent to 91 percent since the cap began.[^premier-league-away-cap]
@@ -23,6 +21,8 @@ After reading this chapter, you should be able to:
 - distinguish consumer surplus, producer surplus, government revenue, total surplus, and deadweight loss
 - identify negative externalities, positive externalities, and public goods without treating them as synonyms
 - evaluate a sports policy by asking about its counterfactual, behavioral effects, allocation, efficiency, distribution, and evidence
+
+The chapter offers two levels of quantitative practice. All readers should be able to interpret the graphs and calculate with values supplied in a problem. Sections labeled **Algebra Extension** show how to recover those values from equations. They are written as separable practice, so an instructor can assign them without making the rest of the policy analysis depend on them.
 
 ## Equilibrium As A Policy Benchmark
 
@@ -51,38 +51,26 @@ At a price of 60, quantity demanded and quantity supplied both equal 8. Buyers a
 This benchmark does not claim that the outcome is morally ideal, equally distributed, or institutionally realistic in every sports market. A team may possess market power. A stadium may have fixed capacity. A transaction may affect nearby residents who are not represented by either curve. Those complications matter, and the rest of the book studies them. The competitive benchmark is useful because it makes the comparison explicit: it identifies the outcome that the policy or market imperfection changes.
 
 ::: quickconcept
-**A Benchmark Is Not An Endorsement**
+**Equilibrium Clears The Market**
 
-A benchmark is a disciplined comparison point. Economists can use competitive equilibrium to measure what a policy changes without claiming that the unregulated outcome is fair, perfect, or appropriate in every setting.
+At the equilibrium price, quantity demanded equals quantity supplied. Buyers can purchase the amount they plan to buy, sellers can sell the amount they plan to offer, and there is no shortage or surplus pushing the market price to change.
 :::
 
 ### Algebra Extension: Finding The Benchmark
 
-The graph shows the equilibrium where demand and supply intersect. Algebra finds the same point by setting the two price expressions equal:
+Chapter 2 showed how to solve this equilibrium step by step. Setting the two price expressions equal,
 
 $$
 100-5Q=20+5Q.
 $$
 
-Subtracting 20 from both sides and adding $5Q$ to both sides gives
+Solving for quantity and substituting the result into either original equation gives
 
 $$
-80=10Q,
+(Q^*,P^*)=(8,60).
 $$
 
-so
-
-$$
-Q^*=8.
-$$
-
-Substitute 8 into either original equation:
-
-$$
-P^*=100-5(8)=60.
-$$
-
-The calculation is not a separate economic theory. It is another way of locating the intersection already shown by the graph. If a problem supplies the equilibrium, students can begin with the economic interpretation. If it supplies only the equations, these steps recover the benchmark.
+The calculation is not a separate economic theory. It recovers the market-clearing benchmark that Chapter 3 will use to evaluate policy. If a problem already supplies the equilibrium, begin with its economic interpretation rather than repeating the algebra.
 
 ## Price Controls
 
@@ -92,7 +80,7 @@ A price ceiling above the equilibrium price is nonbinding. The market-clearing p
 
 A price floor below equilibrium is likewise nonbinding. A floor above equilibrium is binding. Sellers want to provide more than buyers purchase, creating excess supply, also called a surplus.
 
-The size of the shortage or surplus depends on responsiveness. When buyers or sellers adjust strongly to the controlled price, the gap is larger. Fixed event capacity is a special case because short-run quantity supplied may not respond at all.
+The size of the shortage or surplus depends on both the distance between the controlled price and equilibrium and the responsiveness of buyers and sellers. For a given price difference, stronger quantity responses create a larger gap. Fixed event capacity is a special case because short-run quantity supplied may not respond at all.
 
 ::: warning
 **The Rule's Name Does Not Tell You Its Effect**
@@ -204,9 +192,9 @@ $$
 
 The four-unit surplus means that sellers would like to provide more than buyers want to purchase at the required price. In a product market, this may appear as unsold inventory. Sellers may respond through changes in quality, bundles, waiting time, or production if the rule permits those adjustments. Once again, preventing one price adjustment redirects behavior rather than freezing the rest of the market.
 
-A wage is the price of labor, so a minimum wage can be modeled as a price floor. Consider an explicitly hypothetical competitive market for stadium-worker hours. A binding wage floor increases the quantity of labor people want to supply while reducing the quantity employers want to hire. The result is excess labor supply: more people seek the covered work than employers offer at that wage.
+A price floor is less natural as a ticket-market example because teams ordinarily want the freedom to discount unsold seats. Labor provides a clearer illustration because a wage is the price of labor. Consider an explicitly hypothetical competitive market for stadium-worker hours. A binding wage floor increases the quantity of labor people want to supply while reducing the quantity employers want to hire. The result is excess labor supply: more people seek the covered work than employers offer at that wage.
 
-That simple diagram is a benchmark, not a conclusion about every labor policy. Actual sports labor markets can involve employer market power, unions, contracts, job-search frictions, differences in worker productivity, and adjustments in hours or working conditions. Chapters 10 and 11 examine those institutions. The immediate lesson is narrower: in the competitive model, a binding floor creates a surplus, and the scarce jobs must then be allocated somehow.
+This deliberately simple example should not be applied mechanically to a collectively bargained minimum player salary. Actual sports labor markets can involve employer market power, unions, roster limits, contracts, differences in worker productivity, and adjustments in hours or working conditions. Chapters 10 and 11 examine those institutions. The immediate lesson is narrower: in the competitive model, a binding floor creates a surplus, and the scarce jobs must then be allocated somehow.
 
 ## Case Study: The Premier League's £30 Away-Ticket Cap
 
@@ -444,10 +432,10 @@ Efficiency also concerns **who** receives and supplies the units. Among otherwis
 
 That principle complicates the Premier League case. Loyalty rules may not send every ticket to the person with the highest monetary willingness to pay. Yet a committed away supporter may contribute to atmosphere in a way that the private willingness-to-pay ranking omits. Once one attendee affects the value experienced by others, the simple private-surplus benchmark no longer contains every relevant benefit. We will return to that issue when we introduce externalities.
 
-::: warning
-**Efficiency Is Not The Same As Fairness**
+::: quickconcept
+**Efficiency Means Capturing The Gains From Trade**
 
-Total surplus adds measured gains without deciding whether their distribution is fair. A policy can increase total surplus while harming a particular group, or redistribute surplus while leaving the total nearly unchanged. Good policy analysis reports efficiency and distribution separately.
+An outcome is efficient when total surplus is maximized. That means producing every unit for which willingness to pay exceeds marginal cost and allocating the available units toward higher-value buyers and lower-cost sellers. Efficiency describes whether the potential gains from trade have been captured.
 :::
 
 ## Tax Revenue And Deadweight Loss
@@ -540,6 +528,8 @@ Taxation is not the only possible response. Ronald Coase emphasized that externa
 
 A **positive externality** exists when private decisions create an uncompensated benefit for others. A youth sports program may benefit participants directly while also contributing to community health, social connection, or safer recreation. If those broader benefits are omitted from the family's private decision, participation can be lower than the efficient level.
 
+The Premier League's atmosphere rationale fits this framework. If an additional committed away supporter makes the match more enjoyable for home spectators or television viewers, that supporter creates a benefit not fully captured in the decision to buy an away ticket. This is a possible positive externality, not proof of one. Evidence would still have to show that the policy changes who attends or how many attend, that attendance changes atmosphere, and that other people value the resulting experience.
+
 The private benefit appears in **Demand**. **Social value** adds the external benefit received by others, so it lies above Demand. The private market follows Demand and Supply and reaches $Q_m$. Once the external benefit is included, Social value intersects Supply at the larger efficient quantity $Q^*$. The units between $Q_m$ and $Q^*$ create more total social value than they cost, but the private market does not provide them.
 
 A well-designed subsidy may encourage those additional units. Direct provision, partnerships, or changes in property rights and bargaining arrangements may sometimes work better. Again, the existence of a plausible benefit does not establish its magnitude or prove that a particular policy passes a benefit-cost test.
@@ -612,6 +602,31 @@ Upload the chapter Markdown and begin with this prompt:
 > Quiz me on Chapter 3 one question at a time. Let me choose conceptual, graph-reading, arithmetic, algebra, or mixed practice. Wait for my attempt. If I am wrong, give one hint before showing the answer. Require me to interpret every numerical result in economic language.
 
 Begin with conceptual or graph-reading practice. Move to supplied-value arithmetic before asking the tutor to generate solve-from-equations problems.
+:::
+
+::: aitutor
+**AI tutoring protocol: Chapter 3**
+
+When a student asks for practice based on this chapter:
+
+1. Ask the student to choose conceptual, graph-reading, supplied-value arithmetic, algebra, or mixed practice.
+2. Ask one question at a time and wait for an attempt.
+3. If the answer is incorrect, give one targeted hint before showing a solution.
+4. After every numerical answer, require one sentence interpreting the result in economic language.
+5. Do not invent factual claims about an actual league, law, team, tax, or policy. Treat the Premier League attendance comparison as descriptive rather than causal.
+
+Keep the practice modes distinct. Conceptual questions require no calculation. Graph-reading questions use values shown or described in the chapter. Supplied-value arithmetic provides every value needed and does not require solving equations. Algebra questions may require the student to recover equilibrium or controlled quantities from the common model. Mixed practice should combine at most one calculation with interpretation and a policy question.
+
+Use these verified numerical anchors:
+
+- Common market: $D:P=100-5Q$ and $S:P=20+5Q$, with $(Q^*,P^*)=(8,60)$.
+- Price ceiling $P_c=50$: $Q_d=10$, $Q_s=6$, and shortage $=4$.
+- Price floor $P_f=70$: $Q_d=6$, $Q_s=10$, and surplus $=4$.
+- Per-unit tax $t=20$: $Q_t=6$, $P_B=70$, and $P_S=50$, regardless of whether buyers or sellers remit the tax in the competitive model.
+- Before tax: $CS_0=160$, $PS_0=160$, and $TS_0=320$.
+- After tax: $CS_t=90$, $PS_t=90$, government revenue $=120$, $TS_t=300$, and $DWL=20$.
+
+For generated price-control algebra, use a controlled price divisible by 5 so the common model produces integer quantities. For a generated tax variation, either supply the needed values directly or verify the full solution before asking the question. Never classify government revenue as deadweight loss. Never infer the economic tax burden from legal remittance. Do not claim that a ticket ceiling reduces the number of seats offered when the question specifies fixed event capacity. Treat the externality diagrams as qualitative unless numerical curves or values are explicitly supplied.
 :::
 
 ## Big Picture

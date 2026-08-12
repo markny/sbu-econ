@@ -1,5 +1,3 @@
-<!-- Goal-first draft. V1 coverage review completed 2026-08-02. -->
-
 # Ticket Pricing and Attendance
 
 A stadium can be enormously expensive to build and operate. Yet once the gates are open and the event is staffed, admitting one more spectator to an otherwise empty seat may add relatively little to the team's operating cost. If cost determined price in a simple mechanical way, this combination would seem to produce a puzzle: high total cost but a low price for the next ticket.
@@ -153,14 +151,14 @@ $$
 120-2Q=20,
 $$
 
-so $Q^m=50$ thousand tickets. Reading from demand, the team charges \$70. It leaves 10,000 seats unsold because cutting the price enough to fill them would reduce the revenue earned on the other tickets.
+so $Q^m=50$ thousand tickets. Reading from demand, the team charges \$70. It leaves 10,000 seats unsold. Cutting the price to \$60 would fill the stadium and raise ticket revenue from \$3.5 million to \$3.6 million, but serving the additional 10,000 spectators would add \$200,000 in variable cost. Contribution toward fixed cost and profit would fall from \$2.5 million to \$2.4 million. The example shows why maximizing attendance, ticket revenue, and profit are three different objectives.
 
 Now suppose the same game is played in a 40,000-seat stadium. At $Q=40$, marginal revenue is \$40, which still exceeds the \$20 marginal cost, but the team cannot sell another seat. Capacity binds. The market-clearing price at that capacity is \$80. The smaller stadium changes the constraint, not the demand curve. Whether the team can actually charge \$80 still depends on fans' willingness to pay.
 
 ::: sideline
 **Why Would The Bills Build A Smaller Stadium?**
 
-The stadium transition in Orchard Park turns the capacity diagram into a current local decision. The NFL listed the former Highmark Stadium's capacity as 71,621. The Bills list the new stadium, opening for regular-season play in September 2026, at 60,108. That is about 11,500 fewer seats, a reduction of roughly 16 percent.[^bills-capacity]
+The stadium transition in Orchard Park turns the capacity diagram into a current local decision. The NFL listed the former Highmark Stadium's capacity as 71,621. The Bills list the new stadium, whose first regular-season game is scheduled for September 17, 2026, at 60,108. That is about 11,500 fewer seats, a reduction of roughly 16 percent.[^bills-capacity]
 
 Why would a team with strong fan support reduce capacity? The Bills' stated explanation was not simply that fewer seats create scarcity. During planning, the team said that lower capacity made room for bigger seats, larger concourses, a more intimate setting, temperature-controlled areas, more food-and-beverage options, and gathering spaces. Later design materials emphasized canopy coverage, seats closer to the field, improved sightlines, and a wider range of premium products.[^bills-capacity]
 
@@ -175,57 +173,25 @@ The Los Angeles Lakers provide an older version of the same lesson. In 1996, the
 The Lakers did not acquire the ability to charge more merely because they had a large new bill to pay. They could charge more because a team featuring O'Neal was more valuable to customers. His salary and the higher ticket prices were both connected to the same underlying fact: star talent increased expected demand. When costs and prices rise together, ask what changed willingness to pay or scarcity before concluding that costs caused the price increase.
 :::
 
-## Elasticity And The Revenue Trade-Off
+## Elasticity In The Pricing Decision
 
-### Own-Price Elasticity
+Chapter 2 introduced the elasticity formulas, classifications, midpoint method, and total-revenue rule. Here elasticity becomes a decision tool. Over an inelastic range of demand, a price increase raises ticket revenue; over an elastic range, it lowers ticket revenue. A price cut reverses those revenue effects.
 
-Chapter 2 introduced price elasticity of demand:
+A team does not need to publish a textbook elasticity calculation to face this problem. Every proposed price embodies a forecast: how many tickets will sell at that price rather than at the alternatives? Historical sales, resale prices, experiments, surveys, and statistical demand models can inform the forecast. When the Bills choose prices across seats and games, for example, they must form some view of fan responsiveness even though we should not claim to know their undocumented internal method.
 
-$$
-\epsilon_d=\frac{\%\Delta Q_d}{\%\Delta P}
-$$
+### There Is No Single Team Elasticity
 
-For a downward-sloping demand curve, $\epsilon_d$ is normally negative because price and quantity demanded move in opposite directions. When classifying demand as elastic, unit elastic, or inelastic, economists usually compare the magnitude $|\epsilon_d|$ with one.
+Elasticity belongs to a particular product, group, price range, and time. Demand for a rivalry game may be less price responsive than demand for an ordinary game. Students may be more responsive than corporate buyers. Club seats and promotional upper-level seats may face different demand. A fan deciding months in advance may have different alternatives than a visitor shopping on game day.
 
-Here elasticity becomes a pricing tool. If demand is elastic over the relevant range, the percentage reduction in quantity demanded is larger than the percentage increase in price. A price increase then reduces total ticket revenue. If demand is inelastic, the percentage reduction in quantity demanded is smaller, and a price increase raises total ticket revenue.
+This is one reason teams build ticket menus rather than rely on a single teamwide estimate. Expected responsiveness can inform seat tiers, game tiers, discounts, and the timing of price changes. The useful question is not “What is the Bills' elasticity?” but “How responsive is demand for this ticket product, among these buyers, over the price change being considered?”
 
-The relationship also works in reverse. A price cut raises total revenue when demand is elastic and lowers total revenue when demand is inelastic.
+An observed sellout does not answer that question. It tells us that quantity demanded at the posted terms was at least as large as available capacity. It does not reveal how many buyers would have appeared at a lower price or how much more current buyers would have paid. When sales are capped by stadium capacity, the observed quantity conceals some of the underlying demand curve.
 
-Three cautions matter.
+### Income And Related Products
 
-First, elasticity belongs to a particular product, group, price range, and time. Demand for a rivalry game may be less price responsive than demand for an ordinary game. Students may be more responsive than corporate buyers. A fan deciding months in advance may have different alternatives than a visitor shopping on game day.
+Own-price elasticity concerns a movement along a demand curve. Income and the prices of related products can shift the entire curve. Premium seating, ordinary single-game tickets, and low-price promotions need not respond to an income change in the same way. Teams should not assume that every sports ticket is a luxury good merely because some seats are expensive.
 
-Second, maximizing ticket revenue is not the same as maximizing profit. The team must consider marginal cost, complementary revenue, and any effects on future demand.
-
-Third, an observed sellout does not reveal the exact elasticity of demand. It tells us that quantity demanded at the posted terms was at least as large as available capacity. It does not show how many additional buyers would have appeared at a lower price or how much more current buyers would have paid.
-
-### Income Elasticity
-
-Ticket demand can change even when the ticket's own price does not. **Income elasticity of demand** measures the percentage change in quantity demanded associated with a percentage change in consumer income:
-
-$$
-\epsilon_I=\frac{\%\Delta Q_d}{\%\Delta I}
-$$
-
-A positive value indicates a normal good: demand tends to increase as income increases. A negative value indicates an inferior good: demand tends to decrease as income increases. Among normal goods, an income elasticity greater than one identifies demand that grows more than proportionally with income over the measured range.
-
-The classification belongs to a defined ticket product and group of buyers. Premium seating, an ordinary single-game ticket, and a low-price promotional ticket need not have the same income elasticity. Nor should we assume that all sports tickets are luxury goods merely because some seats are expensive. That is an empirical question.
-
-An income change shifts the demand curve. It does not create a movement along an unchanged demand curve. This distinction matters when teams assess the long-run market for different seating products or compare demand across local markets.
-
-### Cross-Price Elasticity
-
-**Cross-price elasticity of demand** measures how demand for one product responds to the price of another:
-
-$$
-\epsilon_{xy}=\frac{\%\Delta Q_x}{\%\Delta P_y}
-$$
-
-A positive cross-price elasticity suggests that products $x$ and $y$ are substitutes. If another entertainment option becomes more expensive, demand for the game may increase. A negative value suggests complements. If parking is separately priced and a higher parking price reduces ticket demand, tickets and parking behave as complements.
-
-Sports relationships are not always obvious in advance. Watching at home may substitute for attending, but media exposure can also deepen interest and make future attendance more attractive. A partial season plan may substitute for single-game tickets while complementing concessions or merchandise. The sign and magnitude depend on the products, buyers, and time horizon being studied.
-
-Together, the three elasticities organize different questions. Own-price elasticity asks what happens when the ticket's price changes. Income elasticity asks what happens when buyers' purchasing power changes. Cross-price elasticity asks what happens when the price of a related product changes. Only the first one directly produces the familiar own-price total-revenue rule.
+Related products are equally important. Parking and tickets may be complements, so an increase in parking prices can reduce ticket demand. Watching at home may substitute for attending a game, but media exposure can also deepen interest and make future attendance more attractive. A partial season plan may substitute for single-game tickets while complementing concessions or merchandise. The relevant relationship is an empirical question about defined products, buyers, and time horizons—not something the team can infer from the labels alone.
 
 ::: sideline
 **Ticket Revenue Is Not Total Event Profit**
@@ -273,7 +239,7 @@ Four boxes feed into a central ticket menu. Seat quality includes club, lower-le
 
 A two-part tariff divides payment into an access charge and a usage charge. A fan might pay an initial fee for the right to buy tickets and then pay separately for the tickets themselves. This structure can transfer more consumer surplus to the seller while also creating a longer-term commitment between the buyer and the team.
 
-The acronym **PSL** is not expanded uniformly. Carolina has used *Permanent Seat License* or *Permanent Seating License*, while Buffalo uses *Personal Seat License*. Both can resemble a two-part tariff, but the controlling contract matters more than the label. As of July 2026, the Buffalo Bills describe a PSL for new Highmark Stadium as a one-time purchase giving the licensee the right and obligation to purchase season tickets; the team requires the PSL for season-ticket purchases.[^bills-psl] The license payment and the later season-ticket payment are economically distinct.
+The acronym **PSL** is not expanded uniformly. Carolina uses *Permanent Seat License*, while Buffalo uses *Personal Seat License*. Both can resemble a two-part tariff, but the controlling contract matters more than the label. As of August 2026, the Buffalo Bills describe a PSL for new Highmark Stadium as a one-time purchase giving the licensee the right and obligation to purchase season tickets; the team requires the PSL for season-ticket purchases.[^bills-psl] The license payment and the later season-ticket payment are economically distinct.
 
 ::: casestudy
 **The PSL: A Ticket, An Asset, Or A Financing Contract?**
@@ -292,7 +258,7 @@ The license therefore combines several economic relationships.
 
 **A risky asset-like contract.** A transferable PSL may have resale value, but it is not equivalent to a risk-free investment or ownership of part of the team. Its value depends on future team demand, annual ticket prices, stadium terms, transfer rules, remaining contract life, and the availability of comparable seats. If annual ticket prices rise enough, the resale value of the license can fall because the future right becomes more expensive to exercise.
 
-Economists and lawyers describe a right that can be transferred to someone else as **alienable**. In plainer language, an alienable PSL can be resold, given away, or passed to another holder, subject to the contract's rules. The original Carolina licenses were not freely alienable. Until June 1997, the Panthers retained the right to repurchase at the original price a PSL that its holder wanted to transfer outside the family.[^psl-alienability] Modern PSL programs more commonly permit resale, although team approval, transfer windows, fees, and other restrictions can still make alienability incomplete.
+Economists and lawyers describe a right that can be transferred to someone else as **alienable**. In plainer language, an alienable PSL can be resold, given away, or passed to another holder, subject to the contract's rules. The original Carolina licenses were not freely alienable. Until June 1997, the Panthers retained the right to repurchase at the original price a PSL that its holder wanted to transfer outside the family.[^psl-alienability] Modern PSL programs may permit resale, although team approval, transfer windows, fees, and other restrictions can still make alienability incomplete.
 
 Alienability can raise what a buyer is willing to pay at the initial sale. A new-car buyer may pay more when a dependable used-car market preserves some future resale value. Similarly, a fan may pay more for a PSL that can later be sold than for an otherwise identical right that must simply be surrendered. This does not guarantee a high resale price. It gives the holder an *option* to recover part of the initial payment if another buyer values the license.
 
@@ -323,11 +289,13 @@ The terminology used by organizations is not perfectly uniform. Students should 
 ::: casestudy
 **Variable And Dynamic Pricing**
 
-FIFA's ticketing guidance for the 2026 World Cup says that it applies variable pricing and may adapt prices across sales phases after reviewing demand and availability. The same guidance explicitly says that FIFA is not using a dynamic-pricing model because prices are not automatically modified.[^fifa-pricing]
+FIFA's ticketing guidance for the 2026 World Cup said that it applied variable pricing and could adapt prices across sales phases after reviewing demand and availability. The same guidance denied using a dynamic-pricing model because prices were not automatically modified.[^fifa-pricing]
 
 The St. Louis Cardinals describe a different rule. Their ticket page says that single-game prices may be adjusted upward or downward daily in response to factors including team performance, pitching matchups, weather, and ticket demand.[^cardinals-pricing]
 
-The examples are useful because they reveal more than two labels. One organization emphasizes reviewed adjustments across sales phases while rejecting the label “dynamic”; the other describes repeated revisions linked to changing information. The economic questions are the timing of commitment, the information used, and the way the price responds.
+The examples are useful because they reveal more than two labels. Under this chapter's operational distinction, FIFA's policy contained a dynamic element: the price could be revised after the initial sale in response to demand and availability, even if the revision was periodic and discretionary rather than automatic. The Cardinals explicitly call their repeated revisions dynamic. The economic questions are the timing of commitment, the information used, and the way the price responds—not merely the seller's preferred label.
+
+Historical MLB evidence also supports treating ticket products separately. Using data from eleven teams, Paul and Weinbach found that factors associated with the highest- and lowest-priced dynamically priced tickets differed with team quality, uncertainty of outcome, key opponents, weekends, opening day, and temperature.[^paul-weinbach] The study does not supply one universal pricing formula. It shows why a seller may learn more by examining demand for defined ticket products than by estimating one average response for the entire stadium.
 :::
 
 Dynamic pricing can improve the match between price and current demand. It can also create uncertainty for buyers, change the value of purchasing early, and raise concerns about transparency or fairness. Those reactions are part of demand. A pricing system that extracts more revenue from one transaction may weaken trust or alter future purchase behavior.
@@ -382,9 +350,11 @@ The main left-to-right flow begins with the team or venue, which sends an initia
 
 ## What Determines Attendance?
 
-Attendance is the quantity demanded that we observe after price, capacity, and the other features of the event interact. It is not generated by ticket price alone.
+Attendance is an observed outcome after price, capacity, and the other features of the event interact. It is not a pure measure of underlying demand, and it is not generated by ticket price alone.
 
-The research literature identifies several recurring categories of demand shifters, but it does not produce one universal attendance equation for every sport and market. Borland and Macdonald's review emphasizes contest quality, viewing quality, and uncertainty of outcome while warning that the evidence does not yield simple conclusions that apply everywhere.[^borland-macdonald]
+The dependent variable itself requires care. A reported attendance figure may count tickets sold or distributed, while a turnstile measure counts people who entered the venue. A ticket holder who does not attend appears in the first measure but not the second. A no-show for a paid ticket does not change primary ticket revenue, but it can matter greatly for concessions, stadium atmosphere, staffing, and any attempt to estimate the demand to be physically present.
+
+The research literature identifies several recurring categories of demand shifters, but it does not produce one universal attendance equation for every sport and market. Borland and Macdonald's review emphasizes contest quality, viewing quality, and uncertainty of outcome while warning that the evidence does not yield simple conclusions that apply everywhere.[^borland-macdonald] A later scoping review documents a large literature but also finds important gaps, including limited work on women's and niche sports, emerging markets, and disaggregated attendance behavior.[^schreyer-ansari]
 
 <div id="tab:ch04-attendance-evidence">
 
@@ -452,7 +422,7 @@ Ticket markets lead naturally to the next chapter. A fan can attend in person, w
 2. Under what condition does stadium capacity bind? Why does a small stadium not guarantee a sellout?
 3. Why can an unsold seat be consistent with profit maximization under single-price monopoly pricing?
 4. How does own-price elasticity determine the direction of the total-revenue response to a price change?
-5. Give one ticket-market example of income elasticity and one example of cross-price elasticity.
+5. How could income and the price of a related product change a team's ticket menu even if its own ticket price has not changed?
 6. Distinguish product differentiation, market segmentation, and price discrimination.
 7. Why is a PSL a two-part tariff? What does alienability add to the contract?
 8. What feature of the pricing rule distinguishes variable pricing from dynamic pricing?
@@ -462,8 +432,8 @@ Ticket markets lead naturally to the next chapter. A fan can attend in person, w
 ## Problems And Applications
 
 1. A team estimates demand as $P(Q)=150-2Q$, where $P$ is dollars and $Q$ is thousands of tickets. Marginal cost is \$30 and stadium capacity is 40,000. Derive marginal revenue, find the unconstrained monopoly quantity and price, and determine whether capacity binds.
-2. A club raises a ticket price from \$50 to \$55, and quantity demanded falls from 20,000 to 17,000. Calculate the own-price elasticity using the midpoint method. Is demand elastic or inelastic over this range, and what happens to ticket revenue?
-3. The price of stadium parking rises by 20 percent, and ticket demand falls by 5 percent. Calculate the cross-price elasticity. Are parking and tickets behaving as substitutes or complements in this example?
+2. A club estimates that the own-price elasticity of demand for an upper-level ticket product is $-1.4$ over the price range it is considering. If the club raises the price by 5 percent, approximate the percentage change in quantity demanded and predict the direction of the ticket-revenue effect. Why is this estimate alone insufficient to determine what happens to total profit?
+3. A team's demand analysis estimates the cross-price elasticity between stadium parking and tickets at $-0.25$. Are the products behaving as substitutes or complements? Explain why raising the parking price could reduce total event profit even if parking revenue increases.
 4. A PSL costs \$4,000, gives the holder the right and obligation to purchase season tickets for \$1,200 per year, and can be resold subject to team approval. Identify the access and usage charges. Then explain how transferability, future ticket-price increases, and expected team quality could affect the PSL's initial and resale values.
 5. A ticket is sold by a team for \$75, resold for \$160, and purchased by a fan willing to pay \$190. The platform keeps \$15 and remits the rest to the reseller. Calculate the final buyer's consumer surplus, the reseller's net gain before other costs, and the platform's revenue. Which party does not capture the resale markup under these assumptions?
 6. A dataset shows that games with higher ticket prices also draw larger crowds. Give a plausible omitted demand shifter that could produce this association. Then describe what additional evidence would be needed to estimate the causal effect of price on attendance.
@@ -476,7 +446,7 @@ Choose a current team, venue, or authorized ticket seller and record the date yo
 1. What precisely is the ticket product: game, seat, package, eligibility rule, and purchase date?
 2. Does the seller describe the system as variable, dynamic, personalized, or something else?
 3. What can actually change, when can it change, and what information appears to matter?
-4. Is the advertised price the required total price, or are additional mandatory charges disclosed later?
+4. Does the displayed total price include mandatory fees? Which permitted exclusions or optional charges, if any, appear later?
 5. Does the evidence support a descriptive, predictive, or causal claim?
 6. Which conclusion can you defend, and which tempting conclusion goes beyond the evidence?
 
@@ -489,16 +459,18 @@ Choose one team and one future home game. Record the access date and compare the
 
 ## Source Notes
 
-[^bills-psl]: Buffalo Bills, “Highmark Stadium,” accessed July 10, 2026, <https://www.buffalobills.com/stadium/>. The team's December 26, 2025 inventory update reported that available new-stadium PSL inventory had sold out: <https://www.buffalobills.com/news/bills-announce-seating-availability-update-for-new-highmark-stadium>.
+[^bills-psl]: Buffalo Bills, “Highmark Stadium,” accessed August 11, 2026, <https://www.buffalobills.com/stadium/>. The team's December 26, 2025 inventory update reported that available new-stadium PSL inventory had sold out: <https://www.buffalobills.com/news/bills-announce-seating-availability-update-for-new-highmark-stadium>.
 [^psl-history]: The Carolina Panthers describe their PSL plan as brand-new to the NFL and central to the franchise's early ticketing strategy: <https://www.panthers.com/news/ticketing-leader-phil-youtsey-calls-it-a-career>. The Associated Press credits Charlotte marketer Max Muhleman with developing the professional-sports PSL concept used to help finance the Panthers' stadium: <https://apnews.com/article/8fe7baf40fbf346676a42bf47a470772>. For an early industry analysis, see Larry M. McCarthy and Richard Irwin, “Permanent Seat Licenses (PSLs) as an Emerging Source of Revenue Production,” *Sport Marketing Quarterly* 7, no. 3 (1998): 41–46, <https://doi.org/10.1177/106169349800700305>.
-[^panthers-psl]: Carolina Panthers, “PSLs / Season Tickets,” accessed July 11, 2026, <https://www.panthers.com/tickets/psls-sign-up-2021-web>; Carolina Panthers Official PSL Marketplace, accessed July 11, 2026, <https://panthers.strmarketplace.com/>.
+[^panthers-psl]: Carolina Panthers, “Permanent Seat Licenses,” accessed August 11, 2026, <https://www.panthers.com/tickets/psls-ab>; Carolina Panthers Official PSL Marketplace, accessed August 11, 2026, <https://panthers.strmarketplace.com/>.
 [^psl-alienability]: Mark Asher, “New Technique Saves a Seat, Collects a Fortune,” *Washington Post*, May 3, 1995, <https://www.washingtonpost.com/archive/sports/1995/05/04/new-technique-saves-a-seat-collects-a-fortune/4c643233-ea12-45bc-91a7-8c144f241686/>. The restriction was a team repurchase right rather than an absolute prohibition on every transfer.
-[^bills-capacity]: The NFL's *2024 Record and Fact Book* lists the former Highmark Stadium at 71,621 seats: <https://operations.nfl.com/media/hfjn4oid/2024-record-fact-book-incl-supplemental.pdf>. The Bills report a final capacity of 60,108 and a first regular-season game on September 17, 2026: <https://www.buffalobills.com/news/impressed-by-every-aspect-of-it-bills-officially-open-highmark-stadium-with-ribbon-cutting-ceremony>. For the team's explanation of the reduced capacity and subsequent design details, see <https://www.buffalobills.com/news/what-bills-fans-need-to-know-about-the-new-bills-stadium-project> and <https://www.buffalobills.com/news/updates-on-bills-2024-season-ticket-member-renewals-and-opening-of-bills-stadium-experience>.
+[^bills-capacity]: The NFL's *2024 Record and Fact Book* lists the former Highmark Stadium at 71,621 seats: <https://operations.nfl.com/media/hfjn4oid/2024-record-fact-book-incl-supplemental.pdf>. The Bills report a final capacity of 60,108 and a first regular-season game on September 17, 2026: <https://www.buffalobills.com/news/impressed-by-every-aspect-of-it-bills-officially-open-highmark-stadium-with-ribbon-cutting-ceremony>. For the team's explanation of the reduced capacity and subsequent design details, see <https://www.buffalobills.com/news/what-bills-fans-need-to-know-about-the-new-bills-stadium-project> and <https://www.buffalobills.com/news/updates-on-bills-2024-season-ticket-member-renewals-and-opening-of-bills-stadium-experience>. Current details rechecked August 11, 2026.
 [^bills-resale-prices]: Brian Mazurowski, “Many Unknowns as Fans Prepare for Bills Tickets to Go On Sale,” *WBEN*, May 12, 2026, <https://www.audacy.com/wben/news/local/bills-tickets>. For the stadium cost and capacity, see John Wawrow, “Bills' New Stadium Costs Balloon to \$2.1 Billion,” Associated Press, November 22, 2024, <https://apnews.com/article/bills-stadium-cost-pegula-8c56fad9d970f2b17429d3ae779f70ba>.
 [^lakers-cost-demand]: Scott Howard-Cooper, “Most Laker Ticket Prices Will Increase,” *Los Angeles Times*, July 19, 1996, <https://www.latimes.com/archives/la-xpm-1996-07-19-sp-25835-story.html>; George Solomon, “O'Neal Receives a Record Deal from the Lakers,” *Washington Post*, July 18, 1996, <https://www.washingtonpost.com/archive/sports/1996/07/19/oneal-receives-a-record-deal-from-the-lakers/d451b845-63c3-4511-bb17-5b2f72492703/>.
-[^fifa-pricing]: FIFA, “How does FIFA determine ticket prices for the FIFA World Cup 2026?”, updated December 8, 2025, accessed July 10, 2026, <https://gpcustomersupportfwc2026.tickets.fifa.com/hc/en-gb/articles/30201776314397-10-How-does-FIFA-determine-ticket-prices-for-the-FIFA-World-Cup-2026>.
-[^cardinals-pricing]: St. Louis Cardinals, “Dynamic Pricing,” accessed July 10, 2026, <https://www.mlb.com/cardinals/tickets/dynamic-pricing>.
+[^fifa-pricing]: FIFA, “How does FIFA determine ticket prices for the FIFA World Cup 26?”, accessed August 11, 2026, <https://gpcustomersupportfwc2026.tickets.fifa.com/hc/en-gb/articles/30201776314397-9-How-does-FIFA-determine-ticket-prices-for-the-FIFA-World-Cup-26>.
+[^cardinals-pricing]: St. Louis Cardinals, “Dynamic Pricing,” accessed August 11, 2026, <https://www.mlb.com/cardinals/tickets/dynamic-pricing>.
+[^paul-weinbach]: Rodney J. Paul and Andrew P. Weinbach, “Using Prediction Market Prices to Differentiate Factors that Influence the Highest and Lowest Priced Tickets in Dynamic Pricing for Major League Baseball,” *Journal of Prediction Markets* 9, no. 2 (2015): 43–63, <https://doi.org/10.5750/jpm.v9i2.1081>.
 [^courty-resale]: Pascal Courty, “Some Economics of Ticket Resale,” *Journal of Economic Perspectives* 17, no. 2 (2003): 85–97, <https://pubs.aeaweb.org/doi/10.1257/089533003765888449>.
 [^vollmer-resale]: Drew Vollmer, “Is Resale Needed in Markets with Refunds? Evidence from College Football Ticket Sales,” *RAND Journal of Economics* 56, no. 3 (2025): 251–268, <https://doi.org/10.1111/1756-2171.12501>.
-[^ftc-fees]: Federal Trade Commission, “FTC Rule on Unfair or Deceptive Fees to Take Effect on May 12, 2025,” May 5, 2025, <https://search.ftc.gov/news-events/news/press-releases/2025/05/ftc-rule-unfair-or-deceptive-fees-take-effect-may-12-2025>.
+[^ftc-fees]: Federal Trade Commission, “The Rule on Unfair or Deceptive Fees: Frequently Asked Questions,” accessed August 11, 2026, <https://www.ftc.gov/business-guidance/resources/rule-unfair-or-deceptive-fees-frequently-asked-questions>.
 [^borland-macdonald]: Jeffery Borland and Robert Macdonald, “Demand for Sport,” *Oxford Review of Economic Policy* 19, no. 4 (2003): 478–502, <https://doi.org/10.1093/oxrep/19.4.478>.
+[^schreyer-ansari]: Dominik Schreyer and Payam Ansari, “Stadium Attendance Demand Research: A Scoping Review,” *Journal of Sports Economics* 23, no. 6 (2022): 749–788, <https://doi.org/10.1177/15270025211000404>.
