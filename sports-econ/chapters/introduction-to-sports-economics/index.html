@@ -86,7 +86,7 @@
         <p class="chapter-deck">How constraints, incentives, institutions, counterfactuals, evidence, and data turn sports headlines into economic questions.</p>
         <div class="chapter-meta" aria-label="Chapter information">
           <span>Undergraduate level</span>
-          <span>6,540 words</span>
+          <span>6,454 words</span>
           <span>Work in progress</span>
         </div>
       </header>
@@ -493,7 +493,7 @@ Y_i=\beta_0+\beta_1X_{1i}+\beta_2X_{2i}+\cdots+u_i.
 </ul>
 <p>OPS can be a better predictor of team scoring than batting average without the simple regression revealing the causal effect of mechanically changing OPS. OPS is constructed from events—reaching base and accumulating total bases—that are closely connected to scoring. Team quality, lineup composition, ballparks, strategy, and other factors also matter. The regression is useful because its descriptive question is clear and its causal claims are modest.</p>
 <h3 id="codex-plus-r-from-a-question-to-a-reproducible-analysis">Codex Plus R: From A Question To A Reproducible Analysis</h3>
-<p>R is a free statistical programming environment. A few years ago, using R required a student to know enough commands to import data, fit models, produce figures, and debug the inevitable mistakes. An AI coding agent can now handle much of that mechanical burden from a plain-language specification. Official OpenAI documentation describes using the integrated terminal to run and validate project scripts and shows AI-assisted workflows that inspect data, build interpretable models, create charts, preserve artifacts, and state caveats.<sup class="footnote-ref"><a href="#fn4" id="fnref4">[4]</a></sup></p>
+<p>R is a free statistical programming environment. A few years ago, using R required a student to know enough commands to import data, fit models, produce figures, and debug the inevitable mistakes. With an AI coding agent, a student can now begin from a plain-language specification and ask it to create and run the code.</p>
 <p>That does not mean a student can safely request “analyze this” and accept whatever appears. The student still owns the question, definitions, source choice, model, interpretation, and verification.</p>
 <aside class="semantic-block semantic-sideline"><p class="semantic-label">Sideline</p>
 <p><strong>What Changed Between Editions?</strong></p>
@@ -557,8 +557,6 @@ summary(model_ops)
 <li id="fn2" class="footnote-item"><p>NBCUniversal, “NBCUniversal Sells Out of Milan Cortina 2026 Olympic Winter Games With One Month to Go,” January 6, 2026, <a href="https://www.nbcsports.com/pressbox/press-releases/nbcuniversal-sells-out-of-milan-cortina-2026-olympic-winter-games-with-one-month-to-go">https://www.nbcsports.com/pressbox/press-releases/nbcuniversal-sells-out-of-milan-cortina-2026-olympic-winter-games-with-one-month-to-go</a>; NBC Sports, “Super Bowl LX Is Second Most-Watched All-Time With 125.6 Million Viewers,” updated February 19, 2026, <a href="https://www.nbcsports.com/pressbox/press-releases/super-bowl-lx-is-second-most-watched-all-time-with-nearly-125-million-viewers-peaking-at-all-time-u-s-record-137-8-million-viewers-across-nbc-peacock-and-telemundo">https://www.nbcsports.com/pressbox/press-releases/super-bowl-lx-is-second-most-watched-all-time-with-nearly-125-million-viewers-peaking-at-all-time-u-s-record-137-8-million-viewers-across-nbc-peacock-and-telemundo</a>, accessed August 12, 2026. These company sources support the sold-out advertising inventory and reported cross-platform audience. They do not establish any individual advertisement’s causal return. <a href="#fnref2" class="footnote-backref">↩︎</a></p>
 </li>
 <li id="fn3" class="footnote-item"><p>Major League Baseball Stats API, 2025 team season hitting statistics, <a href="https://statsapi.mlb.com/api/v1/teams/stats?stats=season&amp;group=hitting&amp;season=2025&amp;sportIds=1">https://statsapi.mlb.com/api/v1/teams/stats?stats=season&amp;group=hitting&amp;season=2025&amp;sportIds=1</a>; Major League Baseball, “2025 MLB Team Hitting Statistics,” <a href="https://www.mlb.com/stats/team/ops/2025">https://www.mlb.com/stats/team/ops/2025</a>, accessed August 2, 2026. The bundled script uses official component totals, checks the 30-team structure, reconciles calculated BA and OPS with MLB’s rounded measures, and reproduces every reported coefficient and figure. The regressions are descriptive team-level comparisons. <a href="#fnref3" class="footnote-backref">↩︎</a></p>
-</li>
-<li id="fn4" class="footnote-item"><p>OpenAI, “Integrated Terminal,” <a href="https://learn.chatgpt.com/docs/integrated-terminal">https://learn.chatgpt.com/docs/integrated-terminal</a>; OpenAI, “Analyze Datasets and Ship Reports,” <a href="https://learn.chatgpt.com/use-cases/datasets-and-reports">https://learn.chatgpt.com/use-cases/datasets-and-reports</a>, accessed August 12, 2026. The documentation supports running and validating project scripts, inspecting data, using interpretable models, creating charts, preserving reproducible artifacts, and reporting caveats. Actual availability can depend on the user’s product, environment, permissions, and installed software. <a href="#fnref4" class="footnote-backref">↩︎</a></p>
 </li>
 </ol>
 </section>
