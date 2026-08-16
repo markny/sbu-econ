@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "549c7585a7eccf9413a78d6357303916b40a82e5",
+    "commit": "d151392b61b91b9ddbaa1138940a79d445484132",
     "dirty": false
   },
   "chapters": [
@@ -24,6 +24,11 @@
       "number": 4,
       "slug": "ticket-pricing-and-attendance",
       "title": "Ticket Pricing and Attendance"
+    },
+    {
+      "number": 5,
+      "slug": "broadcasting-media-rights-and-attention",
+      "title": "Broadcasting, Media Rights, and the Battle for Attention"
     }
   ]
 }
