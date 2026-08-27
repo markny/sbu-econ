@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-reader-theme="classic">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,7 +19,12 @@
   <header class="site-header">
     <a class="book-name" href="/sports-econ/">Sports Economics</a>
     <p>Markets, institutions, strategy, evidence, and policy</p>
-    <span class="preview-badge">Review draft</span>
+    <div class="reader-style-switcher" role="group" aria-label="Reading style">
+      <button type="button" data-reader-theme="classic" aria-pressed="true">Classic</button>
+      <button type="button" data-reader-theme="contemporary" aria-pressed="false">Contemporary</button>
+      <button type="button" data-reader-theme="compact" aria-pressed="false">Compact</button>
+    </div>
+    <span class="preview-badge">Draft reader</span>
   </header>
 
   <div class="reader-layout">
@@ -59,6 +64,12 @@
                     <a href="/sports-econ/chapters/broadcasting-media-rights-and-attention/">
                       <span>5</span>
                       Broadcasting, Media Rights, and the Battle for Attention
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/sports-econ/chapters/team-and-league-behavior/">
+                      <span>6</span>
+                      Team and League Behavior
                     </a>
                   </li>
           </ol>
@@ -520,5 +531,6 @@ DWL=\tfrac{1}{2}t(Q^*-Q_t)=\tfrac{1}{2}(20)(8-6)=20.
       </footer>
     </main>
   </div>
+  <script src="/sports-econ/reader.js" defer></script>
 </body>
 </html>

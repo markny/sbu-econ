@@ -139,6 +139,10 @@ a:hover {
   color: #ffffff;
 }
 
+.sports-course {
+  background: #174b67;
+}
+
 .course-layout {
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(340px, 1.1fr);
