@@ -43,8 +43,9 @@ html[data-reader-theme="compact"] {
 }
 
 .course-site-header {
-  background: #202d37;
-  color: var(--white);
+  background: var(--white);
+  border-bottom: 1px solid #d8dfe2;
+  color: var(--ink);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -57,11 +58,12 @@ html[data-reader-theme="compact"] {
 
 .course-brand,
 .course-site-header nav a {
-  color: var(--white);
+  color: var(--ink);
   text-decoration: none;
 }
 
 .course-brand {
+  color: #174b67;
   font-size: 1.05rem;
   font-weight: 800;
 }
@@ -72,12 +74,12 @@ html[data-reader-theme="compact"] {
 }
 
 .course-site-header nav a {
-  color: #d8e1e6;
+  color: #60717b;
   font-size: .86rem;
 }
 
 .course-site-header nav a[aria-current="page"] {
-  color: var(--white);
+  color: #174b67;
   font-weight: 750;
 }
 
@@ -86,18 +88,17 @@ html[data-reader-theme="compact"] {
 }
 
 .course-hero {
-  background:
-    radial-gradient(circle at 84% 26%, rgb(255 255 255 / 12%), transparent 19rem),
-    linear-gradient(125deg, #174b67, #236b74 58%, #4f8f73);
-  color: var(--white);
-  padding: clamp(4.5rem, 9vw, 8rem) 0;
+  background: #f4f6f3;
+  border-bottom: 1px solid #d8dfe2;
+  color: var(--ink);
+  padding: clamp(4rem, 7vw, 6rem) 0;
 }
 
 .course-hero-layout {
   align-items: center;
   display: grid;
-  gap: 4rem;
-  grid-template-columns: minmax(0, 1.25fr) minmax(15rem, .75fr);
+  gap: clamp(3rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1.35fr) minmax(16rem, .65fr);
 }
 
 .course-breadcrumb,
@@ -109,8 +110,8 @@ html[data-reader-theme="compact"] {
 }
 
 .course-breadcrumb {
-  color: #d6e8eb;
-  margin: 0 0 2.2rem;
+  color: #60717b;
+  margin: 0 0 2rem;
 }
 
 .course-eyebrow {
@@ -119,23 +120,23 @@ html[data-reader-theme="compact"] {
 }
 
 .course-hero .course-eyebrow {
-  color: #ffe0b8;
+  color: var(--orange);
 }
 
 .course-hero h1 {
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.6rem, 8vw, 7.2rem);
+  font-size: clamp(3.5rem, 7vw, 5.8rem);
   letter-spacing: -.045em;
-  line-height: .93;
+  line-height: .96;
   margin: 0;
-  max-width: 8ch;
+  max-width: 9ch;
 }
 
 .course-lead {
-  color: #edf7f7;
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  color: #52636c;
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
   line-height: 1.5;
-  margin: 1.75rem 0 0;
+  margin: 1.5rem 0 0;
   max-width: 38rem;
 }
 
@@ -148,7 +149,7 @@ html[data-reader-theme="compact"] {
 }
 
 .course-actions a {
-  color: var(--white);
+  color: #174b67;
   font-size: .9rem;
   font-weight: 750;
 }
@@ -165,41 +166,52 @@ html[data-reader-theme="compact"] {
 }
 
 .course-button-primary {
-  background: var(--white);
-  border-color: var(--white);
-  color: #174b67 !important;
+  background: #174b67;
+  border-color: #174b67;
+  color: var(--white) !important;
 }
 
 .course-hero-mark {
-  border-bottom: 1px solid rgb(255 255 255 / 45%);
-  border-top: 1px solid rgb(255 255 255 / 45%);
+  background: var(--white);
+  border: 1px solid #d2dadd;
+  border-top: 5px solid #174b67;
+  box-shadow: 0 1rem 2.5rem rgb(38 51 63 / 8%);
   display: grid;
-  padding: 2rem 0;
+  padding: 1.8rem 2rem 2rem;
 }
 
 .course-hero-mark span {
-  font: 700 clamp(5rem, 10vw, 8rem)/.85 Georgia, "Times New Roman", serif;
+  color: #174b67;
+  font: 700 clamp(3.75rem, 7vw, 5rem)/.9 Georgia, "Times New Roman", serif;
 }
 
 .course-hero-mark strong {
-  font-size: 1.15rem;
-  margin-top: 1rem;
+  font-size: .95rem;
+  margin-top: .75rem;
   text-transform: uppercase;
 }
 
 .course-hero-mark small {
-  color: #d6e8eb;
+  color: var(--muted);
+  line-height: 1.45;
   margin-top: .25rem;
+}
+
+.course-hero-mark a {
+  color: #174b67;
+  font-size: .82rem;
+  font-weight: 800;
+  margin-top: 1.25rem;
 }
 
 .course-intro,
 .course-files {
   background: var(--white);
-  padding: 5rem 0;
+  padding: 4rem 0;
 }
 
 .course-files {
-  background: #e6efee;
+  background: #e9f0f2;
 }
 
 .course-split,
@@ -231,8 +243,8 @@ html[data-reader-theme="compact"] {
 
 .course-chapters,
 .course-practice {
-  padding-bottom: 5.5rem;
-  padding-top: 5.5rem;
+  padding-bottom: 4.5rem;
+  padding-top: 4.5rem;
 }
 
 .course-section-head {
@@ -241,7 +253,10 @@ html[data-reader-theme="compact"] {
 }
 
 .course-map {
-  border-top: 1px solid var(--line);
+  border-top: 2px solid #174b67;
+  column-gap: 2.75rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   list-style: none;
   margin: 0;
   padding: 0;
@@ -257,7 +272,7 @@ html[data-reader-theme="compact"] {
   color: var(--ink);
   display: grid;
   gap: 1rem;
-  grid-template-columns: 2.25rem minmax(0, 1fr) 12rem;
+  grid-template-columns: 2.25rem minmax(0, 1fr);
   padding: .95rem .25rem;
   text-decoration: none;
 }
@@ -275,11 +290,12 @@ html[data-reader-theme="compact"] {
 .course-map small {
   color: var(--muted);
   font-size: .75rem;
-  text-align: right;
+  grid-column: 2;
+  text-align: left;
 }
 
 .course-map a:hover strong {
-  color: var(--orange);
+  color: #174b67;
 }
 
 .course-map .is-forthcoming {
@@ -927,7 +943,7 @@ tbody tr:nth-child(even) {
   }
 
   .course-hero-mark {
-    display: none;
+    max-width: 26rem;
   }
 
   .reader-layout {
@@ -996,9 +1012,8 @@ tbody tr:nth-child(even) {
     grid-template-columns: 2rem minmax(0, 1fr);
   }
 
-  .course-map small {
-    grid-column: 2;
-    text-align: left;
+  .course-map {
+    grid-template-columns: 1fr;
   }
 
   .practice-list {
