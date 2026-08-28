@@ -140,7 +140,7 @@ The rest of this book develops specific models, but most sports-economic questio
 
 Why do ticket prices vary across seats and games? Why can a smaller stadium support higher prices for some events? Why is a short Super Bowl advertisement so valuable? Why do leagues sell media rights in large packages?
 
-These are questions about demand, scarcity, product design, market power, and the value of attention. Chapters 2 through 5 build the main tools. The central lesson is that a visible price is an outcome of choices and constraints, not simply a markup placed on an accounting cost.
+These are questions about demand, scarcity, product design, market power, and the value of attention. Chapters 2 through 4 build the main market tools; Chapters 5 and 6 apply them to fan behavior, sponsorship, and media attention. The central lesson is that a visible price is an outcome of choices and constraints, not simply a markup placed on an accounting cost.
 
 ### Labor, Rosters, And Bargaining
 
@@ -158,13 +158,13 @@ That joint production creates questions about revenue sharing, competitive balan
 
 Should a city subsidize a stadium? Should sports gambling face special regulation? What external costs and benefits accompany major events? How should college sports balance education, compensation, and competition? Do participation programs create public-health benefits?
 
-Policy analysis requires more than adding visible spending. It asks how behavior changes, who receives the benefits, who bears the costs, what alternatives are displaced, and what evidence supports the claimed effect. Chapters 3, 9, 12, 13, 14, and 17 return repeatedly to those questions.
+Policy analysis requires more than adding visible spending. It asks how behavior changes, who receives the benefits, who bears the costs, what alternatives are displaced, and what evidence supports the claimed effect. Chapters 3, 10, 11, 12, 15, and 16 return repeatedly to those questions.
 
 ### Data, Prediction, And Decisions
 
 Teams and fans have always used information, but the cost of analyzing it has fallen dramatically. A student can now begin with a plain-language question, ask an AI coding agent to inspect a dataset and write a script, run the analysis, and preserve the data, code, figure, and results for review.
 
-That change makes statistical tools more accessible. It does not make judgment obsolete. A polished chart can use the wrong variable. A regression can answer the wrong question. Generated code can contain an error. A predictive relationship can be described as causal without justification. Chapter 15 examines analytics and organizational adoption in depth. The optional appendix to this chapter supplies the basic vocabulary needed to read empirical evidence throughout the book.
+That change makes statistical tools more accessible. It does not make judgment obsolete. A polished chart can use the wrong variable. A regression can answer the wrong question. Generated code can contain an error. A predictive relationship can be described as causal without justification. Chapter 17 examines analytics and organizational adoption in depth. The optional appendix to this chapter supplies the basic vocabulary needed to read empirical evidence throughout the book.
 
 ## Using AI To Learn Economics
 
@@ -237,7 +237,7 @@ The recurring method is:
 5. State the relevant counterfactual.
 6. Match the evidence to the claim.
 
-Chapter 2 turns this method into the demand-and-supply toolkit. Later chapters apply it to policy, ticketing, media, league behavior, competitive balance, stadiums, labor, college sports, gambling, mega-events, analytics, fandom, and participation.
+Chapter 2 turns this method into the demand-and-supply toolkit. Later chapters apply it to policy, ticketing, fandom and sponsorship, media, league behavior and governance, competitive balance, stadiums, mega-events, participation and public health, labor and bargaining, college sports, gambling, and analytics.
 
 ## Review Questions
 

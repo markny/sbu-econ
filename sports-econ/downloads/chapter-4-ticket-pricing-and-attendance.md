@@ -164,7 +164,7 @@ Why would a team with strong fan support reduce capacity? The Bills' stated expl
 
 Economically, the team was choosing more than the number of admissions. It was choosing the quality and composition of the stadium product. Space devoted to wider seats, circulation, clubs, concessions, and covered gathering areas cannot also be used for additional rows of ordinary seating. The relevant comparison therefore includes expected ticket revenue, premium revenue, complementary spending, construction and operating costs, and the value fans place on the experience.
 
-Reducing capacity can also make sellouts more likely and tickets scarcer, which may support higher prices or resale values. But capacity alone does not prove that price elevation was the only objective, and it does not settle whether the change benefits fans as a group. Some fans may value comfort, sightlines, and weather protection; others may care more about the number and affordability of available seats. That distributional question is part of the economic trade-off. The separate question of who paid for the stadium belongs in Chapter 9.
+Reducing capacity can also make sellouts more likely and tickets scarcer, which may support higher prices or resale values. But capacity alone does not prove that price elevation was the only objective, and it does not settle whether the change benefits fans as a group. Some fans may value comfort, sightlines, and weather protection; others may care more about the number and affordability of available seats. That distributional question is part of the economic trade-off. The separate question of who paid for the stadium belongs in Chapter 10.
 
 Early resale asking prices for the stadium's first regular-season game illustrate the distinction. Some upper-level listings exceeded \$600 months before the game.[^bills-resale-prices] It is tempting to say that tickets became expensive because the stadium cost more than \$2 billion. That reverses the economic logic. The construction bill does not itself raise willingness to pay. A more attractive stadium experience, the novelty of opening a new venue, an appealing team, and the historic first game can shift demand outward. Roughly 11,500 fewer seats can make the capacity constraint tighter. Those demand and scarcity effects can support higher prices. Moreover, a resale listing is an asking price, not proof that a transaction occurred at that price.
 
@@ -414,7 +414,7 @@ The central lesson is not that teams always charge the highest imaginable price.
 - Secondary markets can improve allocation while changing transaction costs and the distribution of surplus.
 - Attendance evidence must separate demand mechanisms from prediction and causal claims.
 
-Ticket markets lead naturally to the next chapter. A fan can attend in person, watch through a media platform, follow highlights, or divide attention across several products. Once the market extends beyond the stadium, the scarce resource is no longer only seating capacity. It is also attention.
+Ticket markets also reveal that fans are not interchangeable buyers. Loyalty, identity, habit, and social connection shape what fans value and how teams turn that relationship into a brand. Chapter 5 develops those ideas and their connection to sponsorship. Chapter 6 then follows fan attention beyond the stadium into media markets, where seating capacity no longer limits the audience.
 
 ## Review Questions
 

@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "1c1138a47b740a18b5a4c8766e5020dd2f5d81f2",
+    "commit": "eb12761649135644661804e0c471f1a85f8e6e24",
     "dirty": false
   },
   "chapters": [
@@ -31,81 +31,81 @@
     },
     {
       "number": 5,
-      "slug": "broadcasting-media-rights-and-attention",
-      "status": "available",
-      "title": "Broadcasting, Media Rights, and the Battle for Attention"
-    },
-    {
-      "number": 6,
-      "slug": "team-and-league-behavior",
-      "status": "available",
-      "title": "Team and League Behavior"
-    },
-    {
-      "number": 7,
-      "slug": "monopoly-power-antitrust-and-league-governance",
-      "status": "forthcoming",
-      "title": "Monopoly Power, Antitrust, and League Governance"
-    },
-    {
-      "number": 8,
-      "slug": "competitive-balance-in-sports",
-      "status": "forthcoming",
-      "title": "Competitive Balance in Sports"
-    },
-    {
-      "number": 9,
-      "slug": "the-economics-of-sports-stadiums",
-      "status": "forthcoming",
-      "title": "The Economics of Sports Stadiums"
-    },
-    {
-      "number": 10,
-      "slug": "labor-and-performance-in-sports",
-      "status": "forthcoming",
-      "title": "Labor and Performance in Sports"
-    },
-    {
-      "number": 11,
-      "slug": "monopsony-free-agency-and-bargaining-power-in-sports",
-      "status": "forthcoming",
-      "title": "Monopsony, Free Agency, and Bargaining Power in Sports"
-    },
-    {
-      "number": 12,
-      "slug": "college-sports",
-      "status": "forthcoming",
-      "title": "College Sports"
-    },
-    {
-      "number": 13,
-      "slug": "sports-gambling",
-      "status": "forthcoming",
-      "title": "Sports Gambling"
-    },
-    {
-      "number": 14,
-      "slug": "the-olympics-and-mega-sporting-events",
-      "status": "forthcoming",
-      "title": "The Olympics and Mega Sporting Events"
-    },
-    {
-      "number": 15,
-      "slug": "moneyball-analytics-and-the-ai-revolution",
-      "status": "forthcoming",
-      "title": "Moneyball, Analytics, and the AI Revolution"
-    },
-    {
-      "number": 16,
       "slug": "fan-behavior-branding-and-sponsorship",
       "status": "forthcoming",
       "title": "Fan Behavior, Branding, and Sponsorship"
     },
     {
-      "number": 17,
+      "number": 6,
+      "slug": "broadcasting-media-rights-and-attention",
+      "status": "available",
+      "title": "Broadcasting, Media Rights, and the Battle for Attention"
+    },
+    {
+      "number": 7,
+      "slug": "team-and-league-behavior",
+      "status": "available",
+      "title": "Team and League Behavior"
+    },
+    {
+      "number": 8,
+      "slug": "monopoly-power-antitrust-and-league-governance",
+      "status": "forthcoming",
+      "title": "Monopoly Power, Antitrust, and League Governance"
+    },
+    {
+      "number": 9,
+      "slug": "competitive-balance-in-sports",
+      "status": "forthcoming",
+      "title": "Competitive Balance in Sports"
+    },
+    {
+      "number": 10,
+      "slug": "the-economics-of-sports-stadiums",
+      "status": "forthcoming",
+      "title": "The Economics of Sports Stadiums"
+    },
+    {
+      "number": 11,
+      "slug": "the-olympics-and-mega-sporting-events",
+      "status": "forthcoming",
+      "title": "The Olympics and Mega Sporting Events"
+    },
+    {
+      "number": 12,
       "slug": "sports-participation-health-and-public-policy",
       "status": "forthcoming",
       "title": "Sports Participation, Health, and Public Policy"
+    },
+    {
+      "number": 13,
+      "slug": "labor-and-performance-in-sports",
+      "status": "forthcoming",
+      "title": "Labor and Performance in Sports"
+    },
+    {
+      "number": 14,
+      "slug": "monopsony-free-agency-and-bargaining-power-in-sports",
+      "status": "forthcoming",
+      "title": "Monopsony, Free Agency, and Bargaining Power in Sports"
+    },
+    {
+      "number": 15,
+      "slug": "college-sports",
+      "status": "forthcoming",
+      "title": "College Sports"
+    },
+    {
+      "number": 16,
+      "slug": "sports-gambling",
+      "status": "forthcoming",
+      "title": "Sports Gambling"
+    },
+    {
+      "number": 17,
+      "slug": "moneyball-analytics-and-the-ai-revolution",
+      "status": "forthcoming",
+      "title": "Moneyball, Analytics, and the AI Revolution"
     }
   ]
 }

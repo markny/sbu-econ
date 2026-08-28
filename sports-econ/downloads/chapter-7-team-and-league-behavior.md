@@ -39,18 +39,18 @@ A team cannot produce a league contest by itself. Opponents compete for wins, bu
 
 Joint production does not mean that every team decision should be centralized. The Bills can choose local sponsors and decide how to market premium seating. The Dolphins can organize their front office differently. Both teams still need common playing rules, an agreed schedule, eligible opponents, officials, and a process for determining a champion.
 
-Nor does joint production prove that every collective league restriction is efficient or legal. A common schedule is necessary to produce a season. It does not follow that any restraint league members might adopt is also necessary. Chapter 7 will examine that boundary. For now, the economic point is narrower: some cooperation is part of producing the product, and the form of that cooperation changes team incentives.
+Nor does joint production prove that every collective league restriction is efficient or legal. A common schedule is necessary to produce a season. It does not follow that any restraint league members might adopt is also necessary. Chapter 8 will examine that boundary. For now, the economic point is narrower: some cooperation is part of producing the product, and the form of that cooperation changes team incentives.
 
-<div id="fig:ch06-joint-production-map">
+<div id="fig:ch07-joint-production-map">
 
-![Team A and Team B compete for wins but both contribute to a contest that combines with schedules, rules, championships, and media inventory to create a league product connected to players, fans, media, and sponsors.](../figures/ch06-team-and-league-behavior/ch06-joint-production-map.svg)
+![Team A and Team B compete for wins but both contribute to a contest that combines with schedules, rules, championships, and media inventory to create a league product connected to players, fans, media, and sponsors.](../figures/ch07-team-and-league-behavior/ch07-joint-production-map.svg)
 
-**Figure 6.1: Rivals as joint producers.** Teams compete on the field while jointly producing contests and depending on league coordination to create a schedule, rules, a championship, and media inventory. The need for cooperation does not imply that every collective rule has the same economic purpose or effect.
+**Figure 7.1: Rivals as joint producers.** Teams compete on the field while jointly producing contests and depending on league coordination to create a schedule, rules, a championship, and media inventory. The need for cooperation does not imply that every collective rule has the same economic purpose or effect.
 
 </div>
 
 ::: aifiguredescription
-**Figure description: `fig:ch06-joint-production-map`**
+**Figure description: `fig:ch07-joint-production-map`**
 
 The schematic places Team A, Team B, Contest, Shared league functions, and League product inside a quiet league boundary. Team A and Team B each point toward Contest, showing that neither can produce it alone. A restrained two-way link between the teams is labeled “compete for wins.” The Shared league functions node lists Schedule, Rules, Championship, and Media inventory. Both Contest and Shared league functions point toward League product. Players, Fans, and Media and sponsors sit outside the league boundary and connect to the relevant teams or league product through short arrows representing labor, attention, distribution, or payments. The boundary does not imply that every decision or revenue source is centralized. The figure is schematic and makes no claim that a collective rule is legal, efficient, or necessary merely because some league coordination is required.
 :::
@@ -118,16 +118,16 @@ The costs can include salary, acquisition price, surrendered draft or prospect a
 
 An owner who receives private value from winning has another benefit at the margin. That private value may support more spending than monetary marginal revenue alone would justify. It must not, however, be relabeled as team revenue merely to fit it on a graph.
 
-<div id="fig:ch06-team-objectives-and-market-opportunity">
+<div id="fig:ch07-team-objectives-and-market-opportunity">
 
-![Two panels distinguish an owner's private value of winning from differences in the monetary opportunity created by expected team improvement.](../figures/ch06-team-and-league-behavior/ch06-team-objectives-and-market-opportunity.svg)
+![Two panels distinguish an owner's private value of winning from differences in the monetary opportunity created by expected team improvement.](../figures/ch07-team-and-league-behavior/ch07-team-objectives-and-market-opportunity.svg)
 
-**Figure 6.2: Different objectives and different monetary opportunities.** Panel A adds an owner's private value of winning to monetary marginal revenue; the higher curve is total marginal benefit to the owner, not team revenue. Panel B holds preferences and marginal cost fixed while comparing lower and higher monetary returns to improvement.
+**Figure 7.2: Different objectives and different monetary opportunities.** Panel A adds an owner's private value of winning to monetary marginal revenue; the higher curve is total marginal benefit to the owner, not team revenue. Panel B holds preferences and marginal cost fixed while comparing lower and higher monetary returns to improvement.
 
 </div>
 
 ::: aifiguredescription
-**Figure description: `fig:ch06-team-objectives-and-market-opportunity`**
+**Figure description: `fig:ch07-team-objectives-and-market-opportunity`**
 
 The figure contains two aligned panels with expected team quality or expected wins, $w$, on the horizontal axis and money-equivalent marginal value or cost on the vertical axis. Panel A is titled “Different objectives.” It draws monetary marginal revenue $MR(w)=9-w$ downward and marginal cost $MC(w)=1+w$ upward. They intersect at the profit-oriented choice $w_{\pi}=4$. A higher curve labeled “Total marginal benefit to owner” equals monetary marginal revenue plus a constant money-equivalent private marginal value of winning, $V'(w)=2$. It intersects marginal cost at the hybrid choice $w_U=5$. The vertical gap between the two benefit curves is labeled “Owner's private value of winning.” The upper curve is never labeled revenue. Panel B is titled “Different monetary opportunities.” It holds marginal cost fixed at $MC(w)=1+w$ and draws $MR_L(w)=8-w$ and $MR_H(w)=10-w$, labeled lower and higher monetary opportunity. Their exact intersections with marginal cost are $w_L=3.5$ and $w_H=4.5$. Owner preferences do not change in Panel B. The schedules are illustrative rather than estimated, and the figure does not claim that expected wins are guaranteed or that every larger-market team earns more from every win.
 :::
@@ -180,7 +180,7 @@ Controlled talent may be particularly important to small-market or lower-revenue
 That does not make the mechanism unique to MLB. NBA draft picks, NFL rookie contracts, and NHL prospects create similar current-versus-future decisions. It also does not give small-market teams an automatic advantage. Wealthier teams can combine strong scouting and development with greater spending, and prospects remain uncertain.
 :::
 
-A current working paper by Mark Wilson and Rodney J. Paul treats deadline trades as an observable exchange of current production and prospect capital. Chapter 15 will examine its descriptive evidence and its limitations. The durable Chapter 6 lesson does not depend on one estimate: retaining every prospect is not proof of sophistication, and trading one is not proof of error. The decision depends on current postseason benefit, future contract value, acquisition cost, and the future assets surrendered.
+A current working paper by Mark Wilson and Rodney J. Paul treats deadline trades as an observable exchange of current production and prospect capital. Chapter 17 will examine its descriptive evidence and its limitations. The durable Chapter 7 lesson does not depend on one estimate: retaining every prospect is not proof of sophistication, and trading one is not proof of error. The decision depends on current postseason benefit, future contract value, acquisition cost, and the future assets surrendered.
 
 ## A Flow Is Not A Stock
 
@@ -194,7 +194,7 @@ Revenue and income are measured over a period. They are **flows**. Franchise val
 Annual revenue, expenses, operating income, and cash flow describe activity during a period. Franchise value describes an asset at a point in time. A transaction price records what particular parties agreed to exchange under particular terms. Large annual revenue does not automatically equal large profit, and neither number is a sale price.
 :::
 
-<div id="tab:ch06-flow-stock-transaction">
+<div id="tab:ch07-flow-stock-transaction">
 
 | Concept | Flow or stock? | Basic meaning | Common mistake |
 | --- | --- | --- | --- |
@@ -205,7 +205,7 @@ Annual revenue, expenses, operating income, and cash flow describe activity duri
 | Franchise-value estimate | Stock estimate | An analyst's estimate of the value of specified ownership assets at a date. | Treating an estimate as an audited balance-sheet number or completed sale. |
 | Transaction price | Observed exchange | The price attached to an actual transfer of specified ownership rights and assets. | Assuming the headline number is cash paid for 100 percent of a standalone team on one date. |
 
-**Table 6.1: Financial concepts answer different questions.** The correct comparison depends on the period, accounting definition, assets included, debt, control rights, and transaction structure.
+**Table 7.1: Financial concepts answer different questions.** The correct comparison depends on the period, accounting definition, assets included, debt, control rights, and transaction structure.
 
 </div>
 
@@ -225,20 +225,20 @@ This is also why a championship does not mechanically add a fixed amount to fran
 
 The Green Bay Packers and Boston Celtics provide two unusually useful—but fundamentally different—observations. The Packers disclose annual financial results. The Celtics changed majority control through a completed transaction. One is a flow observation; the other is an asset-market observation.
 
-<div id="tab:ch06-current-evidence">
+<div id="tab:ch07-current-evidence">
 
 | Observation | Reported fact | Economic use | Essential limitation |
 | --- | --- | --- | --- |
 | Packers fiscal year covering the 2025 season | \$453.2 million in shared national revenue, \$299.8 million in local revenue, a \$1.1 million operating loss, \$133.6 million in non-operating income, and \$132.5 million in net income | Separates national and local revenue and shows why operating income and net income can differ sharply. | Shared national revenue is not identical to media revenue; the unusual non-operating result included investment gains and the NFL–ESPN transaction. |
 | Celtics ownership transaction completed in August 2025 | An investor group led by William Chisholm completed an acquisition of a majority-control position in a transaction reported at a value exceeding \$6.1 billion. | Shows an observed market transaction involving control of a scarce league asset. | Control was staged, and the headline value is not a one-date cash purchase of every share, asset, and related business. |
 
-**Table 6.2: A financial statement and a transaction provide different evidence.** Neither observation is a league-wide valuation formula.
+**Table 7.2: A financial statement and a transaction provide different evidence.** Neither observation is a league-wide valuation formula.
 
 </div>
 
 ### The Packers: Operating Results Versus Net Income
 
-Chapter 5 used the Packers' national and local revenue series to show how media and league distributions help stabilize team finances. The key chart does not need to be repeated here. Instead, consider the latest fiscal-year categories.[^packers-finances]
+Chapter 6 used the Packers' national and local revenue series to show how media and league distributions help stabilize team finances. The key chart does not need to be repeated here. Instead, consider the latest fiscal-year categories.[^packers-finances]
 
 The Packers reported \$753.0 million in combined shared national and local revenue, yet they reported a \$1.1 million operating loss. That is possible because revenue is not profit. Player-related and other operating costs rose enough to absorb the operating revenue.
 
@@ -264,7 +264,7 @@ This is stronger evidence of a market exchange than a publisher's annual franchi
 A publisher's estimate is an analyst's model. A completed transaction is an observed agreement. Even the transaction must be read carefully: majority control, full ownership, related assets, debt, financing, and staged closings can all change what the headline number means.
 :::
 
-The initial Chapter 6 analysis therefore does not need a ranking of estimated team values. The Packers and Celtics already supply the economically important contrast: annual operations and asset-market value are different objects.
+The initial Chapter 7 analysis therefore does not need a ranking of estimated team values. The Packers and Celtics already supply the economically important contrast: annual operations and asset-market value are different objects.
 
 ## Shared Revenue And Local Incentives
 
@@ -325,7 +325,7 @@ It is tempting to reason that transferring revenue from high-revenue teams to lo
 
 A transfer gives a recipient more resources, but the team might spend the money on player talent, facilities, debt, distributions to ownership, or other operations. A donor team might reduce local investment, change payroll, or continue spending because winning remains valuable. Salary caps, luxury taxes, drafts, and player-market rules can interact with the sharing system. If talent is fixed in the short run, bidding may change salaries more than the distribution of players.
 
-Fort and Quirk's classic analysis of cross-subsidization emphasizes these interacting incentives.[^revenue-sharing] Chapter 8 will examine whether particular policies measurably improve competitive balance. The Chapter 6 job is to identify the mechanism and reject the promise of an automatic result.
+Fort and Quirk's classic analysis of cross-subsidization emphasizes these interacting incentives.[^revenue-sharing] Chapter 9 will examine whether particular policies measurably improve competitive balance. The Chapter 7 job is to identify the mechanism and reject the promise of an automatic result.
 
 It also matters whether a transfer is fixed or changes with a team's own behavior. Suppose every club receives an equal distribution from national media rights regardless of its local ticket sales. That distribution raises the team's financial base, but it does not directly reduce the amount the team retains from selling one more local sponsorship. A rule that pools a percentage of local sponsorship revenue does change that marginal return. The two rules could deliver the same average number of dollars to a team while creating different incentives for local sales and investment.
 
@@ -357,7 +357,7 @@ These were bargaining positions, not settled rules. The useful exercise is to se
 Two proposals can invoke competitive balance while producing different effects on salaries, local investment, club profits, media strategy, and the distribution of talent. Economic analysis begins with those mechanisms rather than accepting either side's prediction as a result.
 :::
 
-The disagreement also shows why the phrase “small-market policy” is too vague. A guaranteed transfer, a spending requirement, a payroll ceiling, and centralized media sales all address different margins. Whether they improve fan welfare or competitive balance is an empirical question. Whether they redistribute bargaining power is central to Chapter 11.
+The disagreement also shows why the phrase “small-market policy” is too vague. A guaranteed transfer, a spending requirement, a payroll ceiling, and centralized media sales all address different margins. Whether they improve fan welfare or competitive balance is an empirical question. Whether they redistribute bargaining power is central to Chapter 14.
 
 ## League Governance Manages Cooperative Competition
 
@@ -365,7 +365,7 @@ The joint product needs governance. Someone must determine membership, build the
 
 Governance is not only a legal question. It is an allocation of decision rights. Centralizing a choice can reduce coordination costs and create a common product. Decentralizing a choice can preserve experimentation, local knowledge, and a stronger reward for team-specific investment.
 
-Consider media rights. Collective national sales can assemble a large package and share revenue across teams. Local rights can let a club exploit local demand and experiment with distribution. Chapter 5 showed that neither approach eliminates production, distribution, promotion, or risk. The league-design question is who controls those functions and who bears the consequences.
+Consider media rights. Collective national sales can assemble a large package and share revenue across teams. Local rights can let a club exploit local demand and experiment with distribution. Chapter 6 showed that neither approach eliminates production, distribution, promotion, or risk. The league-design question is who controls those functions and who bears the consequences.
 
 The same logic applies to membership, labor rules, sponsorship, data, scheduling, and venue standards. Different leagues draw the boundary in different places.
 
@@ -373,9 +373,9 @@ Those boundaries allocate **decision rights**. A local team may know more about 
 
 The hard cases combine both forces. A team's preferred kickoff time may help its local attendance but reduce the value of a national television window. A lucrative local media arrangement may benefit one club while fragmenting access to the league product. An expansion team can add a market and an entry payment while diluting each incumbent's share of common revenue. These are not disputes between coordination and no coordination. They are disputes over which level should control a choice and how the resulting gains and costs should be distributed.
 
-League governance also has to produce commitments that teams, players, media partners, sponsors, and fans can rely on. A schedule has less value if opponents can withdraw unpredictably. A long-term media agreement is harder to sell if clubs can remove attractive games after the contract is signed. Rules, voting procedures, contracts, and enforcement mechanisms make some promises credible enough for other parties to invest. The legal limits of those arrangements belong in Chapter 7; the Chapter 6 point is that governance helps turn interdependent team choices into a durable product.
+League governance also has to produce commitments that teams, players, media partners, sponsors, and fans can rely on. A schedule has less value if opponents can withdraw unpredictably. A long-term media agreement is harder to sell if clubs can remove attractive games after the contract is signed. Rules, voting procedures, contracts, and enforcement mechanisms make some promises credible enough for other parties to invest. The legal limits of those arrangements belong in Chapter 8; the Chapter 7 point is that governance helps turn interdependent team choices into a durable product.
 
-<div id="tab:ch06-league-organization">
+<div id="tab:ch07-league-organization">
 
 | Organizational feature | How membership or control works | Main economic opportunity | Main economic risk |
 | --- | --- | --- | --- |
@@ -383,7 +383,7 @@ League governance also has to produce commitments that teams, players, media par
 | Promotion and relegation | Sporting results move clubs between governed divisions, subject to league, licensing, venue, and financial requirements. | Creates a performance-based path upward and keeps high stakes near promotion and relegation thresholds. | Division changes can create sharp revenue risk and encourage costly attempts to avoid relegation. |
 | Single-entity features | A central league entity holds important rights, while local operators exercise specified club-level discretion. | Central control can coordinate player contracting, budgets, and league growth. | The label can conceal meaningful variation in local control and does not by itself answer legal or incentive questions. |
 
-**Table 6.3: League organization allocates entry, control, upside, and risk.** Real leagues combine features, so the categories are analytical rather than exhaustive.
+**Table 7.3: League organization allocates entry, control, upside, and risk.** Real leagues combine features, so the categories are analytical rather than exhaustive.
 
 </div>
 
@@ -435,7 +435,7 @@ The useful questions are concrete:
 - Who owns the league interest and who operates the club?
 - Which decisions require league approval?
 
-“Single entity” is a starting description of governance, not a complete economic or legal conclusion. Chapter 7 will return to why that distinction matters for antitrust analysis.
+“Single entity” is a starting description of governance, not a complete economic or legal conclusion. Chapter 8 will return to why that distinction matters for antitrust analysis.
 
 ## Strategic Rebuilding And Tanking
 
@@ -475,7 +475,7 @@ In negotiation language, relocation can serve as an **outside option**. A team s
 
 Credibility depends on more than an owner naming another city. The alternative needs a plausible venue, financing, market demand, ownership commitment, and league approval. The current city also has an outside option: it can refuse the requested terms and use public resources elsewhere.
 
-This chapter stops at the incentive. Chapter 9 will examine stadium finance, subsidy evidence, economic-impact claims, bargaining, and the conditions under which relocation threats change public policy.
+This chapter stops at the incentive. Chapter 10 will examine stadium finance, subsidy evidence, economic-impact claims, bargaining, and the conditions under which relocation threats change public policy.
 
 ## The Connected Team And League Decision
 
@@ -583,7 +583,7 @@ If you use MLB's 2026 bargaining proposals, label them by date and verify that t
 
 [^burger-market-size]: John D. Burger and Stephen J. K. Walters, “Market Size, Pay, and Performance: A General Model and Application to Major League Baseball,” *Journal of Sports Economics* 4, no. 2 (2003): 108–125, <https://doi.org/10.1177/1527002503004002002>. The study uses MLB data from 1995 through 1999 and supports interaction between market size and expected contention; the chapter does not carry its historical numerical magnitudes forward as current estimates.
 
-[^intertemporal-wins]: Anthony C. Krautmann and James Ciecka, “The Postseason Value of an Elite Player to a Contending Team,” *Journal of Sports Economics* 10, no. 2 (2009): 168–179, <https://doi.org/10.1177/1527002508321457>; Mark Wilson and Rodney J. Paul, “Why Doesn’t Money Buy More Wins? Analytics, Payroll, and Prospect Capital in Major League Baseball,” working paper, August 4, 2026. The chapter uses these sources for postseason value and the current-versus-future mechanism. The working paper's descriptive deadline evidence, small ranked-prospect sample, omitted postseason option value, and noncausal interpretation are reserved for Chapter 15.
+[^intertemporal-wins]: Anthony C. Krautmann and James Ciecka, “The Postseason Value of an Elite Player to a Contending Team,” *Journal of Sports Economics* 10, no. 2 (2009): 168–179, <https://doi.org/10.1177/1527002508321457>; Mark Wilson and Rodney J. Paul, “Why Doesn’t Money Buy More Wins? Analytics, Payroll, and Prospect Capital in Major League Baseball,” working paper, August 4, 2026. The chapter uses these sources for postseason value and the current-versus-future mechanism. The working paper's descriptive deadline evidence, small ranked-prospect sample, omitted postseason option value, and noncausal interpretation are reserved for Chapter 17.
 
 [^packers-finances]: Green Bay Packers, “Packers' Finances Remain Strong Amidst Changing NFL Landscape,” July 24, 2026, accessed August 16, 2026, <https://www.packers.com/news/packers-finances-remain-strong-amidst-changing-nfl-landscape-2026>. The reported fiscal year includes \$453.2 million in shared national revenue, \$299.8 million in local revenue, a \$1.1 million operating loss, \$133.6 million in non-operating income, and \$132.5 million in net income. The national category includes more than media revenue, and the unusual non-operating result should not be treated as recurring operating profit.
 
@@ -597,6 +597,6 @@ If you use MLB's 2026 bargaining proposals, label them by date and verify that t
 
 [^premier-league]: Premier League, “Premier League Relegation: Your Questions Answered,” accessed August 16, 2026, <https://www.premierleague.com/en/news/4657245/202526-premier-league-relegation-faq>; Premier League, “The 2026/27 Premier League Season Officially Starts,” accessed August 16, 2026, <https://www.premierleague.com/en/news/4673099/the-202627-premier-league-season-officially-starts>. The sources establish three promotions and relegations and the governed exchange of league share certificates. They do not imply unrestricted entry.
 
-[^mls-structure]: Major League Soccer, “About Major League Soccer,” accessed August 16, 2026, <https://www.mlssoccer.com/news/about-major-league-soccer-x8297>; Major League Soccer, “J. Todd Durbin,” accessed August 16, 2026, <https://www.mlssoccer.com/news/j-todd-durbin>; Major League Soccer, “2026 MLS Roster Rules and Regulations,” accessed August 16, 2026, <https://www.mlssoccer.com/news/2026-mls-roster-rules-and-regulations>. The sources establish central league organization and player-contract control alongside meaningful club-operator decisions; legal implications are reserved for Chapter 7.
+[^mls-structure]: Major League Soccer, “About Major League Soccer,” accessed August 16, 2026, <https://www.mlssoccer.com/news/about-major-league-soccer-x8297>; Major League Soccer, “J. Todd Durbin,” accessed August 16, 2026, <https://www.mlssoccer.com/news/j-todd-durbin>; Major League Soccer, “2026 MLS Roster Rules and Regulations,” accessed August 16, 2026, <https://www.mlssoccer.com/news/2026-mls-roster-rules-and-regulations>. The sources establish central league organization and player-contract control alongside meaningful club-operator decisions; legal implications are reserved for Chapter 8.
 
 [^nba-lottery]: NBA, “NBA Draft Lottery: Odds, History and How It Works,” accessed August 16, 2026, <https://www.nba.com/news/nba-draft-lottery-explainer>; NBA, “NBA Draft Lottery Changes Over the Years,” accessed August 16, 2026, <https://www.nba.com/news/nba-draft-lottery-changes-over-the-years>. The first source documents the 14 percent odds used for the three worst records in the 2026 lottery. The second describes an announced redesign beginning in 2027; implementation must be rechecked before publication.

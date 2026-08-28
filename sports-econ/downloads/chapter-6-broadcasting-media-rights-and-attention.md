@@ -2,6 +2,8 @@
 
 A stadium places a hard limit on the number of people who can attend a game. Media breaks that limit. A national broadcast can put the same event in front of millions of viewers at once, including fans who live hundreds or thousands of miles from the venue. That larger audience helps explain why broadcasting has become central to the economics of teams and leagues.
 
+Chapter 5 showed how loyalty, identity, and brand relationships help create fan attention that teams and sponsors can monetize. Broadcasting scales that attention beyond the venue and connects it to platforms and advertisers.
+
 Yet the media business now presents a puzzle. Viewers have more entertainment choices than ever: broadcast channels, cable networks, streaming services, social media, video games, podcasts, and an almost unlimited library of on-demand programs. The cable bundle that financed expensive sports networks has lost subscribers. Fans routinely complain that games are scattered across too many outlets. Under those conditions, one might expect the value of sports media rights to collapse.
 
 Instead, major live-sports rights remain extremely valuable. The reason is not simply that “sports are popular.” The more important economic fact is that certain sports—especially NFL football—can still assemble a large audience at the same time. In a fragmented entertainment market, the ability to coordinate attention has become scarce.
@@ -55,7 +57,7 @@ Nielsen's May 2025 television-set data provide one snapshot of the change. Strea
 
 The contrast with an NFL Sunday is instructive. In October 2025, Nielsen reported that broadcast television's share of viewing averaged 22.0 percent from Monday through Saturday but rose to 27.3 percent on Sundays. NFL games on CBS, Fox, and NBC were the month's three leading programs, each averaging more than 20 million viewers.[^nielsen-nfl-gauge]
 
-<div id="tab:ch05-fragmentation-and-mass-reach">
+<div id="tab:ch06-fragmentation-and-mass-reach">
 
 | Evidence | Reported measure | What it helps establish | What it does not establish |
 | --- | --- | --- | --- |
@@ -63,11 +65,11 @@ The contrast with an NFL Sunday is instructive. In October 2025, Nielsen reporte
 | U.S. television use, October 2025 | Broadcast share: 22.0% Monday–Saturday and 27.3% Sunday | NFL programming can pull viewing back toward broad broadcast distribution. | It does not isolate the causal effect of football from every other Sunday difference. |
 | 2025 NFL regular season | 18.7 million average viewers per game across measured television and digital platforms | The league repeatedly assembled a large simultaneous audience. | It is not the number of unique viewers, the audience for every game, or a fixed-method comparison with earlier seasons. |
 
-**Table 5.1: Fragmented television and NFL mass reach.** The measures answer different questions and should not be combined into one ranking. Nielsen changed important parts of its measurement system in 2025, including expanded out-of-home coverage and the use of Big Data + Panel.
+**Table 6.1: Fragmented television and NFL mass reach.** The measures answer different questions and should not be combined into one ranking. Nielsen changed important parts of its measurement system in 2025, including expanded out-of-home coverage and the use of Big Data + Panel.
 
 </div>
 
-The 2025 NFL regular season averaged 18.7 million viewers per game according to the league and Nielsen. The number is impressive, but the measurement warning in Table 5.1 matters: Nielsen expanded out-of-home measurement and began using its Big Data + Panel method during 2025. Part of a change from an earlier season can reflect how viewing was counted rather than a pure change in behavior.[^nfl-2025-audience] The economically durable point is not one record or one percentage increase. It is the league's repeated ability to assemble very large live audiences across an entire season.
+The 2025 NFL regular season averaged 18.7 million viewers per game according to the league and Nielsen. The number is impressive, but the measurement warning in Table 6.1 matters: Nielsen expanded out-of-home measurement and began using its Big Data + Panel method during 2025. Part of a change from an earlier season can reflect how viewing was counted rather than a pure change in behavior.[^nfl-2025-audience] The economically durable point is not one record or one percentage increase. It is the league's repeated ability to assemble very large live audiences across an entire season.
 
 ::: sideline
 **The NFL Streaming Maze Reaches Congress**
@@ -80,7 +82,7 @@ The NFL and a streaming platform have an economic reason to prefer exclusivity. 
 
 Congress has begun examining that trade-off. A May 2025 Senate Commerce Committee hearing focused on the increasingly complicated sports “channel guide.” A June 2026 House Judiciary hearing examined whether the Sports Broadcasting Act's limited antitrust protection still serves consumers in a market increasingly divided among broadcast, cable, and streaming outlets. Senator Tammy Baldwin also introduced the *For the Fans Act*, which would require a free live option for local fans and address certain streaming blackouts. As of August 2026, the bill had been introduced and referred to committee; it had not become law.[^sports-streaming-policy]
 
-A free-access requirement would improve reach for the covered fans, but it could reduce the exclusivity that makes a platform willing to pay a premium. The policy question is therefore not whether access is valuable. It is who should pay for broader access, how broadly “local” should be defined, and whether the benefits leagues receive from coordinated rights sales should carry public-access obligations. Chapter 7 returns to the Sports Broadcasting Act and the boundary between necessary league coordination and market power.
+A free-access requirement would improve reach for the covered fans, but it could reduce the exclusivity that makes a platform willing to pay a premium. The policy question is therefore not whether access is valuable. It is who should pay for broader access, how broadly “local” should be defined, and whether the benefits leagues receive from coordinated rights sales should carry public-access obligations. Chapter 8 returns to the Sports Broadcasting Act and the boundary between necessary league coordination and market power.
 :::
 
 ::: warning
@@ -99,7 +101,7 @@ Second, the schedule coordinates viewers. A popular on-demand drama can accumula
 
 Third, sports produce repeated events with uncertain outcomes. A scripted series must keep inventing stories. A league generates a new set of contests every week, and the uncertainty is partly supplied by the competition itself. A weak game can disappoint, but the next one arrives on schedule.
 
-Economists call the idea that fan interest may increase when a contest is less predictable the **uncertainty of outcome hypothesis**. The hypothesis helps explain the appeal of live sports, but it is not a universal law. Fans may also value a likely home victory, star players, high-quality play, rivalries, or even a dominant team. Chapter 8 examines the evidence and the connection between uncertainty and competitive balance.
+Economists call the idea that fan interest may increase when a contest is less predictable the **uncertainty of outcome hypothesis**. The hypothesis helps explain the appeal of live sports, but it is not a universal law. Fans may also value a likely home victory, star players, high-quality play, rivalries, or even a dominant team. Chapter 9 examines the evidence and the connection between uncertainty and competitive balance.
 
 Fourth, sports are social. Fans discuss a game while it happens, follow it with friends, react on social media, and avoid spoilers. These interactions increase the cost of watching much later. The same behavior that makes the game valuable to fans helps a media partner preserve a live audience.
 
@@ -135,10 +137,10 @@ The main participants perform different jobs:
 
 The boundaries are not fixed. A streaming company can be both the media partner and the distributor. A league can operate its own production and direct subscription service. A traditional network can place the same game on broadcast television and a streaming app. The economic functions remain even when one company performs several of them.
 
-<!-- Figure production slot: fig:ch05-media-rights-value-chain. -->
+<!-- Figure production slot: fig:ch06-media-rights-value-chain. -->
 
 ::: aifiguredescription
-**Figure description: `fig:ch05-media-rights-value-chain`**
+**Figure description: `fig:ch06-media-rights-value-chain`**
 
 The figure separates an upstream rights market from downstream media relationships. On the left, a league or team supplies a defined package of game rights to a broadcaster or streaming platform; a reverse arrow shows a guaranteed or contingent rights payment. On the right, the platform supplies telecasts and access to viewers or subscribers, who return attention, subscription payments, and possibly user data. Advertisers supply advertising payments to the platform and receive access to viewer attention. A distributor or device layer sits between the platform and some viewers, providing carriage, authentication, billing, and technical access in exchange for payments or a negotiated revenue share. Secondary arrows show the platform returning audience information and promotional exposure to the league. The figure shows functions rather than a universal legal structure: one firm may perform several roles, rights may be nonexclusive, and not every service collects both advertising and subscription revenue.
 :::
@@ -195,10 +197,10 @@ ESPN provides an unusually useful case because the same company has participated
 
 Disney's annual reports estimate that the domestic linear ESPN channel reached 92 million subscribers in 2015 and 61 million in 2025—a decline of 31 million, or about 33.7 percent. The series is not perfectly uniform. Disney changed how it treated some virtual multichannel distributors, and COVID-19 disrupted parts of the measurement process in 2020 and 2021. Those caveats make individual annual changes less precise, but they do not erase the long decline in linear reach.[^disney-espn-series]
 
-<!-- Figure production slot: fig:ch05-espn-linear-reach. -->
+<!-- Figure production slot: fig:ch06-espn-linear-reach. -->
 
 ::: aifiguredescription
-**Figure description: `fig:ch05-espn-linear-reach`**
+**Figure description: `fig:ch06-espn-linear-reach`**
 
 The line chart places Disney fiscal years 2015 through 2025 on the horizontal axis and estimated domestic linear ESPN subscribers, in millions, on the vertical axis. The series begins at 92 million in 2015, declines to 83 million in 2019, reports 84 million in 2020, and then falls to 76, 74, 71, 66, and 61 million from 2021 through 2025. A note identifies the 31 million, 33.7 percent decline from 2015 to 2025. Definition annotations explain that 2016 excluded digital multichannel distributors, 2017 and 2018 included certain digital distributors, 2019 through 2024 included the majority of digital over-the-top distributors, and 2025 included traditional and virtual multichannel distributors. A separate warning notes COVID-related measurement disruption in 2020 and 2021. The chart shows estimated channel reach, not viewers, ESPN+ accounts, direct-service customers, revenue, or profit, and it should not be used to infer a precise causal effect of cord-cutting on any one financial measure.
 :::
@@ -282,10 +284,10 @@ As more companies reserved valuable programs for their own services, the market 
 
 This is why **unbundling can produce re-bundling**. Consumers value lower search and transaction costs. Platforms value lower churn and a larger surface on which to recommend content. Rights holders value reach. These incentives create new combinations: channel packages delivered over the internet, services sold together at a discount, authenticated access included with another subscription, and interfaces that aggregate schedules even when payments remain separate.
 
-<!-- Figure production slot: fig:ch05-bundle-dtc-rebundling. -->
+<!-- Figure production slot: fig:ch06-bundle-dtc-rebundling. -->
 
 ::: aifiguredescription
-**Figure description: `fig:ch05-bundle-dtc-rebundling`**
+**Figure description: `fig:ch06-bundle-dtc-rebundling`**
 
 The figure has three left-to-right panels. The cable-bundle panel shows one household payment going to a multichannel distributor, which provides a package of sports and entertainment channels; the distributor sends carriage payments to networks, which send rights payments to leagues. The fragmented-direct panel shows the household making separate payments to several league or platform apps and searching across separate interfaces, with each service providing a narrower set of games. The re-bundled panel shows an aggregator or virtual distributor receiving one combined payment or authentication relationship, assembling several services or access entitlements, and directing the viewer to games while underlying rights remain divided. Advertising arrows enter the network and app layers in all relevant panels. The figure highlights payment count, access paths, and the organization of rights. It does not imply that all bundles contain the same content, that re-bundling recreates the old cable economics exactly, or that a la carte access always raises or lowers the total price.
 :::
@@ -302,9 +304,9 @@ A league rarely sells “television rights” as one undivided object. It create
 
 Package design affects competition among bidders. If all games are placed into one exclusive package, only firms capable of paying for and distributing the entire product can compete. Dividing inventory can attract more bidders and reach audiences across more platforms. It can also increase fragmentation for fans and reduce the exclusivity value of any one package.
 
-The current U.S. structures in Table 5.2 illustrate mixed distribution rather than a simple replacement of old television by streaming.
+The current U.S. structures in Table 6.2 illustrate mixed distribution rather than a simple replacement of old television by streaming.
 
-<div id="tab:ch05-rights-distribution-matrix">
+<div id="tab:ch06-rights-distribution-matrix">
 
 | League | Selected U.S. national structure, as of August 2026 | Mix of access | Economic point |
 | --- | --- | --- | --- |
@@ -313,7 +315,7 @@ The current U.S. structures in Table 5.2 illustrate mixed distribution rather th
 | MLB | National agreements added ESPN, NBCUniversal, and Netflix packages for 2026–28 while other national packages continue. | Broadcast, cable, streaming, marquee-event exclusivity, an out-of-market service, and separate local arrangements. | Different partners receive different kinds of inventory; national and local access remain distinct. |
 | NHL | U.S. national agreements with Disney/ESPN and Warner Bros. Discovery platforms run through 2027–28. | Broadcast, cable, and streaming, with regular-season and playoff inventory divided between partner groups. | Two partner groups provide reach and competition while splitting the audience across outlets. |
 
-**Table 5.2: Selected U.S. national rights architectures.** This is a structure table, not a ranking of contract values or a complete viewing guide. Package terms and platform names can change, so the underlying official announcements must be checked when the chapter is updated.[^nfl-rights] [^nba-rights] [^mlb-rights] [^nhl-rights]
+**Table 6.2: Selected U.S. national rights architectures.** This is a structure table, not a ranking of contract values or a complete viewing guide. Package terms and platform names can change, so the underlying official announcements must be checked when the chapter is updated.[^nfl-rights] [^nba-rights] [^mlb-rights] [^nhl-rights]
 
 </div>
 
@@ -363,7 +365,7 @@ The Los Angeles Dodgers provide a more complicated example. During the club's 20
 
 The distinction is economically important. The large agreement expanded the Dodgers' long-run revenue capacity, while the benchmark limited how much of the media value entered the league's revenue-sharing calculation. Calling the arrangement a *bankruptcy loophole* captures part of the controversy but obscures its origin: the terms helped establish the value of an uncertain asset in a court-supervised sale, and MLB participated in the settlement and later adjustment.
 
-Fans therefore have a legitimate point, but often make it too strongly. The media arrangement helps explain why the Dodgers can support an unusually large payroll. It does not by itself explain every roster decision or competitive result. Market size, attendance, sponsorships, ownership resources, contract deferrals, luxury-tax payments, and the owners' willingness to exchange profit for winning also matter. Chapter 8 will return to the harder question: when does a financial advantage become a competitive-balance problem?
+Fans therefore have a legitimate point, but often make it too strongly. The media arrangement helps explain why the Dodgers can support an unusually large payroll. It does not by itself explain every roster decision or competitive result. Market size, attendance, sponsorships, ownership resources, contract deferrals, luxury-tax payments, and the owners' willingness to exchange profit for winning also matter. Chapter 9 will return to the harder question: when does a financial advantage become a competitive-balance problem?
 :::
 
 ::: casestudy
@@ -487,17 +489,17 @@ Shared national revenue includes more than media rights. It also includes league
 
 From fiscal 2020 through fiscal 2026, Packers shared national revenue rose from about \$296.0 million to \$453.2 million. Local revenue rose from about \$210.9 million to \$299.8 million, but the path was interrupted sharply in fiscal 2021, which covered the largely fanless 2020 season. Local revenue fell to about \$61.8 million, while shared national revenue increased to about \$309.2 million.[^packers-finances]
 
-<!-- Figure production slot: fig:ch05-packers-national-local-revenue. -->
+<!-- Figure production slot: fig:ch06-packers-national-local-revenue. -->
 
 ::: aifiguredescription
-**Figure description: `fig:ch05-packers-national-local-revenue`**
+**Figure description: `fig:ch06-packers-national-local-revenue`**
 
 The grouped line chart places Packers fiscal years 2020 through 2026 on the horizontal axis and nominal revenue in millions of dollars on the vertical axis. The shared-national-revenue series rises from 295.971 in fiscal 2020 to 309.206, 347.270, 374.352, 402.3, 432.6, and 453.2 million dollars. The local-revenue series begins at 210.914 million, falls sharply to 61.849 million in fiscal 2021, then rebounds to 231.741, 235.922, 251.8, 286.4, and 299.8 million dollars. A note connects fiscal 2021 to the largely fanless 2020 NFL season. The figure labels the national series “shared national revenue,” not “media revenue,” because it also includes league sponsorship, licensing, and other shared sources. It shows nominal accounting revenue rather than profit, cash flow, inflation-adjusted purchasing power, or a causal estimate of the value of broadcasting.
 :::
 
 The pandemic observation is unusually revealing. When fans could not attend normally, local game-day activity collapsed. The games were still played and nationally distributed, so the shared national category did not collapse with it. This does not prove that every dollar of national revenue came from broadcasting. It shows why a stable shared national stream can insulate a team from shocks concentrated in its stadium and local market.
 
-The same structure affects league organization. If national revenue is shared relatively evenly, a club in a small local market can receive the same national distribution as a club in a much larger city. Local revenue can still differ substantially. Chapter 6 will examine why teams share some revenue, retain other revenue, and cooperate to produce a league while competing on the field.
+The same structure affects league organization. If national revenue is shared relatively evenly, a club in a small local market can receive the same national distribution as a club in a much larger city. Local revenue can still differ substantially. Chapter 7 will examine why teams share some revenue, retain other revenue, and cooperate to produce a league while competing on the field.
 
 ## Media Rights And Franchise Value
 
@@ -513,7 +515,7 @@ where $V$ is the asset's value, $E(CF_t)$ is expected cash flow in future period
 
 The formula is a bridge, not a full valuation model. A \$1 increase in current revenue does not mechanically add \$1—or any other fixed multiple—to franchise value. The effect depends on whether the revenue persists, what costs accompany it, how it is shared, what taxes and reinvestment are required, and how risky the future stream is. Buyers may also value control, status, strategic assets, or expected resale gains.
 
-The correct short version is: **durable expected media revenue can raise franchise value because it increases expected future benefits of ownership.** Chapter 6 will take up the harder questions of profitability, owner objectives, capital appreciation, and why observed sale prices can exceed simple accounting measures.
+The correct short version is: **durable expected media revenue can raise franchise value because it increases expected future benefits of ownership.** Chapter 7 will take up the harder questions of profitability, owner objectives, capital appreciation, and why observed sale prices can exceed simple accounting measures.
 
 ## The Connected Media Decision
 
@@ -615,7 +617,7 @@ Your memo must:
 [^sports-streaming-policy]: U.S. Senate Committee on Commerce, Science, and Transportation, “Field of Streams: The New Channel Guide for Sports Fans,” hearing, May 6, 2025, <https://www.congress.gov/event/119th-congress/senate-event/336925/text>; U.S. House Committee on the Judiciary, “Examining the Sports Broadcasting Act,” hearing, June 10, 2026, <https://judiciary.house.gov/committee-activity/hearings/examining-sports-broadcasting-act>; *For the Fans Act*, S. 4301, 119th Congress, introduced April 15, 2026, <https://www.govinfo.gov/app/details/BILLS-119s4301is>; Ben Nuckols, “Congress Asks NFL Commissioner to Testify on TV Deals,” Associated Press, June 1, 2026, <https://apnews.com/article/nfl-congress-goodell-broadcast-streaming-13f518be470d8942a79bad00b77c94fb>. The congressional hearings and proposed bill establish that scrutiny is real, not that Congress has enacted a new access mandate. The NFL told the Associated Press that 87 percent of its games were available on free television and that streaming-exclusive games remained available over the air in the participating teams' home markets.
 [^rochet-tirole]: Jean-Charles Rochet and Jean Tirole, “Platform Competition in Two-Sided Markets,” *Journal of the European Economic Association* 1, no. 4 (2003): 990–1029, <https://doi.org/10.1162/154247603322493212>. The chapter uses the article for the cross-side-effects logic while separating the platform relationship from the upstream purchase of sports rights.
 [^crawford-bundling]: Gregory S. Crawford, “The Discriminatory Incentives to Bundle in the Cable Television Industry,” *Quantitative Marketing and Economics* 6, no. 1 (2008): 41–78, <https://doi.org/10.1007/s11129-007-9031-7>. The study finds qualified rather than universal support for the discriminatory-bundling mechanism, which is why the chapter does not claim that every channel bundle works identically.
-[^disney-espn-series]: The Walt Disney Company annual reports for fiscal years 2015–2025. The extracted observations, exact report links, page locators, and changing subscriber definitions are documented in the project dataset `data/ch05/espn-linear-subscribers-2015-2025.csv`. The 2025 report is available at <https://investors.thewaltdisneycompany.com/files/doc_financials/2025/ar/2025-Annual-Report.pdf>.
+[^disney-espn-series]: The Walt Disney Company annual reports for fiscal years 2015–2025. The extracted observations, exact report links, page locators, and changing subscriber definitions are documented in the project dataset `data/ch06/espn-linear-subscribers-2015-2025.csv`. The 2025 report is available at <https://investors.thewaltdisneycompany.com/files/doc_financials/2025/ar/2025-Annual-Report.pdf>.
 [^disney-2025]: The Walt Disney Company, *2025 Annual Report*, pp. 21, 74–76 and 91, <https://investors.thewaltdisneycompany.com/files/doc_financials/2025/ar/2025-Annual-Report.pdf>. The cited revenue is gross domestic ESPN affiliate and subscription revenue, not a per-channel carriage fee or standalone profit measure. The report also states that ESPN's direct service began in August 2025.
 [^espn-aggregation]: National Football League, “NFL Partnerships,” accessed August 15, 2026, <https://www.nfl.com/partners/nfln-partners-update>, reports that the ESPN–NFL transactions closed January 31, 2026. For the assets, retained rights, and equity structure, see National Football League, “ESPN Acquiring NFL Network, Other NFL Media Assets in Exchange for 10 Percent Equity Stake in ESPN,” August 6, 2025, <https://www.nfl.com/news/espn-acquiring-nfl-network-other-nfl-media-assets-in-exchange-for-10-percent-equity-stake-in-espn>. For ESPN's MLB.TV sales rights and midweek package, see Major League Baseball, “MLB Announces New 3-Year Rights Deals with ESPN, NBC, Netflix,” November 19, 2025, <https://www.mlb.com/news/mlb-announces-media-rights-deals-with-espn-nbc-netflix>.
 [^nfl-rights]: National Football League, “NFL Completes Long-Term Media Distribution Agreements Through 2033 Season,” March 18, 2021, accessed August 15, 2026, <https://www.nfl.com/news/nfl-completes-long-term-media-distribution-agreements-through-2033-season>.
@@ -629,4 +631,4 @@ Your memo must:
 [^premierleague-uk]: Premier League, “Premier League Completes Sales Process for UK Live Rights & Free-to-Air Highlights,” December 4, 2023, <https://www.premierleague.com/en/news/3807882>; Premier League, “Broadcasting,” accessed August 15, 2026, <https://www.premierleague.com/en/about/faq/broadcast>. The closed period applies to live UK video distribution of the Saturday 3 p.m. window; the chapter does not claim that its attendance effect has been causally established.
 [^premierleague-us]: Premier League, “NBC Sports Extends Broadcast Deal with Premier League,” November 18, 2021, <https://www.premierleague.com/en/news/2356002>. The six-year U.S. agreement runs through 2028 and covers all 380 matches each season across NBC platforms.
 [^kagel-levin]: John H. Kagel and Dan Levin, “The Winner's Curse and Public Information in Common Value Auctions,” *American Economic Review* 76, no. 5 (1986): 894–920, <https://www.jstor.org/stable/1816459>. The experiments show how failure to adjust for the information contained in winning can generate aggressive bids and negative profits in common-value settings.
-[^packers-finances]: Green Bay Packers annual financial reports and official annual summaries for fiscal years 2020–2026. The extracted values, report links, definitions, and source hierarchy are documented in `data/ch05/packers-national-local-revenue-2020-2026.csv`. For the latest observation, see Green Bay Packers, “Packers Finances Remain Strong Amidst Changing NFL Landscape,” July 2026, <https://www.packers.com/news/packers-finances-remain-strong-amidst-changing-nfl-landscape-2026>. Shared national revenue includes more than media rights.
+[^packers-finances]: Green Bay Packers annual financial reports and official annual summaries for fiscal years 2020–2026. The extracted values, report links, definitions, and source hierarchy are documented in `data/ch06/packers-national-local-revenue-2020-2026.csv`. For the latest observation, see Green Bay Packers, “Packers Finances Remain Strong Amidst Changing NFL Landscape,” July 2026, <https://www.packers.com/news/packers-finances-remain-strong-amidst-changing-nfl-landscape-2026>. Shared national revenue includes more than media rights.

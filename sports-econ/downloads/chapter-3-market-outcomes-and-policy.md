@@ -194,7 +194,7 @@ The four-unit surplus means that sellers would like to provide more than buyers 
 
 A price floor is less natural as a ticket-market example because teams ordinarily want the freedom to discount unsold seats. Labor provides a clearer illustration because a wage is the price of labor. Consider an explicitly hypothetical competitive market for stadium-worker hours. A binding wage floor increases the quantity of labor people want to supply while reducing the quantity employers want to hire. The result is excess labor supply: more people seek the covered work than employers offer at that wage.
 
-This deliberately simple example should not be applied mechanically to a collectively bargained minimum player salary. Actual sports labor markets can involve employer market power, unions, roster limits, contracts, differences in worker productivity, and adjustments in hours or working conditions. Chapters 10 and 11 examine those institutions. The immediate lesson is narrower: in the competitive model, a binding floor creates a surplus, and the scarce jobs must then be allocated somehow.
+This deliberately simple example should not be applied mechanically to a collectively bargained minimum player salary. Actual sports labor markets can involve employer market power, unions, roster limits, contracts, differences in worker productivity, and adjustments in hours or working conditions. Chapters 13 and 14 examine those institutions. The immediate lesson is narrower: in the competitive model, a binding floor creates a surplus, and the scarce jobs must then be allocated somehow.
 
 ## Case Study: The Premier League's £30 Away-Ticket Cap
 
@@ -568,7 +568,7 @@ Public funding describes who pays. Public-good status depends on rivalry and exc
 
 The competitive benchmark also assumes that individual buyers and sellers take the market price as given. Many sports organizations have discretion over price, quantity, product design, eligibility, and access. A team selling tickets is better modeled as a **price searcher** choosing among price-quantity combinations on its demand curve.
 
-Market power can allow a seller to restrict quantity and charge a price above marginal cost. That can redistribute surplus toward the seller and eliminate trades that would have occurred under the competitive benchmark. But Chapter 3 does not need a survey of every market structure. Chapter 4 develops ticket pricing and capacity; Chapters 6 and 7 examine teams, leagues, coordination, governance, and antitrust.
+Market power can allow a seller to restrict quantity and charge a price above marginal cost. That can redistribute surplus toward the seller and eliminate trades that would have occurred under the competitive benchmark. But Chapter 3 does not need a survey of every market structure. Chapter 4 develops ticket pricing and capacity; Chapters 7 and 8 examine teams, leagues, coordination, governance, and antitrust.
 
 The short lesson is methodological. Before using a competitive policy diagram, ask whether the institution behaves like a price-taking market. If not, the diagram may remain a useful benchmark, but the relevant counterfactual must incorporate market power.
 
