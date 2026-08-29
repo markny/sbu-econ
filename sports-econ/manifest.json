@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "eb12761649135644661804e0c471f1a85f8e6e24",
+    "commit": "0d35c8ff2f7a290850340786aca7f94d8b127d20",
     "dirty": false
   },
   "chapters": [
@@ -62,13 +62,13 @@
     {
       "number": 10,
       "slug": "the-economics-of-sports-stadiums",
-      "status": "forthcoming",
+      "status": "available",
       "title": "The Economics of Sports Stadiums"
     },
     {
       "number": 11,
       "slug": "the-olympics-and-mega-sporting-events",
-      "status": "forthcoming",
+      "status": "available",
       "title": "The Olympics and Mega Sporting Events"
     },
     {

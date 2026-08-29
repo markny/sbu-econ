@@ -858,6 +858,28 @@ tbody tr:nth-child(even) {
   .anchored-table[id="tab:ch02-elasticity-family"] table {
     min-width: 44rem;
   }
+
+  .chapter-figure[id="fig:ch10-local-spending-filter"],
+  .chapter-figure[id="fig:ch11-host-risk-lifecycle"] {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .chapter-figure[id="fig:ch10-local-spending-filter"] img,
+  .chapter-figure[id="fig:ch11-host-risk-lifecycle"] img {
+    max-width: none;
+    min-width: 62rem;
+  }
+
+  .chapter-figure[id="fig:ch10-bargaining-and-approval"] {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .chapter-figure[id="fig:ch10-bargaining-and-approval"] img {
+    max-width: none;
+    min-width: 42rem;
+  }
 }
 
 .chapter-figure {
