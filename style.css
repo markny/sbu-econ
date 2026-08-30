@@ -64,6 +64,8 @@ a:hover {
 .site-nav {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   gap: 24px;
   font-size: 0.92rem;
   font-weight: 600;
@@ -141,6 +143,18 @@ a:hover {
 
 .sports-course {
   background: #174b67;
+}
+
+.law-course {
+  background: #6b3f35;
+}
+
+.law-course .section-copy {
+  color: #f1e3df;
+}
+
+.law-course .chapter-preview small {
+  color: #ead1c8;
 }
 
 .course-layout {
