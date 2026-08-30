@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 8: Contracts, Bargaining, and Enforcement | Rules, Rights, and Runtimes</title>
+  <meta name="description" content="A custom restaurant kitchen reveals how courts, reputation, arbitration, contract terms, and remedies make cooperation across time credible.">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <link rel="stylesheet" href="../../assets/book.css">
+  <link rel="stylesheet" href="../../assets/publication.css">
+</head>
+<body>
+  <div class="reader-page">
+    <header class="site-header">
+      <a class="book-name" href="../../">Rules, Rights, and Runtimes</a>
+      <p>Law and Economics in the Age of AI</p>
+    </header>
+
+    <div class="reader-layout">
+      <aside class="reader-sidebar">
+        <div class="sidebar-inner">
+          <p class="sidebar-kicker">Online textbook</p>
+          <p class="sidebar-chapter">Chapter 8 of 16</p>
+
+          <nav class="chapter-list" aria-label="Available chapters">
+            <p class="nav-heading">Chapters</p>
+            <ol>
+<li><a href="../ch01-what-is-law-and-economics/"><span>1</span>What Is Law and Economics?</a></li>
+<li><a href="../ch02-microeconomic-toolkit-for-law/"><span>2</span>The Microeconomic Toolkit for Law</a></li>
+<li><a href="../ch03-law-courts-and-legal-institutions/"><span>3</span>Law, Courts, and Legal Institutions</a></li>
+<li><a href="../ch04-transaction-costs-and-coase-theorem/"><span>4</span>Transaction Costs and the Coase Theorem</a></li>
+<li><a href="../ch05-property-rights-and-institutional-evolution/"><span>5</span>Property Rights and Institutional Evolution</a></li>
+<li><a href="../ch06-intellectual-property-innovation-and-information-goods/"><span>6</span>Intellectual Property, Innovation, and Information Goods</a></li>
+<li><a href="../ch07-torts-accidents-and-incentives/"><span>7</span>Torts, Accidents, and Incentives</a></li>
+<li><a aria-current="page" href="../ch08-contracts-bargaining-and-enforcement/"><span>8</span>Contracts, Bargaining, and Enforcement</a></li>
+<li><a href="../ch09-courts-litigation-and-dispute-resolution/"><span>9</span>Courts, Litigation, and Dispute Resolution</a></li>
+<li><a href="../ch10-common-law-efficiency/"><span>10</span>Does the Common Law Tend Toward Efficiency?</a></li>
+<li><a href="../ch11-crime-punishment-and-social-order/"><span>11</span>Crime, Punishment, and Social Order</a></li>
+<li><a href="../ch12-corporation-as-legal-technology/"><span>12</span>The Corporation as a Legal Technology</a></li>
+<li><a href="../ch13-regulation-and-public-choice/"><span>13</span>Regulation and Public Choice</a></li>
+<li><a href="../ch14-antitrust-competition-and-market-power/"><span>14</span>Antitrust, Competition, and Market Power</a></li>
+<li><a href="../ch15-platforms-code-and-ai/"><span>15</span>Platforms, Code, and AI: New Questions for Law and Economics</a></li>
+<li><a href="../ch16-from-rights-to-runtimes/"><span>16</span>From Rights to Runtimes: The Long Arc of Legal Technology</a></li>
+            </ol>
+          </nav>
+
+          <nav class="contents-nav" aria-label="Chapter contents">
+            <p class="nav-heading">In this chapter</p>
+            <ol>
+<li><a href="#the-promise-that-makes-the-project-possible">The Promise That Makes the Project Possible</a></li>
+<li><a href="#why-promises-need-enforcement">Why Promises Need Enforcement</a></li>
+<li><a href="#formal-and-informal-enforcement">Formal and Informal Enforcement</a></li>
+<li><a href="#designing-the-relationship-before-breach">Designing the Relationship Before Breach</a></li>
+<li><a href="#which-promises-should-law-enforce">Which Promises Should Law Enforce?</a></li>
+<li><a href="#contracts-cannot-specify-everything">Contracts Cannot Specify Everything</a></li>
+<li><a href="#remedies-as-incentive-systems">Remedies as Incentive Systems</a></li>
+<li><a href="#efficient-performance-breach-and-renegotiation">Efficient Performance, Breach, and Renegotiation</a></li>
+<li><a href="#reliance-foreseeability-and-mitigation">Reliance, Foreseeability, and Mitigation</a></li>
+<li><a href="#specific-performance-and-bargaining-breakdown">Specific Performance and Bargaining Breakdown</a></li>
+<li><a href="#standard-forms-clickwrap-and-meaningful-assent">Standard Forms, Clickwrap, and Meaningful Assent</a></li>
+<li><a href="#smart-contracts-and-ai-mediated-agreement">Smart Contracts and AI-Mediated Agreement</a></li>
+<li><a href="#big-picture">Big Picture</a></li>
+<li><a href="#chapter-study-map">Chapter Study Map</a></li>
+<li><a href="#review-questions">Review Questions</a></li>
+<li><a href="#economic-reasoning-questions">Economic Reasoning Questions</a></li>
+<li><a href="#law-and-economics-lab">Law and Economics Lab</a></li>
+            </ol>
+          </nav>
+
+          <div class="download-links">
+            <a class="download-link" href="../../downloads/markdown/ch08_contracts_bargaining_and_enforcement.md" download>Download chapter Markdown</a>
+            <a class="download-link" href="../../downloads/slides/ch08_contracts_bargaining_and_enforcement.pptx" download>Download lecture PowerPoint</a>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="chapter-header">
+          <p class="chapter-number">Chapter 8</p>
+          <h1 id="chapter-title">Contracts, Bargaining, and Enforcement</h1>
+          <p class="chapter-deck">A custom restaurant kitchen reveals how courts, reputation, arbitration, contract terms, and remedies make cooperation across time credible.</p>
+          <div class="chapter-meta" aria-label="Chapter information">
+            <span>Undergraduate level</span>
+            <span>8,693 words</span>
+            <span>Review edition</span>
+          </div>
+        </header>
+
+        <article class="chapter-body">
+<h2 id="the-promise-that-makes-the-project-possible">The Promise That Makes the Project Possible</h2>
+<p>A restaurant owner signs a lease for an empty storefront and hires a contractor to build a custom commercial kitchen. The restaurant is scheduled to open in four months. The owner pays a deposit, hires a chef, recruits servers, advertises an opening date, and begins taking reservations. The contractor orders specialized ventilation equipment, schedules electricians and plumbers, and turns down other work.</p>
+<p>Neither side can complete this exchange in one instant. If the owner pays the full price first, the contractor could take the money and disappear. If the contractor completes the kitchen first, the owner could refuse final payment or demand a lower price after the equipment has been installed. Progress payments reduce the amount at risk at any one time, but they do not eliminate the problem. When three-quarters of a custom kitchen is attached to the owner’s building, replacing either party may be expensive.</p>
+<p>This is not merely a dispute waiting to happen. The possibility of later opportunism changes behavior now. The owner may refuse to hire workers or advertise because completion is uncertain. The contractor may avoid ordering specialized equipment because payment is uncertain. Both parties may choose a smaller and less productive project. A valuable restaurant may never open.</p>
+<p>A <strong>contract</strong> is an agreement that creates obligations the law may enforce. Contract doctrine determines which promises receive legal recognition, how incomplete agreements are interpreted, and what remedy follows breach. Economic analysis begins with a prior question: What useful cooperation becomes possible because the parties believe the promises?</p>
+<p>The immediate exchange of an apple for cash is a <strong>spot exchange</strong>. Payment and delivery can occur together, so neither party remains exposed for long. Construction, employment, leases, loans, warranties, supply agreements, software subscriptions, and research partnerships involve delayed or repeated performance. One party must often act while the other party still has an opportunity to defect.</p>
+<p>Chapter 4 showed that bargaining can create a cooperative surplus. That conclusion assumed that the parties could make an agreement and enforce it. This chapter opens that assumption. Promises can support cooperation only when each party expects the other to perform or bear a meaningful consequence for failing to do so.</p>
+<aside class="semantic-block semantic-keypoint"><p class="semantic-label">Key Point</p>
+<p><strong>Promises Matter Before Breach</strong></p>
+<p>A promise creates value when belief in its enforcement causes parties to invest, specialize, reveal information, or cooperate in ways they otherwise would avoid. Formal and informal enforcement both matter because both change expectations before a dispute occurs.</p>
+</aside>
+<p>The central economic function of contract is therefore not to punish disappointment. It is to make selected commitments credible enough that people can coordinate across time.</p>
+<h2 id="why-promises-need-enforcement">Why Promises Need Enforcement</h2>
+<p>A promise is easy to make when keeping it remains profitable. The harder problem arises when one party becomes vulnerable after the agreement.</p>
+<p>Suppose the restaurant owner has signed the lease, hired workers, and announced the opening. The contractor now demands an additional $40,000 to finish, even though costs have not changed. Refusing leaves the owner with an unusable storefront and a missed opening. Paying rewards the contractor for waiting until the owner’s alternatives became worse.</p>
+<p>The same problem can run in the other direction. Suppose the contractor has installed custom ductwork that has little value elsewhere. The owner threatens to withhold the final $40,000 unless the contractor accepts $20,000. Removing the equipment would be costly and might damage it. The owner can exploit the contractor’s reduced alternatives.</p>
+<p>This is a <strong>hold-up</strong> problem. An investment creates value within the relationship but becomes vulnerable to appropriation after it is made. The possibility of hold-up can cause parties to underinvest even when no one ultimately behaves opportunistically.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Relationship-Specific Investment</strong></p>
+<p>A relationship-specific investment is more valuable within a particular agreement than in its next-best use. That dependence can create cooperative surplus and expose the investor to hold-up.</p>
+</aside>
+<p>Not every sunk cost is relationship-specific. Advertising a restaurant may be sunk once purchased, but it can still benefit the restaurant under another contractor. A ventilation hood built to fit one unusual building may have little value outside that particular project. The relevant question is how much value the investment loses when the relationship ends.</p>
+<p>The parties would like to promise not to exploit each other later. Yet saying “I will not hold you up” does not make the statement credible. Once the other party invests, the short-run gain from renegotiating may remain. A credible commitment changes the future payoff or removes the future choice.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Credible Commitment</strong></p>
+<p>A commitment is credible when the other party expects the promisor to perform or bear a meaningful consequence for nonperformance.</p>
+</aside>
+<p>A damages remedy can make opportunistic breach costly. A deposit places money at risk. A performance bond gives a third party responsibility for payment after specified failure. Reputation threatens future business. Repeat dealing makes today’s defection costly tomorrow. A firm can discipline an employee. A platform can suspend an account. Code can release funds automatically after a verified event.</p>
+<p>Each mechanism changes the expected payoff from keeping or breaking the promise. None is perfect. A court can make an error. Reputation can spread inaccurate information. A bond requires a trusted decision-maker. Automated execution can respond correctly to bad data. Contract economics compares these imperfect commitment technologies.</p>
+<aside class="semantic-block semantic-historicalnote"><p class="semantic-label">Historical Note</p>
+<p><strong>Oliver Williamson and Governance</strong></p>
+<p>Oliver Williamson developed transaction-cost economics by asking how different governance arrangements handle contractual hazards. His focus was not simply whether an exchange occurred in a market or inside a firm. He examined the details of the transaction: uncertainty, repeated adaptation, the difficulty of measuring performance, and especially investments that cannot be redeployed without losing value.</p>
+<p>When investments are generic, either party can often change trading partners at modest cost. When investments are specific, the parties become bilaterally dependent. An incomplete agreement must then survive disturbances, disputed interpretations, and opportunities for strategic behavior. Long-term contracts, hostages, joint ownership, arbitration, and vertical integration can be understood as alternative safeguards.</p>
+<p>Williamson’s framework shifts attention from an imaginary complete contract to comparative governance. The relevant question is which arrangement supports cooperation and adaptation at the lowest total cost, including bargaining, monitoring, enforcement, error, and organizational costs. That question will return in Chapter 12 when the firm itself becomes the institution being explained.</p>
+</aside>
+<h2 id="formal-and-informal-enforcement">Formal and Informal Enforcement</h2>
+<p>People sometimes use <strong>enforcement</strong> as a synonym for filing a lawsuit. That is too narrow. A promise is enforced whenever breaking it triggers a consequence strong enough to affect behavior. The consequence may come from law, a private institution, a continuing relationship, a community, an organization, or a computer system.</p>
+<p><strong>Formal enforcement</strong> uses state-backed legal adjudication and remedies. <strong>Informal enforcement</strong> uses consequences such as lost trust, future business, or community standing without depending on an ordinary court judgment. Several institutions are hybrids. Private arbitration begins with agreement, produces a decision through a private forum, and may rely on courts or industry sanctions for enforcement. Platform rules are privately written but operate within a larger legal system. Automated transfers may be technically immediate while ownership and reversal remain legal questions.</p>
+<p><a id="tbl:ch08-enforcement-institutions"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Institution</th>
+<th>Source of credibility</th>
+<th>Information advantage</th>
+<th>Characteristic limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Repeat dealing</td>
+<td>Loss of future cooperation</td>
+<td>Parties observe the relationship over time</td>
+<td>Weakens near a known final interaction or when exit is easy</td>
+</tr>
+<tr>
+<td>Reputation and network sanctions</td>
+<td>Loss of future partners or standing</td>
+<td>Other traders can aggregate conduct across relationships</td>
+<td>Disputes may be hard for outsiders to verify; exclusion can create entry barriers</td>
+</tr>
+<tr>
+<td>Deposit, escrow, or performance bond</td>
+<td>Money or collateral is placed at risk</td>
+<td>A specified event or trusted decision-maker controls release</td>
+<td>Ties up assets and shifts the dispute to verification of the triggering event</td>
+</tr>
+<tr>
+<td>Merchant rules and arbitration</td>
+<td>Agreed forum plus industry sanctions or award enforcement</td>
+<td>Specialized decision-makers know trade practices</td>
+<td>May sacrifice public precedent, broad participation, or procedural safeguards</td>
+</tr>
+<tr>
+<td>Courts and legal remedies</td>
+<td>State-backed judgment and enforcement</td>
+<td>Public procedure can compel evidence and apply general law</td>
+<td>Litigation can be slow, costly, public, and error-prone</td>
+</tr>
+<tr>
+<td>Firm or platform governance</td>
+<td>Continued access, employment, account status, or internal discipline</td>
+<td>Organization observes activity within its own system</td>
+<td>Private power, conflicts of interest, opacity, and limited external review</td>
+</tr>
+<tr>
+<td>Automated execution</td>
+<td>Code transfers an asset when specified data satisfy a rule</td>
+<td>Fast and consistent treatment of machine-readable events</td>
+<td>Identity, authority, off-chain facts, mistake, fraud, and adaptation remain difficult</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 8.1. Promise-enforcement institutions.</strong> Formal, informal, and hybrid institutions create credibility through different consequences and information channels. The appropriate comparison depends on the transaction; the table does not rank whole legal systems.</p>
+<p>The mechanisms often complement one another. A contractor’s legal obligation supports a reputation for reliability. The reputation reduces the likelihood that the owner must sue. An arbitration clause can produce a specialized decision, while the possibility of court enforcement makes the resulting award more credible. A platform’s transaction records can improve both private dispute resolution and later legal proof.</p>
+<p>Repeat dealing works best when future business is valuable and neither party knows exactly when the relationship will end. If the restaurant hires the same produce supplier every week, cheating today risks years of future sales. A known final transaction weakens that discipline because tomorrow’s retaliation disappears. Parties may respond by requiring final payment, collateral, inspection, or another safeguard before the relationship ends.</p>
+<p>Reputation adds third parties. A builder who mistreats one customer may lose many future customers. But the information must be credible. A complicated construction dispute may leave outsiders unsure whether the contractor performed badly or the owner changed the requirements. Reviews can be manipulated, and a powerful network can exclude outsiders as well as discipline insiders.</p>
+<aside class="semantic-block semantic-keypoint"><p class="semantic-label">Key Point</p>
+<p><strong>Formal and Informal Enforcement Work Together</strong></p>
+<p>Reputation, repeat dealing, bonds, arbitration, courts, organizations, platforms, and code can substitute for one another, but they often work as complements. A formal remedy can strengthen reputation, while a strong relationship can reduce the need to invoke the remedy.</p>
+</aside>
+<h3 id="private-ordering-in-the-cotton-industry">Private Ordering in the Cotton Industry</h3>
+<p>Lisa Bernstein’s study of the cotton industry documents a setting in which private trade rules, merchant arbitration, information, and reputation supported commercial cooperation. Many transactions among merchants and mills were governed by industry rules and heard in merchant tribunals rather than litigated initially in ordinary public courts.</p>
+<aside class="semantic-block semantic-casestudy"><p class="semantic-label">Case Study</p>
+<p><strong>Rules, Arbitration, and Reputation in Cotton Trading</strong></p>
+<p>Cotton contracts required agreement about quality, delivery, timing, and price in a specialized trade. Industry associations supplied standard terms and decision-makers familiar with commercial practice. Arbitration created a focused way to determine whether a party had complied. Information about conduct and awards could then affect reputation and future access to trading relationships.</p>
+<p>The system did not show that law was absent. Parties contracted into the private process, associations operated within a legal environment, and formal enforcement could remain available at the boundary. Nor does one specialized industry establish that private arbitration is always cheaper, fairer, or more accurate than courts.</p>
+<p>The case instead demonstrates institutional combination. Trade rules reduced drafting costs. Specialized arbitration produced information about disputes. Reputation and future business gave parties reasons to comply. Formal law remained part of the background that made private ordering possible.</p>
+</aside>
+<p>The same design will not transfer automatically to consumers making one-time purchases. Cotton merchants had repeated interactions, commercial knowledge, and organizations capable of supplying rules and sanctions. A consumer may lack information, future leverage, or meaningful influence over the forum. Institutional performance depends on those surrounding conditions.</p>
+<h2 id="designing-the-relationship-before-breach">Designing the Relationship Before Breach</h2>
+<p>The best contract remedy is sometimes the one that never needs to be used because the agreement was designed to make performance and verification easier.</p>
+<p>Return to the kitchen. A simple promise that says “build the kitchen for $100,000” leaves important questions unanswered. When are payments due? Who approves plans? What counts as completion? Who bears the risk of a delayed permit? How may the owner inspect work hidden behind walls? What happens if steel prices increase sharply? Which defects must the contractor correct? What if the restaurant changes the design?</p>
+<p>Contract terms organize a sequence of decisions:</p>
+<ul>
+<li>A <strong>deposit</strong> gives the contractor evidence that the owner is committed and funds early purchases, but places the owner at risk.</li>
+<li><strong>Progress payments</strong> limit either side’s exposure by linking payment to stages of work.</li>
+<li><strong>Inspection rights</strong> improve verification before work becomes difficult to observe.</li>
+<li><strong>Warranties</strong> allocate responsibility for quality discovered after completion.</li>
+<li><strong>Change-order procedures</strong> distinguish authorized modifications from opportunistic demands.</li>
+<li><strong>Price-adjustment clauses</strong> allocate specified input-cost risks without reopening the entire bargain.</li>
+<li><strong>Termination rights</strong> identify circumstances in which one party may exit and what payment follows.</li>
+<li><strong>Liquidated damages</strong> state an amount in advance when delay loss will be difficult to prove later.</li>
+<li><strong>Bonds or escrow</strong> place assets under the control of a third party or specified rule.</li>
+</ul>
+<p>These devices change more than the result after failure. Inspection rights encourage observable quality. Staged payments reduce the gain from taking money and disappearing. A warranty can signal confidence and give the seller a reason to improve durability, though it may also weaken buyer care. A price-adjustment clause permits adaptation while limiting strategic renegotiation.</p>
+<p>Contract design also assigns information responsibilities. The owner knows whether a delayed opening will cause an unusually large loss. The contractor knows more about construction risk and scheduling. The equipment supplier knows more about the ventilation system. Disclosure, notice, testing, and documentation terms can move information to the party able to act on it.</p>
+<p>Not every possible term belongs in the agreement. Drafting, reading, negotiation, and administration are costly. A fifty-page clause addressing an event with a one-in-a-million probability may cost more than the expected loss it prevents. Contracting is itself an economic activity governed by marginal benefit and marginal cost.</p>
+<aside class="semantic-block semantic-studyandlearn"><p class="semantic-label">Study and Learn</p>
+<p><strong>The Contract-Enforcement Audit</strong></p>
+<p>Identify the valuable cooperation, the sequence of vulnerable actions, the formal and informal enforcement mechanisms, the omitted contingencies, and the incentives created by the remedy.</p>
+</aside>
+<p>The audit begins before asking whether a breach occurred. It asks what the parties were trying to accomplish and which design features made their cooperation believable.</p>
+<h2 id="which-promises-should-law-enforce">Which Promises Should Law Enforce?</h2>
+<p>Contract law does not enforce every statement about the future. A friend who says “I will call tomorrow” does not ordinarily create a legal obligation. A seller’s definite offer, accepted in exchange for payment, looks different. Law needs ways to identify agreements intended to create enforceable commitments and reasons to withhold enforcement when the apparent agreement does not reflect valuable voluntary cooperation.</p>
+<p>At a principles level, students should recognize several formation terms. An <strong>offer</strong> proposes an exchange on terms that permit acceptance. <strong>Acceptance</strong> manifests agreement to the offer. <strong>Consideration</strong> refers to the bargained-for exchange supporting a promise. <strong>Assent</strong> concerns the parties’ objective manifestation of agreement. Capacity and lawful purpose also matter.</p>
+<p>These categories help courts determine whether an agreement exists. They are not a complete economic theory. A promise may induce valuable reliance even without a conventional exchange. A bargain can involve deception or coercion. A signature can show assent while revealing little about attention or understanding.</p>
+<p>The economic case for enforcement is strongest when parties want enforceability because it helps them make a credible commitment to mutually valuable cooperation. Enforcement can then expand the range of feasible exchanges. The presumption weakens when the agreement does not reliably reveal voluntary, informed choice or when performance harms people outside the bargain.</p>
+<p>Several familiar defenses can be organized around recurring economic problems:</p>
+<ul>
+<li><strong>Fraud</strong> undermines the information on which assent depends and can reward investment in deception.</li>
+<li><strong>Duress</strong> allows a party to create or exploit a threat in order to extract agreement.</li>
+<li><strong>Incapacity</strong> weakens the inference that the person could evaluate and choose the obligation.</li>
+<li><strong>Mistake</strong> may mean that the parties agreed on different objects or shared a false premise.</li>
+<li><strong>Impossibility or impracticability</strong> may arise when an unexpected event radically changes feasible performance, though increased cost alone does not automatically excuse a promise.</li>
+<li><strong>Public policy and third-party harm</strong> limit the claim that benefits to the signers establish social value.</li>
+</ul>
+<p>Consider the contractor who demands an extra $40,000 after deliberately waiting until the restaurant owner is vulnerable. Enforcing that modification can reward creation of the very hold-up problem the original contract was meant to prevent. Now change the facts: an unforeseeable structural defect is discovered, correcting it costs $40,000, and immediate action will save the owner’s project. A modification that finances productive adaptation is economically different from an opportunistic threat, even when both occur mid-performance.</p>
+<p>Information creates another distinction. A buyer who invests in learning which industrial machine will use less energy may deserve to profit from productive research. A seller who conceals a known safety defect does not create the same information benefit. Contract law must avoid eliminating rewards for discovery while also avoiding rewards for deception and strategically produced ignorance.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>A Signature Is Not the End of the Analysis</strong></p>
+<p>Fraud, duress, incapacity, mistake, severe information problems, third-party harms, and unreadable or surprising standard terms can weaken the inference that enforcement supports mutually valuable cooperation.</p>
+</aside>
+<p>The warning should not reverse into a presumption that judges can redesign every agreement more wisely than the parties. Courts also lack information and can make terms less predictable. The institutional question is when the benefits of refusing or modifying enforcement exceed the costs of error, uncertainty, and reduced ability to commit.</p>
+<h2 id="contracts-cannot-specify-everything">Contracts Cannot Specify Everything</h2>
+<p>Future states of the world are numerous, language is imperfect, and performance can be difficult to verify. Real contracts are therefore <strong>incomplete</strong>. They omit contingencies, use general terms, and rely on later interpretation.</p>
+<p>Some gaps are accidental. The parties forgot to discuss what happens if a permit is delayed. Other gaps are rational. Negotiating the term costs more than its expected value. The parties may also prefer a general standard such as “commercially reasonable efforts” because detailed instructions would adapt poorly to conditions not yet known.</p>
+<p>When a dispute reaches a court or arbitrator, the decision-maker may need to interpret language, determine whether a condition occurred, or fill a gap. A <strong>default rule</strong> supplies a term when the parties did not provide another one. Parties can ordinarily contract around a default. A <strong>mandatory term</strong> applies despite their contrary agreement.</p>
+<p>One rationale for a <strong>majoritarian default</strong> is to supply the term many similarly situated parties would have chosen. That approach can reduce drafting costs. It does not guarantee the correct term for these particular parties, especially when preferences and risks differ.</p>
+<p>A <strong>penalty default</strong> follows a different logic. It deliberately supplies a term that at least one party is likely to dislike so that the better-informed party has an incentive to disclose information or draft an explicit term. The framework is influential, but whether particular doctrines actually operate this way is contested.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Default Rules and Mandatory Terms</strong></p>
+<p>Default rules fill gaps and can usually be changed by agreement. Penalty defaults encourage a better-informed party to disclose or draft around the rule. Mandatory terms cannot be waived and require a separate justification.</p>
+</aside>
+<p>Mandatory terms may address defective assent, external harm, information failure, market power, or limits on enforcement. They can protect parties who cannot bargain effectively or protect third parties who were absent from the agreement. But mandatory terms can also block valuable variation, misidentify what parties need, or push exchange into less regulated forms.</p>
+<p>Changed circumstances expose the tension between <strong>commitment</strong> and <strong>adaptation</strong>. If every cost increase excuses performance, promises offer little protection against ordinary risk. If no unexpected event permits adjustment, parties may waste enormous resources on performance that no longer creates value.</p>
+<p>The parties can allocate some risks themselves. A construction agreement may index steel costs, assign permit risk, require insurance, or permit termination after a delay. Unallocated risks may require interpretation. A sensible institutional response asks which party could prevent, predict, insure, or diversify the risk at lower cost; whether the event was foreseeable; what the price already reflected; and how a rule will affect future contracting.</p>
+<p>Incompleteness is not a defect that law can eliminate. It is a reason contracts operate within a larger governance system of default rules, interpretation, renegotiation, norms, and dispute resolution.</p>
+<h2 id="remedies-as-incentive-systems">Remedies as Incentive Systems</h2>
+<p>When an enforceable promise is broken, a <strong>remedy</strong> determines the legal response. Remedies protect different baselines and therefore create different incentives.</p>
+<p><strong>Expectation damages</strong> seek to place the injured promisee in the economic position the promisee would have occupied if the promise had been performed. If the completed kitchen would have given the owner a net gain of $20,000, perfectly measured expectation damages replace that lost net value.</p>
+<p><strong>Reliance damages</strong> use the position before the agreement as the baseline. They seek to compensate expenditures or losses reasonably induced by the promise, subject to legal limits. The owner may have spent money on hiring, advertising, or preparations because completion was expected.</p>
+<p><strong>Opportunity-cost damages</strong> use the best forgone alternative agreement as the benchmark in the economic model. If the owner rejected another contractor who would have provided a net gain of $12,000, that opportunity differs from both the no-contract position and the $20,000 expected gain under the chosen contract.</p>
+<p><strong>Liquidated damages</strong> are selected in advance by the parties. A construction contract might state a reasonable daily amount for delay when proving actual lost sales later would be expensive. Legal treatment of liquidated damages and penalties varies, and an amount that appears unreasonably punitive may not be enforced.</p>
+<p><strong>Specific performance</strong> orders performance rather than substituting money. It becomes attractive when the promised object or service is unique, substitutes are poor, or money damages are especially difficult to measure. It can also require supervision and create difficult renegotiation if circumstances change.</p>
+<p><a id="tbl:ch08-remedies-and-margins"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Remedy</th>
+<th>Protected baseline</th>
+<th>Principal incentive benefit</th>
+<th>Characteristic risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Expectation damages</td>
+<td>Position if the promise had been performed</td>
+<td>Can make the promisor account for the promisee’s net performance value</td>
+<td>Measurement error, incomplete compensation, and overreliance if recovery rises with actual reliance</td>
+</tr>
+<tr>
+<td>Reliance damages</td>
+<td>Position if the agreement had not been made</td>
+<td>Protects reasonable expenditures induced by the promise</td>
+<td>May omit expected gains and can reward excessive reliance if actual expenditures control recovery</td>
+</tr>
+<tr>
+<td>Opportunity-cost damages</td>
+<td>Position under the best forgone agreement</td>
+<td>Recognizes the alternative opportunity displaced by this contract</td>
+<td>Forgone opportunities are difficult to observe and may provide weaker performance incentives than expectation</td>
+</tr>
+<tr>
+<td>Liquidated damages</td>
+<td>Amount selected in advance by the parties</td>
+<td>Reduces later measurement cost and can make damages independent of additional reliance</td>
+<td>The amount may be poorly estimated, strategically imposed, or treated as an unenforceable penalty</td>
+</tr>
+<tr>
+<td>Specific performance</td>
+<td>Receipt of the promised performance</td>
+<td>Protects unique or difficult-to-value performance</td>
+<td>Supervision, rigidity, and bilateral-monopoly bargaining when circumstances change</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 8.2. Contract remedies and incentive margins.</strong> The remedies protect different baselines and influence more than the decision to breach. Actual availability and calculation depend on governing law and facts; this is an economic comparison rather than a complete remedies taxonomy.</p>
+<p>The table resists a common mistake: asking only which remedy gives the promisee the largest award. A larger remedy can strengthen the promisor’s incentive to perform and take precautions against breach. It can also encourage excessive reliance, discourage formation, or increase bargaining and litigation costs. A smaller remedy can weaken performance incentives while improving another margin.</p>
+<p>The right question is not “Which remedy is strongest?” It is “How does this remedy change formation, performance, precaution, reliance, disclosure, mitigation, renegotiation, and enforcement cost?”</p>
+<h2 id="efficient-performance-breach-and-renegotiation">Efficient Performance, Breach, and Renegotiation</h2>
+<p>The phrase <strong>efficient breach</strong> is easy to misunderstand. It does not mean that any breach benefiting the promisor is efficient. It describes a conditional result: nonperformance can increase total surplus when the promisor’s cost of performance exceeds the promisee’s full loss and the injured party can be compensated without creating larger costs.</p>
+<p>Return to the kitchen contract. Assume the completed kitchen is worth $120,000 to the owner and the contract price is $100,000. Performance would give the owner a net gain of $20,000. If the contractor breaches, perfectly measured expectation damages are therefore $20,000.</p>
+<p>Let <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi></mrow><annotation encoding="application/x-tex">V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span></eq> denote the owner’s value from completion and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></eq> the contractor’s real cost of performance. The contract price is a transfer from the owner to the contractor, so it cancels when their gains are added. Total surplus from performance is:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mi>V</mi><mo>−</mo><mi>C</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+S = V - C.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord">.</span></span></span></span></span></eqn></section><p>The notation says that performance creates value when the completed kitchen is worth more than the resources required to build it. With <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mo>=</mo><mn>120,000</mn></mrow><annotation encoding="application/x-tex">V = 120{,}000</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">120</span><span class="mord"><span class="mpunct">,</span></span><span class="mord">000</span></span></span></span></eq>, performance is efficient whenever cost remains below $120,000.</p>
+<p><a id="tbl:ch08-efficient-breach"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th style="text-align:right">Contractor’s performance cost</th>
+<th style="text-align:right">Total surplus from performance</th>
+<th style="text-align:right">Contractor’s payoff from performance</th>
+<th style="text-align:right">Contractor’s payoff from breach after $20,000 damages</th>
+<th>Efficient and private choice</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:right">$90,000</td>
+<td style="text-align:right">$30,000</td>
+<td style="text-align:right">$10,000</td>
+<td style="text-align:right">-$20,000</td>
+<td>Perform</td>
+</tr>
+<tr>
+<td style="text-align:right">$110,000</td>
+<td style="text-align:right">$10,000</td>
+<td style="text-align:right">-$10,000</td>
+<td style="text-align:right">-$20,000</td>
+<td>Perform</td>
+</tr>
+<tr>
+<td style="text-align:right">$140,000</td>
+<td style="text-align:right">-$20,000</td>
+<td style="text-align:right">-$40,000</td>
+<td style="text-align:right">-$20,000</td>
+<td>Breach</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 8.3. Efficient performance and breach under perfect expectation damages.</strong> The completed kitchen is worth $120,000, the price is $100,000, and expectation damages equal the owner’s $20,000 net gain. The example omits reliance beyond that value, mitigation, litigation, collection, reputation, renegotiation, and third-party effects.</p>
+<p>At a performance cost of $90,000, the project creates $30,000 of total surplus. The contractor earns $10,000 by performing and loses $20,000 by breaching, so both private incentive and total surplus favor performance.</p>
+<p>At $110,000, performance remains efficient because it creates $10,000 of total surplus. The contractor loses $10,000 on performance but would lose $20,000 by breaching and paying damages. The remedy prevents the contractor from abandoning a project whose value still exceeds its cost.</p>
+<p>At $140,000, performance destroys $20,000 of total surplus. The contractor would lose $40,000 by performing but $20,000 by breaching and compensating the owner. Breach preserves $20,000 relative to wasteful performance while leaving the owner with the promised net value under the assumptions.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Efficient Breach</strong></p>
+<p>An efficient breach occurs when the gain from nonperformance exceeds the promisee’s loss and the injured party can be compensated without creating larger bargaining, measurement, or enforcement costs.</p>
+</aside>
+<p>The private and social thresholds coincide at $120,000 because expectation damages perfectly equal the owner’s net loss. If damages are only $5,000, the contractor may breach when performance remains socially valuable. If damages are mistakenly set at $50,000, the contractor may perform when resources should be released. Accurate valuation does substantial work in the model.</p>
+<p>The reason for breach matters because it can change other margins. An unforeseen cost shock may make performance genuinely wasteful. A contractor who deliberately creates delay to obtain another job imposes a different effect on future precautions and trust. A better outside offer may be socially valuable only after counting the promisee’s loss, substitute costs, and effects on other agreements.</p>
+<p>Compensation also may be incomplete. Lost opening momentum, customer relationships, employee departures, financing stress, and personal plans can be difficult to prove or value. Litigation consumes time and money. A judgment may not be collected. Reputational harm to the contractor and the broader effect on willingness to rely are real even if they do not appear in the damages award.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>Efficient Breach Is a Conditional Result</strong></p>
+<p>Calling a breach efficient requires more than finding a better opportunity for the promisor. Count the promisee’s full loss, reliance, renegotiation costs, reputation effects, enforcement costs, and any failure of compensation.</p>
+</aside>
+<p>Renegotiation can sometimes correct a poorly fitted remedy. If performance has become inefficient, the owner may release the contractor in exchange for a payment. If performance remains valuable but the contractor faces a temporary cash problem, the owner may revise the payment schedule. Chapter 4’s bargaining logic still applies.</p>
+<p>But the original contract often exists because renegotiation is costly. Each party may misrepresent cost or loss to capture more of the surplus. Delay may destroy value while they bargain. A party can make an extreme demand, hoping the other side will yield. An agreement that simply requires the parties to renegotiate every hard question may recreate the commitment problem it was supposed to solve.</p>
+<h2 id="reliance-foreseeability-and-mitigation">Reliance, Foreseeability, and Mitigation</h2>
+<p>The efficient-breach example focused on the promisor’s decision. The promisee also acts after the agreement. The restaurant owner hires workers, buys inventory, orders signs, and advertises. Those choices are <strong>reliance</strong>: changes in position induced by the promise.</p>
+<p>Reliance can create value. Hiring and training workers before opening may make the restaurant productive immediately. Customizing service stations to match the kitchen can reduce operating costs. Waiting until completion is certain may sacrifice months of preparation.</p>
+<p>Reliance also increases the loss if performance fails. Food spoils, advertising becomes useless, and workers may need to be paid before the opening. Efficient reliance accounts for the probability of performance rather than behaving as if success were certain.</p>
+<p>Let <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi></mrow><annotation encoding="application/x-tex">p</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.625em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span></span></span></span></eq> be the probability of performance, <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>V</mi></mrow><annotation encoding="application/x-tex">\Delta V</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span></span></span></span></eq> the added value an increment of reliance creates if performance occurs, and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi></mrow><annotation encoding="application/x-tex">c</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span></span></span></span></eq> the cost of that reliance. The expected social value of the increment is:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>p</mi><mo>×</mo><mi mathvariant="normal">Δ</mi><mi>V</mi><mo>−</mo><mi>c</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+p \times \Delta V - c.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">p</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.22222em;">V</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">c</span><span class="mord">.</span></span></span></span></span></eqn></section><p>The increment is efficient when its probability-weighted benefit exceeds its cost.</p>
+<p>Suppose performance is 80 percent likely and the owner is considering two separate customization steps. The values are invented to isolate the incentive; they are not empirical estimates.</p>
+<p><a id="tbl:ch08-reliance"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Reliance increment</th>
+<th style="text-align:right">Cost</th>
+<th style="text-align:right">Added value if performance</th>
+<th style="text-align:right">Expected social benefit at 80%</th>
+<th style="text-align:right">Net social value</th>
+<th style="text-align:right">Private net under the assumed remedy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic customization</td>
+<td style="text-align:right">$20.00</td>
+<td style="text-align:right">$30.00</td>
+<td style="text-align:right">$24.00</td>
+<td style="text-align:right">+$4.00</td>
+<td style="text-align:right">+$10.00</td>
+</tr>
+<tr>
+<td>Additional customization</td>
+<td style="text-align:right">$20.00</td>
+<td style="text-align:right">$22.00</td>
+<td style="text-align:right">$17.60</td>
+<td style="text-align:right">-$2.40</td>
+<td style="text-align:right">+$2.00</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 8.4. Efficient and excessive reliance.</strong> The assumed remedy increases dollar-for-dollar with the added performance value created by actual reliance. That simplifying assumption makes the owner treat the added value as certain even though performance occurs with probability 0.80.</p>
+<p>For basic customization, multiplying 0.80 by $30 gives an expected social benefit of $24. Subtracting the $20 cost leaves $4 in expected net value, so the investment is efficient.</p>
+<p>For additional customization, multiplying 0.80 by $22 gives an expected social benefit of $17.60. Subtracting the $20 cost leaves negative $2.40. The extra step is inefficient because its added value materializes only if the kitchen is completed.</p>
+<p>Now assume damages rise with the owner’s actual reliance-created value. If performance occurs, basic customization creates $30. If breach occurs, damages replace that $30. The owner privately sees a certain $30 benefit and takes the investment because it costs only $20. That choice is also socially efficient.</p>
+<p>The same remedy makes additional customization privately attractive: a certain $22 benefit exceeds its $20 cost. The owner takes the second step even though its expected social value is negative. Compensation has removed the owner’s reason to account for the 20 percent breach risk.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>Compensation Can Encourage Overreliance</strong></p>
+<p>If a promisee expects every reliance loss to be reimbursed, the promisee may invest as if breach were impossible. Efficient remedies should preserve useful reliance without encouraging reliance whose expected benefit is smaller than its cost.</p>
+</aside>
+<p>Actual damages do not automatically reimburse every claimed reliance expenditure or every value the promisee says it created. Proof, causation, foreseeability, certainty, reasonableness, contract limits, and mitigation constrain recovery. The table isolates one economic problem: when the award increases with the promisee’s marginal reliance, the promisee may externalize the breach risk that reliance creates.</p>
+<p>One response is to base compensation on reasonable or efficient reliance rather than every actual expenditure. Another is to specify liquidated damages that do not rise with later reliance. A third is for the promisee to disclose unusually valuable reliance and bargain over price, precautions, insurance, or limits before acting.</p>
+<h3 id="hadley-v-baxendale"><em>Hadley v. Baxendale</em></h3>
+<p>The classic foreseeability case is <em>Hadley v. Baxendale</em>, decided by the English Court of Exchequer in 1854. A crankshaft broke at a mill in Gloucester. The millers sent the broken shaft through a carrier so it could serve as a pattern for a replacement. Delivery was delayed, and the millers sought lost profits for the additional time the mill was unable to operate.</p>
+<p>The full facts are more careful than the familiar shorthand. The millers’ servant told the carrier’s clerk that the mill was stopped and that the shaft should be sent immediately. The court nevertheless concluded that the special circumstances supporting the lost-profit award had not been communicated or known in a way that made those profits recoverable on the record. It ordered a new trial and stated a rule limiting contract damages to losses arising ordinarily from the breach or reasonably contemplated by the parties when they contracted.</p>
+<aside class="semantic-block semantic-casestudy"><p class="semantic-label">Case Study</p>
+<p><strong>The Broken Mill and the Missing Information</strong></p>
+<p>The carrier observes an object of modest size and charges for transportation. The mill owner knows whether delayed delivery will stop an entire business. If carriers must pay every undisclosed extraordinary loss, they may raise prices or take expensive precautions on every shipment. If extraordinary loss is never recoverable, informed customers may lack protection even when extra precaution would be worthwhile.</p>
+<p>A foreseeability limit can encourage the customer with unusual exposure to disclose it before the price and precautions are chosen. The carrier can then charge more, promise faster handling, buy insurance, limit liability, or decline the risk. The rule can therefore be understood as information forcing.</p>
+<p>This is an economic interpretation, not the only historical purpose or doctrinal account of <em>Hadley</em>. Whether the rule should be labeled a penalty default is contested. Its durable lesson is that damage rules influence information before breach as well as compensation afterward.</p>
+</aside>
+<p>Foreseeability connects private information with risk pricing. Suppose an ordinary one-day kitchen delay costs $1,000, but this owner will lose a $50,000 event contract if completion is one day late. The owner can disclose that unusual exposure. The contractor may charge for overtime, obtain a backup supplier, refuse the deadline, or negotiate a liability limit. Silence denies the contractor the opportunity to price and manage the risk.</p>
+<p>The rule also has costs. Disclosure takes time. A party may not understand its own exposure. The promisor may exploit revealed dependence by raising the price. Courts may confuse unusual with unreasonable. A uniform limit may undercompensate real loss. Information forcing is a mechanism to evaluate, not a complete defense of every outcome.</p>
+<p><strong>Mitigation</strong> addresses behavior after notice of breach. If the contractor announces two months early that completion is impossible, the owner may seek a replacement, postpone advertising, reduce inventory, or reschedule hiring. The owner need not take absurd or ruinously expensive steps, but avoidable losses should not grow merely because someone else will be asked to pay them.</p>
+<p>Mitigation preserves a private incentive to limit harm after breach. It also prevents a promisee from continuing performance or expenditure solely to enlarge damages. The promisor remains responsible for legally recognized loss caused by breach; the promisee remains responsible for reasonable adjustment once the problem is known.</p>
+<p>Foreseeability, mitigation, and limits on reliance all reveal the same structure encountered in torts. Making one party fully responsible for loss can improve that party’s incentives while weakening the other party’s incentives. Good remedies make both sides account for the margins they control.</p>
+<h2 id="specific-performance-and-bargaining-breakdown">Specific Performance and Bargaining Breakdown</h2>
+<p>Damages protect the promisee through a liability rule: the promisor may breach while owing an amount determined by law or agreement. Specific performance resembles a property rule: the promisee can insist on the promised performance unless the promisee agrees to release it.</p>
+<p>Specific performance becomes attractive when substitutes are poor or valuation is difficult. A buyer may contract for a unique parcel of land, a rare object, or specialized equipment needed within an integrated production process. A court may estimate market price but miss timing, location, compatibility, or subjective value.</p>
+<p>The remedy can also create a <strong>bilateral monopoly</strong> after circumstances change. The promisor needs permission from one promisee to avoid performance, and the promisee can obtain release from only that promisor. Their possible bargain may contain a large cooperative surplus, but each has an incentive to capture it.</p>
+<p>Suppose completing custom equipment now costs the contractor $300,000 because of an extraordinary shock. The equipment is worth $120,000 to the buyer, and no substitute exists. Performance would destroy $180,000 of value. Under specific performance, the buyer can insist on delivery. The contractor would pay as much as $300,000 for release, while the buyer would accept any amount above the $120,000 value of performance. The bargaining range is enormous.</p>
+<p>That range makes agreement possible, but not automatic. The contractor claims the cost is $310,000. The buyer says the equipment is worth $250,000. Each delays to make the claim credible. Lawyers are hired, production plans remain unsettled, and a breakdown can force inefficient performance.</p>
+<p>Damages can reduce the need for permission by allowing breach after payment. But damages transfer valuation to a court, which may know less than the buyer. Specific performance preserves the buyer’s control and encourages voluntary renegotiation, but that bargaining can be costly. The familiar property-rule and liability-rule comparison returns inside contract law.</p>
+<p>The remedy choice should therefore consider uniqueness, valuation error, supervision, opportunism, substitute availability, renegotiation cost, and the parties’ ability to design a better term. There is no general rule that consent always favors specific performance or efficiency always favors damages.</p>
+<h2 id="standard-forms-clickwrap-and-meaningful-assent">Standard Forms, Clickwrap, and Meaningful Assent</h2>
+<p>The restaurant contract may be negotiated in detail because the stakes are large and the project is specialized. Many agreements are not. Software licenses, bank accounts, phone services, tickets, insurance policies, and platform accounts use standard terms offered to many users.</p>
+<p>Standardization creates real value. Drafting every low-value transaction separately would be expensive. Common terms can coordinate payment, warranty, privacy, updates, dispute resolution, acceptable use, and termination. A firm can train employees and build systems around one agreement. Customers can receive a service immediately rather than hire a lawyer for every purchase.</p>
+<p>The same economies create an attention problem. Few consumers read every term, and reading all terms may itself be irrational when the transaction is small, the language is long, and negotiation is unavailable. A visible price and product description may drive the decision while arbitration, data use, unilateral modification, automatic renewal, and liability limits remain obscure.</p>
+<p>This does not mean standard forms have no value or that every unread term is inefficient. Competition can discipline some terms through price, reputation, comparison services, regulators, sophisticated intermediaries, and the choices of attentive marginal consumers. But those mechanisms may be weak when terms are difficult to compare, harms are delayed, switching is costly, or firms use similar provisions.</p>
+<p>Electronic contracting places assent inside interface design. In <em>Specht v. Netscape</em>, the Second Circuit found insufficient reasonable notice and manifestation of assent on the record when license terms for downloaded software were available below the download button. In <em>Meyer v. Uber</em>, the same court found the app’s notice sufficiently conspicuous and the user’s registration sufficiently unambiguous under the governing law.</p>
+<p>The cases do not produce one rule for every screen. They show why traditional contract questions remain important online. Could a reasonable user see that terms existed? Was the link presented near the action? Did the action communicate agreement? Could the drafter document which version applied? State contract law and interface facts matter.</p>
+<p>The economic design problem is to preserve low-cost standardized exchange while improving notice where attention is valuable. Possible tools include concise summaries, layered disclosure, prominent treatment of unusual terms, standardized labels, version records, affirmative action, comparison tools, and limits on particular terms. Each tool can improve information while adding delay, clutter, compliance cost, or false confidence.</p>
+<p>Meaningful assent is not identical to reading every word. Nor is clicking a button proof of informed understanding. Contract institutions need workable signals of agreement while recognizing that attention is scarce.</p>
+<h2 id="smart-contracts-and-ai-mediated-agreement">Smart Contracts and AI-Mediated Agreement</h2>
+<p>Imagine that the kitchen equipment supplier places the owner’s payment in a digital escrow. When an agreed data source reports delivery and an inspection device reports a passing result, code releases payment automatically. The arrangement is often described as a <strong>smart contract</strong>.</p>
+<p>Automatic execution can reduce delay and the risk that a party withholds payment after verified performance. It can make a narrow commitment highly credible. But it moves attention to the trigger. Was the equipment merely delivered, or properly installed? Was the sensor calibrated? Who controlled the data source? Was the shipment stolen immediately after the report? Did the parties authorize a change?</p>
+<p>Code is excellent at applying specified conditions to machine-readable inputs. Many contract disputes concern whether the conditions fit the world. Identity, authority, mistake, fraud, quality, causation, excuse, and changed circumstances require information and judgment that may not exist on the system executing payment.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>Automatic Enforcement Is Not Always Better Enforcement</strong></p>
+<p>Smart contracts can reduce execution costs, but they can be rigid when real-world performance, fraud, mistake, authority, identity, or changed circumstances require interpretation.</p>
+</aside>
+<p>The best design may combine code with governance. Automated payment can handle ordinary verified delivery. A pause, appeal, multisignature approval, arbitrator, insurer, or court can handle contested cases. The choice repeats the chapter’s central institutional comparison: credibility and speed must be balanced against information, adaptation, and error correction.</p>
+<p>AI systems may reduce the cost of drafting, comparing, monitoring, and administering contracts. A restaurant owner could ask a system to compare warranty terms across equipment suppliers. A contractor could generate a first draft of a price-adjustment clause. Software could flag missed milestones, summarize amendments, or recommend renegotiation after a supply disruption.</p>
+<p>Lower drafting cost can make more tailored agreements worthwhile. It does not guarantee better terms. The system may omit a rare but important contingency, misunderstand the business, invent legal authority, or optimize for the party that selected it. Cheap complexity can produce agreements no human understands.</p>
+<p>AI agents also may negotiate or execute transactions. Suppose the restaurant authorizes a purchasing agent to order up to $10,000 per transaction from approved suppliers. The agent places two related orders that together exceed the intended limit, accepts unfamiliar arbitration terms, or continues buying after the owner changes strategy. The economic and legal questions concern the surrounding institution:</p>
+<ul>
+<li>Who is the principal and what authority was delegated?</li>
+<li>How was the counterparty expected to verify that authority?</li>
+<li>Which goals, limits, and information did the agent receive?</li>
+<li>Who monitored the agent and could stop or reverse action?</li>
+<li>Which records show what the agent did and why?</li>
+<li>Who bears loss from error, manipulation, or unauthorized action?</li>
+</ul>
+<p>The agent does not eliminate contracting costs. It changes their location. Negotiation may become cheaper while verification, delegation, monitoring, and responsibility become more important. Chapter 15 will develop these issues. Here they confirm the continuing value of the canonical framework: a new technology is another way to make, interpret, and enforce promises under incomplete information.</p>
+<h2 id="big-picture">Big Picture</h2>
+<p>Contracts support cooperation that cannot be completed through simultaneous spot exchange. A credible promise allows one party to invest, specialize, disclose information, or perform while awaiting the other party’s response. Its value appears before breach because expected enforcement changes present behavior.</p>
+<p>Enforcement is institutional rather than exclusively judicial. Repeat dealing, reputation, deposits, bonds, merchant rules, arbitration, courts, firms, platforms, and code create different consequences for nonperformance. They can substitute for one another, but often work together. Their performance depends on information, repeated interaction, verification, flexibility, cost, and error.</p>
+<p>Contract design organizes the relationship before failure. Payment schedules, inspections, warranties, change procedures, termination, disclosure, and agreed remedies allocate risk and reduce opportunities for hold-up. Because drafting is costly and the future is uncertain, contracts remain incomplete. Defaults, mandatory terms, interpretation, and renegotiation form part of the surrounding governance system.</p>
+<p>Remedies affect several margins. Expectation damages can align performance and breach in a simplified model, yet damages that rise with actual reliance can encourage overreliance. Foreseeability encourages disclosure of unusual loss. Mitigation preserves incentives to limit avoidable harm. Specific performance protects difficult-to-value performance but can create bilateral-monopoly bargaining.</p>
+<p>Standard forms and automated agreements do not replace these problems. They change the cost of drafting, attention, execution, verification, and adaptation. AI can lower some transaction costs while increasing the importance of authority, monitoring, and responsibility.</p>
+<p>Contract law is therefore a technology for credible commitment and adaptation. The economic task is not merely to enforce every promise or excuse every costly performance. It is to compare institutions that make valuable cooperation believable while controlling opportunism, excessive reliance, information failure, bargaining breakdown, enforcement cost, and error.</p>
+<h2 id="chapter-study-map">Chapter Study Map</h2>
+<ul>
+<li><strong>Core ideas:</strong> credible promises, sequential performance, formal and informal enforcement, relationship-specific investment, hold-up, contract design, incompleteness, default and mandatory terms, remedies, efficient breach, efficient reliance, foreseeability, mitigation, and renegotiation.</li>
+<li><strong>Tables:</strong> use the enforcement-institutions table to compare sources of credibility; use the remedies table to identify protected baselines and incentive risks; use the efficient-breach and reliance tables to calculate private and social choices.</li>
+<li><strong>Reasoning tasks:</strong> perform the contract-enforcement audit, identify the vulnerable sequence, compare commitment mechanisms, diagnose omitted contingencies, select a remedy, and trace its effects across performance, reliance, disclosure, mitigation, and bargaining.</li>
+<li><strong>Common mistakes:</strong> treating enforcement as litigation only, calling any profitable breach efficient, ignoring the promisee’s reliance, assuming complete contracts are attainable, equating a signature or click with informed understanding, or assuming automatic execution removes the need for governance.</li>
+<li><strong>Required applications:</strong> restaurant and kitchen contractor, cotton-industry private ordering, cost-shock breach, efficient and excessive reliance, <em>Hadley v. Baxendale</em>, specific performance, standard forms, clickwrap, smart contracts, and AI purchasing agents.</li>
+<li><strong>Optional enrichment:</strong> detailed consideration doctrine, unconscionability, penalty clauses, comparative specific performance, franchise governance, sports contracts, and commercial arbitration law.</li>
+</ul>
+<h2 id="review-questions">Review Questions</h2>
+<ol>
+<li>Why does a spot exchange require less commitment than delayed or sequential performance?</li>
+<li>Explain how an enforceable promise can create value before anyone breaches.</li>
+<li>Define credible commitment.</li>
+<li>What is a relationship-specific investment? Why can it produce hold-up?</li>
+<li>Give one example of hold-up by a promisor and one by a promisee.</li>
+<li>Distinguish formal enforcement, informal enforcement, and a hybrid institution.</li>
+<li>Why can formal remedies and reputation be complements?</li>
+<li>What does Bernstein’s cotton-industry study illustrate about private ordering?</li>
+<li>How do progress payments, inspection rights, warranties, and bonds change incentives?</li>
+<li>Why do rational parties leave gaps in contracts?</li>
+<li>Distinguish a majoritarian default, a penalty default, and a mandatory term.</li>
+<li>Why is consideration useful vocabulary but not a complete economic theory of enforceability?</li>
+<li>How do fraud, duress, incapacity, and third-party harm weaken the economic case for enforcement?</li>
+<li>Compare expectation, reliance, opportunity-cost, liquidated-damages, and specific-performance remedies.</li>
+<li>State the conditions required for an efficient breach.</li>
+<li>In Table 8.3, why do the private and social performance thresholds both equal $120,000?</li>
+<li>What is efficient reliance? How can compensation create overreliance?</li>
+<li>What rule did <em>Hadley v. Baxendale</em> state, and how can foreseeability encourage disclosure?</li>
+<li>How does mitigation affect the promisee’s post-breach incentives?</li>
+<li>Why can specific performance both protect difficult-to-value performance and create bargaining costs?</li>
+<li>What economic benefits do standard-form agreements provide?</li>
+<li>Why does clicking to accept terms not necessarily establish informed understanding?</li>
+<li>What can automated execution verify well, and what contract questions remain difficult?</li>
+<li>How can AI lower some contracting costs while increasing delegation and monitoring costs?</li>
+</ol>
+<h2 id="economic-reasoning-questions">Economic Reasoning Questions</h2>
+<ol>
+<li>A bakery pays a designer a deposit for a custom oven installation. The designer must buy equipment with little resale value, while the bakery must renovate before delivery. Identify each party’s relationship-specific investment, possible hold-up strategy, and one safeguard for each side.</li>
+<li>A supplier and manufacturer expect to trade weekly for ten years. Explain how repeat dealing can support performance. Now assume both know the relationship will end next month. What changes, and which additional enforcement mechanism might become valuable?</li>
+<li>A trade association supplies standard quality grades, private arbitration, and notice of unpaid awards. Explain how each component supports promise credibility. Identify one possible cost or abuse of the system.</li>
+<li>A construction agreement leaves unexpected steel-price increases unaddressed. Compare strict enforcement, judicial excuse, and a court-supplied risk-allocation term. What information would you need to choose among them?</li>
+<li>The completed project is worth $200,000 to the buyer, the contract price is $160,000, and expectation damages perfectly equal the buyer’s net gain. Calculate damages. At what performance cost does breach become efficient in the stripped model? Explain every step.</li>
+<li>Repeat the previous problem when only half of the buyer’s true loss can be proved. Identify a range of performance costs in which the seller’s private breach decision differs from the efficient decision.</li>
+<li>A promisee can spend $1,000 on reliance that creates $1,400 of value if performance occurs. Performance probability is 60 percent. Is the reliance efficient? Predict the choice if damages guarantee the full $1,400 value in either state.</li>
+<li>A photographer sends ordinary-looking equipment through a carrier, but one-day delay will cause an unusual $80,000 loss. Compare nondisclosure, advance disclosure, insurance, a liability limit, and special handling using the information-forcing logic of <em>Hadley</em>.</li>
+<li>A contractor announces breach before the owner orders perishable supplies. The owner orders them anyway and seeks reimbursement. Apply mitigation and causation. What additional facts could justify the purchase?</li>
+<li>A rare machine is worth $500,000 to a buyer. Unexpected events raise the seller’s delivery cost to $900,000. Under specific performance, identify the bargaining range for release and explain why a positive cooperative surplus does not guarantee agreement.</li>
+<li>A software service displays a small terms link at the bottom of a registration screen and states that account creation constitutes assent. Apply notice, assent, transaction-cost, and attention reasoning without assuming a particular legal outcome.</li>
+<li>A platform automatically suspends sellers after a threshold number of complaints. Explain the commitment benefit and the risks of inaccurate information, strategic complaints, and limited appeal. Recommend one hybrid safeguard.</li>
+<li>A smart contract releases payment when a shipping database reports delivery, but the package contains the wrong component. Identify what the code verified, what it failed to verify, and how the agreement could combine automation with dispute resolution.</li>
+<li>An AI purchasing agent accepts a three-year contract outside the owner’s intended budget. Identify the principal, delegated authority, verification problem, monitoring system, and possible loss bearer. What contract or platform rules could reduce the risk?</li>
+</ol>
+<h2 id="law-and-economics-lab">Law and Economics Lab</h2>
+<h3 id="design-and-audit-a-commitment-system">Design and Audit a Commitment System</h3>
+<p>Choose a construction project, supply relationship, employment agreement, lease, software or cloud-service contract, sports or NIL agreement, platform transaction, smart contract, or AI-mediated purchase approved by your instructor.</p>
+<p>Your task is to design a commitment system and test whether it supports valuable cooperation under realistic information and enforcement limits.</p>
+<ol>
+<li><strong>Identify the cooperation.</strong> Explain what valuable activity requires a promise rather than a simultaneous spot exchange.</li>
+<li><strong>Map the sequence.</strong> List the order in which parties pay, invest, disclose, verify, and perform. Mark the points at which each party becomes vulnerable.</li>
+<li><strong>Identify specific investments.</strong> Explain which investments lose value outside the relationship and how hold-up could occur.</li>
+<li><strong>Compare enforcement institutions.</strong> Analyze at least one formal mechanism, one informal mechanism, and one hybrid such as arbitration, platform governance, escrow, or automated execution.</li>
+<li><strong>Design terms.</strong> Propose payment timing, inspection, warranty, notice, termination, disclosure, price-adjustment, mitigation, or liquidated-damages provisions. Explain the behavior each term changes.</li>
+<li><strong>Identify incompleteness.</strong> Select two contingencies the contract should address and one it should rationally leave to a default, standard, or later renegotiation.</li>
+<li><strong>Choose a remedy.</strong> Compare expectation, reliance, liquidated damages, and specific performance. Identify the baseline protected and the risks created by your choice.</li>
+<li><strong>Construct a numerical test.</strong> Create plausible values for performance value, price, cost, breach loss, probability, and reliance. Calculate efficient performance and reliance, then compare them with private incentives under your remedy.</li>
+<li><strong>Stress-test information and enforcement.</strong> Change at least two assumptions involving hidden quality, unusual loss, court error, insolvency, reputation, low attention, inaccurate data, or costly renegotiation.</li>
+<li><strong>Audit an AI proposal.</strong> Ask an AI system to draft or improve the agreement. Identify at least three hidden assumptions, verify every legal claim with authoritative current sources, and identify any term that is clear to code but ambiguous in the real relationship.</li>
+</ol>
+<p>Conclude by recommending the best feasible combination of terms and enforcement institutions. Separate efficiency, distribution, fairness, consent, and legitimacy before giving an overall assessment. Explain why your design is better than the strongest realistic alternative, not why it is perfect.</p>
+
+        </article>
+
+        <footer class="chapter-footer">
+          <nav class="chapter-jump" aria-label="Adjacent chapters">
+            <a href="../ch07-torts-accidents-and-incentives/"><span>Previous chapter</span>7. Torts, Accidents, and Incentives</a>
+            <a class="next-chapter" href="../ch09-courts-litigation-and-dispute-resolution/"><span>Next chapter</span>9. Courts, Litigation, and Dispute Resolution</a>
+          </nav>
+          <div class="chapter-footer-meta">
+            <p>End of Chapter 8</p>
+            <p>Rules, Rights, and Runtimes</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

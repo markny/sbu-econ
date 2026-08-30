@@ -1,0 +1,121 @@
+{
+  "book": "Rules, Rights, and Runtimes",
+  "base_path": "/law-econ/",
+  "source_repository": "markny/law-and-economics",
+  "source_commit": "f1fc23c8d0389de161570b473162464310485a03",
+  "source_dirty": false,
+  "chapters": [
+    {
+      "number": 1,
+      "title": "What Is Law and Economics?",
+      "reader": "chapters/ch01-what-is-law-and-economics/",
+      "markdown": "downloads/markdown/ch01_what_is_law_and_economics.md",
+      "powerpoint": "downloads/slides/ch01_what_is_law_and_economics.pptx"
+    },
+    {
+      "number": 2,
+      "title": "The Microeconomic Toolkit for Law",
+      "reader": "chapters/ch02-microeconomic-toolkit-for-law/",
+      "markdown": "downloads/markdown/ch02_microeconomic_toolkit_for_law.md",
+      "powerpoint": "downloads/slides/ch02_microeconomic_toolkit_for_law.pptx"
+    },
+    {
+      "number": 3,
+      "title": "Law, Courts, and Legal Institutions",
+      "reader": "chapters/ch03-law-courts-and-legal-institutions/",
+      "markdown": "downloads/markdown/ch03_law_courts_and_legal_institutions.md",
+      "powerpoint": "downloads/slides/ch03_law_courts_and_legal_institutions.pptx"
+    },
+    {
+      "number": 4,
+      "title": "Transaction Costs and the Coase Theorem",
+      "reader": "chapters/ch04-transaction-costs-and-coase-theorem/",
+      "markdown": "downloads/markdown/ch04_transaction_costs_and_coase_theorem.md",
+      "powerpoint": "downloads/slides/ch04_transaction_costs_and_coase_theorem.pptx"
+    },
+    {
+      "number": 5,
+      "title": "Property Rights and Institutional Evolution",
+      "reader": "chapters/ch05-property-rights-and-institutional-evolution/",
+      "markdown": "downloads/markdown/ch05_property_rights_and_institutional_evolution.md",
+      "powerpoint": "downloads/slides/ch05_property_rights_and_institutional_evolution.pptx"
+    },
+    {
+      "number": 6,
+      "title": "Intellectual Property, Innovation, and Information Goods",
+      "reader": "chapters/ch06-intellectual-property-innovation-and-information-goods/",
+      "markdown": "downloads/markdown/ch06_intellectual_property_innovation_and_information_goods.md",
+      "powerpoint": "downloads/slides/ch06_intellectual_property_innovation_and_information_goods.pptx"
+    },
+    {
+      "number": 7,
+      "title": "Torts, Accidents, and Incentives",
+      "reader": "chapters/ch07-torts-accidents-and-incentives/",
+      "markdown": "downloads/markdown/ch07_torts_accidents_and_incentives.md",
+      "powerpoint": "downloads/slides/ch07_torts_accidents_and_incentives.pptx"
+    },
+    {
+      "number": 8,
+      "title": "Contracts, Bargaining, and Enforcement",
+      "reader": "chapters/ch08-contracts-bargaining-and-enforcement/",
+      "markdown": "downloads/markdown/ch08_contracts_bargaining_and_enforcement.md",
+      "powerpoint": "downloads/slides/ch08_contracts_bargaining_and_enforcement.pptx"
+    },
+    {
+      "number": 9,
+      "title": "Courts, Litigation, and Dispute Resolution",
+      "reader": "chapters/ch09-courts-litigation-and-dispute-resolution/",
+      "markdown": "downloads/markdown/ch09_courts_litigation_and_dispute_resolution.md",
+      "powerpoint": "downloads/slides/ch09_courts_litigation_and_dispute_resolution.pptx"
+    },
+    {
+      "number": 10,
+      "title": "Does the Common Law Tend Toward Efficiency?",
+      "reader": "chapters/ch10-common-law-efficiency/",
+      "markdown": "downloads/markdown/ch10_common_law_efficiency.md",
+      "powerpoint": "downloads/slides/ch10_common_law_efficiency.pptx"
+    },
+    {
+      "number": 11,
+      "title": "Crime, Punishment, and Social Order",
+      "reader": "chapters/ch11-crime-punishment-and-social-order/",
+      "markdown": "downloads/markdown/ch11_crime_punishment_and_social_order.md",
+      "powerpoint": "downloads/slides/ch11_crime_punishment_and_social_order.pptx"
+    },
+    {
+      "number": 12,
+      "title": "The Corporation as a Legal Technology",
+      "reader": "chapters/ch12-corporation-as-legal-technology/",
+      "markdown": "downloads/markdown/ch12_corporation_as_legal_technology.md",
+      "powerpoint": "downloads/slides/ch12_corporation_as_legal_technology.pptx"
+    },
+    {
+      "number": 13,
+      "title": "Regulation and Public Choice",
+      "reader": "chapters/ch13-regulation-and-public-choice/",
+      "markdown": "downloads/markdown/ch13_regulation_and_public_choice.md",
+      "powerpoint": "downloads/slides/ch13_regulation_and_public_choice.pptx"
+    },
+    {
+      "number": 14,
+      "title": "Antitrust, Competition, and Market Power",
+      "reader": "chapters/ch14-antitrust-competition-and-market-power/",
+      "markdown": "downloads/markdown/ch14_antitrust_competition_and_market_power.md",
+      "powerpoint": "downloads/slides/ch14_antitrust_competition_and_market_power.pptx"
+    },
+    {
+      "number": 15,
+      "title": "Platforms, Code, and AI: New Questions for Law and Economics",
+      "reader": "chapters/ch15-platforms-code-and-ai/",
+      "markdown": "downloads/markdown/ch15_platforms_code_and_ai.md",
+      "powerpoint": "downloads/slides/ch15_platforms_code_and_ai.pptx"
+    },
+    {
+      "number": 16,
+      "title": "From Rights to Runtimes: The Long Arc of Legal Technology",
+      "reader": "chapters/ch16-from-rights-to-runtimes/",
+      "markdown": "downloads/markdown/ch16_from_rights_to_runtimes.md",
+      "powerpoint": "downloads/slides/ch16_from_rights_to_runtimes.pptx"
+    }
+  ]
+}

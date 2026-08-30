@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 4: Transaction Costs and the Coase Theorem | Rules, Rights, and Runtimes</title>
+  <meta name="description" content="A factory, a lake, and a developer reveal how legal entitlements, gains from agreement, and transaction costs shape resource use.">
+  <link rel="stylesheet" href="../../assets/katex.min.css">
+  <link rel="stylesheet" href="../../assets/book.css">
+  <link rel="stylesheet" href="../../assets/publication.css">
+</head>
+<body>
+  <div class="reader-page">
+    <header class="site-header">
+      <a class="book-name" href="../../">Rules, Rights, and Runtimes</a>
+      <p>Law and Economics in the Age of AI</p>
+    </header>
+
+    <div class="reader-layout">
+      <aside class="reader-sidebar">
+        <div class="sidebar-inner">
+          <p class="sidebar-kicker">Online textbook</p>
+          <p class="sidebar-chapter">Chapter 4 of 16</p>
+
+          <nav class="chapter-list" aria-label="Available chapters">
+            <p class="nav-heading">Chapters</p>
+            <ol>
+<li><a href="../ch01-what-is-law-and-economics/"><span>1</span>What Is Law and Economics?</a></li>
+<li><a href="../ch02-microeconomic-toolkit-for-law/"><span>2</span>The Microeconomic Toolkit for Law</a></li>
+<li><a href="../ch03-law-courts-and-legal-institutions/"><span>3</span>Law, Courts, and Legal Institutions</a></li>
+<li><a aria-current="page" href="../ch04-transaction-costs-and-coase-theorem/"><span>4</span>Transaction Costs and the Coase Theorem</a></li>
+<li><a href="../ch05-property-rights-and-institutional-evolution/"><span>5</span>Property Rights and Institutional Evolution</a></li>
+<li><a href="../ch06-intellectual-property-innovation-and-information-goods/"><span>6</span>Intellectual Property, Innovation, and Information Goods</a></li>
+<li><a href="../ch07-torts-accidents-and-incentives/"><span>7</span>Torts, Accidents, and Incentives</a></li>
+<li><a href="../ch08-contracts-bargaining-and-enforcement/"><span>8</span>Contracts, Bargaining, and Enforcement</a></li>
+<li><a href="../ch09-courts-litigation-and-dispute-resolution/"><span>9</span>Courts, Litigation, and Dispute Resolution</a></li>
+<li><a href="../ch10-common-law-efficiency/"><span>10</span>Does the Common Law Tend Toward Efficiency?</a></li>
+<li><a href="../ch11-crime-punishment-and-social-order/"><span>11</span>Crime, Punishment, and Social Order</a></li>
+<li><a href="../ch12-corporation-as-legal-technology/"><span>12</span>The Corporation as a Legal Technology</a></li>
+<li><a href="../ch13-regulation-and-public-choice/"><span>13</span>Regulation and Public Choice</a></li>
+<li><a href="../ch14-antitrust-competition-and-market-power/"><span>14</span>Antitrust, Competition, and Market Power</a></li>
+<li><a href="../ch15-platforms-code-and-ai/"><span>15</span>Platforms, Code, and AI: New Questions for Law and Economics</a></li>
+<li><a href="../ch16-from-rights-to-runtimes/"><span>16</span>From Rights to Runtimes: The Long Arc of Legal Technology</a></li>
+            </ol>
+          </nav>
+
+          <nav class="contents-nav" aria-label="Chapter contents">
+            <p class="nav-heading">In this chapter</p>
+            <ol>
+<li><a href="#a-factory-a-lake-and-a-developer">A Factory, a Lake, and a Developer</a></li>
+<li><a href="#the-pigouvian-first-answer">The Pigouvian First Answer</a></li>
+<li><a href="#reciprocal-harm-and-joint-value">Reciprocal Harm and Joint Value</a></li>
+<li><a href="#cooperative-surplus-and-the-bargaining-range">Cooperative Surplus and the Bargaining Range</a></li>
+<li><a href="#reverse-the-legal-entitlement">Reverse the Legal Entitlement</a></li>
+<li><a href="#the-coase-theorem">The Coase Theorem</a></li>
+<li><a href="#why-the-bargain-may-fail">Why the Bargain May Fail</a></li>
+<li><a href="#from-the-theorem-to-institutional-design">From the Theorem to Institutional Design</a></li>
+<li><a href="#choosing-among-imperfect-responses">Choosing Among Imperfect Responses</a></li>
+<li><a href="#railroad-sparks-and-least-cost-avoidance">Railroad Sparks and Least-Cost Avoidance</a></li>
+<li><a href="#spectrum-and-platform-entitlements">Spectrum and Platform Entitlements</a></li>
+<li><a href="#big-picture">Big Picture</a></li>
+<li><a href="#chapter-study-map">Chapter Study Map</a></li>
+<li><a href="#review-questions">Review Questions</a></li>
+<li><a href="#economic-reasoning-questions">Economic Reasoning Questions</a></li>
+<li><a href="#law-and-economics-lab">Law and Economics Lab</a></li>
+            </ol>
+          </nav>
+
+          <div class="download-links">
+            <a class="download-link" href="../../downloads/markdown/ch04_transaction_costs_and_coase_theorem.md" download>Download chapter Markdown</a>
+            <a class="download-link" href="../../downloads/slides/ch04_transaction_costs_and_coase_theorem.pptx" download>Download lecture PowerPoint</a>
+          </div>
+        </div>
+      </aside>
+
+      <main id="main-content">
+        <header class="chapter-header">
+          <p class="chapter-number">Chapter 4</p>
+          <h1 id="chapter-title">Transaction Costs and the Coase Theorem</h1>
+          <p class="chapter-deck">A factory, a lake, and a developer reveal how legal entitlements, gains from agreement, and transaction costs shape resource use.</p>
+          <div class="chapter-meta" aria-label="Chapter information">
+            <span>Undergraduate level</span>
+            <span>6,874 words</span>
+            <span>Review edition</span>
+          </div>
+        </header>
+
+        <article class="chapter-body">
+<h2 id="a-factory-a-lake-and-a-developer">A Factory, a Lake, and a Developer</h2>
+<p>A factory operates beside a scenic lake. It produces goods that customers value, employs workers, and earns a return for its owners. Its production process also releases waste into the water. In this hypothetical setting, the factory has the legal right to continue the discharge.</p>
+<p>A developer owns land around another part of the lake. The land could support houses, restaurants, trails, and other lakeside uses, but those plans become much more valuable if the water is cleaner. Pollution control at the factory would therefore create a benefit for the developer.</p>
+<p>This looks like the negative externality introduced in Chapter 2. The factory considers wages, equipment, energy, and materials when deciding how to operate, but it does not automatically bear the loss in development value caused by dirtier water. The initial economic diagnosis seems straightforward: an important cost is missing from the factory’s calculation.</p>
+<p>The legal question is less straightforward. Should the factory be prohibited from discharging? Should it pay damages or a tax? Should the developer pay for pollution controls? Should the development change instead? Does it matter who arrived first or who holds the legal entitlement? What happens if thousands of homeowners use the lake rather than one developer?</p>
+<p>These questions cannot be answered by observing that pollution causes harm. The factory’s production is valuable too, and every response consumes resources. Sound economic analysis must compare the feasible uses and the institutions available to coordinate them.</p>
+<p>Figure 4.1 maps the conflict. It is a stylized teaching example, not a description of the environmental law of a particular jurisdiction. Its purpose is to make the competing uses and bargaining problem visible.</p>
+<figure class="chapter-figure" id="fig:ch04-lake-factory-developer">
+<p><img src="../../figures/ch04_transaction_costs_and_coase_theorem/ch04_lake_factory_developer.svg" alt="A factory with an initial right to discharge and a developer that values cleaner water are connected through a shared lake and a comparison of gains, control costs, and bargaining costs."></p>
+<p><strong>Figure 4.1. A factory, a lake, and a developer.</strong> The legal entitlement supplies the starting point for the conflict. Whether agreement can improve the outcome depends on the gains from cleaner water, the cost of pollution control, and the cost of reaching and enforcing a bargain.</p>
+</figure>
+<p>The rest of the chapter develops a method for answering the questions raised by the figure. We begin with the familiar externality response, then introduce Ronald Coase’s deeper challenge: What changes when harms are reciprocal, legal rights are transferable, and agreement itself is costly?</p>
+<h2 id="the-pigouvian-first-answer">The Pigouvian First Answer</h2>
+<p>Recall the basic externality logic. An actor who bears all relevant costs and benefits has a reason to compare them when choosing what to do. If some costs fall on outsiders, private incentives can diverge from social value.</p>
+<p>The factory pays for its labor and fuel, but the developer loses value when water quality falls. If that loss never enters the factory’s calculation, the factory may discharge too much waste or invest too little in pollution control. One possible response is to <strong>internalize</strong> the external cost by making the factory bear more of the harm associated with its choices.</p>
+<p>A corrective tax could charge for discharge. Tort damages could require compensation for legally attributable harm. A fine could punish violation of an emissions rule. A regulation could mandate a control technology or specify a water-quality standard. Each approach changes the factory’s expected payoff from continuing the discharge.</p>
+<p>This is often called a Pigouvian response, after economist A. C. Pigou. The core intuition is powerful: when a decision omits an external cost, adjust the decision-maker’s incentives so that the missing cost receives weight.</p>
+<p>But saying “make the polluter pay” does not complete the analysis. Someone must determine which effects count, estimate their size, identify the relevant activity, monitor conduct, and enforce the response. The developer may also have ways to reduce the conflict. The factory and developer may possess information that a regulator or court lacks. They may be able to reach an agreement. A legal response can itself create administrative costs, errors, and strategic behavior.</p>
+<p>The Pigouvian approach identifies an incentive problem. Coase asks us to examine the institutional problem underneath it.</p>
+<h3 id="what-exactly-is-the-entitlement">What Exactly Is the Entitlement?</h3>
+<p>The phrase “the factory has the right to discharge” compresses many legal details. A real entitlement must answer questions about scope. Which substances may be released? In what quantity? At which location and time? For how long? May the right be transferred? What remedy follows a violation? Which institution interprets uncertain terms?</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Legal Entitlement</strong></p>
+<p>A legal entitlement is a legally recognized claim that establishes what a party may do or prevent before any bargain. Property rights are an important class of entitlements, but entitlements can also arise from nuisance law, regulation, permits, or contracts. The broader term lets us identify the legal starting position without implying that either party owns the entire resource in the ordinary sense.</p>
+</aside>
+<p>Those details change the economics. A clear limit can reduce disagreement about the no-agreement baseline. A vague promise of “reasonable use” may permit adaptation but require costly interpretation. A transferable entitlement can move through exchange, while a nontransferable rule blocks some bargains deliberately. An entitlement protected by an injunction gives its holder different leverage from one protected only by damages.</p>
+<p>Clarity is therefore not the same as breadth. Law could clearly give the factory an unlimited right to discharge any substance forever, but that rule might ignore changing harms and technologies. Law could clearly prohibit every trace of discharge, but that rule might prevent valuable production even when modest emissions create little harm. A usable entitlement must be sufficiently definite for planning and exchange without pretending that every future condition is known.</p>
+<p>Chapter 3 showed that rights depend on institutions. A paper entitlement is valuable only if parties can identify it, rely on it, transfer it when permitted, and obtain a remedy when it is violated. Chapter 5 will examine the content and protection of property rights in detail. For now, the important point is that bargaining does not begin from nature. Law helps construct the object over which the parties bargain.</p>
+<h2 id="reciprocal-harm-and-joint-value">Reciprocal Harm and Joint Value</h2>
+<p>The factory physically changes the water. That fact matters for causation, responsibility, and law. Yet an economic comparison must also ask what happens when the factory is stopped.</p>
+<p>If discharge is prohibited, the developer receives cleaner water, but the factory must install controls, alter production, relocate, or close. If discharge continues, the factory avoids those costs, but the developer loses valuable opportunities. Choosing either use prevents some part of the other use. Coase described this feature as the <strong>reciprocal nature of harm</strong>.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>Reciprocal Harm Does Not Erase Responsibility</strong></p>
+<p>Calling a conflict reciprocal does not deny physical harm, legal causation, fairness, or responsibility. It means that preventing one activity can also impose a cost. Economic analysis compares what each feasible arrangement requires society to give up.</p>
+</aside>
+<p>A thought experiment makes the point clearer. Imagine that one company owns both the factory and the development. The company would not treat pollution damage as someone else’s problem. Dirtier water would reduce the value of one of its own assets. At the same time, it would not treat factory production as worthless. It would compare the total value created by the alternatives.</p>
+<p>Suppose pollution controls cost <code>\$2 million</code> and cleaner water adds <code>\$5 million</code> to the development’s value. An integrated owner installs the controls. Spending <code>\$2 million</code> creates a <code>\$5 million</code> gain elsewhere in the organization, increasing joint value by <code>\$3 million</code>.</p>
+<p>Now change the numbers. Suppose controls cost <code>\$6 million</code> while cleaner water adds only <code>\$5 million</code> to development value. An integrated owner does not install the controls merely because the waste physically comes from the factory. It allows discharge and changes, relocates, or abandons the development plan because the controls would consume more value than they create.</p>
+<p>The integrated-owner thought experiment does not recommend merging every pair of conflicting activities. It identifies the comparison that an institution should help produce. The efficient use is the feasible arrangement with the greatest total value after counting both sides.</p>
+<p>Separate ownership creates an additional question. Can agreement make the factory and developer behave as though one decision-maker were comparing the joint consequences?</p>
+<h3 id="does-it-matter-who-came-first">Does It Matter Who Came First?</h3>
+<p>Suppose the factory was operating before the developer acquired the lakeside land. Many people react differently to that sequence than they would if the factory opened beside an established resort. Lawyers sometimes describe the issue as <strong>coming to the nuisance</strong>: one party knowingly locates near an existing activity and later complains about its effects.</p>
+<p>Timing can matter, but not because it mechanically determines the efficient use. At the moment of conflict, the same comparison remains necessary. If controls cost <code>\$2 million</code> and cleaner water creates <code>\$5 million</code> in development value, controls increase joint value regardless of which activity arrived first.</p>
+<p>Timing matters through expectations and investment incentives. If the developer knew about the discharge and the factory’s entitlement, the land’s purchase price may already reflect dirtier water. Granting the developer a new right to stop discharge could transfer wealth that was not part of the original purchase. It might also encourage buyers to acquire inexpensive land beside existing activities in hopes of later obtaining compensation.</p>
+<p>The other rule creates its own incentives. If being first gives the factory an unlimited right to impose future harms, the factory may have too little reason to adopt inexpensive controls as surrounding land becomes more valuable. Early use can become a shield for inefficient conduct even after technology, population, and opportunity costs change.</p>
+<p>The legal rule therefore affects decisions made before the dispute appears. Factories choose locations and equipment. Developers investigate land and decide where to build. Lenders and insurers price risks. Communities decide which uses may coexist. A predictable entitlement can reduce uncertainty, but a rigid entitlement can preserve a use after circumstances have changed.</p>
+<p>This is another reason not to turn Coasean analysis into a slogan. “The developer came later” identifies a relevant fact about expectations and distribution. It does not eliminate the need to compare adjustment costs, reliance, notice, bargaining possibilities, and institutional alternatives. Chapter 5 will return to nuisance and land-use rules after developing a fuller account of property rights.</p>
+<h2 id="cooperative-surplus-and-the-bargaining-range">Cooperative Surplus and the Bargaining Range</h2>
+<p>Return to the original numbers. Cleaner water adds <code>\$5 million</code> to development value, and pollution controls cost <code>\$2 million</code>. The factory currently holds the legal right to discharge. Without an agreement, discharge continues.</p>
+<p>The developer could offer to pay for pollution controls. The factory requires at least <code>\$2 million</code>, because a smaller payment would not cover the control cost. The developer is willing to pay as much as <code>\$5 million</code>, because a larger payment would exceed the value created by cleaner water.</p>
+<p>Any payment strictly between those amounts can make both parties better off. If the developer pays <code>\$3 million</code>, for example, the factory pays <code>\$2 million</code> for controls and keeps a <code>\$1 million</code> gain. The developer receives <code>\$5 million</code> in added land value, pays <code>\$3 million</code>, and gains <code>\$2 million</code>. Together they gain <code>\$3 million</code>.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Cooperative Surplus</strong></p>
+<p>Cooperative surplus is the value created by agreement relative to the no-agreement outcome. It is the gains from agreement that the parties can potentially divide.</p>
+</aside>
+<p>Let <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>G</mi></mrow><annotation encoding="application/x-tex">G</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">G</span></span></span></span></eq> represent the gain from cleaner water and <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi></mrow><annotation encoding="application/x-tex">C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span></span></span></span></eq> represent the cost of pollution controls. Measured in millions of dollars, the cooperative surplus is:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>S</mi><mo>=</mo><mi>G</mi><mo>−</mo><mi>C</mi><mo>=</mo><mn>5</mn><mo>−</mo><mn>2</mn><mo>=</mo><mn>3.</mn></mrow><annotation encoding="application/x-tex">
+S = G - C = 5 - 2 = 3.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal">G</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">3.</span></span></span></span></span></eqn></section><p>Read the expression in words. The gain from agreement equals the benefit created by cleaner water minus the cost of producing it. The symbol does not determine how the <code>\$3 million</code> is divided.</p>
+<p>Let <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span></eq> represent the payment from the developer to the factory, also measured in millions. A payment can make both parties strictly better off when:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mn>2</mn><mo>&lt;</mo><mi>P</mi><mo>&lt;</mo><mn>5.</mn></mrow><annotation encoding="application/x-tex">
+2 &lt; P &lt; 5.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6835em;vertical-align:-0.0391em;"></span><span class="mord">2</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7224em;vertical-align:-0.0391em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&lt;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">5.</span></span></span></span></span></eqn></section><p>This interval is the <strong>bargaining range</strong>. At <code>\$2 million</code>, the factory is just compensated for its control cost. At <code>\$5 million</code>, the developer gives up the full gain from cleaner water. Payments inside the range divide the cooperative surplus in different ways.</p>
+<p>Nothing in the basic example predicts one unique payment. Bargaining power, patience, information, alternatives, norms, and legal rules can influence the division. We do not need a formal bargaining solution to understand the central result. The essential point is gains from trade: an agreement can create value because the developer values cleaner water more than it costs the factory to provide it.</p>
+<h2 id="reverse-the-legal-entitlement">Reverse the Legal Entitlement</h2>
+<p>Now suppose the developer holds the legal right to clean water. The factory must install controls unless the developer gives permission to discharge.</p>
+<p>The efficient use remains cleaner water. Controls cost the factory <code>\$2 million</code>, while discharge would reduce development value by <code>\$5 million</code>. The factory would pay at most <code>\$2 million</code> for permission to discharge because that is what it saves by avoiding controls. The developer would require at least <code>\$5 million</code> because that is the loss caused by discharge. No payment can satisfy both parties.</p>
+<p>No bargain is needed. The legal baseline already produces the value-maximizing use: the factory installs the controls.</p>
+<p><a id="tbl:ch04-cooperative-surplus-and-rights"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Initial legal entitlement</th>
+<th>No-agreement outcome</th>
+<th>Bargaining implication</th>
+<th>Efficient use with fixed values</th>
+<th>Distributional consequence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Factory has the right to discharge</td>
+<td>Discharge continues</td>
+<td>Developer can pay more than <code>\$2 million</code> and less than <code>\$5 million</code> for controls</td>
+<td>Factory installs controls</td>
+<td>Bargaining creates and divides a <code>\$3 million</code> cooperative surplus</td>
+</tr>
+<tr>
+<td>Developer has the right to clean water</td>
+<td>Factory must control its discharge</td>
+<td>Factory will not pay the <code>\$5 million</code> minimum needed to impose a loss in order to save only <code>\$2 million</code></td>
+<td>Factory installs controls</td>
+<td>Factory bears the <code>\$2 million</code> control cost; no cooperative surplus arises relative to this legal baseline</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 4.1. Cooperative surplus and entitlement reversal.</strong> With fixed values and costless bargaining, both entitlements produce pollution control. The legal starting point still changes whether bargaining is needed and who bears the cost.</p>
+<p>The comparison reveals two separate questions:</p>
+<ol>
+<li><strong>Which resource use creates the most value?</strong> With these numbers, pollution control creates <code>\$3 million</code> more value than continued discharge.</li>
+<li><strong>Who receives the benefits and bears the costs?</strong> That depends on the initial entitlement and the payment, if any.</li>
+</ol>
+<aside class="semantic-block semantic-keypoint"><p class="semantic-label">Key Point</p>
+<p><strong>Initial Rights Affect Distribution</strong></p>
+<p>Even when costless bargaining produces the same efficient use, the initial legal entitlement affects the no-agreement baseline, who must obtain permission, who pays, and who receives the gains from agreement.</p>
+</aside>
+<p>If land is bought and sold after the legal rule is known, some of the entitlement’s value may become reflected in land prices. If people value additional wealth differently, changing the entitlement may also alter later choices. Those complications matter in advanced versions of the theorem. For the present fixed-value example, the central distinction is enough: efficient use and distribution are not the same question.</p>
+<h3 id="a-second-numerical-case-when-discharge-is-efficient">A Second Numerical Case: When Discharge Is Efficient</h3>
+<p>The original numbers make cleaner water the efficient use. That result comes from the values, not from a rule that zero pollution is always efficient.</p>
+<p>Suppose cleaner water adds <code>\$5 million</code> to development value but pollution controls now cost <code>\$6 million</code>. Installing controls would destroy <code>\$1 million</code> in joint value. Continued discharge is the efficient use within this simplified choice.</p>
+<p>If the factory has the right to discharge, no bargain is needed. Discharge continues under the legal baseline. The developer would pay at most <code>\$5 million</code> for cleaner water, while the factory requires at least <code>\$6 million</code> to cover the controls. There is no mutually beneficial payment.</p>
+<p>If the developer instead has the right to clean water, the no-agreement outcome requires the factory to install the costly controls. Now a bargain can create value. The factory is willing to pay up to <code>\$6 million</code> for permission to discharge, and the developer requires at least <code>\$5 million</code> to accept the resulting loss. A payment between those amounts creates and divides a <code>\$1 million</code> cooperative surplus.</p>
+<p>Both entitlements therefore produce discharge when bargaining is costless, but the payment and distribution differ. This reversed example completes the symmetry behind the theorem. The efficient use can be more pollution or less pollution depending on the relative values. Economic efficiency asks whether another unit of control creates benefits exceeding its cost; it does not declare that environmental quality is unimportant or decide which harms the law may permissibly impose.</p>
+<h2 id="the-coase-theorem">The Coase Theorem</h2>
+<p>We can now state the result that George Stigler later named the <strong>Coase Theorem</strong>:</p>
+<aside class="semantic-block semantic-keypoint"><p class="semantic-label">Key Point</p>
+<p><strong>The Coase Theorem</strong></p>
+<p>When legal entitlements are clear and transferable and transaction costs are zero, private bargaining produces an efficient use of resources regardless of the initial assignment of the entitlement.</p>
+</aside>
+<p>The theorem is a benchmark. In the factory-right case, bargaining moves the lake toward its higher-valued use. In the developer-right case, the legal baseline already produces that use. Reversing the entitlement changes payments and wealth but not the use of the lake in this simplified example.</p>
+<p>“Zero transaction costs” is intentionally demanding. The parties can find one another, know the relevant values, communicate without expense or delay, write any needed agreement, observe performance, and enforce promises at no cost. Strategic behavior never prevents them from realizing available gains.</p>
+<p>Sometimes people restate the theorem using “low transaction costs.” That phrasing captures the practical intuition: bargaining becomes more plausible when its costs are small relative to the gains. But the precise benchmark is zero transaction costs. Positive costs must be subtracted from the cooperative surplus and can affect the result.</p>
+<aside class="semantic-block semantic-warning"><p class="semantic-label">Important Qualification</p>
+<p><strong>The Coase Theorem Is Not A Claim That Law Does Not Matter</strong></p>
+<p>The theorem identifies a world in which bargaining corrects the resource-use consequences of the initial entitlement. Law still determines the bargaining baseline and distribution. In the real world, positive transaction costs make legal rules even more consequential.</p>
+</aside>
+<p>The theorem also does not determine which entitlement is fair, morally justified, constitutionally permissible, or politically legitimate. An efficiency result cannot answer those questions by itself. Nor does the theorem prove that government is unnecessary. Courts, registries, contract enforcement, and public rules may be what make rights clear and agreements credible in the first place.</p>
+<aside class="semantic-block semantic-historicalnote"><p class="semantic-label">Historical Note</p>
+<p><strong>Ronald Coase and the World of Positive Transaction Costs</strong></p>
+<p>Ronald Coase (1910-2013) urged economists to compare actual institutional arrangements rather than an idealized market with an idealized government. In “The Problem of Social Cost,” he used disputes involving cattle, crops, railroads, smoke, noise, and other incompatible uses to show why reciprocal harm, legal rights, and transaction costs belong in the same analysis.</p>
+<p>George Stigler later named and formulated the zero-transaction-cost result as the Coase Theorem. Coase treated that result as a starting point, not the destination. Once the frictionless benchmark is understood, the harder and more useful question is why real transactions are costly and how alternative legal, market, organizational, and political institutions perform when those costs are positive.</p>
+</aside>
+<p>The lake example therefore has two lessons. The famous theorem explains what frictionless bargaining could accomplish. Coase’s broader contribution directs attention to the institutional obstacles that keep the bargain from happening.</p>
+<h2 id="why-the-bargain-may-fail">Why the Bargain May Fail</h2>
+<p>The simple bargain involved one factory, one developer, known values, a clear entitlement, and an enforceable promise. Real disputes rarely arrive in that form.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Transaction Costs</strong></p>
+<p>Transaction costs are the costs of arranging and carrying out exchange. They include finding parties and relevant information, negotiating and recording agreement, and monitoring and enforcing performance.</p>
+</aside>
+<h3 id="search-and-information-costs">Search and Information Costs</h3>
+<p>The parties must first identify one another and learn what matters. Who owns the affected land? Which discharge changes water quality? How much would controls cost? How much value would cleaner water create? Are there other users of the lake whose losses or benefits should be counted?</p>
+<p>Some information is technical. Engineers may disagree about how a control system performs. Scientists may face uncertainty about ecological effects. Some information is private. The factory knows more about its production process, while the developer knows more about its plans and financing. Each side may have a reason to exaggerate its costs or benefits to obtain a larger share of the surplus.</p>
+<p>Uncertain legal rights create another information cost. A permit, deed, easement, regulation, common-law rule, or contract may define the parties’ authority. If those sources conflict or their application is uncertain, the parties must spend resources determining the bargaining baseline before discussing a payment.</p>
+<h3 id="bargaining-and-strategic-costs">Bargaining and Strategic Costs</h3>
+<p>Even informed parties must communicate, propose terms, make concessions, and record an agreement. Negotiation consumes time and professional services. Delay may destroy some of the opportunity. A party may refuse an otherwise beneficial offer in hopes of capturing a larger share.</p>
+<p>Distribution is therefore not an afterthought. The parties can agree that controls create <code>\$3 million</code> while fighting over who receives it. The possibility of strategic bargaining becomes more serious when one side faces a deadline, has few alternatives, or must obtain unanimous consent.</p>
+<p>Now replace the single developer with ten thousand households. If the factory has the right to discharge, residents may try to raise money for controls. Each household enjoys some benefit from cleaner water whether or not it contributes. That creates a <strong>free-rider problem</strong>.</p>
+<p>If each resident instead holds an individual right that the factory must acquire before discharging, one resident may refuse consent in hopes of receiving an unusually large payment. That creates a <strong>holdout problem</strong>. The problem is not simply that people are unreasonable. A legal arrangement can give each person strategic leverage over a project whose value depends on assembling many permissions.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Holdouts and Free Riders</strong></p>
+<p>A holdout tries to capture more of the gains from agreement by withholding necessary cooperation. A free rider tries to receive the benefit of collective action without paying a share of its cost. Either problem can block an agreement that would create value.</p>
+</aside>
+<h3 id="monitoring-and-enforcement-costs">Monitoring and Enforcement Costs</h3>
+<p>An agreement must specify what the factory promises. “Keep the lake clean” is not enough. How clean? Measured where, when, and by whom? Does the obligation concern the factory’s equipment, its emissions, or the resulting water quality? What happens after an equipment failure, unusual rainfall, a new production process, or pollution from another source?</p>
+<p>Monitoring answers whether performance occurred. Enforcement determines what follows if it did not. The parties may need inspections, data access, dispute procedures, security, insurance, or a court. An agreement that cannot be verified or enforced may have little value.</p>
+<p>These costs can be compared with the cooperative surplus. Let <eq><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span></span></span></span></eq> represent total transaction costs, measured in millions. The net gains potentially available from the bargain are:</p>
+<section><eqn><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>N</mi><mo>=</mo><mi>S</mi><mo>−</mo><mi>T</mi><mi mathvariant="normal">.</mi></mrow><annotation encoding="application/x-tex">
+N = S - T.
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.10903em;">N</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">T</span><span class="mord">.</span></span></span></span></span></eqn></section><p>If the cooperative surplus is <code>\$3 million</code> and transaction costs are <code>\$500,000</code>, a net gain of <code>\$2.5 million</code> remains to be divided. If transaction costs exceed <code>\$3 million</code>, the bargain consumes more value than it creates. Even when the arithmetic leaves positive net gains, private information or strategic conflict may still prevent agreement.</p>
+<aside class="semantic-block semantic-keypoint"><p class="semantic-label">Key Point</p>
+<p><strong>Institutions Matter Because Bargaining Is Costly</strong></p>
+<p>Positive transaction costs determine which agreements are feasible. Legal rules affect who must coordinate, what information is available, who has leverage, and what happens when agreement fails.</p>
+</aside>
+<h2 id="from-the-theorem-to-institutional-design">From the Theorem to Institutional Design</h2>
+<p>Once transaction costs enter the analysis, “let the parties bargain” is no longer a complete policy. Law faces two related tasks.</p>
+<p>First, it can reduce obstacles to agreement. Clear titles identify who may transfer land. Public records reduce search costs. Standard contract terms reduce drafting costs. Disclosure rules can improve information. Courts and arbitration can make promises more credible. Rules allowing an authorized representative to act for a group can sometimes reduce the number of necessary negotiations.</p>
+<p>Second, law can choose a sensible outcome for cases in which agreement is unlikely. Traffic rules do not ask drivers to bargain at every intersection. Pollution affecting millions of people cannot ordinarily be resolved through a separate contract with each victim. A starting rule, remedy, or public standard determines what happens when private coordination fails.</p>
+<p>Cooter and Ulen give these tasks memorable names.</p>
+<aside class="semantic-block semantic-quickconcept"><p class="semantic-label">Quick Concept</p>
+<p><strong>Normative Coase and Normative Hobbes</strong></p>
+<p>The Normative Coase principle says law should reduce impediments to private agreement when bargaining can work. The Normative Hobbes principle says law should reduce the harm caused by bargaining failure when agreement is unlikely.</p>
+</aside>
+<p>The Normative Coase principle is sometimes described as <strong>lubricating bargaining</strong>. Law can make rights simpler, more certain, easier to find, and easier to transfer. It need not know the final highest-valued use if parties can discover that use and trade toward it themselves.</p>
+<p>The Normative Hobbes principle begins from a less optimistic situation. If disagreement, threats, delay, or collective-action problems will block trade, the law should try to make the no-agreement result less destructive. That may mean assigning control to the party likely to place greater value on it, placing a precaution duty on the party able to avoid harm more cheaply, or creating a public decision process.</p>
+<p>Neither principle eliminates the information problem. A court or legislature may not know who values an entitlement most or who can prevent harm at least cost. Attempting to make that determination can itself be expensive and error-prone. The institutional comparison therefore includes the cost of private bargaining and the cost of public decision-making.</p>
+<p>The two principles are not opposites. A property system can assign an initial entitlement for cases without agreement while also making the entitlement transferable. Contract law can provide default rules while enforcing voluntary modifications. A pollution regime can set a baseline and still permit trading or negotiated compliance. Legal institutions often combine a no-agreement rule with a path for consensual change.</p>
+<h3 id="organizations-associations-and-norms">Organizations, Associations, and Norms</h3>
+<p>Direct bargaining between every affected person is not the only way to coordinate. People can change the structure within which decisions are made.</p>
+<p>The integrated-owner thought experiment points toward <strong>organization</strong>. A firm can place connected activities under common authority. One management system can compare the effects of a decision across factories, suppliers, land, and distribution networks without negotiating a new market contract for every adjustment. This can reduce some external bargaining costs.</p>
+<p>Organization does not make coordination free. Managers need information from different divisions. Employees may pursue their own objectives. Internal rules can become rigid, and mistakes may be difficult for outsiders to correct. Bringing a transaction inside a firm replaces some market transaction costs with administrative and agency costs. Chapter 12 will use that comparison to study corporate boundaries and governance.</p>
+<p>An <strong>association</strong> can bundle many participants. A homeowners association can adopt noise or maintenance rules for a neighborhood. A watershed group can represent landowners in recurring water disputes. A trade association can set shared technical standards. Representation reduces the number of separate bargains, but it raises governance questions: Who may speak for the group? How are votes counted? What protects dissenters? Who monitors the representative?</p>
+<p><strong>Social norms</strong> can also reduce formal enforcement costs. Neighbors who interact repeatedly may limit late-night noise, share maintenance, or compensate one another informally because reputation and future cooperation matter. Norms work better when conduct is observable, membership is stable, and expectations are shared. They work less well when parties are anonymous, harms are difficult to observe, or values sharply conflict.</p>
+<p>These arrangements reinforce the institutional lesson. A market bargain, firm, association, norm, court, and agency are different coordination technologies. The question is not whether a response is labeled private or public. It is which arrangement handles the relevant information, bargaining, monitoring, and enforcement problems at lower total cost.</p>
+<h2 id="choosing-among-imperfect-responses">Choosing Among Imperfect Responses</h2>
+<p>Return to the lake. The available responses differ in who makes the immediate decision and what information must be produced.</p>
+<p><a id="tbl:ch04-institutional-responses"></a></p>
+<div class="table-scroll"><table><thead>
+<tr>
+<th>Response</th>
+<th>Who makes the immediate decision?</th>
+<th>Information required</th>
+<th>Characteristic cost or failure risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Private bargain</td>
+<td>Factory and affected right holder</td>
+<td>Parties, entitlements, costs, benefits, feasible terms</td>
+<td>Search, strategic bargaining, holdouts, free riding, monitoring, enforcement</td>
+</tr>
+<tr>
+<td>Injunction</td>
+<td>Court gives the entitlement holder authority to stop or condition the activity</td>
+<td>Legal right, violation, scope of prohibited conduct</td>
+<td>Litigation, compliance uncertainty, holdout leverage, later bargaining costs</td>
+</tr>
+<tr>
+<td>Damages</td>
+<td>Court or legal process permits the activity subject to compensation</td>
+<td>Causation, legally recognized harm, amount of loss</td>
+<td>Valuation error, proof cost, delay, collection problems</td>
+</tr>
+<tr>
+<td>Tax or fine</td>
+<td>Public authority sets a price or sanction</td>
+<td>Harm or prohibited conduct, tax base, enforcement probability</td>
+<td>Measurement error, evasion, administration, possible over- or underdeterrence</td>
+</tr>
+<tr>
+<td>Direct rule or standard</td>
+<td>Legislature or agency specifies permitted conduct or required precautions</td>
+<td>Technology, risks, alternatives, monitoring criteria</td>
+<td>Rigidity, outdated rules, compliance cost, enforcement error</td>
+</tr>
+</tbody>
+</table></div><p><strong>Table 4.2. Institutional responses to the lake conflict.</strong> Every response uses information and enforcement. The relevant comparison is among imperfect alternatives, not between an imperfect bargain and a costless legal command.</p>
+<p>An <strong>injunction</strong> can give the developer control over whether discharge continues. If bargaining is manageable, the factory can seek permission for a mutually beneficial use. But an injunction can create powerful holdout leverage when many permissions are required or when stopping the activity imposes enormous costs.</p>
+<p><strong>Damages</strong> can permit discharge while requiring the factory to compensate legally recognized losses. This avoids the need for advance consent from every affected person, but it requires a court or another institution to determine causation and value. Undercompensation leaves some harm external; excessive damages can deter valuable activity.</p>
+<p>A <strong>tax or fine</strong> changes the price faced by the factory. A tax linked to expected harm can encourage the factory to compare discharge with control. A fine can enforce a public rule. Both require a measurable base and credible enforcement. A stated charge that is rarely collected may create a much smaller expected incentive than its nominal amount suggests.</p>
+<p>A <strong>direct rule</strong> can require a technology, limit discharge, or establish a water-quality standard. It can coordinate many parties without thousands of bargains, but the rulemaker must decide what to require and update the rule as conditions change.</p>
+<p>Multiple responses can coexist, but more instruments do not automatically produce better incentives. If a factory pays a tax already designed to reflect the full harm and also pays full uncompensated damages for the same harm, its private cost may exceed social cost. On the other hand, a tax and damages may address different harms or enforcement gaps. The correct question is what each instrument adds after accounting for the others.</p>
+<p>The institutional menu will return throughout the book. Chapter 5 develops injunctions and damages as ways of protecting property entitlements. Chapter 7 examines accident liability. Chapter 9 considers court information and litigation costs. Chapter 13 compares regulatory instruments and political incentives in greater depth.</p>
+<h2 id="railroad-sparks-and-least-cost-avoidance">Railroad Sparks and Least-Cost Avoidance</h2>
+<p>Coase used railroad sparks as another example of reciprocal harm. A train produces sparks that can ignite crops planted beside the track. The railroad is the physical source of the sparks, but identifying the physical source does not determine the least costly response.</p>
+<p>Suppose crop fires cause <code>\$3,000</code> in expected annual damage and a spark arrestor costs the railroad <code>\$1,750</code> per year. Installing the arrestor prevents more harm than it costs. A legal rule that makes the railroad bear the crop losses gives it a reason to take the precaution.</p>
+<p>Now suppose an effective railroad precaution costs <code>\$10,000</code>, while the farmer can avoid most of the loss by leaving a narrow strip beside the track unplanted at a cost of <code>\$500</code>. Preventing all farming or all rail service would waste value. The lower-cost adjustment is at the field boundary.</p>
+<p>This motivates the <strong>least-cost-avoider</strong> question: Which party can prevent or reduce the expected harm at lower cost? Guido Calabresi developed this reasoning as part of the economic analysis of accident law.</p>
+<p>The least-cost-avoider idea is not a complete liability rule. Courts may have difficulty observing costs. Both parties may be able to take useful precautions. A rule may affect activity levels as well as care. Fairness, rights, and administrability also matter. Chapter 7 will develop those complications. Here the example reinforces the Coasean habit: compare the costs of alternative adjustments rather than stopping after identifying physical causation.</p>
+<h2 id="spectrum-and-platform-entitlements">Spectrum and Platform Entitlements</h2>
+<p>The framework extends beyond land and pollution.</p>
+<p>Radio transmissions can interfere with one another. A useful spectrum system must define who may transmit, at what frequency, power, place, or time. Clear and transferable permissions can enable bargaining and reallocation. Poorly defined or highly fragmented rights can create interference, search costs, holdouts, and enforcement problems. Collective or unlicensed uses can sometimes create value as well, which means that exclusive rights are one institutional option rather than an automatic conclusion.</p>
+<p>Digital platforms also define valuable entitlements. An app developer may seek access to an operating system, customer data, payment services, or an app store. The platform may claim authority to exclude, set technical standards, charge fees, or change access rules. A bargain can support investment and specialization, but the platform and developer may have unequal alternatives. Third-party privacy, security, competition, and user interests may not be fully represented in their agreement.</p>
+<p>These are not exceptions to the traditional framework. They are new settings for familiar questions. What is the entitlement? Who holds it? Can it be transferred? What is the no-agreement outcome? Which parties and effects are outside the bargain? What information and enforcement are required? Chapter 15 will use those questions to analyze platforms, code, and AI agents.</p>
+<h2 id="big-picture">Big Picture</h2>
+<p>The Coase Theorem begins with ordinary gains-from-trade reasoning. When one party values a change more than it costs another party to provide it, agreement can create a cooperative surplus. With clear entitlements and zero transaction costs, bargaining moves resources toward higher-valued uses regardless of the initial entitlement.</p>
+<p>The initial entitlement still matters. It establishes the no-agreement baseline, determines who must seek permission, affects bargaining leverage, and distributes wealth. Efficiency does not decide whether that distribution is fair.</p>
+<p>The theorem becomes most useful when its assumptions fail. Search, private information, strategic behavior, free riders, holdouts, monitoring, and enforcement can prevent valuable agreements. Legal institutions then influence not only who pays but also what activity occurs.</p>
+<p>The Normative Coase and Normative Hobbes principles capture the resulting design problem. Law can reduce obstacles to private agreement, and it can reduce the damage from disagreement by selecting a workable starting rule. Bargaining, injunctions, damages, taxes, fines, regulation, organizations, and norms each solve some coordination problems while creating others.</p>
+<p>Chapter 5 turns this framework into a theory of property. Property rights clarify control, support investment and exchange, and reduce some conflicts. They also require boundaries, records, exclusion, and enforcement. The Coasean question will remain with us: Which transaction costs does an institution reduce, and which new costs does it create?</p>
+<h2 id="chapter-study-map">Chapter Study Map</h2>
+<ul>
+<li><strong>Core ideas:</strong> reciprocal harm, legal entitlements, no-agreement baselines, cooperative surplus, bargaining ranges, the Coase Theorem, transaction costs, holdouts, free riders, least-cost avoidance, and the Normative Coase/Hobbes principles.</li>
+<li><strong>Figure and tables:</strong> explain the factory-lake-developer conflict, calculate the <code>\$3 million</code> cooperative surplus, reverse the entitlement in Table 4.1, and compare institutional responses in Table 4.2.</li>
+<li><strong>Reasoning tasks:</strong> identify the entitlement and fallback outcome, calculate gains from agreement, find possible payments, distinguish efficiency from distribution, diagnose bargaining failure, and compare realistic institutional alternatives.</li>
+<li><strong>Common mistakes:</strong> saying the theorem proves law or government is unnecessary, confusing low transaction costs with zero, treating reciprocal harm as denial of physical injury, assuming the physical cause is necessarily the least-cost avoider, or predicting one unique division of the cooperative surplus.</li>
+<li><strong>Practice tools:</strong> use the review questions for vocabulary and theorem conditions, the economic reasoning questions for numerical and institutional variations, and the Coasean Conflict Audit for a complete application.</li>
+<li><strong>Optional enrichment:</strong> long-run wealth and income effects, formal bargaining solutions, coming-to-the-nuisance doctrine, and specific spectrum-allocation regimes are not required for the chapter’s core argument.</li>
+</ul>
+<h2 id="review-questions">Review Questions</h2>
+<ol>
+<li>Why does the factory-lake-developer conflict initially appear to be a standard negative externality?</li>
+<li>What is the basic Pigouvian response to an external cost?</li>
+<li>What does reciprocal harm mean?</li>
+<li>Why does reciprocal harm not imply that physical causation or legal responsibility is irrelevant?</li>
+<li>What does the integrated-owner thought experiment reveal?</li>
+<li>Define cooperative surplus.</li>
+<li>With a <code>\$5 million</code> gain from cleaner water and a <code>\$2 million</code> control cost, what is the cooperative surplus?</li>
+<li>What is the bargaining range when the factory has the right to discharge?</li>
+<li>Why does the basic model not determine one unique payment inside that range?</li>
+<li>State the Coase Theorem at a principles level.</li>
+<li>Why is zero transaction cost a benchmark rather than a realistic description?</li>
+<li>How can the initial entitlement affect distribution even when it does not affect efficient resource use?</li>
+<li>Distinguish search, bargaining, and enforcement costs.</li>
+<li>Distinguish a holdout from a free rider.</li>
+<li>What does the Normative Coase principle recommend?</li>
+<li>What does the Normative Hobbes principle recommend?</li>
+<li>What is the least-cost-avoider question?</li>
+<li>Why should institutional responses be compared by their information and enforcement requirements?</li>
+<li>Why might a law-and-economics analysis use the term legal entitlement rather than property right when describing the starting position in a dispute?</li>
+</ol>
+<h2 id="economic-reasoning-questions">Economic Reasoning Questions</h2>
+<ol>
+<li>Pollution controls cost <code>\$4 million</code> and cleaner water increases development value by <code>\$9 million</code>. The factory has the right to discharge. Calculate the cooperative surplus and identify the gross bargaining range.</li>
+<li>Repeat the previous problem when bargaining and enforcement together cost <code>\$2 million</code>. What net gains remain? Does the arithmetic guarantee agreement?</li>
+<li>Controls cost <code>\$7 million</code>, while cleaner water creates <code>\$4 million</code> in development value. Determine the efficient use under each initial entitlement when transaction costs are zero. Explain any payment that could occur.</li>
+<li>One factory’s discharge affects ten thousand households. Explain how the entitlement assignment can create either a free-rider problem or a holdout problem.</li>
+<li>A factory and developer agree that the factory will maintain “reasonable water quality.” Identify at least four information, monitoring, or enforcement problems created by that language.</li>
+<li>A court can estimate the developer’s harm accurately but cannot observe the factory’s control cost. Compare an injunction with damages without assuming either remedy is automatically superior.</li>
+<li>A pollution tax is intended to equal the full external harm, but victims may also recover full damages for the same loss. Explain why the combination could overcorrect incentives. Identify a reason the conclusion might change.</li>
+<li>Railroad spark prevention costs <code>\$8,000</code>; expected crop damage is <code>\$5,000</code>; and a farmer can avoid the loss by changing planting patterns at a cost of <code>\$1,500</code>. Identify the least-cost adjustment and explain what additional facts a legal rule would need.</li>
+<li>A platform has the contractual right to exclude an app developer. Identify the no-agreement outcome, possible cooperative surplus, transaction costs, and one important third-party interest that their bargain might omit.</li>
+<li>A city proposes replacing individualized noise disputes with a uniform nighttime rule. Use the Normative Coase and Normative Hobbes principles to explain the potential advantage and cost of the change.</li>
+</ol>
+<h2 id="law-and-economics-lab">Law and Economics Lab</h2>
+<h3 id="coasean-conflict-and-bargaining-audit">Coasean Conflict and Bargaining Audit</h3>
+<p>Choose a real or carefully constructed conflict involving incompatible uses. Suitable topics include neighborhood noise, shared parking, water access, an easement, spectrum interference, use of customer data, platform access, or a recurring campus-resource dispute.</p>
+<ol>
+<li>Describe the conflict neutrally. Identify each valuable use and separate physical causation from the economic comparison.</li>
+<li>Identify the current or assumed legal entitlement and the no-agreement outcome. If using a real dispute, verify the entitlement against an authoritative source and state the jurisdiction and date.</li>
+<li>Estimate or construct plausible values for the benefit of changing the use, the cost of adjustment, and any direct implementation cost. Clearly label hypothetical numbers.</li>
+<li>Calculate the cooperative surplus, if any, relative to the no-agreement baseline. Identify the gross bargaining range without predicting a unique payment.</li>
+<li>Reverse the entitlement. Determine what changes in resource use, payment, leverage, and distribution under zero transaction costs.</li>
+<li>Use an AI system to generate a list of possible transaction costs and strategic problems. Classify each as a search or information cost, bargaining cost, or monitoring and enforcement cost.</li>
+<li>Critique the AI response. Remove generic items that do not fit the facts, identify at least one omitted obstacle, and correct any unsupported legal claim.</li>
+<li>Compare at least three institutional responses, such as private bargaining, an injunction, damages, a tax or fine, a direct rule, association governance, or organizational integration.</li>
+<li>Apply the Normative Coase and Normative Hobbes principles. Explain which obstacles law could reduce and what no-agreement rule would limit the harm if bargaining fails.</li>
+<li>Conclude with a recommendation and a confidence statement. Identify the missing information most likely to change your conclusion.</li>
+</ol>
+<p>Submit a three-page audit, one numerical table, links or citations for any real legal claims, and an appendix containing the AI prompts and responses you evaluated. The objective is not to obtain an answer from AI. It is to use AI to generate possibilities and then discipline them with entitlements, baselines, values, transaction costs, and institutional comparison.</p>
+
+        </article>
+
+        <footer class="chapter-footer">
+          <nav class="chapter-jump" aria-label="Adjacent chapters">
+            <a href="../ch03-law-courts-and-legal-institutions/"><span>Previous chapter</span>3. Law, Courts, and Legal Institutions</a>
+            <a class="next-chapter" href="../ch05-property-rights-and-institutional-evolution/"><span>Next chapter</span>5. Property Rights and Institutional Evolution</a>
+          </nav>
+          <div class="chapter-footer-meta">
+            <p>End of Chapter 4</p>
+            <p>Rules, Rights, and Runtimes</p>
+          </div>
+        </footer>
+      </main>
+    </div>
+  </div>
+</body>
+</html>

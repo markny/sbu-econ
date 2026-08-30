@@ -1,0 +1,548 @@
+.publication-page {
+  background: var(--paper);
+}
+
+.publication-wrap {
+  margin: 0 auto;
+  width: min(68rem, calc(100% - 2.5rem));
+}
+
+.publication-site-header {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.publication-header-inner {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-between;
+  min-height: 4rem;
+}
+
+.publication-brand {
+  color: var(--ink);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.publication-nav {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.82rem;
+  font-weight: 700;
+  gap: 0.6rem 1.35rem;
+}
+
+.publication-nav a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.publication-nav a:hover,
+.publication-nav a:focus-visible,
+.publication-nav a[aria-current="page"] {
+  color: var(--deep-green);
+}
+
+.publication-breadcrumb,
+.publication-eyebrow,
+.law-causal-chain {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.publication-breadcrumb {
+  font-size: 0.8rem;
+  margin: 0 0 2.3rem;
+}
+
+.publication-eyebrow {
+  color: var(--brick);
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin: 0 0 0.7rem;
+  text-transform: uppercase;
+}
+
+.law-hero {
+  background: #f4f6f2;
+  border-bottom: 1px solid var(--line);
+}
+
+.law-hero-layout {
+  align-items: center;
+  display: grid;
+  gap: 4.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(15rem, 20rem);
+  min-height: 35rem;
+  padding-bottom: 4rem;
+  padding-top: 4rem;
+}
+
+.law-hero-copy {
+  max-width: 41rem;
+}
+
+.law-hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.02;
+  margin: 0;
+  max-width: 13ch;
+}
+
+.law-hero-status {
+  border-bottom: 5px solid var(--gold);
+  border-top: 5px solid var(--deep-green);
+  padding: 2rem 0;
+}
+
+.law-hero-status > span,
+.law-hero-status > strong,
+.law-hero-status > small {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.law-hero-status > span {
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 5rem;
+  line-height: 1;
+}
+
+.law-hero-status > strong {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.law-hero-status > small {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+  margin-top: 1rem;
+}
+
+.law-causal-chain {
+  border-top: 1px solid var(--line);
+  color: var(--deep-green);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1.6;
+  margin: 1.4rem 0 0;
+  padding-top: 1.2rem;
+}
+
+.law-causal-chain b {
+  color: var(--brick);
+}
+
+.law-intro {
+  background: var(--deep-green);
+  color: var(--white);
+}
+
+.law-split {
+  align-items: center;
+  display: grid;
+  gap: 4.5rem;
+  grid-template-columns: minmax(0, 0.9fr) minmax(20rem, 1.1fr);
+  padding-bottom: 3.6rem;
+  padding-top: 3.6rem;
+}
+
+.law-split h2 {
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.law-split p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.94rem;
+  line-height: 1.65;
+  margin: 0 0 1.25rem;
+}
+
+.law-intro .publication-eyebrow {
+  color: #f2ca69;
+}
+
+.light-action,
+.primary-action {
+  display: inline-flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  min-height: 2.75rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1rem;
+  text-decoration: none;
+}
+
+.light-action {
+  background: var(--white);
+  color: var(--deep-green);
+}
+
+.light-action:hover,
+.light-action:focus-visible {
+  background: #f2ca69;
+  color: var(--ink);
+}
+
+.law-chapters {
+  background: var(--white);
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 4.7rem;
+  padding-top: 4.3rem;
+}
+
+.law-files {
+  background: var(--pale-green);
+}
+
+.law-files .primary-action {
+  background: var(--deep-green);
+  color: var(--white);
+}
+
+.law-files .primary-action:hover,
+.law-files .primary-action:focus-visible {
+  background: var(--brick);
+}
+
+.publication-header {
+  justify-content: space-between;
+}
+
+.publication-hero,
+.downloads-hero,
+.publication-section,
+.publication-footer > .publication-wrap {
+  margin: 0 auto;
+  max-width: 76rem;
+  padding-left: clamp(1.5rem, 5vw, 4.5rem);
+  padding-right: clamp(1.5rem, 5vw, 4.5rem);
+}
+
+.publication-hero,
+.downloads-hero {
+  padding-bottom: clamp(3.5rem, 8vw, 6.5rem);
+  padding-top: clamp(3.5rem, 8vw, 6.5rem);
+}
+
+.publication-hero {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-hero h1,
+.downloads-hero h1 {
+  font-size: 4.5rem;
+  line-height: 1.02;
+  margin: 0;
+  max-width: 13ch;
+}
+
+.publication-subtitle {
+  color: var(--brick);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  margin: 1rem 0 0;
+}
+
+.publication-lead {
+  color: #344d52;
+  font-size: 1.2rem;
+  line-height: 1.55;
+  margin: 1.8rem 0 0;
+  max-width: 45rem;
+}
+
+.publication-actions {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.88rem;
+  font-weight: 700;
+  gap: 1rem 1.5rem;
+  margin-top: 2rem;
+}
+
+.publication-actions a {
+  text-decoration: none;
+}
+
+.publication-actions a:hover,
+.publication-actions a:focus-visible {
+  text-decoration: underline;
+}
+
+.publication-actions .primary-action {
+  background: var(--deep-green);
+  color: var(--white);
+  padding: 0.8rem 1rem;
+}
+
+.publication-section {
+  padding-bottom: 5rem;
+  padding-top: 4rem;
+}
+
+.publication-section-head {
+  align-items: end;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) minmax(18rem, 31rem);
+  margin-bottom: 2rem;
+}
+
+.publication-section-head h2 {
+  font-size: 2.4rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.publication-section-head > p {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.publication-chapter-list,
+.publication-download-list {
+  border-top: 1px solid var(--line);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.publication-chapter-list {
+  display: grid;
+  column-gap: 2.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.publication-chapter-list li,
+.publication-download-list li {
+  border-bottom: 1px solid var(--line);
+}
+
+.publication-chapter-list a {
+  align-items: baseline;
+  color: var(--ink);
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 1rem;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  padding: 1rem 0;
+  text-decoration: none;
+}
+
+.publication-chapter-list a:hover strong,
+.publication-chapter-list a:focus-visible strong {
+  color: var(--brick);
+  text-decoration: underline;
+}
+
+.publication-chapter-list span,
+.download-number {
+  color: var(--brick);
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.publication-chapter-list strong {
+  font-size: 0.95rem;
+}
+
+.publication-chapter-list small {
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.publication-download-list li {
+  align-items: center;
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  gap: 1rem;
+  grid-template-columns: 2rem minmax(0, 1fr) auto;
+  padding: 1rem 0;
+}
+
+.publication-download-list strong {
+  font-size: 0.9rem;
+}
+
+.download-actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.download-actions a {
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.55rem 0.7rem;
+  text-decoration: none;
+}
+
+.download-actions a:hover,
+.download-actions a:focus-visible {
+  border-color: var(--brick);
+  color: var(--brick);
+}
+
+.download-actions small {
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.downloads-hero .chapter-number a {
+  color: var(--brick);
+}
+
+.publication-footer {
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+}
+
+.publication-footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+}
+
+.publication-footer p {
+  margin: 0;
+}
+
+.download-links {
+  border-top: 1px solid var(--line);
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.download-links .download-link {
+  border-top: 0;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.download-links .download-link + .download-link {
+  margin-top: 0.7rem;
+}
+
+.reader-page .chapter-header h1 {
+  font-size: 4rem;
+}
+
+@media (max-width: 720px) {
+  .publication-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.25rem;
+    justify-content: center;
+    min-height: 5.5rem;
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+  }
+
+  .law-hero-layout,
+  .law-split {
+    grid-template-columns: 1fr;
+  }
+
+  .law-hero-layout {
+    gap: 2.5rem;
+    min-height: 0;
+  }
+
+  .law-split {
+    gap: 2rem;
+  }
+
+  .publication-chapter-list {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-section-head {
+    display: block;
+  }
+
+  .publication-section-head > p {
+    margin-top: 1rem;
+  }
+
+  .publication-chapter-list a,
+  .publication-download-list li {
+    grid-template-columns: 1.6rem minmax(0, 1fr);
+  }
+
+  .publication-chapter-list small,
+  .download-actions {
+    grid-column: 2;
+  }
+
+  .publication-download-list strong {
+    line-height: 1.35;
+  }
+
+  .publication-footer-inner {
+    display: block;
+  }
+
+  .publication-footer a {
+    display: inline-block;
+    margin-top: 0.4rem;
+  }
+}
+
+@media (max-width: 960px) {
+  .download-links {
+    border-top: 0;
+    display: flex;
+    float: right;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+  }
+
+  .download-links .download-link,
+  .download-links .download-link + .download-link {
+    float: none;
+    margin: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  .law-hero h1,
+  .publication-hero h1,
+  .downloads-hero h1 {
+    font-size: 3rem;
+  }
+
+  .publication-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .reader-page .chapter-header h1 {
+    font-size: 2.7rem;
+  }
+
+  .download-links {
+    float: none;
+    margin-top: 0.6rem;
+  }
+}
