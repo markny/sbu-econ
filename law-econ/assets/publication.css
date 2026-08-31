@@ -2,6 +2,56 @@
   background: var(--paper);
 }
 
+.reader-bar {
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reader-brand p {
+  margin-top: 0.15rem;
+}
+
+.style-switcher {
+  border: 1px solid rgb(255 255 255 / 35%);
+  display: grid;
+  flex: 0 0 auto;
+  grid-template-columns: repeat(3, minmax(6.25rem, 1fr));
+  overflow: hidden;
+}
+
+.style-switcher button {
+  background: transparent;
+  border: 0;
+  border-right: 1px solid rgb(255 255 255 / 35%);
+  color: #d9e2df;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  min-height: 2.25rem;
+  padding: 0.45rem 0.7rem;
+}
+
+.style-switcher button:last-child {
+  border-right: 0;
+}
+
+.style-switcher button:hover,
+.style-switcher button:focus-visible {
+  background: rgb(255 255 255 / 10%);
+  color: var(--white);
+}
+
+.style-switcher button[aria-pressed="true"] {
+  background: var(--gold);
+  color: var(--ink);
+}
+
+.mobile-reader-menu {
+  display: none;
+}
+
 .publication-wrap {
   margin: 0 auto;
   width: min(68rem, calc(100% - 2.5rem));
@@ -510,11 +560,118 @@
 }
 
 @media (max-width: 960px) {
+  .sidebar-inner {
+    align-items: center;
+    display: grid;
+    gap: 0.8rem 1.25rem;
+    grid-template-columns: auto auto minmax(0, 1fr);
+    position: relative;
+  }
+
+  .mobile-reader-menu {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .mobile-reader-menu[open] {
+    grid-column: 1 / -1;
+  }
+
+  .mobile-reader-menu summary {
+    align-items: center;
+    border: 1px solid var(--line);
+    color: var(--ink);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 0.76rem;
+    font-weight: 700;
+    gap: 0.65rem;
+    min-height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    user-select: none;
+  }
+
+  .mobile-reader-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .mobile-reader-menu summary::after {
+    color: var(--brick);
+    content: "+";
+    font-size: 1.05rem;
+    line-height: 1;
+  }
+
+  .mobile-reader-menu[open] summary {
+    border-color: var(--brick);
+  }
+
+  .mobile-reader-menu[open] summary::after {
+    content: "-";
+  }
+
+  .mobile-reader-menu-panel {
+    background: var(--white);
+    border: 1px solid var(--line);
+    box-shadow: 0 12px 32px rgb(23 36 45 / 18%);
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    max-height: 70vh;
+    margin-top: 0.6rem;
+    overflow-y: auto;
+    padding: 1.25rem;
+  }
+
+  .mobile-reader-menu nav {
+    display: block;
+  }
+
+  .mobile-reader-menu ol {
+    border-top: 1px solid var(--line);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .mobile-reader-menu li {
+    border-bottom: 1px solid var(--line);
+    line-height: 1.35;
+  }
+
+  .mobile-reader-menu a {
+    color: #43545c;
+    display: block;
+    font-size: 0.76rem;
+    padding: 0.55rem 0.25rem;
+    text-decoration: none;
+  }
+
+  .mobile-reader-menu a:hover,
+  .mobile-reader-menu a:focus-visible,
+  .mobile-reader-menu a[aria-current="page"] {
+    color: var(--brick);
+    text-decoration: underline;
+  }
+
+  .mobile-chapter-list a {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+  }
+
+  .mobile-chapter-list a span {
+    color: var(--brick);
+    font-size: 0.68rem;
+    font-weight: 700;
+  }
+
   .download-links {
     border-top: 0;
     display: flex;
     float: right;
     gap: 1rem;
+    justify-self: end;
     margin: 0;
     padding: 0;
   }
@@ -527,6 +684,47 @@
 }
 
 @media (max-width: 620px) {
+  .reader-bar {
+    padding: 0.75rem 1rem;
+  }
+
+  .reader-brand p {
+    display: none;
+  }
+
+  .style-switcher {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    margin-top: 0.7rem;
+    width: 100%;
+  }
+
+  .style-switcher button {
+    min-width: 0;
+  }
+
+  .sidebar-inner {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .mobile-reader-menu-panel {
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    max-height: 72vh;
+  }
+
+  .download-links {
+    display: grid;
+    gap: 0.6rem 1rem;
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-self: stretch;
+  }
+
+  .download-links .download-link,
+  .download-links .download-link + .download-link {
+    margin: 0;
+  }
+
   .law-hero h1,
   .publication-hero h1,
   .downloads-hero h1 {

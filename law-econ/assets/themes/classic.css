@@ -1,0 +1,15 @@
+:root {
+  --reading-width: 47rem;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 18px;
+  line-height: 1.72;
+}
+
+@media (max-width: 620px) {
+  body {
+    font-size: 17px;
+  }
+}
