@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "b2498acf0df2d56106adce75c3f5f1b3b70b3d17",
+    "commit": "58443225ab6e682a94e92ead89c94e21d12e13ef",
     "dirty": false
   },
   "chapters": [
@@ -50,7 +50,7 @@
     {
       "number": 8,
       "slug": "monopoly-power-antitrust-and-league-governance",
-      "status": "forthcoming",
+      "status": "available",
       "title": "Monopoly Power, Antitrust, and League Governance"
     },
     {
