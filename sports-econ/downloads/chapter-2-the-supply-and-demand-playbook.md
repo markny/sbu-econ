@@ -138,7 +138,7 @@ When the product's own price changes, quantity demanded changes along an unchang
 ::: aifiguredescription
 **Figure description: `fig:ch02-demand-movement-shift`**
 
-Both panels place price $P$ on the vertical axis and quantity $Q$ on the horizontal axis. In the left panel, one downward-sloping curve labeled $D$ contains point $A$ at $(Q,P)=(6,70)$ and point $B$ at $(10,50)$. An arrow from $A$ toward $B$ shows that a price decrease raises quantity demanded through a movement along the unchanged curve. In the right panel, the downward-sloping curve $D_0$, defined by $P=100-5Q$, shifts rightward to the parallel curve $D_1$, defined by $P=120-5Q$. At the common reference price $P=60$, quantity demanded rises from $Q_0=8$ to $Q_1=12$. The shift arrow sits between the curves rather than along either curve. The figure's conclusion is that own price changes quantity demanded along a curve, whereas another determinant changes demand by shifting the entire curve. The values are hypothetical and have no empirical units.
+Both panels place price $P$ on the vertical axis and quantity $Q$ on the horizontal axis. In the left panel, one downward-sloping curve labeled $D$ contains point $A$ at $(Q,P)=(6,70)$ and point $B$ at $(10,50)$. An arrow from $A$ toward $B$ shows that a price decrease raises quantity demanded through a movement along the unchanged curve. In the right panel, the downward-sloping curve $D_0$, defined by $P=100-5Q$, shifts rightward to the parallel curve $D_1$, defined by $P=120-5Q$. At the common reference price $P=60$, quantity demanded rises from $Q_0=8$ to $Q_1=12$. Two short horizontal arrows point rightward between the curves, comparing quantities at the same price. The figure's conclusion is that own price changes quantity demanded along a curve, whereas another determinant changes demand by shifting the entire curve. The values are hypothetical and have no empirical units.
 :::
 
 ::: warning
@@ -187,6 +187,22 @@ As with demand, sports do not replace the standard determinants. Important suppl
 
 Suppose the material needed to produce an officially licensed jersey becomes more expensive. At every possible jersey price, producing a given quantity is now less attractive. Supply shifts left. By contrast, if the jersey's own price rises while material cost and other determinants remain fixed, producers move upward along the same supply curve and offer a larger quantity.
 
+<div id="fig:ch02-supply-movement-shift">
+
+![Two panels distinguish movement along an unchanged supply curve from a leftward shift of supply caused by higher input costs.](../figures/ch02-supply-demand/ch02-supply-movement-shift.svg)
+
+**Figure 2.2: Movement along supply versus a decrease in supply.** A higher product price increases quantity supplied along the same curve. Higher input costs shift supply left: sellers offer less at any given price.
+
+</div>
+
+::: aifiguredescription
+**Figure description: `fig:ch02-supply-movement-shift`**
+
+Both panels place price $P$ on the vertical axis and quantity $Q$ on the horizontal axis. The left panel, titled `Movement along supply`, contains the upward-sloping supply curve $S$, defined by $P=20+5Q$. Point $A$ is at $(Q,P)=(4,40)$ and point $B$ is at $(8,60)$, with dashed guides to the corresponding axis values. A compact black arrowhead points upward and rightward along the unchanged curve from $A$ toward $B$ when the product's own price rises. The right panel, titled `Decrease in supply`, compares two parallel, solid red curves: $S_0: P=20+5Q$ and $S_1: P=40+5Q$. Higher input costs shift supply left from $S_0$ to $S_1$. Two short neutral horizontal arrows point leftward between the curves. At the common reference price $P=60$, the gray point on $S_0$ has $Q_0=8$ and the red point on $S_1$ has $Q_1=4$; dashed guides connect these points to the price and quantity axes. The conclusion is that own price changes quantity supplied along a curve, while an input-cost change shifts supply. There is no demand curve or equilibrium comparison. The values are hypothetical teaching quantities, not observed jersey-market data.
+:::
+
+Read the right panel horizontally at the same price. At $P=60$, sellers would offer 8 units under the original conditions but only 4 after the input-cost increase. That is a decrease in supply, not a response to a lower price for the product. Lower input costs would reverse the direction, shifting supply right. We will bring demand into the picture below to see how a supply shift changes the market's equilibrium price and quantity.
+
 ### Capacity Changes The Short-Run Response
 
 Supply responsiveness depends on what is being produced and how much time sellers have to adjust. A merchandise producer may add a shift, order more material, or contract with another factory. The quantity supplied can increase when price rises.
@@ -195,16 +211,16 @@ Admissions to one event are different. Once the venue configuration, safety rule
 
 <div id="fig:ch02-supply-and-capacity">
 
-![Two panels contrast an upward-sloping ordinary supply curve with a vertical line representing fixed available admissions to one event in the short run.](../figures/ch02-supply-demand/ch02-supply-and-capacity.svg)
+![A vertical supply line at capacity K represents fixed available admissions to one event in the short run.](../figures/ch02-supply-demand/ch02-supply-and-capacity.svg)
 
-**Figure 2.2: Ordinary supply response and fixed venue capacity.** Sellers may expand output along an ordinary supply curve, while available admissions to one defined event may be fixed over the short run.
+**Figure 2.3: Fixed venue capacity.** Unlike ordinary production, available admissions to one defined event may be fixed over the short run. If all $K$ admissions are offered, a higher price does not increase quantity supplied.
 
 </div>
 
 ::: aifiguredescription
 **Figure description: `fig:ch02-supply-and-capacity`**
 
-Both panels place price $P$ on the vertical axis and quantity $Q$ on the horizontal axis. The left panel contains the upward-sloping supply curve $S$, defined by $P=20+5Q$. Point $A$ is at $(Q,P)=(4,40)$ and point $B$ is at $(8,60)$. A compact black arrowhead on the curve shows movement from $A$ toward $B$ when the product's own price rises. The right panel, titled `Fixed venue capacity`, contains a solid red vertical supply line at $Q=K$ labeled $S_K$. A three-line annotation to its left states that available admissions do not change when price changes. It represents one defined event, venue configuration, ticket product, and short time horizon under the assumption that all $K$ sellable admissions are offered. It does not imply that future capacity can never change, that a team must offer every physical seat, or that the vertical line by itself determines the price selected by a team with market power. Chapter 4 supplies that pricing model.
+This single panel places price $P$ on the vertical axis and quantity $Q$ on the horizontal axis. Titled `Fixed venue capacity`, it contains a solid red vertical supply line at $Q=K$ labeled $S_K$, with $K$ marked on the quantity axis. A three-line annotation to its left states that available admissions do not change when price changes; a short neutral pointer connects the annotation to the line. It represents one defined event, venue configuration, ticket product, and short time horizon under the assumption that all $K$ sellable admissions are offered. It does not imply that future capacity can never change, that a team must offer every physical seat, or that the vertical line by itself determines the price selected by a team with market power. Chapter 4 supplies that pricing model.
 :::
 
 Calling event capacity “perfectly inelastic supply” therefore requires a careful market definition. A team can change future stadium capacity, standing-room inventory, seat configuration, or the number of tickets it withholds. The vertical curve is a useful short-run model, not a universal physical law.
@@ -269,7 +285,7 @@ A limited-edition sneaker offered below the market-clearing price provides a fam
 
 ![Two panels use the same supply and demand curves to show excess supply above equilibrium and a shortage below equilibrium.](../figures/ch02-supply-demand/ch02-equilibrium-shortage-surplus.svg)
 
-**Figure 2.3: Equilibrium, excess supply, and shortage.** At \$60, planned buying and selling agree. At \$70, quantity supplied exceeds quantity demanded. At \$50, quantity demanded exceeds quantity supplied.
+**Figure 2.4: Equilibrium, excess supply, and shortage.** At \$60, planned buying and selling agree. At \$70, quantity supplied exceeds quantity demanded. At \$50, quantity demanded exceeds quantity supplied.
 
 </div>
 
@@ -306,7 +322,7 @@ Now suppose a production interruption increases the cost of making jerseys. Supp
 
 ![Two panels show a demand increase raising equilibrium price and quantity and a supply decrease raising equilibrium price while lowering equilibrium quantity.](../figures/ch02-supply-demand/ch02-comparative-statics.svg)
 
-**Figure 2.4: Two comparative-statics results.** A demand increase raises both equilibrium price and quantity. A supply decrease raises equilibrium price while reducing equilibrium quantity.
+**Figure 2.5: Two comparative-statics results.** A demand increase raises both equilibrium price and quantity. A supply decrease raises equilibrium price while reducing equilibrium quantity.
 
 </div>
 
@@ -453,7 +469,7 @@ The higher price more than offsets the smaller number of tickets because demand 
 
 ![Two panels compare the same ticket-price increase under an inelastic quantity response and an elastic quantity response, with price-times-quantity rectangles showing the different total-revenue results.](../figures/ch02-supply-demand/ch02-elasticity-revenue.svg)
 
-**Figure 2.5: Elasticity and the total-revenue response.** A price increase raises total revenue when demand is inelastic over the comparison and lowers total revenue when demand is elastic.
+**Figure 2.6: Elasticity and the total-revenue response.** A price increase raises total revenue when demand is inelastic over the comparison and lowers total revenue when demand is elastic.
 
 </div>
 
