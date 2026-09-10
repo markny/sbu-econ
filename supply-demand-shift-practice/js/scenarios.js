@@ -1,5 +1,5 @@
 const MARKETS = [
-  "coffee",
+  "coffee beans",
   "apartments",
   "movie tickets",
   "wheat",
@@ -8,8 +8,26 @@ const MARKETS = [
   "college sweatshirts",
   "ice cream",
   "textbooks",
-  "laptops"
+  "laptops",
+  "rice"
 ];
+
+// Keep events in markets where the story fits. Income classifications remain
+// explicit assumptions about the buyers in the question, not universal facts.
+const GOODS = MARKETS.filter((market) => !["apartments", "movie tickets"].includes(market));
+const STORABLE_GOODS = GOODS.filter((market) => !["orange juice", "ice cream"].includes(market));
+const CROPS = ["coffee beans", "wheat", "rice"];
+
+export function eligibleMarkets(event) {
+  if (event.category === "weather or production shocks") return CROPS;
+  if (event.category === "expectations of future prices") return STORABLE_GOODS;
+  if (event.category === "income for an inferior good") return ["rice"];
+  return event.affectedCurve === "supply" ? GOODS : MARKETS;
+}
+
+function marketFor(...events) {
+  return sample(MARKETS.filter((market) => events.every((event) => eligibleMarkets(event).includes(market))));
+}
 
 function createEvent({
   id,
@@ -131,7 +149,7 @@ const DEMAND_EVENTS = [
     shiftDirection: "left",
     priceEffect: "decrease",
     quantityEffect: "decrease",
-    explanation: "For an inferior good, higher income causes some consumers to switch toward better alternatives, so demand falls.",
+    explanation: "For an inferior good, higher income causes some consumers to switch toward alternatives they prefer, so demand falls. Inferior describes the income response, not product quality.",
     alternatePrompts: [
       "Consumer income rises, and {market} is an inferior good.",
       "Households earn more income, and {market} is an inferior good.",
@@ -346,10 +364,10 @@ const SUPPLY_EVENTS = [
     quantityEffect: "decrease",
     explanation: "If firms expect higher future prices, they may hold back output now, reducing current supply.",
     alternatePrompts: [
-      "Firms expect the future price of {market} to rise.",
+      "Firms expect the future price of {market} to rise and hold back some inventory to sell later.",
       "Sellers think {market} will be more valuable later, so they hold some back now.",
-      "Producers expect higher future prices for {market}.",
-      "Firms believe they can sell {market} for more in the future."
+      "Producers expect higher future prices for {market} and store more of their current output for later sale.",
+      "Firms believe they can sell {market} for more in the future, so they offer less of their inventory today."
     ]
   }),
   createEvent({
@@ -361,10 +379,10 @@ const SUPPLY_EVENTS = [
     quantityEffect: "increase",
     explanation: "If firms expect lower future prices, they may sell more now, increasing current supply.",
     alternatePrompts: [
-      "Firms expect the future price of {market} to fall.",
+      "Firms expect the future price of {market} to fall and release more inventory for sale today.",
       "Sellers think {market} will be worth less later, so they sell more now.",
-      "Producers expect lower future prices for {market}.",
-      "Firms believe they should move more {market} onto the market today."
+      "Producers expect lower future prices for {market} and sell more of their stored inventory now.",
+      "Firms expect a future price decline and move more {market} from storage onto the market today."
     ]
   }),
   createEvent({
@@ -460,6 +478,7 @@ const SUPPLY_EVENTS = [
 ];
 
 function sample(list) {
+  if (list.length === 0) throw new Error("No compatible scenario choices available");
   return list[Math.floor(Math.random() * list.length)];
 }
 
@@ -490,9 +509,9 @@ function instantiateEvent(base, market) {
 }
 
 export function createOneEventProblem() {
-  const market = sample(MARKETS);
   const type = Math.random() < 0.5 ? "demand" : "supply";
   const base = type === "demand" ? sample(DEMAND_EVENTS) : sample(SUPPLY_EVENTS);
+  const market = marketFor(base);
 
   return {
     mode: "one",
@@ -502,9 +521,11 @@ export function createOneEventProblem() {
 }
 
 export function createTwoEventProblem() {
-  const market = sample(MARKETS);
-  const demandEvent = instantiateEvent(sample(DEMAND_EVENTS), market);
-  const supplyEvent = instantiateEvent(sample(SUPPLY_EVENTS), market);
+  const demandBase = sample(DEMAND_EVENTS);
+  const supplyBase = sample(SUPPLY_EVENTS);
+  const market = marketFor(demandBase, supplyBase);
+  const demandEvent = instantiateEvent(demandBase, market);
+  const supplyEvent = instantiateEvent(supplyBase, market);
 
   return {
     mode: "two",
@@ -515,13 +536,13 @@ export function createTwoEventProblem() {
 }
 
 export function createOneEventProblemLike(problem) {
-  const market = sample(MARKETS);
   const sourceEvent = problem?.event;
   const base = sourceEvent
     ? (sourceEvent.affectedCurve === "demand"
         ? sampleFiltered(DEMAND_EVENTS, (item) => item.category === sourceEvent.category)
         : sampleFiltered(SUPPLY_EVENTS, (item) => item.category === sourceEvent.category))
     : (Math.random() < 0.5 ? sample(DEMAND_EVENTS) : sample(SUPPLY_EVENTS));
+  const market = marketFor(base);
 
   return {
     mode: "one",
@@ -531,13 +552,13 @@ export function createOneEventProblemLike(problem) {
 }
 
 export function createTwoEventProblemLike(problem) {
-  const market = sample(MARKETS);
   const demandBase = problem?.demandEvent
     ? sampleFiltered(DEMAND_EVENTS, (item) => item.category === problem.demandEvent.category)
     : sample(DEMAND_EVENTS);
   const supplyBase = problem?.supplyEvent
     ? sampleFiltered(SUPPLY_EVENTS, (item) => item.category === problem.supplyEvent.category)
     : sample(SUPPLY_EVENTS);
+  const market = marketFor(demandBase, supplyBase);
 
   return {
     mode: "two",
@@ -549,11 +570,11 @@ export function createTwoEventProblemLike(problem) {
 
 export function countQuestionVariations() {
   const totalDemand = DEMAND_EVENTS.reduce(
-    (sum, event) => sum + event.alternatePrompts.length * MARKETS.length,
+    (sum, event) => sum + event.alternatePrompts.length * eligibleMarkets(event).length,
     0
   );
   const totalSupply = SUPPLY_EVENTS.reduce(
-    (sum, event) => sum + event.alternatePrompts.length * MARKETS.length,
+    (sum, event) => sum + event.alternatePrompts.length * eligibleMarkets(event).length,
     0
   );
 
