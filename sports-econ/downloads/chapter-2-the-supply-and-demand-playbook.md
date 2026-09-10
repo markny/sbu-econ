@@ -345,6 +345,8 @@ For each claim, define the market, identify the changed determinant, and predict
 4. Heavy rain reduces interest in an outdoor game and also raises the venue's operating cost.
 
 Do not begin by guessing what happens to price. Begin with the curves.
+
+For more practice, use the [Supply and Demand Shift Practice app](https://sbu-econ.org/supply-demand-shift-practice/?course=sports-econ). Start with **One Event**, then try **Two Events**. Identify the changed determinant, shift the relevant curve left or right, and predict equilibrium price and quantity before revealing the explanation. These exercises use familiar markets to practice the same competitive-market reasoning used here; they do not require calculations. The app's detailed shifter list separates cases within the chapter's broader categories—for example, substitutes and complements are both related-good prices, while weather is an operating condition.
 :::
 
 ## Elasticity: Measuring Responsiveness
