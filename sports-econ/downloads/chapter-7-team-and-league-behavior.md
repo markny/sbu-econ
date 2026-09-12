@@ -221,6 +221,8 @@ Here, $E(B_t)$ is the expected benefit of ownership in future period $t$ and $r$
 
 This is also why a championship does not mechanically add a fixed amount to franchise value. Winning may strengthen demand, brand reach, sponsorships, and future revenue. The effect depends on persistence, cost, expectations, and what buyers believe. An owner can rationally accept lower current operating income in pursuit of winning, but current losses do not prove that the losses caused later appreciation.
 
+Recall Chapter 5's Cowboys case. Brand popularity and the right to earn income from that brand are complementary, not competing explanations of value. A buyer would ask which sponsorship and merchandising rights come with ownership, what costs and sharing obligations accompany them, and how durable the demand is. A commercial arrangement can change expected future income without establishing how many dollars of franchise value it caused.
+
 ## Two Current Financial Observations
 
 The Green Bay Packers and Boston Celtics provide two unusually useful—but fundamentally different—observations. The Packers disclose annual financial results. The Celtics changed majority control through a completed transaction. One is a flow observation; the other is an asset-market observation.
@@ -279,6 +281,8 @@ This produces a basic tradeoff.
 - Less sharing preserves stronger local incentives but exposes teams to larger revenue differences and greater local risk.
 
 The tradeoff is about the **marginal dollar**, not simply the total transfer a team receives. A team can receive a substantial distribution and still retain a reason to generate local revenue. Another formula could provide the same average transfer while producing a different marginal incentive.
+
+Chapter 5's later Cowboys merchandising arrangement illustrates that distinction. The option announced in 2001 paired independent control with a guaranteed contribution and retained upside above a benchmark.[^cowboys-merchandise] Economically, a guarantee can support the shared pool while leaving an incentive to expand sales beyond it. It also leaves the operator responsible for meeting the commitment when sales disappoint. That historical arrangement is neither a blanket exemption from sharing nor a statement of today's NFL formula. The hypothetical below isolates a different design: proportional pooling.
 
 ### A Transparent Retained-Dollar Example
 
@@ -590,6 +594,8 @@ If you use MLB's 2026 bargaining proposals, label them by date and verify that t
 [^celtics-transaction]: Boston Celtics, “Chisholm Group Takes Control of the Boston Celtics,” August 19, 2025, <https://www.nba.com/celtics/news/081925-chisholm-group-takes-control-of-the-boston-celtics>; NBA.com, “NBA Approves Sale of Boston Celtics at Record Valuation,” August 13, 2025, <https://www.nba.com/news/nba-approves-sale-of-boston-celtics>. The team source confirms completed majority control; the NBA-hosted Associated Press report supplies the value exceeding \$6.1 billion and describes staged broader control. The chapter does not infer undisclosed transaction terms.
 
 [^revenue-sharing]: Rodney Fort and James Quirk, “Cross-Subsidization, Incentives, and Outcomes in Professional Team Sports Leagues,” *Journal of Economic Literature* 33, no. 3 (1995): 1265–1299, <https://ideas.repec.org/a/aea/jeclit/v33y1995i3p1265-1299.html>. The chapter uses the article to establish that sharing, owner objectives, salary rules, and talent-market conditions interact; it does not treat a theoretical possibility as a measured effect of a current league rule.
+
+[^cowboys-merchandise]: *Sports Business Daily*, “Cowboys' Effort Highlights Details of Clause in License Deal,” May 24, 2001 issue, reporting Rick Gosselin's *Dallas Morning News* account, <https://www.sportsbusinessjournal.com/Daily/Issues/2001/05/24/Sponsorships-Advertising-Marketing/Cowboys-Effort-Highlights-Details-Of-Clause-In-License-Deal/>, accessed September 12, 2026. Historical evidence for the 2002 option, available to teams generally but taken by Dallas, and its guaranteed contribution with additional retained revenue. The chapter does not infer current sharing terms, player-compensation accounting, or a measured valuation effect. Chapter 5 distinguishes this option from the earlier stadium-sponsorship settlement.
 
 [^mlb-cba-proposals]: Major League Baseball, “MLB Makes Initial CBA Proposal to Address Competitive Balance,” May 28, 2026, accessed August 16, 2026, <https://www.mlb.com/news/mlb-makes-initial-economic-proposal-for-new-cba>; Major League Baseball Players Association, “MLBPA Makes Opening Proposals to Benefit All Players and Build Upon Industry Momentum,” May 27, 2026, <https://www.mlbplayers.com/press-releases/mlbpa-makes-opening-proposals-to-benefit-all-players-and-build-upon-industry-momentum>; Major League Baseball Players Association, “Statement from Interim Executive Director Bruce Meyer,” May 28, 2026, <https://www.mlbplayers.com/press-releases/statement-from-interim-executive-director-bruce-meyer>. These are the parties' descriptions of contested bargaining proposals, not enacted rules or neutral estimates of policy effects. Status must be rechecked before publication.
 

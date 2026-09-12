@@ -855,6 +855,16 @@ tbody tr:nth-child(even) {
 }
 
 @media (max-width: 640px) {
+  .chapter-figure[id="fig:ch05-fan-brand-sponsor"] > p:first-child {
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+  }
+
+  .chapter-figure[id="fig:ch05-fan-brand-sponsor"] img {
+    max-width: none;
+    min-width: 40rem;
+  }
+
   .anchored-table[id="tab:ch02-elasticity-family"] table {
     min-width: 44rem;
   }

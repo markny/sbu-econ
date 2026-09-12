@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "f1b077329ce17dae4f8442c3a3a7359a40b58dfc",
+    "commit": "ac4f62c30b00b07296be34255cc919b2b775b9ad",
     "dirty": false
   },
   "chapters": [
@@ -32,7 +32,7 @@
     {
       "number": 5,
       "slug": "fan-behavior-branding-and-sponsorship",
-      "status": "forthcoming",
+      "status": "available",
       "title": "Fan Behavior, Branding, and Sponsorship"
     },
     {
