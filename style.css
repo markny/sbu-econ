@@ -141,6 +141,16 @@ a:hover {
   color: #ffffff;
 }
 
+/* Principles of Macroeconomics */
+.macro-course {
+  background: #702f32;
+}
+
+.macro-course .section-copy,
+.macro-course .chapter-preview small {
+  color: #f3e7df;
+}
+
 .sports-course {
   background: #174b67;
 }
