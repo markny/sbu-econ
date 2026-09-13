@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore how land, labor, and technology affect output, real wages, rents, and income shares in a Cobb–Douglas economy.">
+  <title>Cobb–Douglas Explorer | SBU Econ</title>
+  <link rel="canonical" href="https://sbu-econ.org/cobb-douglas/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="model.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <p class="site-return"><a href="../#other-tools">SBU Econ · All tools</a></p>
+  <header>
+    <div><p class="eyebrow">ECO 314 · PRODUCTION & DISTRIBUTION</p><h1>Cobb–Douglas explorer</h1></div>
+    <div class="equation" aria-label="Output equals technology times capital to the alpha power times labor to the one minus alpha power">Y = A K<sup>α</sup> L<sup>1−α</sup></div>
+  </header>
+  <p class="intro">Change the economy. See what happens to production and to the people who earn its income.</p>
+  <nav class="scenarios" aria-label="Examples starting from the original economy">
+    <span>Try a change</span>
+    <button data-scenario="plague">Half the workers</button>
+    <button data-scenario="immigration">More workers</button>
+    <button data-scenario="earthquake">Half the land / capital</button>
+    <button data-scenario="technology">Better technology</button>
+    <button data-scenario="inflation">Double nominal prices</button>
+    <button data-scenario="reset" class="reset">Reset</button>
+  </nav>
+  <p class="scenario-note">Each example starts from the original economy: K = 100, L = 100, A = 1, α = 0.50, P = 1.</p>
+
+  <div class="workspace">
+    <section class="inputs" aria-labelledby="inputs-title">
+      <h2 id="inputs-title">The economy</h2>
+      <div class="control">
+        <div class="control-heading"><label for="labor">Workers <span>L</span></label><output id="labor-value" for="labor">100</output></div>
+        <input id="labor" type="range" min="1" max="200" step="1" value="100">
+        <div class="range-ends"><span>1</span><span>200</span></div>
+      </div>
+      <div class="control">
+        <div class="control-heading"><label for="capital">Land / capital <span>K</span></label><output id="capital-value" for="capital">100</output></div>
+        <input id="capital" type="range" min="1" max="200" step="1" value="100">
+        <div class="range-ends"><span>1</span><span>200</span></div>
+      </div>
+      <div class="control">
+        <div class="control-heading"><label for="technology">Technology <span>A</span></label><output id="technology-value" for="technology">1.00</output></div>
+        <input id="technology" type="range" min="0.25" max="2" step="0.05" value="1">
+        <div class="range-ends"><span>0.25</span><span>2.00</span></div>
+      </div>
+      <div class="control">
+        <div class="control-heading"><label for="alpha">Capital exponent <span>α</span></label><output id="alpha-value" for="alpha">0.50</output></div>
+        <input id="alpha" type="range" min="0.1" max="0.9" step="0.05" value="0.5" aria-describedby="alpha-note">
+        <div class="range-ends"><span>0.10</span><span>0.90</span></div>
+        <p id="alpha-note" class="hint">Also capital’s income share in this model. Labor’s share is 1 − α.</p>
+      </div>
+      <p class="ratio">Land / capital per worker <strong id="capital-per-worker">1.00</strong></p>
+    </section>
+
+    <section class="production" aria-labelledby="production-title">
+      <div class="section-heading"><h2 id="production-title">Production & factor prices</h2><span class="unit-note">All values below are real</span></div>
+      <div class="results" aria-live="off">
+        <div><h3>Total output <span>Y</span></h3><strong id="output-value">100.00</strong><p id="output-change">Original: 100.00</p></div>
+        <div><h3>Wage per worker <span>W/P</span></h3><strong id="wage-value">0.500</strong><p id="wage-change">Original: 0.500</p></div>
+        <div><h3>Rent per unit <span>R/P</span></h3><strong id="rent-value">0.500</strong><p id="rent-change">Original: 0.500</p></div>
+      </div>
+      <div class="graph-heading">
+        <div class="graph-switch" role="group" aria-label="Input on the horizontal axis">
+          <button id="labor-view" aria-pressed="true">Vary labor</button>
+          <button id="capital-view" aria-pressed="false">Vary land / capital</button>
+        </div>
+        <p id="held-fixed">Holding K = 100 and A = 1.00 fixed</p>
+      </div>
+      <div class="slope-readout"><span>Current slope</span><strong id="slope-value">MPL = 0.500</strong></div>
+      <svg id="production-graph" viewBox="0 0 720 340" role="img" aria-labelledby="graph-title graph-desc">
+        <title id="graph-title">Output as labor changes</title><desc id="graph-desc">A production curve with the original point, current point, and marginal-product tangent.</desc>
+        <g id="graph-drawing"></g>
+      </svg>
+      <div class="legend"><span><i class="line-original"></i>Original economy</span><span><i class="line-current"></i>Current economy</span><span><i class="line-slope"></i>Current slope</span></div>
+      <p id="graph-explanation" class="graph-explanation">The slope shows how much extra output a small increase in labor produces, with land / capital held fixed.</p>
+    </section>
+  </div>
+
+  <section class="meaning" aria-labelledby="meaning-title">
+    <p class="eyebrow" id="meaning-title">WHAT CHANGED?</p>
+    <h2 id="takeaway">Start with 100 workers and 100 units of land.</h2>
+    <p id="explanation">Move a slider or try an example. Compare income per worker with total labor income below.</p>
+  </section>
+
+  <section class="distribution" aria-labelledby="distribution-title">
+    <div class="section-heading"><h2 id="distribution-title">Who receives the output?</h2><span class="unit-note">Real income = units of output</span></div>
+    <p class="section-intro">Bar length shows total output. The two colored portions show how it is divided.</p>
+    <div class="income-visual" role="img" aria-label="Output divided between labor and capital in the original and current economies">
+      <div class="income-row"><span>Original</span><div class="bar-track"><div class="income-bar" id="before-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong id="before-total">100.00</strong></div>
+      <div class="income-row"><span>Current</span><div class="bar-track"><div class="income-bar" id="after-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong id="after-total">100.00</strong></div>
+    </div>
+    <div class="legend income-legend"><span><i class="labor-key"></i>Labor income</span><span><i class="capital-key"></i>Land / capital income</span></div>
+    <div class="table-wrap"><table><caption class="sr-only">Income amounts and shares before and after the change</caption><thead><tr><th scope="col">Income measure</th><th scope="col">Original</th><th scope="col">Current</th><th scope="col">Change</th></tr></thead><tbody id="income-table"></tbody></table></div>
+    <p id="share-explanation" class="share-note">With α fixed, the income shares stay constant even when income amounts change.</p>
+  </section>
+
+  <details class="lesson" id="math-details">
+    <summary>Show the math: from output to wages and rents</summary>
+    <div class="lesson-body">
+      <p>Competitive firms pay each input its marginal product. Differentiating with respect to one input means holding the other input, technology, and the exponents fixed.</p>
+      <div class="math-columns">
+        <div><h3>For labor, hold K fixed</h3><p class="math">MPL = (1 − α) A K<sup>α</sup> L<sup>−α</sup></p><p class="math">W/P = MPL = (1 − α)Y/L</p><p id="wage-substitution"></p></div>
+        <div><h3>For capital, hold L fixed</h3><p class="math">MPK = α A K<sup>α−1</sup> L<sup>1−α</sup></p><p class="math">R/P = MPK = αY/K</p><p id="rent-substitution"></p></div>
+      </div>
+      <p class="power-rule">The power rule: bring down the exponent, then subtract 1 from it. For labor, (1 − α) − 1 = −α. For capital, α − 1 remains α − 1.</p>
+      <p id="share-math"></p>
+      <p class="hint">The tangent is the derivative: the output change per unit for an arbitrarily small input change. Adding one whole worker gives a slightly different finite change.</p>
+    </div>
+  </details>
+
+  <details class="lesson" id="nominal-details">
+    <summary>What if all nominal prices double?</summary>
+    <div class="lesson-body">
+      <div class="price-control"><div class="control-heading"><label for="price">Output price <span>P</span></label><output id="price-value" for="price">1.00</output></div><input id="price" type="range" min="0.5" max="3" step="0.1" value="1"></div>
+      <p>Keep the real economy fixed and change its price level. Nominal wages and rents adjust with the output price.</p>
+      <div class="nominal-values"><p>Nominal wage <strong id="nominal-wage">0.500</strong><span>W = P × MPL</span></p><p>Nominal rent <strong id="nominal-rent">0.500</strong><span>R = P × MPK</span></p><p>Real wage <strong id="nominal-real-wage">0.500</strong><span>W/P = MPL</span></p><p>Real rent <strong id="nominal-real-rent">0.500</strong><span>R/P = MPK</span></p></div>
+      <p>Doubling W, R, and P leaves W/P and R/P unchanged. The money amounts double; the quantities of goods those payments buy stay the same.</p>
+    </div>
+  </details>
+  <p id="live-summary" class="sr-only" role="status" aria-live="polite"></p>
+  <footer><strong>Model assumptions.</strong> Constant returns to scale, competitive factor markets, and inputs paid their marginal products. K is land in the medieval example and capital more generally. Technology changes here raise A, benefiting both factors. These are comparisons within the model, not forecasts of an economy’s adjustment over time.</footer>
+</main>
+</body>
+</html>
