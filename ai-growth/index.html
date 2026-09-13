@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore how AI productivity gains and changing income shares affect workers and capital owners. Includes a growth comparison and a CES technology model.">
+  <title>AI: How much growth is enough? | SBU Econ</title>
+  <link rel="canonical" href="https://sbu-econ.org/ai-growth/">
+  <link rel="stylesheet" href="styles.css">
+  <script src="model.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<main>
+  <nav class="site-nav" aria-label="Related pages"><a href="../#other-tools">SBU Econ · All tools</a><a href="../cobb-douglas/">Cobb–Douglas explorer</a></nav>
+  <header><p class="eyebrow">ECO 314 · TECHNOLOGY & DISTRIBUTION</p><h1>AI: How much growth is enough?</h1><p class="intro">Can workers earn more when capital receives a larger share of the economy?</p></header>
+  <noscript><p class="notice">Enable JavaScript to use the controls and calculate scenarios.</p></noscript>
+  <nav class="scenarios" aria-label="Illustrative scenarios"><span>Try an example</span><button data-example="modest">Small productivity gain</button><button data-example="abundance">Both groups gain</button><button data-example="shared">Shares stay the same</button><button data-example="reset" class="quiet">Reset all</button></nav>
+  <p class="hint scenario-note">Examples are assumptions, not AI forecasts. Each example starts with capital receiving 40% of income.</p>
+
+  <div class="workspace">
+    <section class="inputs" aria-labelledby="assumptions-title">
+      <h2 id="assumptions-title">Set the scenario</h2>
+      <div class="control"><div class="control-heading"><label for="initial-capital">Capital’s initial share</label><output id="initial-capital-value" for="initial-capital">40%</output></div><input id="initial-capital" type="range" min="5" max="95" step="1" value="40"><p class="hint" id="initial-labor">Labor initially receives 60%.</p></div>
+      <div class="control"><div class="control-heading"><label for="final-capital">Capital’s new share</label><output id="final-capital-value" for="final-capital">60%</output></div><input id="final-capital" type="range" min="5" max="95" step="1" value="60"><p class="hint" id="final-labor">Labor now receives 40%.</p></div>
+      <div class="control"><div class="control-heading"><label for="productivity">Productivity change</label><output id="productivity-value" for="productivity">+50%</output></div><input id="productivity" type="range" min="-95" max="500" step="0.1" value="50" aria-describedby="productivity-note"><p class="hint" id="productivity-note">Change in real output per worker. Employment, hours, and the amount of capital stay fixed.</p></div>
+      <button id="break-even" class="action">Set growth to break-even</button>
+      <p class="hint">“Better off” here means higher average real labor compensation, including benefits.</p>
+    </section>
+
+    <section class="outcomes" aria-labelledby="outcomes-title">
+      <h2 id="outcomes-title">What happens to income?</h2>
+      <div class="results"><div><h3>Worker compensation</h3><strong id="wage-change">0%</strong><p>Per worker, vs. before</p></div><div class="capital-result"><h3>Capital rental income</h3><strong id="rent-change">+125%</strong><p>Per unit, vs. before</p></div><div class="output-result"><h3>Real output</h3><strong id="output-value">150</strong><p>Before = 100</p></div></div>
+      <div class="verdict" id="verdict"><p class="eyebrow">THE RESULT</p><h2 id="takeaway">Workers just break even.</h2><p id="explanation">The productivity increase exactly offsets labor’s smaller share.</p></div>
+      <div class="chart-heading"><h3>How much productivity would offset the share change?</h3><p class="readout">Break-even productivity change <strong id="threshold">+50%</strong></p></div>
+      <div class="chart-scroll"><svg id="threshold-chart" viewBox="0 0 700 300" role="img" aria-labelledby="threshold-title threshold-desc"><title id="threshold-title">Worker compensation as productivity changes</title><desc id="threshold-desc">The blue line shows compensation at the chosen income share. The dashed line marks the original compensation level.</desc><g id="threshold-drawing"></g></svg></div>
+      <div class="legend"><span><i class="blue-line"></i>Worker compensation</span><span><i class="baseline-line"></i>Before = 100</span><span><i class="point-key"></i>Your scenario</span></div>
+    </section>
+  </div>
+
+  <section class="distribution" aria-labelledby="distribution-title"><h2 id="distribution-title">A larger economy. A different split.</h2><p class="section-intro">Bar length is total output. Color shows the income going to each factor.</p>
+    <div class="income-row"><span>Before</span><div class="bar-track"><div class="income-bar" id="before-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong>100</strong></div>
+    <div class="income-row"><span>After</span><div class="bar-track"><div class="income-bar" id="after-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong id="after-total">150</strong></div>
+    <div class="legend income-legend"><span><i class="labor-key"></i>Labor income</span><span><i class="capital-key"></i>Capital income</span></div>
+    <div class="table-wrap"><table><caption class="sr-only">Income amounts and shares before and after AI</caption><thead><tr><th scope="col">Measure</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Change</th></tr></thead><tbody id="income-table"></tbody></table></div>
+    <p class="hint">Income amounts are in common units of output. With labor and capital quantities fixed, each factor’s total income and income per unit change by the same percentage.</p>
+  </section>
+
+  <details class="lesson" id="time-view"><summary>Over time: better off than today—or than a future without AI?</summary><div class="lesson-body">
+    <p>This comparison uses the same initial and final income shares. Annual productivity growth replaces the one-time change above. With AI, capital’s share changes steadily to its new level; without AI, shares stay at their initial levels.</p>
+    <div class="control-grid">
+      <div class="control"><div class="control-heading"><label for="ordinary-growth">Annual growth without AI</label><output id="ordinary-growth-value" for="ordinary-growth">2%</output></div><input id="ordinary-growth" type="range" min="0" max="6" step="0.1" value="2"></div>
+      <div class="control"><div class="control-heading"><label for="ai-growth">Annual growth with AI</label><output id="ai-growth-value" for="ai-growth">6%</output></div><input id="ai-growth" type="range" min="0" max="30" step="0.1" value="6"><p class="hint">Total annual productivity growth, including ordinary growth.</p></div>
+      <div class="control"><div class="control-heading"><label for="years">Years from now</label><output id="years-value" for="years">10</output></div><input id="years" type="range" min="1" max="30" step="1" value="10"></div>
+    </div>
+    <div class="results"><div><h3>With AI vs. today</h3><strong id="time-today"></strong><p id="time-today-note"></p></div><div><h3>With AI vs. without AI</h3><strong id="time-comparison"></strong><p>Worker compensation at the horizon</p></div><div class="output-result"><h3>Annual growth to match no AI</h3><strong id="time-required"></strong><p id="time-required-note"></p></div></div>
+    <p id="time-takeaway" class="callout"></p>
+    <div class="chart-scroll"><svg id="time-chart" viewBox="0 0 900 340" role="img" aria-labelledby="time-title time-desc"><title id="time-title">Worker compensation over time with and without AI</title><desc id="time-desc"></desc><g id="time-drawing"></g></svg></div>
+    <div class="legend"><span><i class="blue-line"></i>With AI</span><span><i class="baseline-line"></i>Without AI</span><span><i class="today-line"></i>Today = 100</span></div>
+    <p class="hint">These are illustrative paths with fixed employment and capital, not a model of investment or job transitions. Matching the endpoint does not guarantee workers avoid losses along the way.</p>
+  </div></details>
+
+  <details class="lesson" id="ces-view"><summary>Where do the gains come from? Labor, capital, and the CES model</summary><div class="lesson-body">
+    <p>Let AI improve labor and capital by different amounts. Here the model calculates output and income shares from technology. It uses the initial capital share above; the main view’s new share and productivity change do not apply.</p>
+    <div class="scenarios compact" role="group" aria-label="CES examples"><button data-ces="equal">Both twice as effective</button><button data-ces="capital">Capital improves more</button><button data-ces="complements">Same gains, stronger complements</button><button data-ces="cobb">Cobb–Douglas case</button><button data-ces="reset" class="quiet">No efficiency gains</button></div>
+    <div class="control-grid">
+      <div class="control"><div class="control-heading"><label for="labor-efficiency">Labor effectiveness</label><output id="labor-efficiency-value" for="labor-efficiency">1.50×</output></div><input id="labor-efficiency" type="range" min="1" max="5" step="0.05" value="1.5"><p class="hint">1× = before. 2× means one worker supplies twice the effective labor input; their wage is calculated separately.</p></div>
+      <div class="control"><div class="control-heading"><label for="capital-efficiency">Capital effectiveness</label><output id="capital-efficiency-value" for="capital-efficiency">4.00×</output></div><input id="capital-efficiency" type="range" min="1" max="5" step="0.05" value="4"><p class="hint">1× = before. Changes the effective services from each unit of capital, holding its physical quantity fixed.</p></div>
+      <div class="control"><div class="control-heading"><label for="sigma">Ease of substitution <span>σ</span></label><output id="sigma-value" for="sigma">2.00</output></div><input id="sigma" type="range" min="0.25" max="3" step="0.05" value="2"><p class="hint" id="sigma-note"></p></div>
+    </div>
+    <div class="results"><div><h3>Worker compensation</h3><strong id="ces-wage"></strong><p>Per worker, vs. before</p></div><div class="capital-result"><h3>Capital rental income</h3><strong id="ces-rent"></strong><p>Per unit, vs. before</p></div><div class="output-result"><h3>Real output</h3><strong id="ces-output"></strong><p>Before = 100</p></div></div>
+    <p id="ces-takeaway" class="callout"></p>
+    <div class="income-row"><span>Before</span><div class="bar-track"><div class="income-bar" id="ces-before-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong>100</strong></div>
+    <div class="income-row"><span>After</span><div class="bar-track"><div class="income-bar" id="ces-after-bar"><span class="labor-part"></span><span class="capital-part"></span></div></div><strong id="ces-total"></strong></div>
+    <div class="legend income-legend"><span><i class="labor-key"></i>Labor income</span><span><i class="capital-key"></i>Capital income</span></div>
+    <div class="table-wrap"><table><caption class="sr-only">CES productivity, income, and share comparisons</caption><thead><tr><th scope="col">Measure</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Change</th></tr></thead><tbody id="ces-table"></tbody></table></div>
+    <p class="hint">Wages and capital rentals equal marginal products. Output per worker and output per unit of capital are average products; they both track total output here because the quantities of both inputs stay fixed.</p>
+  </div></details>
+
+  <details class="lesson"><summary>Show the math and assumptions</summary><div class="lesson-body math-notes">
+    <h3>The income threshold</h3><p>Let s be labor’s income share and q be real output per worker. Average labor compensation is w = sq. Subscripts 0 and 1 mean before and after.</p><p class="math">w₁ / w₀ = (s₁ / s₀) × (q₁ / q₀)</p><p class="math">Break-even productivity growth = s₀ / s₁ − 1</p><p>For the time comparison, g₀ is annual growth without AI and T is the number of years. The annual growth rate with AI that matches the no-AI wage at T is:</p><p class="math">g* = (1 + g₀)(s₀ / s₁)<sup>1/T</sup> − 1</p>
+    <h3>A normalized CES economy</h3><p>K = 100, L = 100, and initial output = 100. Let a be capital’s initial share, A<sub>K</sub> capital effectiveness, A<sub>L</sub> labor effectiveness, and ρ = (σ − 1)/σ.</p><p class="math">Y = 100[a(A<sub>K</sub>K/100)<sup>ρ</sup> + (1 − a)(A<sub>L</sub>L/100)<sup>ρ</sup>]<sup>1/ρ</sup></p><p class="math">Capital share = a(A<sub>K</sub>K/100)<sup>ρ</sup> / [a(A<sub>K</sub>K/100)<sup>ρ</sup> + (1 − a)(A<sub>L</sub>L/100)<sup>ρ</sup>]</p><p class="math">Real wage = MPL = (labor share)Y/L<br>Real capital rental = MPK = (capital share)Y/K</p><p>At σ = 1, use the continuous Cobb–Douglas limit: Y = 100(A<sub>K</sub>K/100)<sup>a</sup>(A<sub>L</sub>L/100)<sup>1−a</sup>. Income shares then remain a and 1 − a.</p>
+    <h3>What the comparison includes</h3><p>All values use a common output price. The main view is an income-accounting exercise; the CES view additionally assumes constant returns to scale, competitive factor markets, and marginal-product payments. Capital income is gross rental income, before depreciation—not an asset price or net investment return.</p><p>Employment, hours, and physical capital are fixed. Average worker compensation does not describe every worker, unemployment, household capital ownership, taxes, transfers, or differences between consumer and output prices. A larger average wage does not establish that every household is better off.</p>
+    <h3>Further reading</h3><ul><li><a href="https://www.nber.org/papers/w24196">Acemoglu & Restrepo: Artificial Intelligence, Automation and Work</a> — productivity gains and displacement.</li><li><a href="https://www.census.gov/library/working-papers/2011/adrm/ces-wp-11-05.html">Raval: Beyond Cobb–Douglas</a> — factor-augmenting technology and CES production.</li></ul>
+  </div></details>
+  <p id="live-summary" class="sr-only" role="status" aria-live="polite"></p>
+  <footer>Illustrative economics, not a forecast of AI. <a href="../cobb-douglas/">Revisit production and marginal products in the Cobb–Douglas explorer.</a></footer>
+</main>
+</body>
+</html>
