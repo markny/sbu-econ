@@ -460,6 +460,139 @@
   color: var(--brick);
 }
 
+.downloads-hero {
+  padding-bottom: 3.5rem;
+}
+
+.downloads-hero h1 {
+  max-width: none;
+}
+
+.epub-download-bar {
+  align-items: center;
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: minmax(0, 1fr) auto;
+  margin-top: 2.5rem;
+  padding: 1.5rem 0;
+}
+
+.epub-download-bar .publication-eyebrow {
+  margin-bottom: 0.4rem;
+}
+
+.epub-download-bar h2 {
+  font-size: 1.7rem;
+  line-height: 1.15;
+  margin: 0;
+}
+
+.epub-download-bar > div > p:last-child {
+  color: var(--muted);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  margin: 0.55rem 0 0;
+}
+
+.epub-download-bar > div > p:last-child span {
+  color: var(--gold);
+  margin: 0 0.45rem;
+}
+
+.epub-action {
+  background: var(--deep-green);
+  color: var(--white);
+  gap: 0.65rem;
+  min-width: 12.5rem;
+}
+
+.epub-action:hover,
+.epub-action:focus-visible {
+  background: var(--brick);
+}
+
+.epub-action small {
+  color: #d8e2dd;
+  font-size: 0.68rem;
+  font-weight: 400;
+}
+
+.reader-help {
+  background: var(--pale-green);
+  border-bottom: 1px solid var(--line);
+  border-top: 1px solid var(--line);
+  padding: 3.5rem 0 3.75rem;
+}
+
+.reader-help-head {
+  margin-bottom: 1.65rem;
+}
+
+.reader-platforms {
+  border-top: 1px solid #b9c7c1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.reader-platforms article {
+  border-right: 1px solid #b9c7c1;
+  padding: 1.4rem 1.5rem 0 0;
+}
+
+.reader-platforms article + article {
+  padding-left: 1.5rem;
+}
+
+.reader-platforms article:last-child {
+  border-right: 0;
+}
+
+.platform-name {
+  color: var(--brick);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+  text-transform: uppercase;
+}
+
+.reader-platforms h3 {
+  font-size: 1.28rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.reader-platforms article > p:not(.platform-name) {
+  color: #344d52;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.84rem;
+  line-height: 1.55;
+  margin: 0.7rem 0 0;
+}
+
+.reader-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin-top: 0.9rem;
+}
+
+.reader-links a {
+  color: var(--deep-green);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.76rem;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.16rem;
+}
+
+.reader-links a:hover,
+.reader-links a:focus-visible {
+  color: var(--brick);
+}
+
 .publication-footer {
   border-top: 1px solid var(--line);
   color: var(--muted);
@@ -538,6 +671,30 @@
   .publication-chapter-list a,
   .publication-download-list li {
     grid-template-columns: 1.6rem minmax(0, 1fr);
+  }
+
+  .epub-download-bar {
+    align-items: start;
+    grid-template-columns: 1fr;
+  }
+
+  .epub-action {
+    justify-self: start;
+  }
+
+  .reader-platforms {
+    grid-template-columns: 1fr;
+  }
+
+  .reader-platforms article,
+  .reader-platforms article + article {
+    border-bottom: 1px solid #b9c7c1;
+    border-right: 0;
+    padding: 1.25rem 0;
+  }
+
+  .reader-platforms article:last-child {
+    border-bottom: 0;
   }
 
   .publication-chapter-list small,

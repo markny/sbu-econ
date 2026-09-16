@@ -72,9 +72,9 @@ Calling a conflict reciprocal does not deny physical harm, legal causation, fair
 
 A thought experiment makes the point clearer. Imagine that one company owns both the factory and the development. The company would not treat pollution damage as someone else's problem. Dirtier water would reduce the value of one of its own assets. At the same time, it would not treat factory production as worthless. It would compare the total value created by the alternatives.
 
-Suppose pollution controls cost `\$2 million` and cleaner water adds `\$5 million` to the development's value. An integrated owner installs the controls. Spending `\$2 million` creates a `\$5 million` gain elsewhere in the organization, increasing joint value by `\$3 million`.
+Suppose pollution controls cost \$2 million and cleaner water adds \$5 million to the development's value. An integrated owner installs the controls. Spending \$2 million creates a \$5 million gain elsewhere in the organization, increasing joint value by \$3 million.
 
-Now change the numbers. Suppose controls cost `\$6 million` while cleaner water adds only `\$5 million` to development value. An integrated owner does not install the controls merely because the waste physically comes from the factory. It allows discharge and changes, relocates, or abandons the development plan because the controls would consume more value than they create.
+Now change the numbers. Suppose controls cost \$6 million while cleaner water adds only \$5 million to development value. An integrated owner does not install the controls merely because the waste physically comes from the factory. It allows discharge and changes, relocates, or abandons the development plan because the controls would consume more value than they create.
 
 The integrated-owner thought experiment does not recommend merging every pair of conflicting activities. It identifies the comparison that an institution should help produce. The efficient use is the feasible arrangement with the greatest total value after counting both sides.
 
@@ -84,7 +84,7 @@ Separate ownership creates an additional question. Can agreement make the factor
 
 Suppose the factory was operating before the developer acquired the lakeside land. Many people react differently to that sequence than they would if the factory opened beside an established resort. Lawyers sometimes describe the issue as **coming to the nuisance**: one party knowingly locates near an existing activity and later complains about its effects.
 
-Timing can matter, but not because it mechanically determines the efficient use. At the moment of conflict, the same comparison remains necessary. If controls cost `\$2 million` and cleaner water creates `\$5 million` in development value, controls increase joint value regardless of which activity arrived first.
+Timing can matter, but not because it mechanically determines the efficient use. At the moment of conflict, the same comparison remains necessary. If controls cost \$2 million and cleaner water creates \$5 million in development value, controls increase joint value regardless of which activity arrived first.
 
 Timing matters through expectations and investment incentives. If the developer knew about the discharge and the factory's entitlement, the land's purchase price may already reflect dirtier water. Granting the developer a new right to stop discharge could transfer wealth that was not part of the original purchase. It might also encourage buyers to acquire inexpensive land beside existing activities in hopes of later obtaining compensation.
 
@@ -96,11 +96,11 @@ This is another reason not to turn Coasean analysis into a slogan. "The develope
 
 ## Cooperative Surplus and the Bargaining Range
 
-Return to the original numbers. Cleaner water adds `\$5 million` to development value, and pollution controls cost `\$2 million`. The factory currently holds the legal right to discharge. Without an agreement, discharge continues.
+Return to the original numbers. Cleaner water adds \$5 million to development value, and pollution controls cost \$2 million. The factory currently holds the legal right to discharge. Without an agreement, discharge continues.
 
-The developer could offer to pay for pollution controls. The factory requires at least `\$2 million`, because a smaller payment would not cover the control cost. The developer is willing to pay as much as `\$5 million`, because a larger payment would exceed the value created by cleaner water.
+The developer could offer to pay for pollution controls. The factory requires at least \$2 million, because a smaller payment would not cover the control cost. The developer is willing to pay as much as \$5 million, because a larger payment would exceed the value created by cleaner water.
 
-Any payment strictly between those amounts can make both parties better off. If the developer pays `\$3 million`, for example, the factory pays `\$2 million` for controls and keeps a `\$1 million` gain. The developer receives `\$5 million` in added land value, pays `\$3 million`, and gains `\$2 million`. Together they gain `\$3 million`.
+Any payment strictly between those amounts can make both parties better off. If the developer pays \$3 million, for example, the factory pays \$2 million for controls and keeps a \$1 million gain. The developer receives \$5 million in added land value, pays \$3 million, and gains \$2 million. Together they gain \$3 million.
 
 ::: quickconcept
 **Cooperative Surplus**
@@ -114,7 +114,7 @@ $$
 S = G - C = 5 - 2 = 3.
 $$
 
-Read the expression in words. The gain from agreement equals the benefit created by cleaner water minus the cost of producing it. The symbol does not determine how the `\$3 million` is divided.
+Read the expression in words. The gain from agreement equals the benefit created by cleaner water minus the cost of producing it. The symbol does not determine how the \$3 million is divided.
 
 Let $P$ represent the payment from the developer to the factory, also measured in millions. A payment can make both parties strictly better off when:
 
@@ -122,7 +122,7 @@ $$
 2 < P < 5.
 $$
 
-This interval is the **bargaining range**. At `\$2 million`, the factory is just compensated for its control cost. At `\$5 million`, the developer gives up the full gain from cleaner water. Payments inside the range divide the cooperative surplus in different ways.
+This interval is the **bargaining range**. At \$2 million, the factory is just compensated for its control cost. At \$5 million, the developer gives up the full gain from cleaner water. Payments inside the range divide the cooperative surplus in different ways.
 
 Nothing in the basic example predicts one unique payment. Bargaining power, patience, information, alternatives, norms, and legal rules can influence the division. We do not need a formal bargaining solution to understand the central result. The essential point is gains from trade: an agreement can create value because the developer values cleaner water more than it costs the factory to provide it.
 
@@ -130,7 +130,7 @@ Nothing in the basic example predicts one unique payment. Bargaining power, pati
 
 Now suppose the developer holds the legal right to clean water. The factory must install controls unless the developer gives permission to discharge.
 
-The efficient use remains cleaner water. Controls cost the factory `\$2 million`, while discharge would reduce development value by `\$5 million`. The factory would pay at most `\$2 million` for permission to discharge because that is what it saves by avoiding controls. The developer would require at least `\$5 million` because that is the loss caused by discharge. No payment can satisfy both parties.
+The efficient use remains cleaner water. Controls cost the factory \$2 million, while discharge would reduce development value by \$5 million. The factory would pay at most \$2 million for permission to discharge because that is what it saves by avoiding controls. The developer would require at least \$5 million because that is the loss caused by discharge. No payment can satisfy both parties.
 
 No bargain is needed. The legal baseline already produces the value-maximizing use: the factory installs the controls.
 
@@ -138,14 +138,14 @@ No bargain is needed. The legal baseline already produces the value-maximizing u
 
 | Initial legal entitlement | No-agreement outcome | Bargaining implication | Efficient use with fixed values | Distributional consequence |
 |---|---|---|---|---|
-| Factory has the right to discharge | Discharge continues | Developer can pay more than `\$2 million` and less than `\$5 million` for controls | Factory installs controls | Bargaining creates and divides a `\$3 million` cooperative surplus |
-| Developer has the right to clean water | Factory must control its discharge | Factory will not pay the `\$5 million` minimum needed to impose a loss in order to save only `\$2 million` | Factory installs controls | Factory bears the `\$2 million` control cost; no cooperative surplus arises relative to this legal baseline |
+| Factory has the right to discharge | Discharge continues | Developer can pay more than \$2 million and less than \$5 million for controls | Factory installs controls | Bargaining creates and divides a \$3 million cooperative surplus |
+| Developer has the right to clean water | Factory must control its discharge | Factory will not pay the \$5 million minimum needed to impose a loss in order to save only \$2 million | Factory installs controls | Factory bears the \$2 million control cost; no cooperative surplus arises relative to this legal baseline |
 
 **Table 4.1. Cooperative surplus and entitlement reversal.** With fixed values and costless bargaining, both entitlements produce pollution control. The legal starting point still changes whether bargaining is needed and who bears the cost.
 
 The comparison reveals two separate questions:
 
-1. **Which resource use creates the most value?** With these numbers, pollution control creates `\$3 million` more value than continued discharge.
+1. **Which resource use creates the most value?** With these numbers, pollution control creates \$3 million more value than continued discharge.
 2. **Who receives the benefits and bears the costs?** That depends on the initial entitlement and the payment, if any.
 
 ::: keypoint
@@ -160,11 +160,11 @@ If land is bought and sold after the legal rule is known, some of the entitlemen
 
 The original numbers make cleaner water the efficient use. That result comes from the values, not from a rule that zero pollution is always efficient.
 
-Suppose cleaner water adds `\$5 million` to development value but pollution controls now cost `\$6 million`. Installing controls would destroy `\$1 million` in joint value. Continued discharge is the efficient use within this simplified choice.
+Suppose cleaner water adds \$5 million to development value but pollution controls now cost \$6 million. Installing controls would destroy \$1 million in joint value. Continued discharge is the efficient use within this simplified choice.
 
-If the factory has the right to discharge, no bargain is needed. Discharge continues under the legal baseline. The developer would pay at most `\$5 million` for cleaner water, while the factory requires at least `\$6 million` to cover the controls. There is no mutually beneficial payment.
+If the factory has the right to discharge, no bargain is needed. Discharge continues under the legal baseline. The developer would pay at most \$5 million for cleaner water, while the factory requires at least \$6 million to cover the controls. There is no mutually beneficial payment.
 
-If the developer instead has the right to clean water, the no-agreement outcome requires the factory to install the costly controls. Now a bargain can create value. The factory is willing to pay up to `\$6 million` for permission to discharge, and the developer requires at least `\$5 million` to accept the resulting loss. A payment between those amounts creates and divides a `\$1 million` cooperative surplus.
+If the developer instead has the right to clean water, the no-agreement outcome requires the factory to install the costly controls. Now a bargain can create value. The factory is willing to pay up to \$6 million for permission to discharge, and the developer requires at least \$5 million to accept the resulting loss. A payment between those amounts creates and divides a \$1 million cooperative surplus.
 
 Both entitlements therefore produce discharge when bargaining is costless, but the payment and distribution differ. This reversed example completes the symmetry behind the theorem. The efficient use can be more pollution or less pollution depending on the relative values. Economic efficiency asks whether another unit of control creates benefits exceeding its cost; it does not declare that environmental quality is unimportant or decide which harms the law may permissibly impose.
 
@@ -224,7 +224,7 @@ Uncertain legal rights create another information cost. A permit, deed, easement
 
 Even informed parties must communicate, propose terms, make concessions, and record an agreement. Negotiation consumes time and professional services. Delay may destroy some of the opportunity. A party may refuse an otherwise beneficial offer in hopes of capturing a larger share.
 
-Distribution is therefore not an afterthought. The parties can agree that controls create `\$3 million` while fighting over who receives it. The possibility of strategic bargaining becomes more serious when one side faces a deadline, has few alternatives, or must obtain unanimous consent.
+Distribution is therefore not an afterthought. The parties can agree that controls create \$3 million while fighting over who receives it. The possibility of strategic bargaining becomes more serious when one side faces a deadline, has few alternatives, or must obtain unanimous consent.
 
 Now replace the single developer with ten thousand households. If the factory has the right to discharge, residents may try to raise money for controls. Each household enjoys some benefit from cleaner water whether or not it contributes. That creates a **free-rider problem**.
 
@@ -248,7 +248,7 @@ $$
 N = S - T.
 $$
 
-If the cooperative surplus is `\$3 million` and transaction costs are `\$500,000`, a net gain of `\$2.5 million` remains to be divided. If transaction costs exceed `\$3 million`, the bargain consumes more value than it creates. Even when the arithmetic leaves positive net gains, private information or strategic conflict may still prevent agreement.
+If the cooperative surplus is \$3 million and transaction costs are \$500,000, a net gain of \$2.5 million remains to be divided. If transaction costs exceed \$3 million, the bargain consumes more value than it creates. Even when the arithmetic leaves positive net gains, private information or strategic conflict may still prevent agreement.
 
 ::: keypoint
 **Institutions Matter Because Bargaining Is Costly**
@@ -326,9 +326,9 @@ The institutional menu will return throughout the book. Chapter 5 develops injun
 
 Coase used railroad sparks as another example of reciprocal harm. A train produces sparks that can ignite crops planted beside the track. The railroad is the physical source of the sparks, but identifying the physical source does not determine the least costly response.
 
-Suppose crop fires cause `\$3,000` in expected annual damage and a spark arrestor costs the railroad `\$1,750` per year. Installing the arrestor prevents more harm than it costs. A legal rule that makes the railroad bear the crop losses gives it a reason to take the precaution.
+Suppose crop fires cause \$3,000 in expected annual damage and a spark arrestor costs the railroad \$1,750 per year. Installing the arrestor prevents more harm than it costs. A legal rule that makes the railroad bear the crop losses gives it a reason to take the precaution.
 
-Now suppose an effective railroad precaution costs `\$10,000`, while the farmer can avoid most of the loss by leaving a narrow strip beside the track unplanted at a cost of `\$500`. Preventing all farming or all rail service would waste value. The lower-cost adjustment is at the field boundary.
+Now suppose an effective railroad precaution costs \$10,000, while the farmer can avoid most of the loss by leaving a narrow strip beside the track unplanted at a cost of \$500. Preventing all farming or all rail service would waste value. The lower-cost adjustment is at the field boundary.
 
 This motivates the **least-cost-avoider** question: Which party can prevent or reduce the expected harm at lower cost? Guido Calabresi developed this reasoning as part of the economic analysis of accident law.
 
@@ -359,7 +359,7 @@ Chapter 5 turns this framework into a theory of property. Property rights clarif
 ## Chapter Study Map
 
 - **Core ideas:** reciprocal harm, legal entitlements, no-agreement baselines, cooperative surplus, bargaining ranges, the Coase Theorem, transaction costs, holdouts, free riders, least-cost avoidance, and the Normative Coase/Hobbes principles.
-- **Figure and tables:** explain the factory-lake-developer conflict, calculate the `\$3 million` cooperative surplus, reverse the entitlement in Table 4.1, and compare institutional responses in Table 4.2.
+- **Figure and tables:** explain the factory-lake-developer conflict, calculate the \$3 million cooperative surplus, reverse the entitlement in Table 4.1, and compare institutional responses in Table 4.2.
 - **Reasoning tasks:** identify the entitlement and fallback outcome, calculate gains from agreement, find possible payments, distinguish efficiency from distribution, diagnose bargaining failure, and compare realistic institutional alternatives.
 - **Common mistakes:** saying the theorem proves law or government is unnecessary, confusing low transaction costs with zero, treating reciprocal harm as denial of physical injury, assuming the physical cause is necessarily the least-cost avoider, or predicting one unique division of the cooperative surplus.
 - **Practice tools:** use the review questions for vocabulary and theorem conditions, the economic reasoning questions for numerical and institutional variations, and the Coasean Conflict Audit for a complete application.
@@ -373,7 +373,7 @@ Chapter 5 turns this framework into a theory of property. Property rights clarif
 4. Why does reciprocal harm not imply that physical causation or legal responsibility is irrelevant?
 5. What does the integrated-owner thought experiment reveal?
 6. Define cooperative surplus.
-7. With a `\$5 million` gain from cleaner water and a `\$2 million` control cost, what is the cooperative surplus?
+7. With a \$5 million gain from cleaner water and a \$2 million control cost, what is the cooperative surplus?
 8. What is the bargaining range when the factory has the right to discharge?
 9. Why does the basic model not determine one unique payment inside that range?
 10. State the Coase Theorem at a principles level.
@@ -389,14 +389,14 @@ Chapter 5 turns this framework into a theory of property. Property rights clarif
 
 ## Economic Reasoning Questions
 
-1. Pollution controls cost `\$4 million` and cleaner water increases development value by `\$9 million`. The factory has the right to discharge. Calculate the cooperative surplus and identify the gross bargaining range.
-2. Repeat the previous problem when bargaining and enforcement together cost `\$2 million`. What net gains remain? Does the arithmetic guarantee agreement?
-3. Controls cost `\$7 million`, while cleaner water creates `\$4 million` in development value. Determine the efficient use under each initial entitlement when transaction costs are zero. Explain any payment that could occur.
+1. Pollution controls cost \$4 million and cleaner water increases development value by \$9 million. The factory has the right to discharge. Calculate the cooperative surplus and identify the gross bargaining range.
+2. Repeat the previous problem when bargaining and enforcement together cost \$2 million. What net gains remain? Does the arithmetic guarantee agreement?
+3. Controls cost \$7 million, while cleaner water creates \$4 million in development value. Determine the efficient use under each initial entitlement when transaction costs are zero. Explain any payment that could occur.
 4. One factory's discharge affects ten thousand households. Explain how the entitlement assignment can create either a free-rider problem or a holdout problem.
 5. A factory and developer agree that the factory will maintain "reasonable water quality." Identify at least four information, monitoring, or enforcement problems created by that language.
 6. A court can estimate the developer's harm accurately but cannot observe the factory's control cost. Compare an injunction with damages without assuming either remedy is automatically superior.
 7. A pollution tax is intended to equal the full external harm, but victims may also recover full damages for the same loss. Explain why the combination could overcorrect incentives. Identify a reason the conclusion might change.
-8. Railroad spark prevention costs `\$8,000`; expected crop damage is `\$5,000`; and a farmer can avoid the loss by changing planting patterns at a cost of `\$1,500`. Identify the least-cost adjustment and explain what additional facts a legal rule would need.
+8. Railroad spark prevention costs \$8,000; expected crop damage is \$5,000; and a farmer can avoid the loss by changing planting patterns at a cost of \$1,500. Identify the least-cost adjustment and explain what additional facts a legal rule would need.
 9. A platform has the contractual right to exclude an app developer. Identify the no-agreement outcome, possible cooperative surplus, transaction costs, and one important third-party interest that their bargain might omit.
 10. A city proposes replacing individualized noise disputes with a uniform nighttime rule. Use the Normative Coase and Normative Hobbes principles to explain the potential advantage and cost of the change.
 

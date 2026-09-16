@@ -403,7 +403,7 @@ The central question is not whether intellectual property is good or bad. It is 
 
 ## Economic Reasoning Questions
 
-1. A digital textbook costs `\$500,000` to research and produce, but another download costs `\$0.10` to serve. Explain why marginal-cost pricing promotes access but may not finance the first copy. Identify at least three possible institutions that could support production.
+1. A digital textbook costs \$500,000 to research and produce, but another download costs \$0.10 to serve. Explain why marginal-cost pricing promotes access but may not finance the first copy. Identify at least three possible institutions that could support production.
 2. A musician can earn revenue from recordings, performances, merchandise, patron support, and licensing. How does the availability of these complements affect the case for stronger protection of recordings? What information would you need before recommending a rule?
 3. A software interface can be copied cheaply, but compatibility allows users to switch products without retraining. Explain the incentive and competition effects of protecting the interface broadly.
 4. Two patent designs generate the same expected reward. Design A is narrow and long; Design B is broad and short. Explain why they may produce different effects on substitutes, follow-on invention, and licensing.
