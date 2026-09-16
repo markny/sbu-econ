@@ -2,7 +2,7 @@
   "book": "Rules, Rights, and Runtimes",
   "base_path": "/law-econ/",
   "source_repository": "markny/law-and-economics",
-  "source_commit": "72f4fcf9cc752157728865c2a8ce80655e11dbef",
+  "source_commit": "11b07b03f69b45dbbb98aa93d4236e6d9fda5fac",
   "source_dirty": false,
   "epub": "downloads/rules-rights-and-runtimes.epub",
   "chapters": [

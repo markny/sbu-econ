@@ -1,5 +1,13 @@
 # Chapter 4: Transaction Costs and the Coase Theorem
 
+## Why Coase Matters for Law and Economics
+
+Chapter 2 introduced the economic tools of incentives, opportunity cost, and gains from exchange. Chapter 3 explained how legal institutions define rights and make them enforceable. This chapter brings those ideas together. A legal rule establishes what people may do, what they may prevent, and what requires someone else's permission. People then respond to that starting point. They may change their behavior, negotiate an agreement, or continue a costly conflict. To evaluate the rule, we need to understand those responses.
+
+Ronald Coase's 1960 article, "The Problem of Social Cost," helped launch modern law and economics by placing legal rights and the costs of agreement at the center of economic analysis. Economists had studied law and externalities before Coase. His contribution was to show why identifying an external cost does not, by itself, tell us which legal response will work best. The parties might arrange a mutually beneficial solution, but their ability to do so depends on the rights they hold and the obstacles they face. That reasoning helped make ordinary disputes over property and liability central subjects of economic inquiry.
+
+The organizing question is straightforward: when can people resolve a conflict through agreement, and when does the legal rule determine which use of a resource prevails because agreement is too costly? **Transaction costs** are the costs of reaching and carrying out agreements. We will examine those costs in detail after seeing what bargaining could accomplish without them. A factory and a lakeside developer provide the setting, but the method extends well beyond pollution. The same questions will return when we study property rights, accident prevention, contracts, and regulation: what choices does the law make possible, what prevents a useful agreement, and which feasible arrangement creates the most value?
+
 ## A Factory, a Lake, and a Developer
 
 A factory operates beside a scenic lake. It produces goods that customers value, employs workers, and earns a return for its owners. Its production process also releases waste into the water. In this hypothetical setting, the factory has the legal right to continue the discharge.
@@ -195,7 +203,7 @@ The theorem also does not determine which entitlement is fair, morally justified
 ::: historicalnote
 **Ronald Coase and the World of Positive Transaction Costs**
 
-Ronald Coase (1910-2013) urged economists to compare actual institutional arrangements rather than an idealized market with an idealized government. In "The Problem of Social Cost," he used disputes involving cattle, crops, railroads, smoke, noise, and other incompatible uses to show why reciprocal harm, legal rights, and transaction costs belong in the same analysis.
+Coase developed his argument through concrete disputes involving cattle, crops, railroads, smoke, noise, and other incompatible uses. Those conflicts required comparing actual institutional arrangements, each with its own costs, rather than assuming an ideal market or an ideal government could solve the problem without expense or error.
 
 George Stigler later named and formulated the zero-transaction-cost result as the Coase Theorem. Coase treated that result as a starting point, not the destination. Once the frictionless benchmark is understood, the harder and more useful question is why real transactions are costly and how alternative legal, market, organizational, and political institutions perform when those costs are positive.
 :::
