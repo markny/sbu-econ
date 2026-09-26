@@ -699,3 +699,17 @@ a:hover {
     padding: 22px;
   }
 }
+
+/* 2027 European Economic Experience invitation */
+.europe-feature{background:#102941;color:#fff;overflow:hidden}
+.europe-feature-inner{display:grid;grid-template-columns:1fr 1fr;min-height:390px;align-items:stretch;gap:45px}
+.europe-feature-copy{padding:55px 0;display:flex;flex-direction:column;align-items:flex-start;justify-content:center}
+.europe-feature .eyebrow{color:#d7b36f;letter-spacing:.11em}
+.europe-feature h2{font-family:var(--serif);font-size:clamp(2.3rem,4vw,4.1rem);line-height:1.05;margin:0 0 19px;max-width:510px}
+.europe-feature p:not(.eyebrow){color:#e8eced;max-width:500px;font-size:.97rem;line-height:1.6;margin:0 0 25px}
+.europe-feature-link{display:inline-flex;justify-content:space-between;align-items:center;gap:28px;background:#d6ac66;color:#102941;font-weight:700;padding:13px 18px;min-height:48px;text-decoration:none;border:1px solid #d6ac66}
+.europe-feature-link:hover{background:#f3d596;color:#102941}
+.europe-feature-image{display:block;position:relative;min-height:320px;margin-right:calc((min(1080px, 100vw - 40px) - 100vw)/2)}
+.europe-feature-image img{width:100%;height:100%;object-fit:cover;object-position:64% center;position:absolute;inset:0}
+.europe-feature-image:focus-visible,.europe-feature-link:focus-visible{outline:3px solid #f3d596;outline-offset:4px}
+@media(max-width:700px){.europe-feature-inner{grid-template-columns:1fr;gap:0}.europe-feature-copy{padding:45px 0 35px}.europe-feature-image{margin-inline:-20px;min-height:260px}.europe-feature h2{font-size:clamp(2.3rem,8vw,3.6rem)}}
