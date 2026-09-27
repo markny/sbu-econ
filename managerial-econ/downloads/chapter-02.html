@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Chapter 2: Costs, Capacity, and Better Decisions | Managerial Economics</title>
+<meta name="description" content="Decisions, incentives, and organizational design">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fffefa;
+  --ground: #f4f3ed;
+  --ink: #253433;
+  --muted: #526461;
+  --accent: #17635b;
+  --line: #d5ded8;
+  --soft: #ecf4ef;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 19px/1.75 Georgia, "Times New Roman", serif; }
+a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: #0b403a; }
+:focus-visible { outline: 3px solid #be7725; outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -8rem; padding: .6rem 1rem; background: white; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.masthead { border-bottom: 1px solid var(--line); background: var(--ground); }
+.masthead-inner { max-width: 1380px; margin: auto; padding: 1.2rem 2.2rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.brand { color: var(--ink); text-decoration: none; font: 700 19px/1.35 var(--sans); letter-spacing: -.02em; }
+.tagline { color: var(--muted); font: 13px/1.5 var(--sans); }
+.layout { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 64px; padding: 2.4rem 2.2rem 5rem; }
+.sidebar { align-self: start; position: sticky; top: 1.3rem; max-height: calc(100vh - 2.6rem); overflow-y: auto; padding-right: 1rem; scrollbar-width: thin; }
+.book-nav { font: 14px/1.4 var(--sans); }
+.book-nav h2 { font: 700 11px/1.4 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin: 1.6rem .65rem .6rem; }
+.book-nav h2:first-child { margin-top: 0; }
+.book-nav ol, .book-nav ul { list-style: none; padding: 0; margin: 0; }
+.book-nav a { display: block; text-decoration: none; color: var(--muted); padding: .5rem .65rem; margin: .12rem 0; border-radius: 5px; }
+.book-nav a:hover { background: var(--ground); color: var(--ink); }
+.book-nav a[aria-current="page"] { background: var(--soft); color: #14564e; box-shadow: inset 3px 0 var(--accent); }
+.nav-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.nav-title { display: block; padding-top: .15rem; }
+main { min-width: 0; max-width: 790px; width: 100%; }
+.eyebrow { font: 700 11px/1.4 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: .3rem 0 .8rem; }
+h1 { font: 500 clamp(2rem, 3.4vw, 3.05rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.035em; margin: 0 0 1.2rem; text-wrap: pretty; }
+h2 { font: 600 1.52rem/1.3 Georgia, "Times New Roman", serif; letter-spacing: -.015em; margin: 2.6rem 0 .8rem; text-wrap: pretty; }
+h3 { font: 700 1rem/1.45 var(--sans); margin: 2rem 0 .7rem; }
+p { margin: 0 0 1.05rem; }
+li { padding-left: .15rem; margin-bottom: .45rem; }
+ol, ul { padding-left: 1.5rem; }
+.page-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.1rem; font: 13px/1.5 var(--sans); margin: 0 0 1.4rem; }
+.download { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; background: var(--paper); }
+.download:hover { background: var(--soft); }
+.contents { font: 14px/1.6 var(--sans); border-block: 1px solid var(--line); margin: 1.4rem 0 2rem; padding: .75rem 0; }
+summary { cursor: pointer; font-weight: 600; }
+.contents ul { columns: 2; column-gap: 2rem; margin-bottom: .35rem; padding-left: 1.2rem; }
+.contents li { break-inside: avoid; margin: .4rem 0; }
+.chapter-content { overflow-wrap: break-word; }
+.chapter-content > :first-child { margin-top: 0; }
+.semantic-block { border-left: 4px solid var(--accent); background: var(--soft); padding: 1.35rem 1.55rem; margin: 2rem 0; border-radius: 0 7px 7px 0; }
+.semantic-block > p:first-child { font-family: var(--sans); font-size: .94em; color: #164e48; margin-bottom: .75rem; }
+.semantic-block > :last-child { margin-bottom: 0; }
+.studyandlearn { background: #f6f1e5; border-color: #9a7338; }
+.studyandlearn > p:first-child { color: #6b4d20; }
+figure { margin: 2rem 0; }
+img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; }
+figcaption { font: 14px/1.5 var(--sans); color: var(--muted); margin-top: .5rem; }
+.table-scroll { width: 100%; overflow-x: auto; margin: .7rem 0 1.7rem; scrollbar-color: #91aaa0 var(--ground); scrollbar-width: thin; }
+.table-caption { font: 600 15px/1.55 var(--sans); margin: 1.7rem 0 .5rem; }
+.table-caption p { margin: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; padding: 0; }
+.table-scroll:focus-visible { outline-offset: 2px; }
+table { border-collapse: collapse; font: 15px/1.55 var(--sans); width: 100%; min-width: 480px; }
+caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 .85rem; }
+th, td { text-align: left; vertical-align: top; padding: .8rem .65rem; border-bottom: 1px solid var(--line); }
+th { background: var(--soft); font-weight: 650; }
+tbody tr:nth-child(even) { background: #f7f8f3; }
+.table-hint { display: none; color: var(--muted); font: 12px/1.5 var(--sans); margin: -1rem 0 1.5rem; }
+.chapter-content blockquote { margin: 1.5rem 0; padding-left: 1.3rem; border-left: 3px solid var(--line); }
+.reading-footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.3rem; }
+.sequence { display: flex; justify-content: space-between; gap: 1.4rem; font: 14px/1.6 var(--sans); }
+.sequence a:last-child { text-align: right; }
+.edition-note { color: var(--muted); font: 12px/1.65 var(--sans); margin: 1.2rem 0 0; }
+.mobile-menu { display: none; }
+.standalone .layout { display: block; max-width: 900px; }
+.standalone main { margin: auto; }
+.standalone .masthead-inner { max-width: 900px; }
+.separate-reading { color: var(--muted); }
+@media (max-width: 1050px) {
+  .layout { grid-template-columns: 230px minmax(0, 1fr); gap: 36px; padding-inline: 1.5rem; }
+  .masthead-inner { padding-inline: 1.5rem; }
+}
+@media (max-width: 800px) {
+  body { font-size: 18px; line-height: 1.75; }
+  .masthead-inner { padding: 1rem 1.1rem; flex-wrap: wrap; gap: .5rem; }
+  .tagline { display: none; }
+  .layout { display: block; padding: 1.8rem 1.1rem 3rem; }
+  .sidebar { display: none; }
+  main { margin: auto; }
+  .mobile-menu { display: block; width: 100%; font: 14px/1.5 var(--sans); }
+  .mobile-menu summary { color: var(--accent); padding: .6rem 0 .15rem; }
+  .mobile-menu nav { padding: 1.2rem 0 .5rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.45rem; margin-top: 2.1rem; }
+  .contents ul { columns: 1; }
+  .table-hint { display: block; }
+  .semantic-block { padding: 1rem 1.1rem; margin: 1.6rem 0; }
+  .sequence { flex-wrap: wrap; }
+}
+@media print {
+  body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
+  .masthead, .sidebar, .mobile-menu, .page-tools, .contents, .skip-link, .sequence, .table-hint { display: none; }
+  .layout, .standalone .layout { display: block; margin: 0; padding: 0; max-width: none; }
+  main { max-width: none; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 17pt; break-after: avoid; }
+  h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+  a { color: inherit; }
+  .table-scroll { overflow: visible; }
+  table { min-width: 0; font-size: 9pt; }
+  tr, img { break-inside: avoid; }
+  .semantic-block { border: 1px solid #aaa; border-left: 3px solid #555; background: transparent; }
+  .reading-footer { margin-top: 1.5rem; }
+}
+
+</style>
+</head>
+<body class="standalone">
+<a class="skip-link" href="#reader-main">Skip to reading</a>
+<header class="masthead"><div class="masthead-inner"><span class="brand">Managerial Economics</span><span class="tagline">Decisions, incentives, and organizational design</span></div></header>
+<div class="layout">
+
+<main id="reader-main" tabindex="-1">
+<header class="chapter-heading"><p class="eyebrow">Chapter 2</p><h1 id="chapter-2-costs-capacity-and-better-decisions">Costs, Capacity, and Better Decisions</h1></header>
+<details class="contents"><summary>On this page</summary><ul><li><a href="#should-cedar-take-the-order">Should Cedar take the order?</a></li><li><a href="#start-with-the-alternative-not-the-cost-label">Start with the alternative, not the cost label</a></li><li><a href="#the-order-with-spare-capacity">The order with spare capacity</a></li><li><a href="#fixed-variable-and-avoidable-answer-different-questions">Fixed, variable, and avoidable answer different questions</a></li><li><a href="#when-capacity-has-another-use">When capacity has another use</a></li><li><a href="#average-cost-is-not-the-cost-of-the-next-choice">Average cost is not the cost of the next choice</a></li><li><a href="#a-profit-can-include-payment-for-the-owners-own-resources">A profit can include payment for the owner’s own resources</a></li><li><a href="#capacity-and-scale-are-decisions-too">Capacity and scale are decisions too</a></li><li><a href="#what-should-cedar-recommend">What should Cedar recommend?</a></li><li><a href="#study-map">Study map</a></li><li><a href="#practice-and-discussion">Practice and discussion</a></li><li><a href="#source-note">Source note</a></li></ul></details>
+<article class="chapter-content"><h2 id="should-cedar-take-the-order">Should Cedar take the order?</h2>
+<p>Cedar Components makes parts for other businesses. A customer offers to buy 80 units at $75 each, with delivery during the coming week. Producing each unit would use $48 of additional resources. Preparing the equipment for this particular order would cost another $800.</p>
+<p>Cedar has already paid a designer $1,200 to develop the part. The payment cannot be refunded, and the design has no resale value or alternative use. The customer will take the complete batch or none of it.</p>
+<p>The offer looks attractive: $75 is more than $48. But that comparison leaves out the setup. Including every number in the file is no better, because the design payment has already occurred. And neither approach asks what Cedar would otherwise do with the equipment and workers.</p>
+<p>Suppose the capacity would sit idle if Cedar declines. Should it accept? Now suppose the order would displace ordinary business that earns a useful return. Does the answer change?</p>
+<p>Cedar and its numbers are fictional. The purpose is to compare decisions under stated assumptions, not estimate the costs of an actual manufacturer.</p>
+<h2 id="start-with-the-alternative-not-the-cost-label">Start with the alternative, not the cost label</h2>
+<p>The decision is whether to accept this order, at these terms, for delivery this week. The comparison is with declining it. We are not yet deciding whether Cedar should enter this line of business, buy another machine, or renew its factory lease.</p>
+<p>That distinction determines which costs matter. An additional expense caused by accepting the order counts against acceptance. A benefit Cedar gives up also counts against it. An expense incurred either way does not change the comparison, even if someone assigns a share of it to the order.</p>
+<p>These are <strong>relevant costs</strong>: costs that differ between the alternatives under consideration. To identify them, ask what Cedar would do with each resource if it declined. “We own it already” does not answer the question. An owned machine might be available for another order, for rental to someone else, or for sale. Using it can give up a valuable alternative without producing a new invoice.</p>
+<p>For the initial comparison, assume the $48 includes all incremental per-unit costs, including materials, labor, power, and any relevant wear. The $800 setup can be avoided completely by declining. Existing overhead does not change. There are no additional delivery charges, payment risks, tax differences, or effects on other customers. The production plan allows for setup time; there is no additional capacity loss left outside the comparison.</p>
+<p>These assumptions make a clean calculation possible. In an actual decision, they would be questions to check. Calling a cost “incremental” is a claim about what changes, not a guarantee that an accounting report has captured everything.</p>
+<h2 id="the-order-with-spare-capacity">The order with spare capacity</h2>
+<p>The order brings in 80 × $75 = $6,000. Its additional production cost is 80 × $48 = $3,840. Subtracting production cost leaves $2,160 before setup. The additional $800 setup reduces the gain to $1,360:</p>
+<p><strong>Incremental gain = $6,000 − $3,840 − $800 = $1,360.</strong></p>
+<p>Here <strong>contribution</strong> means revenue left after the particular costs already deducted. The order contributes $2,160 before setup and $1,360 after setup. Specify which costs have been allowed for whenever using that word. Contribution is not automatically the firm’s total profit.</p>
+<p>Under the spare-capacity assumptions, accepting leaves Cedar $1,360 better off than declining. That is a reason to accept. It does not establish that the entire business is profitable, because Cedar still has other costs to cover. An order can help cover unchanged overhead without covering all of it by itself.</p>
+<p>What happened to the $1,200 design fee? Cedar has paid it under both alternatives. Accepting does not cause that expense again, and declining does not recover it. Its change is zero. It is a <strong>sunk cost</strong> for this decision.</p>
+<p>Excluding it does not mean the earlier design decision was sensible. That decision should have considered the expected opportunities available before the payment became irreversible. It also does not mean Cedar should stop recording design expenses. Accounting for what happened and deciding what to do next serve different purposes.</p>
+<p>A sunk payment must be distinguished from a recoverable resource. If this design could instead be sold, using it exclusively for the order could sacrifice the sale proceeds. That would change our assumptions and introduce an opportunity cost. The original price paid would still not tell us what the design is worth in its best remaining use.</p>
+<h2 id="fixed-variable-and-avoidable-answer-different-questions">Fixed, variable, and avoidable answer different questions</h2>
+<p>For this batch, total production cost is $48 times the number of units, so it varies with output. The $800 setup is the same once Cedar undertakes the specified setup; it does not increase with each additional unit within the stated range. We therefore call the first cost <strong>variable</strong> and the second <strong>fixed</strong> with respect to that range of production.</p>
+<p>Yet both are avoidable by declining the entire order. <strong>Avoidable</strong> means the cost can be eliminated by choosing the relevant alternative. Fixed does not mean sunk, and variable does not mean that a cost should automatically be added to every decision calculation.</p>
+<p>Consider an existing factory lease whose payment stays the same whether Cedar accepts or declines this week’s order. That payment does not affect this comparison. If Cedar instead considers renewing the lease for another year, the prospective payment may become avoidable. The resource and the cost label have not changed; the decision and time horizon have.</p>
+<p>Likewise, having workers on the payroll does not make their time free. If they can do nothing else valuable during the production period and their pay is unchanged, there may be no additional labor opportunity cost beyond the costs already specified. If using their time prevents other profitable work, that lost contribution matters. The task is to identify the alternative, not to infer cost from how the worker is paid.</p>
+<p>Allocating overhead is different again. A report might distribute an existing supervisor’s salary among products according to machine hours. Giving this order a larger share does not increase the salary or necessarily displace useful supervision elsewhere. The allocation alone is not evidence of a relevant cost. If the order really requires additional supervisory time with another valuable use, that is a separate reason to include a cost.</p>
+<p>The distinction between unchanged allocations and additional fixed costs is also emphasized in <a href="https://www.accaglobal.com/gb/en/student/exam-support-resources/fundamentals-exams-study-resources/f5/technical-articles/relevant-costs.html">ACCA’s discussion of relevant costs</a>. For economic decisions, we must also consider resources and consequences that do not appear as separate cash payments.</p>
+<h2 id="when-capacity-has-another-use">When capacity has another use</h2>
+<p>Change one assumption. Cedar is now fully scheduled, and accepting the special order would displace 80 ordinary units. Each ordinary unit would have contributed $25 after its avoidable production costs. Those sales would be lost, not postponed until next week.</p>
+<p>The special order still adds $1,360 after its production and setup costs. But Cedar now gives up 80 × $25 = $2,000 elsewhere. The net effect is:</p>
+<p><strong>Incremental gain = $1,360 − $2,000 = −$640.</strong></p>
+<p>Cedar should decline under these assumptions. The offered price, the special order’s direct costs, and the historical design payment are unchanged. The recommendation reverses because the alternative use of capacity is more valuable.</p>
+<p>Table 2.1 puts both comparisons together. Positive entries improve Cedar’s position when it accepts; negative entries make it worse. Each column compares acceptance with declining under that column’s capacity condition.</p>
+<div class="table-caption" aria-hidden="true"><p>Table 2.1. What changes if Cedar accepts rather than declines?</p></div><div class="table-scroll" role="region" tabindex="0" aria-label="Table 2.1. What changes if Cedar accepts rather than declines?"><table>
+<caption class="visually-hidden"><p>Table 2.1. What changes if Cedar accepts rather than declines?</p></caption>
+<thead>
+<tr>
+<th scope="col">Change</th>
+<th scope="col" style="text-align: right;">Spare capacity</th>
+<th scope="col" style="text-align: right;">Ordinary business displaced</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Additional order revenue</td>
+<td style="text-align: right;">+$6,000</td>
+<td style="text-align: right;">+$6,000</td>
+</tr>
+<tr>
+<td>Additional production cost</td>
+<td style="text-align: right;">−$3,840</td>
+<td style="text-align: right;">−$3,840</td>
+</tr>
+<tr>
+<td>Additional setup cost</td>
+<td style="text-align: right;">−$800</td>
+<td style="text-align: right;">−$800</td>
+</tr>
+<tr>
+<td>Ordinary contribution forgone</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">−$2,000</td>
+</tr>
+<tr>
+<td>Change in already-paid design fee</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">$0</td>
+</tr>
+<tr>
+<td>Net change</td>
+<td style="text-align: right;">+$1,360</td>
+<td style="text-align: right;">−$640</td>
+</tr>
+</tbody>
+</table></div><p class="table-hint">On a small screen, scroll the table sideways to see all columns.</p>
+<p>The lost $2,000 is contribution, not the ordinary customers’ entire payment. Cedar loses their revenue but also avoids the costs of making the displaced units. The $25 per unit already accounts for both changes. Subtracting lost revenue and then subtracting $2,000 would count part of the loss twice. Deducting the ordinary production costs again would also be wrong; those costs are avoided, not incurred.</p>
+<p>It is tempting to say Cedar should run an extra shift, subcontract, or ask the customer to wait. Any could be a useful alternative. None is available in the comparison just calculated. Adding one requires its own costs and consequences: overtime, outside supplier charges, delivery risk, or a customer’s willingness to accept a later date. The capacity constraint is not a reason to stop thinking, but neither can it be assumed away.</p>
+<p>The same reasoning applies outside a factory. An hour spent serving one client can prevent serving another. A room used for one event cannot necessarily host a second. What matters is the return forgone in the best feasible alternative, not simply whether the resource has a recorded price.</p>
+<h2 id="average-cost-is-not-the-cost-of-the-next-choice">Average cost is not the cost of the next choice</h2>
+<p>Cedar’s avoidable cost for the complete batch is $3,840 + $800 = $4,640. Dividing by 80 gives an average of $58 per unit. This <strong>average cost</strong> spreads the batch’s setup across all 80 units.</p>
+<p>Now consider a different offer: one additional unit after the setup, with spare capacity and no new setup required. Under the constant $48 production-cost assumption, that unit costs another $48. This is its <strong>marginal cost</strong>, the additional cost of one more unit. It is not $58, because producing that unit does not cause one-eightieth of the setup cost again.</p>
+<p>The original customer offered an all-or-nothing batch, however. Cedar cannot assess that decision using only the marginal cost of unit 81. The choice is whether to undertake all 80 units and the setup. The relevant cost for that choice is $4,640 before considering displaced business.</p>
+<p>Suppose a report also allocates the $1,200 design payment across the batch. It then shows ($3,840 + $800 + $1,200) ÷ 80 = $73 per unit. The extra $15 is a share of the sunk payment, not an additional expense caused by acceptance. That report can describe selected expenditures associated with the product without establishing the right acceptance threshold.</p>
+<p>With spare capacity, $58 per unit just covers the batch’s avoidable costs. With the stated displacement, the required revenue is $4,640 + $2,000 = $6,640, or $83 per unit. At those prices Cedar is financially indifferent between accepting and declining within the respective comparison.</p>
+<p>These are <strong>break-even offer prices for this order</strong>, not recommended selling prices. A customer might be willing to pay more. Changing a quote can change whether the customer buys, and future customers may respond to a special deal. Chapter 3 examines customer response and pricing. Here the thresholds tell us what Cedar gives up, not how much of the available gain it should try to capture.</p>
+<h2 id="a-profit-can-include-payment-for-the-owners-own-resources">A profit can include payment for the owner’s own resources</h2>
+<p>The capacity example gives a cost to resources already inside the firm. The same question applies to resources supplied by its owner. An owner can provide labor and capital without receiving a wage slip or charging the business interest. Those resources still have alternatives.</p>
+<p>Consider a separate one-owner business over one year. Its accounts show $72,000 of profit after recorded business expenses. For this example, depreciation has already been deducted and equals the economic loss of asset value during the year. No wage for the owner has been deducted. The business is entirely owner-financed, so no interest expense has been deducted either.</p>
+<p>The owner could earn $60,000 in another job with comparable hours and working conditions. The owner also has $120,000 of recoverable capital tied up in the business. Suppose a comparable-risk alternative would earn 5% over the same year, giving $6,000. This rate is an illustrative assumption, not a statement about available investments. Assume the owner could take the job and invest the released capital together, with no transition costs, tax differences, or differing nonfinancial benefits.</p>
+<p>The accounts report <strong>accounting profit</strong>, revenue less the expenses recorded for the period. <strong>Economic profit</strong> also allows for the opportunity costs of owner-supplied resources not already deducted. Under our assumptions:</p>
+<p><strong>Economic profit = $72,000 − $60,000 − $6,000 = $6,000.</strong></p>
+<p>The business leaves the owner $6,000 ahead of the combined labor and capital alternatives. Comparing $72,000 only with the outside wage would overstate that advantage. Comparing it only with the capital return would treat the owner’s work as free.</p>
+<p>Notice what we did not subtract. The $120,000 capital principal is not an annual expense. The relevant annual charge is the $6,000 return forgone, with asset-value loss already included through depreciation. Nor should we deduct an owner’s wage or a financing cost a second time if the starting profit measure already includes that same cost. Identify what the accounts have deducted before adding an economic adjustment.</p>
+<p>What if accounting profit were $66,000 instead? Economic profit would be zero: the owner would receive enough to match $60,000 for labor and $6,000 for capital, but nothing above those alternatives. <strong>Zero economic profit does not mean that the owner receives nothing.</strong> A normal return to capital is the compensation needed to match the relevant alternative, not an extra gain above economic cost.</p>
+<p>In an actual business, a negative economic profit does not establish that closing immediately is best. The calculation must reflect feasible alternatives, including transition costs and expected future returns. Our simple annual example removes those complications so the distinction is visible. It does not turn an accounting statement into a complete investment appraisal.</p>
+<h2 id="capacity-and-scale-are-decisions-too">Capacity and scale are decisions too</h2>
+<p>The original order used equipment whose availability was already determined. Buying capacity for future orders is a different choice. A new machine, lease, or shift can create expenses that this week’s spare-capacity calculation rightly excluded.</p>
+<p>Spreading one setup over more units lowers the setup cost per unit. That arithmetic alone does not show that a larger factory is more efficient. <strong>Economies of scale</strong> occur when larger output can be produced at a lower average cost, allowing the production arrangement to change. A larger operation might support specialized equipment or divide tasks among workers who become faster at them. It can also require additional coordination, supervision, and movement between stages.</p>
+<p>Capacity planning therefore needs information about the work likely to be available, not just the lowest unit cost achievable when every machine is busy. Empty capacity can be expensive to maintain, while deliberately keeping some spare capacity may help the firm accommodate urgent orders. The choice depends on the benefits and costs of those alternatives.</p>
+<p>This connects cost reasoning to Chapter 1’s organizational problem. A manager rewarded for machine utilization might accept work that displaces more valuable activity or builds unwanted inventory. A manager judged on a product’s allocated profit might reject an order that increases firm-wide contribution. Neither response follows inevitably. The point is that a report or reward can direct attention toward a number that answers a different question from the one the business needs to ask.</p>
+<h2 id="what-should-cedar-recommend">What should Cedar recommend?</h2>
+<p>For the original order, the recommendation is conditional but definite: accept with otherwise idle capacity and the stated costs; decline when it displaces $2,000 of ordinary contribution. The recommendation changes because the relevant alternative changes, not because economics offers a different rule for a busy factory.</p>
+<p>A useful recommendation should identify what could overturn it. Cedar should confirm the full setup and production costs, the availability of capacity through the delivery date, and the contribution from any work it would forgo. It should also ask whether the special order changes future sales or creates service obligations omitted from the initial figures. Those checks focus on inputs capable of changing the answer.</p>
+<p>The underlying principle is that cost belongs to a particular choice. <a href="https://www.econlib.org/library/Buchanan/buchCv6.html?chapter_num=4">Buchanan’s <em>Cost and Choice</em></a> develops this forward-looking interpretation of opportunity cost. Our dollar examples make the alternatives explicit; the numbers do not remove the need to identify and value those alternatives correctly.</p>
+<h2 id="study-map">Study map</h2>
+<p>Define the decision, its horizon, and the alternative. Trace what changes in revenue, resource use, and opportunities forgone. Exclude unchanged costs, but include avoidable setup and displaced contribution. Distinguish the cost of a complete batch from average and marginal unit costs. Check whether owner labor and capital have already been allowed for. End with a recommendation and the assumption most likely to change it.</p>
+<h2 id="practice-and-discussion">Practice and discussion</h2>
+<p>These are public practice questions. Change only the assumption specified in each question.</p>
+<ol type="1">
+<li><p><strong>Change the offer.</strong> The customer offers $85 for each of the original 80 units. Calculate the incremental gain with spare capacity and with the original displacement. What offer price would make Cedar indifferent in each case? Explain why these prices need not be the best prices to quote.</p></li>
+<li><p><strong>Change the displaced business.</strong> Return to the $75 offer. Suppose it displaces only 54 ordinary units, each contributing $25. Would Cedar accept? What if it displaces 55? Explain why the ordinary sales’ contribution, rather than their full revenue, enters the comparison.</p></li>
+<li><p><strong>Interrogate a cost label.</strong> A supervisor argues that the $800 setup should be ignored because it is fixed, while the $1,200 design fee must be recovered because it belongs to this product. Explain both errors. Then describe a changed assumption that would make an alternative use of the design relevant.</p></li>
+<li><p><strong>Recalculate the owner’s alternatives.</strong> In the separate annual example, the owner’s alternative job now pays $70,000. Keep accounting profit at $72,000 and the capital opportunity cost at $6,000. Calculate economic profit. Why is the $120,000 principal not subtracted as an annual cost? What additional information would be needed before recommending a change of occupation?</p></li>
+<li><p><strong>Write a recommendation.</strong> In about 150 words, advise Cedar on the original order. State both capacity results, distinguish the current order from the earlier design decision, and identify one missing real-world fact that could reverse your recommendation. Do not assume that another shift or subcontractor is available without checking its cost and feasibility.</p></li>
+</ol>
+<h3 id="check-your-arithmetic">Check your arithmetic</h3>
+<p>For question 1, $6,800 − $3,840 − $800 = $2,160 with spare capacity; subtracting $2,000 leaves $160 with displacement. The break-even prices are $58 and $83. For question 2, subtracting $1,350 leaves $10, while subtracting $1,375 leaves −$15. For question 4, $72,000 − $70,000 − $6,000 = −$4,000. These answers rely on the stated alternatives, not just on the reported accounting figures.</p>
+<h2 id="source-note">Source note</h2>
+<p>The examples, numbers, table, and exercises are original teaching constructions. The two linked readings support bounded distinctions, not the hypothetical results. The chapter does not estimate a real firm’s costs or prescribe an investment return.</p>
+</article>
+<footer class="reading-footer"><p class="edition-note">Self-contained chapter: text, styling, and figures are included. Cited websites require internet access; other book readings are supplied separately.</p></footer>
+</main></div>
+</body></html>

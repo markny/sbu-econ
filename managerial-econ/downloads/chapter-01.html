@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Chapter 1: Managers, Value, and Organizational Design | Managerial Economics</title>
+<meta name="description" content="Decisions, incentives, and organizational design">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fffefa;
+  --ground: #f4f3ed;
+  --ink: #253433;
+  --muted: #526461;
+  --accent: #17635b;
+  --line: #d5ded8;
+  --soft: #ecf4ef;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 19px/1.75 Georgia, "Times New Roman", serif; }
+a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: #0b403a; }
+:focus-visible { outline: 3px solid #be7725; outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -8rem; padding: .6rem 1rem; background: white; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.masthead { border-bottom: 1px solid var(--line); background: var(--ground); }
+.masthead-inner { max-width: 1380px; margin: auto; padding: 1.2rem 2.2rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.brand { color: var(--ink); text-decoration: none; font: 700 19px/1.35 var(--sans); letter-spacing: -.02em; }
+.tagline { color: var(--muted); font: 13px/1.5 var(--sans); }
+.layout { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 64px; padding: 2.4rem 2.2rem 5rem; }
+.sidebar { align-self: start; position: sticky; top: 1.3rem; max-height: calc(100vh - 2.6rem); overflow-y: auto; padding-right: 1rem; scrollbar-width: thin; }
+.book-nav { font: 14px/1.4 var(--sans); }
+.book-nav h2 { font: 700 11px/1.4 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin: 1.6rem .65rem .6rem; }
+.book-nav h2:first-child { margin-top: 0; }
+.book-nav ol, .book-nav ul { list-style: none; padding: 0; margin: 0; }
+.book-nav a { display: block; text-decoration: none; color: var(--muted); padding: .5rem .65rem; margin: .12rem 0; border-radius: 5px; }
+.book-nav a:hover { background: var(--ground); color: var(--ink); }
+.book-nav a[aria-current="page"] { background: var(--soft); color: #14564e; box-shadow: inset 3px 0 var(--accent); }
+.nav-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.nav-title { display: block; padding-top: .15rem; }
+main { min-width: 0; max-width: 790px; width: 100%; }
+.eyebrow { font: 700 11px/1.4 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: .3rem 0 .8rem; }
+h1 { font: 500 clamp(2rem, 3.4vw, 3.05rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.035em; margin: 0 0 1.2rem; text-wrap: pretty; }
+h2 { font: 600 1.52rem/1.3 Georgia, "Times New Roman", serif; letter-spacing: -.015em; margin: 2.6rem 0 .8rem; text-wrap: pretty; }
+h3 { font: 700 1rem/1.45 var(--sans); margin: 2rem 0 .7rem; }
+p { margin: 0 0 1.05rem; }
+li { padding-left: .15rem; margin-bottom: .45rem; }
+ol, ul { padding-left: 1.5rem; }
+.page-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.1rem; font: 13px/1.5 var(--sans); margin: 0 0 1.4rem; }
+.download { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; background: var(--paper); }
+.download:hover { background: var(--soft); }
+.contents { font: 14px/1.6 var(--sans); border-block: 1px solid var(--line); margin: 1.4rem 0 2rem; padding: .75rem 0; }
+summary { cursor: pointer; font-weight: 600; }
+.contents ul { columns: 2; column-gap: 2rem; margin-bottom: .35rem; padding-left: 1.2rem; }
+.contents li { break-inside: avoid; margin: .4rem 0; }
+.chapter-content { overflow-wrap: break-word; }
+.chapter-content > :first-child { margin-top: 0; }
+.semantic-block { border-left: 4px solid var(--accent); background: var(--soft); padding: 1.35rem 1.55rem; margin: 2rem 0; border-radius: 0 7px 7px 0; }
+.semantic-block > p:first-child { font-family: var(--sans); font-size: .94em; color: #164e48; margin-bottom: .75rem; }
+.semantic-block > :last-child { margin-bottom: 0; }
+.studyandlearn { background: #f6f1e5; border-color: #9a7338; }
+.studyandlearn > p:first-child { color: #6b4d20; }
+figure { margin: 2rem 0; }
+img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; }
+figcaption { font: 14px/1.5 var(--sans); color: var(--muted); margin-top: .5rem; }
+.table-scroll { width: 100%; overflow-x: auto; margin: .7rem 0 1.7rem; scrollbar-color: #91aaa0 var(--ground); scrollbar-width: thin; }
+.table-caption { font: 600 15px/1.55 var(--sans); margin: 1.7rem 0 .5rem; }
+.table-caption p { margin: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; padding: 0; }
+.table-scroll:focus-visible { outline-offset: 2px; }
+table { border-collapse: collapse; font: 15px/1.55 var(--sans); width: 100%; min-width: 480px; }
+caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 .85rem; }
+th, td { text-align: left; vertical-align: top; padding: .8rem .65rem; border-bottom: 1px solid var(--line); }
+th { background: var(--soft); font-weight: 650; }
+tbody tr:nth-child(even) { background: #f7f8f3; }
+.table-hint { display: none; color: var(--muted); font: 12px/1.5 var(--sans); margin: -1rem 0 1.5rem; }
+.chapter-content blockquote { margin: 1.5rem 0; padding-left: 1.3rem; border-left: 3px solid var(--line); }
+.reading-footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.3rem; }
+.sequence { display: flex; justify-content: space-between; gap: 1.4rem; font: 14px/1.6 var(--sans); }
+.sequence a:last-child { text-align: right; }
+.edition-note { color: var(--muted); font: 12px/1.65 var(--sans); margin: 1.2rem 0 0; }
+.mobile-menu { display: none; }
+.standalone .layout { display: block; max-width: 900px; }
+.standalone main { margin: auto; }
+.standalone .masthead-inner { max-width: 900px; }
+.separate-reading { color: var(--muted); }
+@media (max-width: 1050px) {
+  .layout { grid-template-columns: 230px minmax(0, 1fr); gap: 36px; padding-inline: 1.5rem; }
+  .masthead-inner { padding-inline: 1.5rem; }
+}
+@media (max-width: 800px) {
+  body { font-size: 18px; line-height: 1.75; }
+  .masthead-inner { padding: 1rem 1.1rem; flex-wrap: wrap; gap: .5rem; }
+  .tagline { display: none; }
+  .layout { display: block; padding: 1.8rem 1.1rem 3rem; }
+  .sidebar { display: none; }
+  main { margin: auto; }
+  .mobile-menu { display: block; width: 100%; font: 14px/1.5 var(--sans); }
+  .mobile-menu summary { color: var(--accent); padding: .6rem 0 .15rem; }
+  .mobile-menu nav { padding: 1.2rem 0 .5rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.45rem; margin-top: 2.1rem; }
+  .contents ul { columns: 1; }
+  .table-hint { display: block; }
+  .semantic-block { padding: 1rem 1.1rem; margin: 1.6rem 0; }
+  .sequence { flex-wrap: wrap; }
+}
+@media print {
+  body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
+  .masthead, .sidebar, .mobile-menu, .page-tools, .contents, .skip-link, .sequence, .table-hint { display: none; }
+  .layout, .standalone .layout { display: block; margin: 0; padding: 0; max-width: none; }
+  main { max-width: none; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 17pt; break-after: avoid; }
+  h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+  a { color: inherit; }
+  .table-scroll { overflow: visible; }
+  table { min-width: 0; font-size: 9pt; }
+  tr, img { break-inside: avoid; }
+  .semantic-block { border: 1px solid #aaa; border-left: 3px solid #555; background: transparent; }
+  .reading-footer { margin-top: 1.5rem; }
+}
+
+</style>
+</head>
+<body class="standalone">
+<a class="skip-link" href="#reader-main">Skip to reading</a>
+<header class="masthead"><div class="masthead-inner"><span class="brand">Managerial Economics</span><span class="tagline">Decisions, incentives, and organizational design</span></div></header>
+<div class="layout">
+
+<main id="reader-main" tabindex="-1">
+<header class="chapter-heading"><p class="eyebrow">Chapter 1</p><h1 id="chapter-1-managers-value-and-organizational-design">Managers, Value, and Organizational Design</h1></header>
+<details class="contents"><summary>On this page</summary><ul><li><a href="#more-jobs-less-progress">More jobs, less progress?</a></li><li><a href="#what-would-count-as-improvement">What would count as improvement?</a></li><li><a href="#follow-a-choice-through-the-working-day">Follow a choice through the working day</a></li><li><a href="#the-employees-problem-is-not-the-firms-problem">The employee’s problem is not the firm’s problem</a></li><li><a href="#why-dealing-with-conflicting-interests-is-costly">Why dealing with conflicting interests is costly</a></li><li><a href="#three-organizational-choices-that-belong-together">Three organizational choices that belong together</a></li><li><a href="#agency-costs-help-shape-the-organization-chart">Agency costs help shape the organization chart</a></li><li><a href="#diagnose-before-choosing-the-cure">Diagnose before choosing the cure</a></li><li><a href="#study-map-a-reusable-diagnostic-checklist">Study map: a reusable diagnostic checklist</a></li><li><a href="#practice-and-discussion">Practice and discussion</a></li><li><a href="#source-note">Source note</a></li></ul></details>
+<article class="chapter-content"><h2 id="more-jobs-less-progress">More jobs, less progress?</h2>
+<p>Harbor Service repairs equipment for local businesses. A dispatcher assigns customer visits, technicians diagnose faults and make repairs, and a supervisor approves purchases of replacement parts above a spending limit. When a technician closes an initial visit in the scheduling system, the visit enters Harbor’s completion count. Closing that record does not establish that the repair will last.</p>
+<p>Imagine you manage the service operation. Your report shows more completed initial visits. It also shows more repeat visits, and customers are complaining about equipment that still does not work properly. Headquarters rewards initial completions; repeat visits do not enter the headline performance measure.</p>
+<p>Should you change the bonus, require closer supervision, or arrange more training?</p>
+<p>Each could help with a different problem. Technicians might hurry through diagnosis to complete another visit. They might diagnose correctly but lack the necessary parts. Or they might not know how to handle unfamiliar equipment. Even the apparent deterioration needs checking: more initial jobs can produce more repeats without a higher repeat rate.</p>
+<p>Harbor is fictional. The rules and problems in this chapter are assumptions for reasoning, not evidence about an actual business. We will not settle its entire service problem here. The first task is to identify the choices people face and what would help us understand them.</p>
+<h2 id="what-would-count-as-improvement">What would count as improvement?</h2>
+<p>Before changing a rule, specify the objective. For this case, suppose Harbor’s owners want a business whose reliable service earns more than the relevant costs over time, while meeting its service commitments and safety requirements. This gives us something more useful than “increase completions.”</p>
+<p>A quick repair that fails tomorrow can improve today’s report while using another technician’s time next week. A careful repair can look slow today while saving a return trip and preserving a customer relationship. Neither possibility proves that careful work always pays. Spending hours checking a trivial problem can waste resources too.</p>
+<p>We need to distinguish creating value from recording activity or receiving a payment. As Foundations explained, the payment divides gains from an exchange; it is not itself a measure of all the gains created. Harbor needs customers to value its service, and it needs to retain enough of that value to make providing the service worthwhile. A larger invoice alone does not show that a repair became more useful.</p>
+<p>State the horizon as well. This week’s job count, this month’s profit, and the business’s value over time answer different questions. Future benefits are uncertain, so a claim about “building relationships” needs a plausible explanation, not a free pass for any current expense.</p>
+<p>Finally, make the constraints explicit. Harbor cannot assign technicians it does not have or use a part that has not arrived. Nor does an attractive financial return justify ignoring the safety requirement in our case. A recommendation must compare feasible alternatives, not an imperfect operation with an imaginary business that has unlimited staff, perfect information, and no obligations.</p>
+<h2 id="follow-a-choice-through-the-working-day">Follow a choice through the working day</h2>
+<p>Consider a technician who has made a repair but could spend additional time testing it under normal operating conditions. That time might reveal a remaining fault. It also delays the next customer visit.</p>
+<p>The relevant comparison is the expected benefit of the extra check against the value of the best use of that time elsewhere. Checking is attractive when the avoided repeat work and other benefits justify the displaced work. “Quality matters” and “we need more jobs” are both incomplete answers. We need to know what this particular extra check is likely to accomplish.</p>
+<p>Now put the parts-approval rule into the same decision. The technician believes a replacement is needed but must wait for approval. Staying means missing another appointment; leaving may require a second trip. A dispatcher who pushes the technician toward the next job could be responding to the waiting queue, not simply behaving carelessly.</p>
+<p>The manager has a time constraint too. Reviewing every parts request leaves less time for scheduling, coaching, and difficult customer problems. The opportunity cost of supervision is not zero because the supervisor already receives a salary. What changes is the work that cannot be done while the supervisor reviews the request.</p>
+<p>Chapter 2 develops the calculations behind these comparisons. Here the important step is to follow the whole decision, including the work displaced elsewhere.</p>
+<h2 id="the-employees-problem-is-not-the-firms-problem">The employee’s problem is not the firm’s problem</h2>
+<p>From Harbor’s viewpoint, extra testing can be valuable. From the technician’s viewpoint, the choice also affects the completion count, the likelihood of a reward, the length of the working day, and the reaction of the supervisor. These consequences need not point in the same direction.</p>
+<p>An <strong>incentive</strong> is a consequence that changes the attractiveness of one action relative to another. A completion bonus is an incentive, but so is the prospect of an angry conversation about a missed appointment. Pride in a sound repair and concern for a customer can also matter. Pay is one influence, not a complete account of motivation.</p>
+<p>Nobody has to calculate an equation before responding. A technician can learn from experience that closing another visit earns praise while extra checking goes unnoticed. Habits can reflect that experience. Different workers may respond differently because they value different things or hold different beliefs about what will happen.</p>
+<p>This is why “hire good people” does not finish the organizational problem. A conscientious employee can face conflicting instructions. A highly energetic employee can work hard at the activity the firm rewards while neglecting another activity the firm needs. The question is not just whether someone is trying, but what the arrangement gives that person reasons to try to accomplish.</p>
+<h2 id="why-dealing-with-conflicting-interests-is-costly">Why dealing with conflicting interests is costly</h2>
+<p>Harbor’s owners cannot personally make every repair, so they entrust decisions to others. The party entrusting the work is the <strong>principal</strong>; the person acting on its behalf is the <strong>agent</strong>. An <strong>agency problem</strong> arises when the agent’s interests can lead to choices that differ from what the principal wants, and those choices cannot be directed or checked costlessly.</p>
+<p>Three kinds of cost matter. First, Harbor might pay a supervisor to inspect a sample of repairs or review parts requests. The review consumes time even when it uncovers no problem. This is <strong>monitoring</strong>: the principal’s expenditure on oversight and controls. It means more than watching someone work; approval rules also attempt to influence what gets done.</p>
+<p>Second, change the relationship. Suppose a customer worries that Harbor will claim a repair is complete before doing the promised work. Harbor offers to pay for an independent inspection to reassure the customer. Harbor is now the agent bearing an assurance cost. This is <strong>bonding</strong>: the agent’s expenditure on credible assurances about its conduct. If the customer instead pays someone to check Harbor’s work, that is monitoring by the principal. The distinction concerns who supplies the safeguard, not whether the inspection looks different. Bonding does not mean team-building.</p>
+<p>Third, suppose some technicians still omit worthwhile checks because the completion reward makes another visit more attractive. The resulting avoidable loss can remain even after Harbor introduces oversight. This is <strong>residual loss</strong>: the value the principal still loses because interests remain imperfectly aligned. But a fault that nobody could reasonably anticipate is not automatically an agency loss. Neither is every missing skill or delayed part. We need a connection to the conflict of interest, not merely a disappointing outcome.</p>
+<p>Monitoring, bonding, and residual loss together constitute <strong>agency costs</strong>, using the categories developed by <a href="https://doi.org/10.1016/0304-405X%2876%2990026-X">Jensen and Meckling (1976)</a>. Count the resources spent addressing the problem as well as the losses left afterward.</p>
+<p>The aim is not to drive one category to zero at any cost. Preventing the last avoidable repeat could require reviewing every action, slowing repairs and consuming more resources than it saves. A safeguard can be worthwhile without eliminating all mistakes; a perfectly enforced rule can still be a bad rule.</p>
+<h2 id="three-organizational-choices-that-belong-together">Three organizational choices that belong together</h2>
+<p>To examine Harbor’s arrangement, ask three questions.</p>
+<p><strong>Who may decide?</strong> Decision rights specify the choices a person is authorized to make. The technician can diagnose and repair, but cannot approve every parts purchase. Being responsible for a result does not necessarily mean having authority over everything that affects it.</p>
+<p><strong>How is performance evaluated?</strong> Harbor must choose what information to collect and how to interpret it. Counting closed visits is one possible measure. Deciding that a higher count deserves a better rating is an additional choice.</p>
+<p><strong>What follows from the evaluation?</strong> Rewards and other consequences connect the rating to something the employee cares about. The same information can guide coaching or determine a bonus. Those uses can create different reasons to change behavior.</p>
+<p>This connected view of authority, evaluation, and rewards is developed in <a href="https://ucema.edu.ar/u/je49/organizacion/Jensen_SpecificK.pdf">Jensen and Meckling’s work on knowledge and organizational structure</a>. Our Harbor application makes the connections visible.</p>
+<div class="table-caption" aria-hidden="true"><p>Table 1.1. Three choices behind Harbor’s service results.</p></div><div class="table-scroll" role="region" tabindex="0" aria-label="Table 1.1. Three choices behind Harbor’s service results."><table>
+<caption class="visually-hidden"><p>Table 1.1. Three choices behind Harbor’s service results.</p></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col">Design choice</th>
+<th scope="col">Harbor’s arrangement</th>
+<th scope="col">Question or possible response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Decision rights</td>
+<td>Technicians diagnose and repair; a supervisor approves above-limit parts</td>
+<td>Does waiting for approval make another trip necessary?</td>
+</tr>
+<tr>
+<td>Performance evaluation</td>
+<td>Closed initial visits enter the headline count; repeats do not</td>
+<td>Can the count improve without more lasting repairs?</td>
+</tr>
+<tr>
+<td>Rewards</td>
+<td>Completing more initial visits helps earn a reward</td>
+<td>Extra checking may be less attractive than starting another visit</td>
+</tr>
+</tbody>
+</table></div><p class="table-hint">On a small screen, scroll the table sideways to see all columns.</p>
+<p>Suppose Harbor responds by penalizing repeat visits but leaves parts approval unchanged. A technician may now bear a penalty for a return trip caused by an approval delay. The technician might press harder for timely approval, avoid jobs likely to need expensive parts, or dispute how returns are classified. Which response occurs depends on the options available.</p>
+<p>Changing the reward without examining authority can therefore create a new problem. But expanding spending authority while rewarding only volume can also be troublesome: buying a replacement may become the quickest way to close a visit even when diagnosis would reveal a cheaper repair. The choices interact. Fixing one in isolation need not improve the whole arrangement.</p>
+<h2 id="agency-costs-help-shape-the-organization-chart">Agency costs help shape the organization chart</h2>
+<p>Imagine Harbor wants technicians to use their knowledge without letting each person approve every expenditure and judge the quality of their own work. It could leave diagnosis and repair with the technician, assign approval of larger purchases to a supervisor, and give another reviewer responsibility for disputed repeat classifications.</p>
+<p>Adding a separate reviewer changes organizational responsibilities, not just a pay formula. These assignments establish where a decision must be handed off, whose approval is necessary, and who can question the result. The distinction between proposing and carrying out decisions, on one side, and approving and reviewing them, on the other, is central to <a href="https://doi.org/10.1086/467037">Fama and Jensen’s analysis (1983)</a>.</p>
+<p>Separation can make it harder for someone to favor their own interest without scrutiny. It can also lose information between the technician and the reviewer. The supervisor may know less about the equipment; the technician may explain the situation poorly; the customer may wait while they exchange messages. Moving authority upward does not make the person receiving it perfectly informed or free of conflicting interests.</p>
+<p>Nor does reducing agency costs always mean adding another level of management. Suppose reliable review of completed work makes it less costly to let technicians approve routine parts themselves. Better oversight after a decision could support fewer approvals before it. Whether that arrangement is worthwhile depends on the potential waste, the value of quick action, and the cost of meaningful review.</p>
+<p>Agency concerns thus help explain both restrictions on discretion and arrangements that make discretion workable. They are not the only reason for structure. Harbor also needs to combine specialized skills, coordinate travel, and respond to customers. Even people with perfectly aligned interests would still need to divide work and share information. A useful organizational design addresses these problems together.</p>
+<h2 id="diagnose-before-choosing-the-cure">Diagnose before choosing the cure</h2>
+<p>Return to the report that began the chapter. Start by checking what it measures. Compare repeat visits relative to initial jobs, allow the same follow-up time, and examine whether the mix of equipment or repair difficulty changed. Otherwise an increase in workload can be mistaken for worsening performance.</p>
+<p>Then consider the competing explanations.</p>
+<p><strong>If hurried diagnosis is important</strong>, a review of comparable jobs might reveal omitted checks that would probably have detected the fault. Ask whether those checks were understood and feasible, and how taking the time affected evaluation. A high completion count alone does not establish rushing.</p>
+<p><strong>If parts availability is important</strong>, inspect when the technician identified the need, when approval was requested and received, and when the part became available. A part waiting for approval presents a different problem from a promptly ordered part that the supplier could not deliver. A stronger completion incentive cannot make unavailable stock appear.</p>
+<p><strong>If training is important</strong>, ask technicians to explain how they would diagnose the relevant fault and observe whether they can perform the necessary test. Returns concentrated in unfamiliar equipment suggest a question worth investigating, not a verdict about ability. More training helps only if it addresses the knowledge actually missing.</p>
+<p>These mechanisms can coexist. A technician might lack training and also face pressure to hurry. The purpose of diagnosis is to find information that changes the preferred response, not to attach a single label to the problem.</p>
+<p>Harbor could next test a limited change in a defined set of routine repairs, specifying what will be compared, which service requirements remain fixed, and when the trial will be reviewed. It should track resource use and lasting repairs, not merely the favored score. If results improve, check whether job difficulty or parts availability also changed. A simple before-and-after improvement is not, by itself, proof that the new rule caused it.</p>
+<p>Harbor’s first step is to verify the problem, investigate the competing mechanisms, and compare a feasible change with its costs. A good decision can still produce a bad outcome when uncertainty turns against it. The test of the reasoning is what the available information justified when the choice was made—not whether hindsight makes the result look obvious.</p>
+<h2 id="study-map-a-reusable-diagnostic-checklist">Study map: a reusable diagnostic checklist</h2>
+<p>For an organizational problem, ask:</p>
+<ol type="1">
+<li>What decision must be made, for whose benefit, over what horizon, and within which constraints?</li>
+<li>What choices do the people doing the work actually have?</li>
+<li>Who has authority, how are results evaluated, and what consequences follow?</li>
+<li>What costs arise from oversight, assurances, and remaining conflicts of interest?</li>
+<li>Which alternative explanation could fit the same outcome, and what information would help distinguish it?</li>
+<li>What feasible change is worth trying, what does it cost, and what would make us reconsider it?</li>
+</ol>
+<h2 id="practice-and-discussion">Practice and discussion</h2>
+<p>These are public practice questions. Use the chapter’s assumptions unless a question changes them.</p>
+<ol type="1">
+<li><p><strong>Clarify the objective.</strong> Harbor announces that its goal is “the most completed visits in the region.” Explain one way achieving that goal could leave the business worse off. Rewrite it as a useful managerial objective with a horizon and a constraint.</p></li>
+<li><p><strong>Identify the relationship.</strong> Compare Harbor paying a supervisor to check technicians’ work with Harbor paying for independent verification to reassure a customer. Identify the principal and agent in each case and explain the monitoring–bonding distinction. Why is the repair bill itself not automatically an agency cost?</p></li>
+<li><p><strong>Connect the rules.</strong> Harbor starts penalizing repeat visits but keeps slow parts approval. Describe a potentially useful response and a potentially harmful response a technician could make. What would you want to know before changing the approval rule?</p></li>
+<li><p><strong>Compare structures.</strong> One proposal requires supervisor approval for every replacement part. Another allows routine purchases and reviews a sample afterward. Explain one benefit and one cost of each. Name a condition that could change your recommendation.</p></li>
+<li><p><strong>Offer a disciplined diagnosis.</strong> In about 150 words, recommend Harbor’s next investigative step. Include two competing explanations, evidence that could help distinguish them, the cost of obtaining that evidence, and a conclusion the opening report does not support.</p></li>
+</ol>
+<h2 id="source-note">Source note</h2>
+<p>The linked sources ground the agency-cost categories and organizational-design distinctions. Harbor’s situation, possible responses, investigative steps, table, and exercises were constructed for this book; they are not findings reported in those papers.</p>
+</article>
+<footer class="reading-footer"><p class="edition-note">Self-contained chapter: text, styling, and figures are included. Cited websites require internet access; other book readings are supplied separately.</p></footer>
+</main></div>
+</body></html>

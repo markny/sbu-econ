@@ -1,0 +1,299 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Chapter 8: Hiring, Retention, and Careers | Managerial Economics</title>
+<meta name="description" content="Decisions, incentives, and organizational design">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fffefa;
+  --ground: #f4f3ed;
+  --ink: #253433;
+  --muted: #526461;
+  --accent: #17635b;
+  --line: #d5ded8;
+  --soft: #ecf4ef;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 19px/1.75 Georgia, "Times New Roman", serif; }
+a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: #0b403a; }
+:focus-visible { outline: 3px solid #be7725; outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -8rem; padding: .6rem 1rem; background: white; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.masthead { border-bottom: 1px solid var(--line); background: var(--ground); }
+.masthead-inner { max-width: 1380px; margin: auto; padding: 1.2rem 2.2rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.brand { color: var(--ink); text-decoration: none; font: 700 19px/1.35 var(--sans); letter-spacing: -.02em; }
+.tagline { color: var(--muted); font: 13px/1.5 var(--sans); }
+.layout { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 64px; padding: 2.4rem 2.2rem 5rem; }
+.sidebar { align-self: start; position: sticky; top: 1.3rem; max-height: calc(100vh - 2.6rem); overflow-y: auto; padding-right: 1rem; scrollbar-width: thin; }
+.book-nav { font: 14px/1.4 var(--sans); }
+.book-nav h2 { font: 700 11px/1.4 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin: 1.6rem .65rem .6rem; }
+.book-nav h2:first-child { margin-top: 0; }
+.book-nav ol, .book-nav ul { list-style: none; padding: 0; margin: 0; }
+.book-nav a { display: block; text-decoration: none; color: var(--muted); padding: .5rem .65rem; margin: .12rem 0; border-radius: 5px; }
+.book-nav a:hover { background: var(--ground); color: var(--ink); }
+.book-nav a[aria-current="page"] { background: var(--soft); color: #14564e; box-shadow: inset 3px 0 var(--accent); }
+.nav-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.nav-title { display: block; padding-top: .15rem; }
+main { min-width: 0; max-width: 790px; width: 100%; }
+.eyebrow { font: 700 11px/1.4 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: .3rem 0 .8rem; }
+h1 { font: 500 clamp(2rem, 3.4vw, 3.05rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.035em; margin: 0 0 1.2rem; text-wrap: pretty; }
+h2 { font: 600 1.52rem/1.3 Georgia, "Times New Roman", serif; letter-spacing: -.015em; margin: 2.6rem 0 .8rem; text-wrap: pretty; }
+h3 { font: 700 1rem/1.45 var(--sans); margin: 2rem 0 .7rem; }
+p { margin: 0 0 1.05rem; }
+li { padding-left: .15rem; margin-bottom: .45rem; }
+ol, ul { padding-left: 1.5rem; }
+.page-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.1rem; font: 13px/1.5 var(--sans); margin: 0 0 1.4rem; }
+.download { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; background: var(--paper); }
+.download:hover { background: var(--soft); }
+.contents { font: 14px/1.6 var(--sans); border-block: 1px solid var(--line); margin: 1.4rem 0 2rem; padding: .75rem 0; }
+summary { cursor: pointer; font-weight: 600; }
+.contents ul { columns: 2; column-gap: 2rem; margin-bottom: .35rem; padding-left: 1.2rem; }
+.contents li { break-inside: avoid; margin: .4rem 0; }
+.chapter-content { overflow-wrap: break-word; }
+.chapter-content > :first-child { margin-top: 0; }
+.semantic-block { border-left: 4px solid var(--accent); background: var(--soft); padding: 1.35rem 1.55rem; margin: 2rem 0; border-radius: 0 7px 7px 0; }
+.semantic-block > p:first-child { font-family: var(--sans); font-size: .94em; color: #164e48; margin-bottom: .75rem; }
+.semantic-block > :last-child { margin-bottom: 0; }
+.studyandlearn { background: #f6f1e5; border-color: #9a7338; }
+.studyandlearn > p:first-child { color: #6b4d20; }
+figure { margin: 2rem 0; }
+img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; }
+figcaption { font: 14px/1.5 var(--sans); color: var(--muted); margin-top: .5rem; }
+.table-scroll { width: 100%; overflow-x: auto; margin: .7rem 0 1.7rem; scrollbar-color: #91aaa0 var(--ground); scrollbar-width: thin; }
+.table-caption { font: 600 15px/1.55 var(--sans); margin: 1.7rem 0 .5rem; }
+.table-caption p { margin: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; padding: 0; }
+.table-scroll:focus-visible { outline-offset: 2px; }
+table { border-collapse: collapse; font: 15px/1.55 var(--sans); width: 100%; min-width: 480px; }
+caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 .85rem; }
+th, td { text-align: left; vertical-align: top; padding: .8rem .65rem; border-bottom: 1px solid var(--line); }
+th { background: var(--soft); font-weight: 650; }
+tbody tr:nth-child(even) { background: #f7f8f3; }
+.table-hint { display: none; color: var(--muted); font: 12px/1.5 var(--sans); margin: -1rem 0 1.5rem; }
+.chapter-content blockquote { margin: 1.5rem 0; padding-left: 1.3rem; border-left: 3px solid var(--line); }
+.reading-footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.3rem; }
+.sequence { display: flex; justify-content: space-between; gap: 1.4rem; font: 14px/1.6 var(--sans); }
+.sequence a:last-child { text-align: right; }
+.edition-note { color: var(--muted); font: 12px/1.65 var(--sans); margin: 1.2rem 0 0; }
+.mobile-menu { display: none; }
+.standalone .layout { display: block; max-width: 900px; }
+.standalone main { margin: auto; }
+.standalone .masthead-inner { max-width: 900px; }
+.separate-reading { color: var(--muted); }
+@media (max-width: 1050px) {
+  .layout { grid-template-columns: 230px minmax(0, 1fr); gap: 36px; padding-inline: 1.5rem; }
+  .masthead-inner { padding-inline: 1.5rem; }
+}
+@media (max-width: 800px) {
+  body { font-size: 18px; line-height: 1.75; }
+  .masthead-inner { padding: 1rem 1.1rem; flex-wrap: wrap; gap: .5rem; }
+  .tagline { display: none; }
+  .layout { display: block; padding: 1.8rem 1.1rem 3rem; }
+  .sidebar { display: none; }
+  main { margin: auto; }
+  .mobile-menu { display: block; width: 100%; font: 14px/1.5 var(--sans); }
+  .mobile-menu summary { color: var(--accent); padding: .6rem 0 .15rem; }
+  .mobile-menu nav { padding: 1.2rem 0 .5rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.45rem; margin-top: 2.1rem; }
+  .contents ul { columns: 1; }
+  .table-hint { display: block; }
+  .semantic-block { padding: 1rem 1.1rem; margin: 1.6rem 0; }
+  .sequence { flex-wrap: wrap; }
+}
+@media print {
+  body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
+  .masthead, .sidebar, .mobile-menu, .page-tools, .contents, .skip-link, .sequence, .table-hint { display: none; }
+  .layout, .standalone .layout { display: block; margin: 0; padding: 0; max-width: none; }
+  main { max-width: none; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 17pt; break-after: avoid; }
+  h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+  a { color: inherit; }
+  .table-scroll { overflow: visible; }
+  table { min-width: 0; font-size: 9pt; }
+  tr, img { break-inside: avoid; }
+  .semantic-block { border: 1px solid #aaa; border-left: 3px solid #555; background: transparent; }
+  .reading-footer { margin-top: 1.5rem; }
+}
+
+</style>
+</head>
+<body class="standalone">
+<a class="skip-link" href="#reader-main">Skip to reading</a>
+<header class="masthead"><div class="masthead-inner"><span class="brand">Managerial Economics</span><span class="tagline">Decisions, incentives, and organizational design</span></div></header>
+<div class="layout">
+
+<main id="reader-main" tabindex="-1">
+<header class="chapter-heading"><p class="eyebrow">Chapter 8</p><h1 id="chapter-8-hiring-retention-and-careers">Hiring, Retention, and Careers</h1></header>
+<details class="contents"><summary>On this page</summary><ul><li><a href="#is-one-more-hiring-step-worth-its-cost">Is one more hiring step worth its cost?</a></li><li><a href="#compare-expected-values-on-the-same-basis">Compare expected values on the same basis</a></li><li><a href="#what-would-make-the-sample-informative">What would make the sample informative?</a></li><li><a href="#screening-signaling-and-self-selection">Screening, signaling, and self-selection</a></li><li><a href="#learning-changes-what-the-relationship-is-worth">Learning changes what the relationship is worth</a></li><li><a href="#a-future-reward-must-be-worth-believing">A future reward must be worth believing</a></li><li><a href="#promotion-as-a-tournament">Promotion as a tournament</a></li><li><a href="#rewarding-an-analyst-is-not-the-same-as-choosing-a-coordinator">Rewarding an analyst is not the same as choosing a coordinator</a></li><li><a href="#retention-compare-the-feasible-alternatives">Retention: compare the feasible alternatives</a></li><li><a href="#put-the-employment-relationship-together">Put the employment relationship together</a></li><li><a href="#study-map">Study map</a></li><li><a href="#practice-and-discussion">Practice and discussion</a></li><li><a href="#source-note">Source note</a></li></ul></details>
+<article class="chapter-content"><h2 id="is-one-more-hiring-step-worth-its-cost">Is one more hiring step worth its cost?</h2>
+<p>Northbank Advisory needs an analyst who can turn client records into useful business recommendations. Its leading candidate interviews well and has a strong résumé. Before making an offer, the hiring manager proposes a paid work sample: examine a small set of records, identify a problem, and explain a recommendation. Paying the candidate and administering the exercise would cost Northbank $200.</p>
+<p>Should the firm add the step?</p>
+<p>The sample could reveal something the interview missed. But collecting more information is not automatically worthwhile. The information must help Northbank make a better decision, and that improvement must justify the cost.</p>
+<p>Suppose Northbank compares two policies for one opening. Without the sample, it hires its leading finalist, meaning the candidate remaining near the end of the hiring process. With the sample, it evaluates that finalist once and uses the result to decide between the finalist and an already-assessed, available alternative. The comparison involves no additional uncounted testing or search rounds.</p>
+<p>Assume the probability of a successful match is 0.60 without the sample and 0.80 under the policy that uses it. These probabilities describe the eventual match under the two policies. They are not the test’s accuracy or the probability that the finalist passes. Nor does taking a test turn the same person into a more capable analyst. The assumed benefit comes from using information to change a decision.</p>
+<p>All the numbers are hypothetical. A successful match is worth $5,000 more to Northbank than a poor match over the same evaluation period, after other relevant costs. Compensation and any costs of using the alternative are included in those outcome values or held equal. The $200 is the additional cost of the sample, not just the amount paid to the candidate.</p>
+<p>Chapter 7 considered how compensation affects choices after someone joins. This chapter asks who joins, how people develop, and whether the relationship continues. A pay rule cannot be evaluated independently of the people it attracts or the career it offers.</p>
+<h2 id="compare-expected-values-on-the-same-basis">Compare expected values on the same basis</h2>
+<p>Use the poor-match outcome as a common reference worth $0. This does not mean a poor hire has no actual cost. It means we measure the successful outcome as $5,000 above that reference. A common baseline can be left out when comparing the policies.</p>
+<p>Without the sample, expected value above the reference is 0.60 × $5,000 = $3,000. With it, expected value before paying for the sample is 0.80 × $5,000 = $4,000. Deduct the $200 once.</p>
+<div class="table-caption" aria-hidden="true"><p>Table 8.1. One opening under two hiring policies.</p></div><div class="table-scroll" role="region" tabindex="0" aria-label="Table 8.1. One opening under two hiring policies."><table>
+<caption class="visually-hidden"><p>Table 8.1. One opening under two hiring policies.</p></caption>
+<thead>
+<tr>
+<th scope="col">Item</th>
+<th scope="col" style="text-align: right;">No added work sample</th>
+<th scope="col" style="text-align: right;">Use one work sample</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Probability of a successful match</td>
+<td style="text-align: right;">0.60</td>
+<td style="text-align: right;">0.80</td>
+</tr>
+<tr>
+<td>Successful-match value above the common reference</td>
+<td style="text-align: right;">$5,000</td>
+<td style="text-align: right;">$5,000</td>
+</tr>
+<tr>
+<td>Expected value before screening cost</td>
+<td style="text-align: right;">$3,000</td>
+<td style="text-align: right;">$4,000</td>
+</tr>
+<tr>
+<td>Additional screening cost</td>
+<td style="text-align: right;">$0</td>
+<td style="text-align: right;">$200</td>
+</tr>
+<tr>
+<td>Expected value after screening cost</td>
+<td style="text-align: right;">$3,000</td>
+<td style="text-align: right;">$3,800</td>
+</tr>
+</tbody>
+</table></div><p class="table-hint">On a small screen, scroll the table sideways to see all columns.</p>
+<p>The expected improvement is $3,800 − $3,000 = $800. Equivalently:</p>
+<p>(0.80 − 0.60) × $5,000 − $200 = $800.</p>
+<p>The firm is comparing expected net value here, without a separate charge for risk. The calculation supports the screen under the stated assumptions. It does not establish that this sample really raises the successful-match probability by twenty percentage points.</p>
+<p>How much improvement is necessary? Dividing $200 by $5,000 gives 0.04. Raising the probability from 0.60 to 0.64 would just cover the screening cost. That is a four-percentage-point improvement, not a four-percent proportional increase. If the probability reaches only 0.62, the gain is 0.02 × $5,000 − $200 = −$100.</p>
+<p>Keep the unit of comparison straight. The benefit is for one filled opening; the cost is incurred for every person tested. Testing six finalists does not produce six filled openings. Both the total testing expense and any improvement from considering more candidates would need to enter that different comparison.</p>
+<h2 id="what-would-make-the-sample-informative">What would make the sample informative?</h2>
+<p>Northbank should begin with the job, not with an interesting test. If the analyst must identify unreliable assumptions and explain tradeoffs to clients, a sample focused only on rapid arithmetic may miss important work. Conversely, an elaborate presentation might reward polish more than sound reasoning.</p>
+<p>The question is what the exercise reveals beyond the information Northbank already has. A second résumé score that repeats the first score adds little if it never changes the hiring decision. A short task that reveals a previously hidden weakness could matter much more.</p>
+<p>The conditions also need to match the capability being assessed. If the actual job permits analytical software or AI assistance, Northbank might assess whether candidates can check an output, identify an error, and defend a recommendation using those tools. If independent reasoning is required, the exercise needs a way to observe it. A polished answer by itself need not reveal who supplied the reasoning. The design should state which tools are permitted and what the candidate must demonstrate.</p>
+<p>Neither a demanding sample nor a low pass rate proves usefulness. Northbank would need to compare the information collected with later job performance, using a consistent definition of a successful match. It should ask whether the sample predicts outcomes beyond the interview and whether its value justifies its cost. Poor performers who were rejected are not observed on the job, which complicates evaluation of the decisions the screen prevented.</p>
+<p>Even an apparent improvement after adoption is not automatically caused by the sample. The applicant pool, training, assigned work, or supervisor may also have changed. Those are competing explanations for the result, not reasons to avoid evaluating the process.</p>
+<p>Participation costs matter as well. A long, inconvenient exercise can discourage a capable candidate with another job or limited time. Paying for the sample reduces one burden but does not eliminate every burden. A screen intended to measure analytical skill could partly sort people by their ability to accommodate the process. Northbank should recognize that possibility before interpreting every withdrawal as lack of commitment.</p>
+<h2 id="screening-signaling-and-self-selection">Screening, signaling, and self-selection</h2>
+<p>Three related mechanisms help explain what Northbank learns and who enters its applicant pool.</p>
+<p><strong>Screening</strong> occurs when the less-informed side takes steps to obtain useful information. Northbank requests the work sample because it does not yet know enough about the candidate. A structured interview can serve the same purpose. Candidates can also screen employers, for example by asking to meet the people who would supervise them.</p>
+<p><strong>Signaling</strong> occurs when the better-informed side takes an observable action that can communicate something about an otherwise hard-to-observe characteristic. An applicant might provide a verifiable portfolio or earn a credential. The signal is useful only to the extent that it conveys information. Being expensive or impressive-looking is not enough by itself.</p>
+<p>Spence’s signaling framework separates information conveyed by an activity from skills the activity creates. Those effects can coexist. A credential might develop useful capabilities and help an employer recognize them; a wage premium alone does not tell us how much comes from each channel. <a href="https://www.nobelprize.org/uploads/2018/06/spence-lecture.pdf">Spence, 2001</a></p>
+<p><strong>Self-selection</strong> occurs when people sort themselves by choosing whether to enter or accept an arrangement. A job with substantial travel may attract a different group from one with predictable hours. A commission-heavy package may attract applicants who expect to sell successfully, but it may also attract people who are more willing or able to bear income risk. Selection need not occur only by ability.</p>
+<div class="table-caption" aria-hidden="true"><p>Table 8.2. Related mechanisms, different actions.</p></div><div class="table-scroll" role="region" tabindex="0" aria-label="Table 8.2. Related mechanisms, different actions."><table>
+<caption class="visually-hidden"><p>Table 8.2. Related mechanisms, different actions.</p></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col">Mechanism</th>
+<th scope="col">Who takes the relevant action?</th>
+<th scope="col">Northbank example</th>
+<th scope="col">What can change?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Screening</td>
+<td>Employer seeks information</td>
+<td>Northbank requests a work sample</td>
+<td>Information used in the hiring decision</td>
+</tr>
+<tr>
+<td>Signaling</td>
+<td>Applicant offers observable evidence</td>
+<td>Candidate provides a verifiable portfolio</td>
+<td>Employer’s beliefs about the candidate</td>
+</tr>
+<tr>
+<td>Self-selection</td>
+<td>Applicant chooses whether to enter or accept</td>
+<td>Candidate applies for or accepts the offered package</td>
+<td>Composition of the people who join</td>
+</tr>
+</tbody>
+</table></div><p class="table-hint">On a small screen, scroll the table sideways to see all columns.</p>
+<p>The categories can overlap. Northbank may design a menu of job packages specifically to learn from applicants’ choices. That is screening through self-selection. An employer’s credential requirement uses evidence that applicants may have obtained partly to signal their capabilities. The labels help identify the mechanism; they do not require putting each hiring practice in exactly one box.</p>
+<p>An employer also sends signals. A precise account of responsibilities, a consistent hiring process, and credible evidence about advancement can help candidates assess the job. Unverifiable promises are less informative if an unattractive employer can make them just as easily. Hiring is a two-sided information problem, not simply a firm inspecting a worker.</p>
+<h2 id="learning-changes-what-the-relationship-is-worth">Learning changes what the relationship is worth</h2>
+<p>After joining, an analyst learns. Some learning improves the analyst’s productivity in many organizations. Some is especially valuable at Northbank.</p>
+<p><strong>General human capital</strong> consists of productive knowledge or skills that are useful across employers. <strong>Firm-specific human capital</strong> is valuable within a particular employment relationship and less useful outside it. Becker’s distinction directs attention to where the return can be earned, rather than simply to who paid for the training. <a href="https://www.nobelprize.org/uploads/2018/06/becker-lecture.pdf">Becker, 1992</a></p>
+<p>Learning to evaluate a forecast could help the analyst at many firms. Learning the details of Northbank’s internal approval process could be especially useful there. A single assignment can produce both kinds of knowledge. Calling a program “company training” does not establish that all its benefits disappear when the worker leaves.</p>
+<p>Transferability changes the investment problem. If training makes the analyst more valuable to other employers, outside offers may improve. Northbank cannot assume it will keep every dollar of the resulting productivity gain. That does not imply it should never fund transferable training. It might benefit while the analyst stays, require the skills for its own work, or attract capable applicants by offering development. The expected benefits still have to cover the costs it bears.</p>
+<p>With specific learning, leaving can destroy value that neither party can reproduce immediately elsewhere. That gives both a reason to preserve a productive match, but it does not determine how they divide the gain. The employee may fear learning a system useful only at Northbank and then receiving no reward. Northbank may fear paying for development and then facing a demand for nearly all the benefit. Becker’s discussion identifies this two-sided vulnerability after specific investment. <a href="https://www.nobelprize.org/uploads/2018/06/becker-lecture.pdf">Becker, 1992</a></p>
+<p>Anticipating that conflict can discourage useful investment before it occurs. A credible development arrangement therefore addresses responsibilities and rewards, not just a training budget. Northbank might provide supervised assignments, useful feedback, and an identified review point. The analyst must still invest attention and effort. Neither party can create the full benefit alone by announcing that development matters.</p>
+<h2 id="a-future-reward-must-be-worth-believing">A future reward must be worth believing</h2>
+<p>A career promise affects today’s choice through what the employee expects to receive. “Take on this difficult assignment and you may advance” has little incentive value if the stated opportunity does not exist or the criteria change whenever someone meets them.</p>
+<p>Future rewards also involve delay and uncertainty. An employee may value a learning opportunity or later advancement while still preferring some current compensation. Chapter 7’s participation and risk-bearing issues continue to apply. A firm cannot assume that a distant promise substitutes dollar for dollar for current pay.</p>
+<p>A credible promise needs more than enthusiastic language. Northbank can identify the responsibilities associated with advancement, who evaluates readiness, and when a review occurs. It can explain what happens if the employee develops successfully but no managerial vacancy opens. A promotion guarantee to every successful analyst would be difficult to honor if there are fewer positions than qualified people.</p>
+<p>The organization has incentives too. After an analyst performs the difficult work, a manager might save money by denying the promised reward. If employees expect that behavior, the original promise becomes less effective. A record of honoring commitments and a review process that does not depend entirely on one supervisor can help. Neither eliminates business uncertainty or makes every promised career path feasible.</p>
+<p>These are considerations for designing credible future arrangements, not reasons to withhold compensation already owed. The economic question is how expected future treatment changes current investment and effort.</p>
+<h2 id="promotion-as-a-tournament">Promotion as a tournament</h2>
+<p>Suppose Northbank has one opening for a project coordinator. Eligible analysts compete for it, and the winner receives higher future pay and greater responsibility. This is a <strong>promotion tournament</strong>: a scarce reward depends on relative standing. The rank-order approach was developed by Lazear and Rosen. <a href="https://www.nber.org/papers/w0401">Lazear and Rosen, 1979/1981</a></p>
+<p>One reason to use a tournament is that relative performance may be easier or cheaper to assess than absolute contribution. Northbank might be able to judge which of two analysts produced the stronger recommendation without assigning a reliable dollar value to each analyst’s work. A rank-based prize can then provide incentives without requiring that precise valuation. <a href="https://www.nber.org/system/files/working_papers/w0401/w0401.pdf">Lazear and Rosen, 1979, abstract</a></p>
+<p>The comparison still needs to be informative: analysts facing very different assignments may be difficult to rank fairly. This is an argument for rank-based rewards, not necessarily for promotion over every other pay method. A bonus can also depend on relative performance. <a href="https://doi.org/10.1111/j.1540-6261.1988.tb04593.x">Baker, Jensen, and Murphy, 1988, §II.A</a></p>
+<p>Why might it encourage effort today? An analyst considers whether doing better work will improve the chance of receiving a valuable position. The incentive depends on the difference an action makes to that chance, the value of advancement, and the cost of the action. An attractive prize offers little incentive through this mechanism if the employee believes the decision is already settled.</p>
+<p>Ranking also differs from meeting a standard. Every analyst might improve, while only one advances. Someone can do better work than last year and still lose to a colleague who improves more. Calling the result a tournament does not mean the unsuccessful applicants performed poorly.</p>
+<p>The competition can change cooperation. Suppose an analyst discovers an error in a shared forecasting method. Explaining the correction helps Northbank, but it may also improve a rival’s promotion prospects. If only individual rank is rewarded, withholding useful assistance can become privately attractive. A larger prize can strengthen that temptation as well as the incentive to improve one’s own work. These are possible responses to the rule, not claims about what every employee will do.</p>
+<p>Northbank could count useful mentoring and shared improvements in promotion reviews. It would then need evidence about those contributions and a way to distinguish genuine help from visibility-seeking. Team-based recognition might support cooperation but weaken the connection between individual effort and advancement. The design problem resembles Chapter 7’s imperfect-measure problem, now attached to a scarce future job.</p>
+<h2 id="rewarding-an-analyst-is-not-the-same-as-choosing-a-coordinator">Rewarding an analyst is not the same as choosing a coordinator</h2>
+<p>The coordinator must schedule work, coach colleagues, resolve disagreements, and make decisions across projects. A strong analyst may be good at those activities, but a high analytical score does not establish it. Promotion has two jobs: motivating current performance and assigning someone to a different role. Baker, Jensen, and Murphy emphasize the potential conflict between those purposes. <a href="https://doi.org/10.1111/j.1540-6261.1988.tb04593.x">Baker, Jensen, and Murphy, 1988, §II</a></p>
+<p>Northbank should therefore consider evidence relevant to coordination rather than simply carry the analyst ranking into a new job. A supervised opportunity to coordinate a small assignment might reveal useful information. It also takes time and may affect a real project, so it is not a costless audition. Nor should one difficult assignment be treated as a perfect measure of future performance.</p>
+<p>A specialist path offers another possibility. An analyst could take responsibility for reviewing difficult models, developing methods, and teaching other analysts without becoming their line manager. Advancement would recognize more valuable specialist work rather than require abandoning it.</p>
+<p>But a new title is not a complete career system. The specialist needs substantive work, appropriate authority, credible evaluation, and rewards that make the path attractive. Otherwise the firm has renamed a stalled career. It also needs to avoid creating confusion about whether the specialist or coordinator has the final decision on a project. Chapter 5’s assignment of decision rights matters here.</p>
+<p>Neither path is automatically superior. The question is what work the organization needs and where this person’s capabilities can create value. Promoting someone solely to prevent departure may preserve the employment relationship while putting the employee in an unsuitable role.</p>
+<h2 id="retention-compare-the-feasible-alternatives">Retention: compare the feasible alternatives</h2>
+<p>Suppose other employers increase their demand for the same analytical skills while labor supply is unchanged. Under the competitive-market reasoning from Foundations, that puts upward pressure on pay. Northbank’s analyst may now have a better outside option even without becoming more productive at Northbank. The market has changed; dissatisfaction need not be the explanation.</p>
+<p>That does not establish the right counteroffer. Northbank must compare retaining the analyst with its actual alternatives, including replacement, reorganizing the work, or discontinuing an activity. It cannot assume an equally productive replacement remains available at yesterday’s wage after market conditions change.</p>
+<p>Use a separate, deliberately simplified one-year comparison. Suppose the incumbent contributes $90,000 before their own pay and will stay for $65,000. A feasible replacement contributes $80,000 before their own pay and requires $55,000. Replacement also incurs a $4,000 transition cost, not already deducted from the $80,000. Other relevant costs and consequences are included or equal. Ignore uncertainty and value beyond this one year for this construction.</p>
+<p>Retaining leaves $90,000 − $65,000 = $25,000. Replacing leaves $80,000 − $55,000 − $4,000 = $21,000. Retention is worth $4,000 more on these assumptions, even though the replacement’s pay is lower.</p>
+<p>If the incumbent instead requires $70,000, retaining leaves $20,000, and replacement is better by $1,000. Northbank is indifferent at incumbent pay of $69,000. That is a break-even amount in this case, not a predicted market wage or a rule about what the worker deserves. Worker acceptance and replacement availability are stipulated, and a longer horizon would require additional calculations.</p>
+<p>Past training expenditure is not another benefit of retaining the employee. It is already spent. The knowledge that training created can still matter through future contribution or the cost of replacing it. Counting both that future advantage and the historical expenditure as separate retention benefits would confuse sunk cost with remaining value.</p>
+<p>Low turnover is therefore not an objective by itself. Some departures end poor matches; others destroy valuable knowledge and relationships. Northbank needs to understand which is occurring. A blanket stay bonus may pay many people who would have remained anyway while failing to address the responsibilities, working conditions, or career limits causing valuable employees to leave.</p>
+<h2 id="put-the-employment-relationship-together">Put the employment relationship together</h2>
+<p>Northbank’s hiring, training, promotion, and retention choices are connected. A promised specialist path can attract applicants who value technical work. The assignments they receive determine what they learn and what the firm learns about them. Promotion criteria affect whether they help colleagues, while outside opportunities affect which rewards remain attractive.</p>
+<p>The relevant question is not simply whether each practice sounds sensible. Does the combination identify useful capabilities, develop them, put people in appropriate roles, and sustain relationships whose future benefits justify their costs? A demanding hiring screen does little good if the eventual job uses different skills. A well-designed career promise does little good if nobody believes it. Good organizational design follows the relationship beyond the offer letter.</p>
+<h2 id="study-map">Study map</h2>
+<p>Distinguish obtaining information, communicating information, and sorting through choices. Evaluate a hiring screen per opening while counting every test. Distinguish transferable skills from relationship-specific knowledge, and promotion rewards from assignment to a new role. Retention depends on future value and feasible alternatives, not on recovering sunk training costs or reducing turnover at any price.</p>
+<h2 id="practice-and-discussion">Practice and discussion</h2>
+<ol type="1">
+<li><p><strong>A weaker screen.</strong> Suppose the sample raises Northbank’s policy-level probability of a successful match from 0.60 to 0.62. Keep the $5,000 outcome difference and $200 cost. Calculate the expected net improvement. What probability would just cover the cost? Explain why the result is not a measure of the test’s accuracy.</p></li>
+<li><p><strong>More finalists, one opening.</strong> In a separate proposal, six finalists each complete a $200 sample for one opening. Assume, only for this comparison, that the successful-match probability under the complete policy is still 0.80 rather than 0.60 without samples. Calculate total testing cost and net improvement. What additional evidence would be needed before assuming the larger pool leaves the probability unchanged?</p></li>
+<li><p><strong>What does the credential do?</strong> An applicant completes a data-analysis certificate, shows the resulting project portfolio to Northbank, and chooses its specialist opening instead of a travel-heavy role. Northbank asks the applicant to explain a project. Identify possible skill creation, signaling, screening, and self-selection. Why would higher subsequent earnings not establish which mechanism caused the difference?</p></li>
+<li><p><strong>The promotion rule.</strong> Northbank promises its highest-scoring analyst the next coordinator opening. Describe one productive incentive and one possible cost to cooperation. Identify a capability the coordinator needs that the analyst score may miss. Propose a specific way to recognize excellent analytical work without assuming that a new title alone solves the problem.</p></li>
+<li><p><strong>The outside offer.</strong> In the separate retention example, the incumbent now requires $70,000; all other inputs remain unchanged. Compare retaining and replacing for the stated year. Explain why an earlier $8,000 training bill should not be added to the benefit of retention. What might change your recommendation if the horizon or feasible replacement changed?</p></li>
+</ol>
+<h3 id="check-your-arithmetic">Check your arithmetic</h3>
+<p>The weaker screen yields (0.62 − 0.60) × $5,000 − $200 = −$100. Break-even success probability is 0.64, four percentage points above 0.60. Six samples cost 6 × $200 = $1,200; the assumed gross improvement remains $1,000, so net improvement is −$200.</p>
+<p>At $70,000 required pay, retaining leaves $20,000 versus $21,000 from replacing. Replacement is better by $1,000 for the stated year. The $8,000 already spent does not change that comparison; any remaining value of the acquired knowledge belongs in the future contribution estimates.</p>
+<h2 id="source-note">Source note</h2>
+<p>Northbank’s hiring, career, and retention cases and all numerical inputs are original teaching constructions. Conceptual attributions draw on selected passages from Spence’s 2001 and Becker’s 1992 Nobel lectures, the abstract of Lazear and Rosen’s 1979 NBER tournament paper (published in 1981), and section II of Baker, Jensen, and Murphy’s 1988 article. They do not establish the effectiveness of the proposed hiring screen, actual training returns, or an optimal career system. No employment-law conclusion is offered.</p>
+</article>
+<footer class="reading-footer"><p class="edition-note">Self-contained chapter: text, styling, and figures are included. Cited websites require internet access; other book readings are supplied separately.</p></footer>
+</main></div>
+</body></html>

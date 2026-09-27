@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Chapter 6: Measuring Performance | Managerial Economics</title>
+<meta name="description" content="Decisions, incentives, and organizational design">
+<style>
+:root {
+  color-scheme: light;
+  --paper: #fffefa;
+  --ground: #f4f3ed;
+  --ink: #253433;
+  --muted: #526461;
+  --accent: #17635b;
+  --line: #d5ded8;
+  --soft: #ecf4ef;
+  --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 1.5rem; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 19px/1.75 Georgia, "Times New Roman", serif; }
+a { color: var(--accent); text-underline-offset: .18em; overflow-wrap: anywhere; }
+a:hover { color: #0b403a; }
+:focus-visible { outline: 3px solid #be7725; outline-offset: 4px; }
+.skip-link { position: absolute; left: 1rem; top: -8rem; padding: .6rem 1rem; background: white; z-index: 10; }
+.skip-link:focus { top: 1rem; }
+.masthead { border-bottom: 1px solid var(--line); background: var(--ground); }
+.masthead-inner { max-width: 1380px; margin: auto; padding: 1.2rem 2.2rem; display: flex; justify-content: space-between; align-items: center; gap: 1.5rem; }
+.brand { color: var(--ink); text-decoration: none; font: 700 19px/1.35 var(--sans); letter-spacing: -.02em; }
+.tagline { color: var(--muted); font: 13px/1.5 var(--sans); }
+.layout { max-width: 1380px; margin: auto; display: grid; grid-template-columns: 270px minmax(0, 1fr); gap: 64px; padding: 2.4rem 2.2rem 5rem; }
+.sidebar { align-self: start; position: sticky; top: 1.3rem; max-height: calc(100vh - 2.6rem); overflow-y: auto; padding-right: 1rem; scrollbar-width: thin; }
+.book-nav { font: 14px/1.4 var(--sans); }
+.book-nav h2 { font: 700 11px/1.4 var(--sans); letter-spacing: .13em; text-transform: uppercase; color: var(--muted); margin: 1.6rem .65rem .6rem; }
+.book-nav h2:first-child { margin-top: 0; }
+.book-nav ol, .book-nav ul { list-style: none; padding: 0; margin: 0; }
+.book-nav a { display: block; text-decoration: none; color: var(--muted); padding: .5rem .65rem; margin: .12rem 0; border-radius: 5px; }
+.book-nav a:hover { background: var(--ground); color: var(--ink); }
+.book-nav a[aria-current="page"] { background: var(--soft); color: #14564e; box-shadow: inset 3px 0 var(--accent); }
+.nav-label { display: block; font-size: 11px; font-weight: 700; letter-spacing: .03em; }
+.nav-title { display: block; padding-top: .15rem; }
+main { min-width: 0; max-width: 790px; width: 100%; }
+.eyebrow { font: 700 11px/1.4 var(--sans); text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin: .3rem 0 .8rem; }
+h1 { font: 500 clamp(2rem, 3.4vw, 3.05rem)/1.16 Georgia, "Times New Roman", serif; letter-spacing: -.035em; margin: 0 0 1.2rem; text-wrap: pretty; }
+h2 { font: 600 1.52rem/1.3 Georgia, "Times New Roman", serif; letter-spacing: -.015em; margin: 2.6rem 0 .8rem; text-wrap: pretty; }
+h3 { font: 700 1rem/1.45 var(--sans); margin: 2rem 0 .7rem; }
+p { margin: 0 0 1.05rem; }
+li { padding-left: .15rem; margin-bottom: .45rem; }
+ol, ul { padding-left: 1.5rem; }
+.page-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .7rem 1.1rem; font: 13px/1.5 var(--sans); margin: 0 0 1.4rem; }
+.download { display: inline-block; padding: .45rem .8rem; border: 1px solid var(--line); border-radius: 4px; text-decoration: none; background: var(--paper); }
+.download:hover { background: var(--soft); }
+.contents { font: 14px/1.6 var(--sans); border-block: 1px solid var(--line); margin: 1.4rem 0 2rem; padding: .75rem 0; }
+summary { cursor: pointer; font-weight: 600; }
+.contents ul { columns: 2; column-gap: 2rem; margin-bottom: .35rem; padding-left: 1.2rem; }
+.contents li { break-inside: avoid; margin: .4rem 0; }
+.chapter-content { overflow-wrap: break-word; }
+.chapter-content > :first-child { margin-top: 0; }
+.semantic-block { border-left: 4px solid var(--accent); background: var(--soft); padding: 1.35rem 1.55rem; margin: 2rem 0; border-radius: 0 7px 7px 0; }
+.semantic-block > p:first-child { font-family: var(--sans); font-size: .94em; color: #164e48; margin-bottom: .75rem; }
+.semantic-block > :last-child { margin-bottom: 0; }
+.studyandlearn { background: #f6f1e5; border-color: #9a7338; }
+.studyandlearn > p:first-child { color: #6b4d20; }
+figure { margin: 2rem 0; }
+img { max-width: 100%; height: auto; display: block; margin: 1.5rem auto; }
+figcaption { font: 14px/1.5 var(--sans); color: var(--muted); margin-top: .5rem; }
+.table-scroll { width: 100%; overflow-x: auto; margin: .7rem 0 1.7rem; scrollbar-color: #91aaa0 var(--ground); scrollbar-width: thin; }
+.table-caption { font: 600 15px/1.55 var(--sans); margin: 1.7rem 0 .5rem; }
+.table-caption p { margin: 0; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; padding: 0; }
+.table-scroll:focus-visible { outline-offset: 2px; }
+table { border-collapse: collapse; font: 15px/1.55 var(--sans); width: 100%; min-width: 480px; }
+caption { caption-side: top; text-align: left; font-weight: 600; color: var(--ink); padding: 0 0 .85rem; }
+th, td { text-align: left; vertical-align: top; padding: .8rem .65rem; border-bottom: 1px solid var(--line); }
+th { background: var(--soft); font-weight: 650; }
+tbody tr:nth-child(even) { background: #f7f8f3; }
+.table-hint { display: none; color: var(--muted); font: 12px/1.5 var(--sans); margin: -1rem 0 1.5rem; }
+.chapter-content blockquote { margin: 1.5rem 0; padding-left: 1.3rem; border-left: 3px solid var(--line); }
+.reading-footer { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.3rem; }
+.sequence { display: flex; justify-content: space-between; gap: 1.4rem; font: 14px/1.6 var(--sans); }
+.sequence a:last-child { text-align: right; }
+.edition-note { color: var(--muted); font: 12px/1.65 var(--sans); margin: 1.2rem 0 0; }
+.mobile-menu { display: none; }
+.standalone .layout { display: block; max-width: 900px; }
+.standalone main { margin: auto; }
+.standalone .masthead-inner { max-width: 900px; }
+.separate-reading { color: var(--muted); }
+@media (max-width: 1050px) {
+  .layout { grid-template-columns: 230px minmax(0, 1fr); gap: 36px; padding-inline: 1.5rem; }
+  .masthead-inner { padding-inline: 1.5rem; }
+}
+@media (max-width: 800px) {
+  body { font-size: 18px; line-height: 1.75; }
+  .masthead-inner { padding: 1rem 1.1rem; flex-wrap: wrap; gap: .5rem; }
+  .tagline { display: none; }
+  .layout { display: block; padding: 1.8rem 1.1rem 3rem; }
+  .sidebar { display: none; }
+  main { margin: auto; }
+  .mobile-menu { display: block; width: 100%; font: 14px/1.5 var(--sans); }
+  .mobile-menu summary { color: var(--accent); padding: .6rem 0 .15rem; }
+  .mobile-menu nav { padding: 1.2rem 0 .5rem; }
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.45rem; margin-top: 2.1rem; }
+  .contents ul { columns: 1; }
+  .table-hint { display: block; }
+  .semantic-block { padding: 1rem 1.1rem; margin: 1.6rem 0; }
+  .sequence { flex-wrap: wrap; }
+}
+@media print {
+  body { background: white; color: black; font-size: 11pt; line-height: 1.5; }
+  .masthead, .sidebar, .mobile-menu, .page-tools, .contents, .skip-link, .sequence, .table-hint { display: none; }
+  .layout, .standalone .layout { display: block; margin: 0; padding: 0; max-width: none; }
+  main { max-width: none; }
+  h1 { font-size: 25pt; }
+  h2 { font-size: 17pt; break-after: avoid; }
+  h3 { break-after: avoid; }
+  p { orphans: 3; widows: 3; }
+  a { color: inherit; }
+  .table-scroll { overflow: visible; }
+  table { min-width: 0; font-size: 9pt; }
+  tr, img { break-inside: avoid; }
+  .semantic-block { border: 1px solid #aaa; border-left: 3px solid #555; background: transparent; }
+  .reading-footer { margin-top: 1.5rem; }
+}
+
+</style>
+</head>
+<body class="standalone">
+<a class="skip-link" href="#reader-main">Skip to reading</a>
+<header class="masthead"><div class="masthead-inner"><span class="brand">Managerial Economics</span><span class="tagline">Decisions, incentives, and organizational design</span></div></header>
+<div class="layout">
+
+<main id="reader-main" tabindex="-1">
+<header class="chapter-heading"><p class="eyebrow">Chapter 6</p><h1 id="chapter-6-measuring-performance">Measuring Performance</h1></header>
+<details class="contents"><summary>On this page</summary><ul><li><a href="#who-did-the-better-job">Who did the better job?</a></li><li><a href="#the-objective-the-measure-and-the-rule">The objective, the measure, and the rule</a></li><li><a href="#adding-costs-changes-the-ranking">Adding costs changes the ranking</a></li><li><a href="#a-result-is-not-a-direct-observation-of-effort">A result is not a direct observation of effort</a></li><li><a href="#what-does-the-measure-encourage-people-to-leave-out">What does the measure encourage people to leave out?</a></li><li><a href="#todays-target-can-change-tomorrows-behavior">Today’s target can change tomorrow’s behavior</a></li><li><a href="#three-ways-to-interpret-performance">Three ways to interpret performance</a></li><li><a href="#better-evaluation-is-an-organizational-choice">Better evaluation is an organizational choice</a></li><li><a href="#what-should-harbor-do-next">What should Harbor do next?</a></li><li><a href="#study-map">Study map</a></li><li><a href="#practice-and-discussion">Practice and discussion</a></li><li><a href="#source-note">Source note</a></li></ul></details>
+<article class="chapter-content"><p><em>Pilot draft for author review — September 9, 2026</em></p>
+<h2 id="who-did-the-better-job">Who did the better job?</h2>
+<p>Harbor Service maintains equipment for local businesses. Its technicians travel to customers, diagnose problems, make repairs, and record completed jobs. Imagine you supervise two technicians. During the same four-week period, technician A completes 50 initial jobs and technician B completes 42.</p>
+<p>Who performed better?</p>
+<p>A completed eight more jobs. If your job as supervisor were simply to identify the larger number, the answer would be easy. But your real task is to decide what those numbers tell you about the business and the people doing its work.</p>
+<p>Now you learn that A’s jobs required 10 repeat visits, while B’s required only two. A repeat visit means Harbor sends someone back to work on an initial job. Perhaps the first repair was incomplete. Perhaps an unexpected fault appeared. Either way, returning uses resources that could have been spent elsewhere.</p>
+<p>The new information makes A’s lead less convincing. Yet it does not establish that B is the better technician. What if Harbor assigns A the oldest equipment and the most difficult repairs? What if A spends time helping B diagnose unfamiliar problems? What if repeat visits are not recorded consistently?</p>
+<p>These are different questions, not reasons to abandon evaluation. We can calculate what the recorded work contributed under stated assumptions. We can also investigate why the results differ. What we cannot do is turn one calculation into an answer to every question about performance.</p>
+<p>Harbor, its technicians, and its operating numbers are fictional teaching constructions. Our task is to design an evaluation process for Harbor, not to uncover a fact about an actual company.</p>
+<h2 id="the-objective-the-measure-and-the-rule">The objective, the measure, and the rule</h2>
+<p>Start by separating three things that are easily confused.</p>
+<p>The <strong>objective</strong> is the result the organization wants. For Harbor, suppose that means providing reliable repairs that customers will pay for, at a cost that leaves the business better off. Completing jobs matters, but so do repair quality, resource use, and the willingness of customers to return.</p>
+<p>A <strong>performance measure</strong> is something the organization can observe and record. Initial jobs completed, repeat visits, and recorded contribution are measures. None is identical to the objective. A job count misses differences in repair quality. A short-period financial measure can miss a damaged customer relationship whose cost appears later.</p>
+<p>The <strong>evaluation rule</strong> determines how the organization interprets and uses the measures. Harbor might review everyone below a job target, compare technicians doing similar work, or ask a supervisor to explain unusual results before assigning a rating. The same job count can support any of these rules. It does not choose the rule for us.</p>
+<p>Consider a weekly list of repeat visits. A supervisor could use it to identify equipment that needs better spare parts. Alternatively, Harbor could automatically reduce a technician’s rating whenever a repeat appears. The information collected is similar, but the consequences are different. In the second arrangement, how a visit gets classified now matters directly to the technician.</p>
+<p>That distinction matters because evaluation has two jobs. Looking backward, it helps us interpret what happened. Looking forward, it tells people which actions are likely to help or hurt them. A measure that describes yesterday’s work reasonably well may still encourage an undesirable choice tomorrow.</p>
+<h2 id="adding-costs-changes-the-ranking">Adding costs changes the ranking</h2>
+<p>Return to A and B. To make a clear financial comparison, suppose every initial job contributes $100 before repeat-visit costs and incentive pay. This is not the customer’s bill: it is what remains after the initial costs already allowed for in our example. Each repeat visit costs Harbor another $120. Hold other relevant costs equal.</p>
+<p>We also need a consistent observation period. Take the jobs completed during the same four weeks and follow each one for 30 days. Count all repeat visits linked to those jobs during their follow-up windows, even when the repeat occurs after the original four weeks. We wait until the final job’s window closes before comparing technicians. Otherwise, recently completed work would have had less time to reveal a problem.</p>
+<div class="table-caption" aria-hidden="true"><p>Table 6.1. Harbor Service: the same work, viewed through two measures.</p></div><div class="table-scroll" role="region" tabindex="0" aria-label="Table 6.1. Harbor Service: the same work, viewed through two measures."><table>
+<caption class="visually-hidden"><p>Table 6.1. Harbor Service: the same work, viewed through two measures.</p></caption>
+<thead>
+<tr>
+<th scope="col">Measure</th>
+<th scope="col" style="text-align: right;">Technician A</th>
+<th scope="col" style="text-align: right;">Technician B</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Initial jobs completed</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">42</td>
+</tr>
+<tr>
+<td>Repeat visits linked to those jobs</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr>
+<td>Initial contribution: jobs × $100</td>
+<td style="text-align: right;">$5,000</td>
+<td style="text-align: right;">$4,200</td>
+</tr>
+<tr>
+<td>Repeat-visit cost: repeats × $120</td>
+<td style="text-align: right;">$1,200</td>
+<td style="text-align: right;">$240</td>
+</tr>
+<tr>
+<td>Recorded contribution after repeat costs</td>
+<td style="text-align: right;">$3,800</td>
+<td style="text-align: right;">$3,960</td>
+</tr>
+<tr>
+<td>Rank by initial-job count</td>
+<td style="text-align: right;">1st</td>
+<td style="text-align: right;">2nd</td>
+</tr>
+<tr>
+<td>Rank by recorded contribution</td>
+<td style="text-align: right;">2nd</td>
+<td style="text-align: right;">1st</td>
+</tr>
+</tbody>
+</table></div><p class="table-hint">On a small screen, scroll the table sideways to see all columns.</p>
+<p>A’s 50 initial jobs produce $5,000 of contribution before repeat costs. Ten repeats cost $1,200, leaving $3,800. B’s 42 initial jobs produce $4,200; two repeats cost $240, leaving $3,960. We do not add repeats to the initial-job counts. They use resources to revisit work already counted.</p>
+<p>B leads by $160 on this measure. Another way to see why is to compare the differences. A’s eight additional initial jobs bring in $800, but A’s eight additional repeats cost $960. The extra initial contribution does not cover the extra repeat cost.</p>
+<p>This is a better answer to a particular question: what contribution remains from the recorded work after these repeat costs? It is not a complete estimate of the technicians’ value to Harbor. We have not priced mentoring, long-run customer relationships, or failures discovered after the follow-up window. Nor have we established who caused each repeat.</p>
+<p>There is an important distinction here between recording a cost and assigning responsibility for it. Harbor incurred the repeat costs whether they arose from poor workmanship or unusually difficult equipment. The financial calculation should not make those costs disappear. But using that calculation to evaluate an individual requires additional reasoning about the work the person faced.</p>
+<h2 id="a-result-is-not-a-direct-observation-of-effort">A result is not a direct observation of effort</h2>
+<p>Suppose Harbor assigns repairs centrally: a dispatcher decides which technician goes to which customer. The dispatcher gives A complicated breakdowns because A has more experience, while B receives routine maintenance jobs. A can make good decisions and work carefully while still completing fewer successful repairs per hour than someone with an easier assignment.</p>
+<p>Now change the arrangement. Technicians choose jobs from a shared queue. A worker who wants a high completion count may select short jobs and leave difficult ones for others. Job difficulty still helps explain the count, but it is no longer entirely outside the worker’s choices. Before making an adjustment, we need to know who had the right to choose the jobs.</p>
+<p>Keep two other distinctions clear. <strong>Outcome noise</strong> means conditions and chance affect the result even when the recording is accurate. A replacement part may arrive late despite a timely order. <strong>Recording error</strong> means the measure fails to capture what actually happened: a completed visit might be omitted or assigned to the wrong technician. Better recordkeeping can fix the second problem without eliminating the first.</p>
+<p>An outcome need not be fully under a worker’s control to contain useful information about performance. Additional information can help us interpret it. This is the useful lesson of the informativeness approach to performance evaluation, not a rule that every available statistic belongs in a score. <a href="https://economics.mit.edu/research/publications/nobel-prize-lecture-pay-performance-and-beyond">Holmström’s Nobel lecture</a> develops the distinction.</p>
+<p>For Harbor, a parts-delay record may explain why a repair remained unfinished. But we would still ask whether the technician ordered promptly, warned the customer, or found a workable substitute. “There was a delay” does not mean “nothing the technician did mattered.” Equally, “the repair was late” does not establish that the technician was careless.</p>
+<p>The manager’s task is to ask what information would change the decision. If both technicians had comparable assignments and the difference persisted across several periods, the results would warrant more attention. That still would not turn the contribution calculation into a direct measurement of effort. A longer record helps with some uncertainty; it cannot, by itself, repair consistently different job assignments.</p>
+<h2 id="what-does-the-measure-encourage-people-to-leave-out">What does the measure encourage people to leave out?</h2>
+<p>Even perfectly recorded numbers can point effort in the wrong direction. Imagine Harbor counts every initial job accurately and rewards a technician only for increasing that count.</p>
+<p>At the end of a visit, a technician can spend a few additional minutes testing whether the equipment works under its usual load. That check might prevent a repeat visit. Or the technician can leave immediately and start another job. The completion count recognizes the second choice sooner than the first. If the technician expects testing to help the customer but not the evaluation, Harbor has created a reason to hurry past it.</p>
+<p>Notice that this problem does not require false records or a lazy employee. The technician could work intensely all day while allocating too little time to checking repairs. More effort is not the same thing as better-directed effort.</p>
+<p>Economists call this a <strong>multitasking problem</strong>: when activities compete for time, rewards tied to a well-measured activity can draw attention away from valuable activities that are harder to measure. The central issue is the allocation of attention, not simply whether a person works hard. <a href="https://doi.org/10.1093/jleo/7.special_issue.24">Holmström and Milgrom’s analysis</a> provides the underlying framework.</p>
+<p>Now suppose Harbor adds repeat costs to the score. That gives testing a possible payoff in the evaluation: preventing a repeat protects recorded contribution. But the revised measure creates another question. If technicians can decide whether a return visit is a repeat or a new job, classifying it as new may improve their score without improving the repair.</p>
+<p>We can distinguish improving performance from <strong>gaming a measure</strong> by asking what changed besides the score. Preventing a return visit saves resources. Merely changing the label does not. Choosing easy jobs is more complicated: it may raise genuine short-run contribution, but leave Harbor’s difficult customers unserved. The relevant test is the organization’s objective, not whether the worker technically obeyed the scoring instructions.</p>
+<p>It would be a mistake to infer gaming from every favorable classification or every easy job. The point is to identify an opportunity the rule creates, then decide whether the likely consequences justify a safeguard. Suspicion is not evidence.</p>
+<h2 id="todays-target-can-change-tomorrows-behavior">Today’s target can change tomorrow’s behavior</h2>
+<p>The way a score is used matters as much as what it counts. Consider two illustrative rules Harbor might adopt. They are alternatives to examine, not existing policies of our fictional firm.</p>
+<p>First, suppose a fixed bonus is paid for recording at least 40 initial jobs in a period, with no additional volume payment above 40. A technician at 39 gets a substantial financial benefit from bringing one more job inside the period. Someone already at 41 gets no extra volume pay from recording job 42. The rule has a <strong>threshold</strong>: crossing one boundary changes the reward abruptly.</p>
+<p>If technicians can influence recording dates, the first worker has a reason to accelerate a record and the second may have a reason to save it for the next period. We have not predicted that either will do so. Customer needs, other evaluation criteria, professional standards, and the cost of changing dates may outweigh this incentive. But the volume-pay component treats the same additional job differently depending on where the worker stands.</p>
+<p>Now add a second rule: next period’s target equals this period’s reported output. Today’s target is 40. Reporting 40 or 45 earns the same current bonus, but reporting 45 raises tomorrow’s hurdle to 45. If the technician expects that next period’s output could fall between 40 and 44, revealing the higher capacity today can reduce the chance of receiving the next bonus.</p>
+<p>This is a <strong>target ratchet</strong>. Current success changes the standard against which future success will be judged. The resulting trade-off between current performance and future demands is the mechanism analyzed by <a href="https://doi.org/10.2307/3003414">Weitzman</a>. It can make revealing an improvement personally costly even when the improvement would help the organization.</p>
+<p>The lesson is not to freeze targets forever. Suppose a new tool genuinely makes repairs faster. Ignoring that improvement indefinitely could leave a target unnecessarily easy. The manager must distinguish a sustainable change in capacity from a temporary favorable condition, while considering whether the updating rule discourages people from revealing useful information.</p>
+<p>For Harbor, one option is to announce that an unusually productive period prompts a discussion rather than an automatic target increase. That sacrifices a simple formula and requires judgment. It also creates room for bargaining and favoritism. We have exchanged one set of problems for another, not found a costless solution.</p>
+<h2 id="three-ways-to-interpret-performance">Three ways to interpret performance</h2>
+<p>Harbor could compare work against an established standard, against other workers, or through a supervisor’s judgment. These approaches can be combined. Their usefulness depends on which uncertainty matters and what implementing them costs.</p>
+<h3 id="compare-against-a-standard">Compare against a standard</h3>
+<p><strong>Absolute evaluation</strong> compares performance with a stated benchmark: a contribution target, a completion standard, or a quality requirement. Technicians can see what they are being asked to achieve without waiting to learn how everyone else performed.</p>
+<p>The hard part is choosing a sensible standard. If Harbor sets one job target for all technicians, the rule is easy to communicate but may ignore assignment differences. Separate targets for many job categories may be more informative but require reliable classification. They also invite arguments about which category a job belongs in.</p>
+<p>An explicit standard is valuable when it makes expectations intelligible. Precision in the wording does not guarantee that the standard represents the right objective or treats different assignments appropriately.</p>
+<h3 id="compare-with-relevant-peers">Compare with relevant peers</h3>
+<p><strong>Relative evaluation</strong> compares a person’s result with the results of others. If several crews encounter the same parts shortage, comparing their performance may help distinguish the shared disruption from differences in how they responded. The common-condition rationale is developed by <a href="https://www.nber.org/papers/w2944">Gibbons and Murphy</a>.</p>
+<p>The word <em>relevant</em> matters. A crew handling emergency breakdowns is not automatically a useful benchmark for a crew doing scheduled inspections. Nor do two crews necessarily face the same shortage merely because they work for the same firm. Harbor would need to check the comparison, not simply produce a ranking.</p>
+<p>Relative evaluation can also determine who advances. Suppose Harbor has one supervisor opening and awards it to the highest-rated eligible technician. The promotion brings higher future pay and greater authority. This is a <strong>promotion tournament</strong>: workers compete for a scarce prize based on their relative standing. A technician can improve and still lose if someone else improves more. The rank-order tournament framework comes from <a href="https://doi.org/10.1086/261010">Lazear and Rosen</a>.</p>
+<p>The prospect of winning can motivate better work today, even if pay in the current job is fixed. It matters whether employees believe additional effort can improve their chances. But consider A spending an hour helping B solve a difficult repair. That helps Harbor while potentially strengthening A’s rival for the opening. A contest can therefore encourage withholding useful help—or undermining a rival—as well as improving one’s own performance. These are possible responses, not claims about what either technician will do. Using peers to understand conditions need not mean making them compete for a single prize.</p>
+<p>Promotion also assigns someone to a different job. The strongest repair technician may not be the person best able to coach colleagues, schedule work, and resolve customer disputes. Rewarding current performance and selecting a suitable supervisor are different objectives, as <a href="https://doi.org/10.1111/j.1540-6261.1988.tb04593.x">Baker, Jensen, and Murphy</a> emphasize. Chapter 8 returns to that tension and to alternatives such as advancement along a specialist career path.</p>
+<h3 id="use-informed-judgment">Use informed judgment</h3>
+<p><strong>Subjective evaluation</strong> gives a reviewer discretion to weigh information that does not fit a predetermined formula. A supervisor might consider a technician’s explanation of an unusual repair, review records of assistance to colleagues, and distinguish avoidable returns from equipment faults.</p>
+<p>Judgment can supplement incomplete numerical measures, but employees must have reason to trust how it will be used. A promise to recognize valuable work is less useful if the organization can conveniently disregard it when rewards are due. <a href="https://doi.org/10.2307/2118358">Baker, Gibbons, and Murphy</a> analyze the role of subjective measures and the credibility of discretionary rewards.</p>
+<p>For Harbor, the practical questions are concrete. What evidence must the supervisor examine? Must exceptions have a written reason? Who checks whether favored technicians repeatedly receive generous interpretations? These checks may improve the process, but they take time and can make ordinary decisions cumbersome.</p>
+<p>“Objective” does not mean economically complete. “Subjective” does not mean arbitrary. The relevant comparison is between feasible processes, including their mistakes, administrative burdens, and effects on behavior.</p>
+<h2 id="better-evaluation-is-an-organizational-choice">Better evaluation is an organizational choice</h2>
+<p>It is tempting to respond to every weakness by adding another measure. Harbor could record job type, travel time, parts delays, repeat visits, customer comments, assistance to colleagues, and several kinds of repair quality. Each item might be useful in some decision. Collecting all of them for every job could still be a poor use of resources.</p>
+<p>Someone must enter the data, check definitions, resolve disputes, and read the results. Technicians who spend more time documenting work have less time to perform it. A supervisor with too many reports may give them less attention. The question is not whether information has value in principle, but whether its expected contribution to better decisions exceeds the cost of obtaining and using it.</p>
+<p>This connects measurement to <strong>agency costs</strong>: costs of dealing with differences between what decision-makers find personally attractive and what the organization wants. Harbor spends resources on monitoring and review, while some losses from misdirected choices remain. A tighter system may reduce one loss while increasing administration or restricting useful discretion. Eliminating every opportunity to make a bad choice is not the same as improving the business.</p>
+<p>Measurement also affects organizational structure. If technicians both classify their own return visits and are judged on those classifications, Harbor may assign a separate person to review disputed cases. That changes who has authority, not just which number appears on a report. An independent reviewer introduces handoffs and may know less about the repair. Alternatively, keeping the decision with the technician preserves local knowledge but leaves Harbor needing some way to check it.</p>
+<p>The reviewer has incentives too. A supervisor may want favorable-looking team results, avoid difficult conversations, or favor an agreeable employee. Moving a decision upward does not remove the problem of evaluating the person who now makes it. This is why performance measures, decision rights, and oversight belong in the same discussion.</p>
+<h2 id="what-should-harbor-do-next">What should Harbor do next?</h2>
+<p>We can now propose a limited improvement without claiming to have found Harbor’s ideal system.</p>
+<p>Begin with the job and repeat records in Table 6.1. Keep the observation window consistent and show both volume and recorded contribution. Do not erase an incurred cost because its cause is disputed, but do not automatically treat that cost as evidence of poor individual performance either.</p>
+<p>Before assigning a consequential rating, review the main assignment differences and a sample of repeat visits. Include some ordinary cases, not just the worst-looking records, so the review can detect classification problems as well as explain poor outcomes. Require short reasons for exceptions and give technicians a way to correct factual errors. Sampling saves review time but will miss some problems; broader review may be justified when the stakes are higher.</p>
+<p>Then ask what response the revised process encourages. Will technicians test repairs more carefully? Will they avoid difficult jobs? Will supervisors reclassify returns to protect their teams? Those are questions to investigate, not effects we can announce from the arithmetic. Harbor should look for changes in actual service and resource use, not only improvements in the score.</p>
+<p>Finally, specify what remains uncertain. B produced $160 more recorded contribution under our assumptions. We do not yet know whether B exerted more effort, whether A received harder work, or whether either technician helped create value outside the recorded jobs. The honest conclusion is narrower than a personnel verdict, but more useful than declaring evaluation impossible.</p>
+<p>Chapter 7 takes the next step: deciding how strongly and in what form rewards should respond to evaluated performance. A better measure is an input to that choice. It is not, by itself, a pay policy.</p>
+<h2 id="study-map">Study map</h2>
+<p>Start with the organization’s objective. Identify what the measure captures, what it leaves out, and which conditions affect it. Examine the rule that turns the measure into a rating or consequence. Ask how a person can improve the score without improving the business. Compare feasible additions—better records, a benchmark, informed review—against their costs. End with a recommendation that states both the decision it helps and what remains unknown.</p>
+<h2 id="practice-and-discussion">Practice and discussion</h2>
+<p>These are public practice questions, not graded-assignment solutions. Use the chapter’s assumptions unless the question changes them.</p>
+<ol type="1">
+<li><p><strong>Change one cost.</strong> Suppose a repeat visit costs $80 rather than $120. Recalculate each technician’s recorded contribution. At what repeat-visit cost would the two technicians tie? Explain why changing this cost cannot tell us who worked harder.</p></li>
+<li><p><strong>Investigate the assignment process.</strong> You learn that A handles most emergency repairs. Identify two pieces of information that would help interpret the original ranking. Explain how your interpretation could differ if technicians choose jobs rather than receive assignments from a dispatcher.</p></li>
+<li><p><strong>Predict a response.</strong> Harbor begins rating technicians partly on the number of customers who submit favorable comments. Describe one way to improve that number by improving service and one way to improve it without a comparable service improvement. Propose a bounded safeguard and identify its cost.</p></li>
+<li><p><strong>Examine a ratchet.</strong> Under the chapter’s 40-job target and next-period updating rule, explain why reporting 45 rather than 40 might be unattractive. What changes if extra jobs receive a sufficiently large current reward? Why would a month with only 40 jobs not prove that someone withheld output?</p></li>
+<li><p><strong>Make a recommendation.</strong> In about 150 words, recommend a next step to Harbor’s owner before assigning individual performance ratings. Include the objective, one useful measure, one piece of contextual information, one cost of your proposed process, and one conclusion the available evidence does not support.</p></li>
+</ol>
+<h3 id="check-your-arithmetic">Check your arithmetic</h3>
+<p>For question 1, A contributes $5,000 − $800 = $4,200 and B contributes $4,200 − $160 = $4,040. A now leads by $160. A’s eight extra initial jobs bring $800 more initial contribution, so the rankings tie when the eight extra repeat visits cost $800: $100 per visit. At that cost both contribute $4,000. These are changes in the recorded-contribution comparison, not discoveries about effort.</p>
+<h2 id="source-note">Source note</h2>
+<p>The linked readings ground the short theoretical propositions; the Harbor narrative, numbers, proposed procedures, and exercises were constructed for this book. They are not reported findings from those papers.</p>
+</article>
+<footer class="reading-footer"><p class="edition-note">Self-contained chapter: text, styling, and figures are included. Cited websites require internet access; other book readings are supplied separately.</p></footer>
+</main></div>
+</body></html>
