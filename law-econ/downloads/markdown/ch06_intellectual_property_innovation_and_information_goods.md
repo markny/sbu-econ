@@ -331,8 +331,26 @@ The first two are legal classification questions informed by facts about the tec
 
 News organizations spend resources gathering facts, interviewing sources, verifying claims, editing stories, and maintaining reporting institutions. Published articles can then be copied cheaply and may be valuable as AI training inputs. AI developers argue that training can produce new capabilities rather than substitute copies. Publishers argue that unlicensed use can appropriate valuable expression and support products that compete with their reporting.
 
-Current U.S. disputes over training, fair use, output similarity, and licensing remain unsettled and context-specific. The economic questions are also open. Licensing could compensate creators and support production. It could also require costly rights clearance at scale, advantage large firms, or exclude socially valuable research. A rule favoring unlicensed training could accelerate model development while weakening some creation incentives or bargaining positions. The relevant comparison is among feasible institutions, not between innovation and copyright as abstract absolutes.
+Whether a particular training use requires permission depends on the facts and applicable copyright rules, including fair use. The economic questions are also open. Licensing could compensate creators and support production. It could also require costly rights clearance at scale, advantage large firms, or exclude socially valuable research. A rule favoring unlicensed training could accelerate model development while weakening some creation incentives or bargaining positions. The relevant comparison is among feasible institutions, not between innovation and copyright as abstract absolutes.
 :::
+
+### AI Training, Permission, and the Anticommons
+
+Recall Chapter 5's account of how property arrangements respond to changing costs and benefits. More valuable resources can justify clearer rights, but not necessarily stronger exclusion over every use. AI may increase the value of combining creative works while making individual permissions costly to assemble. The question is how to organize access without undermining the production of the material being used.
+
+Consider a hypothetical training project that requires 1,000 separate permissions. Suppose each rights holder would willingly accept a payment of \$1, but finding the owner, verifying authority, and processing the agreement costs \$20. Payments total \$1,000; clearance consumes another \$20,000. These are invented numbers illustrating a possible problem, not estimates of actual training costs or a claim that every training use requires permission. Even agreeable owners and tiny royalties can coexist with expensive access.
+
+The two amounts play different economic roles. A royalty transfers income from the developer to a rights holder. Searching records and arranging agreements use time and other resources. Royalties are not therefore irrelevant: they can support creation, change which inputs developers choose, or discourage a project. But the developer's entire licensing bill is not a social resource cost.
+
+There can also be an **anticommons**, the problem introduced in Chapter 5. If several independently controlled permissions are needed together, separate vetoes can block a valuable combination. Each owner may seek a share of the project's gains without accounting for how other owners' demands affect its viability. This resembles assembling parcels for redevelopment or consent to coordinate an oil pool. Yet a large training collection is not automatically an anticommons. When works are readily replaceable, one owner's refusal may cause substitution rather than block the model. Routine clearance costs can remain even without an indispensable holdout.
+
+**Permission and compensation are separate design choices.** Individual licensing preserves an owner's choice over a use and its price. Voluntary collective licensing lets owners authorize an organization to assemble permissions and offer common terms. That can reduce repeated negotiations, although coverage, market power, and payment distribution still matter. A proposed compensated-access rule would go further: a defined use could proceed with a payment obligation rather than a separate veto for every owner. A defined exception could instead permit the covered use without payment. These are alternatives to compare, not a description of one general rule already governing AI training.
+
+None eliminates the incentive-access tradeoff. An elaborate payment system might consume more resources than it saves. An exception might expand useful training while weakening incentives to supply new reporting, music, or specialized information. Payment to a publisher or platform may support its services without producing comparable income for individual creators; contracts determine how receipts are shared. We must ask which future activity the payment encourages and who actually receives it.
+
+The lesson is neither that AI should receive everything free nor that every useful contribution requires a separate bargain. It is to compare workable arrangements for permission, payment, and administration. Lower the cost of combining information while preserving the incentives that make valuable information available in the first place.
+
+### Outputs and Economic Substitution
 
 AI can sometimes learn what might loosely be called a **reduced form** of a body of work: features that help generate economically substitutable output without reproducing one obvious passage, image, or file. This is an economic metaphor, not a category in copyright law. It highlights a possible gap between conventional copying analysis and market effect.
 
@@ -400,6 +418,8 @@ The central question is not whether intellectual property is good or bad. It is 
 28. Distinguish permissive open source from copyleft at a principles level.
 29. What governance problems remain in an open-source project?
 30. Why must legal copying, economic substitution, and institutional design remain separate questions in AI disputes?
+31. How can AI training face Chapter 5's anticommons problem? Why does the number of works alone not establish that problem?
+32. Distinguish a royalty payment from the resources used to obtain permission. How might compensation be organized without a separate negotiation with every owner?
 
 ## Economic Reasoning Questions
 
@@ -415,6 +435,7 @@ The central question is not whether intellectual property is good or bad. It is 
 10. A copyleft requirement causes improvements to remain open but discourages one firm from combining the code with a proprietary system. Identify the cumulative-innovation benefit and the possible integration cost.
 11. An AI system produces summaries that reduce visits to news websites but does not reproduce recognizable passages in its answers. Separate the legal, economic, and institutional-design questions.
 12. A proposed AI-training license would compensate publishers but require negotiations with thousands of rights holders. Compare the creation-incentive benefit with transaction-cost, entry, and research effects. What institutions might lower those costs?
+13. In the hypothetical project requiring 1,000 permissions, each owner accepts \$1 and each separate clearance costs \$20. A collective can secure the same permissions for a total administration cost of \$2,000 while preserving the same total payments. Calculate the resource saving. Then identify one reason this arrangement might not cover all needed rights and one reason payments to rights holders might not reach individual creators.
 
 ## Law and Economics Lab
 
