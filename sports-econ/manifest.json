@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "52a068e91c10f2a45b45c55fa6ddea8abfac07f3",
+    "commit": "55424878eabaf3c0e686063e2b95ad5e281b900a",
     "dirty": false
   },
   "chapters": [
@@ -74,7 +74,7 @@
     {
       "number": 12,
       "slug": "sports-participation-health-and-public-policy",
-      "status": "forthcoming",
+      "status": "available",
       "title": "Sports Participation, Health, and Public Policy"
     },
     {
