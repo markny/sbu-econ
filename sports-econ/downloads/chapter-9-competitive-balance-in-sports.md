@@ -126,6 +126,24 @@ The adjustment is useful, but it is not a universal ranking machine. The basic b
 
 Ties and standings-point systems require additional care. A football tie can count as half a win in a win-percentage calculation. Hockey awards standings points under rules that distinguish some kinds of losses. Soccer uses wins, draws, and points. Simply placing each sport's published “percentage” into the same formula can compare unlike quantities. Define the outcome and its reference model first.
 
+Table 9.2 puts the distinction between raw and relative dispersion to work. Each cell reports three numbers: the actual standard deviation, the equal-strength reference for that schedule length, and their ratio. You do not need to calculate the standard deviations by hand; the question is what the comparison tells us.[^balance-comparison]
+
+<div id="tab:ch09-historical-dispersion">
+
+| Season year | NFL | NBA | MLB |
+| --- | --- | --- | --- |
+| 1980 | .1836 / .1250 / 1.47 | .1486 / .0552 / 2.69 | .0697 / .0393 / 1.77 |
+| 1990 | .1990 / .1250 / 1.59 | .1707 / .0552 / 3.09 | .0548 / .0393 / 1.39 |
+| 2000 | .1938 / .1250 / 1.55 | .1581 / .0552 / 2.86 | .0607 / .0393 / 1.54 |
+| 2010 | .1842 / .1250 / 1.47 | .1602 / .0552 / 2.90 | .0668 / .0393 / 1.70 |
+| 2025 | .2004 / .1213 / 1.65 | .1601 / .0552 / 2.90 | .0710 / .0393 / 1.81 |
+
+**Table 9.2: Regular-season dispersion in selected historical seasons.** Each entry is **actual population SD / equal-strength reference SD / ratio**, calculated from unrounded values. NBA years identify the season ending that year: 1980 is 1979–80 and 2025 is 2024–25. NFL years identify regular seasons, not the following Super Bowl; MLB uses calendar years. The reference uses 16 games for the historical NFL snapshots, 17 for 2025, 82 for the NBA, and 162 for MLB. Actual percentages use exact records, with NFL ties counted as half a win.[^balance-comparison]
+
+</div>
+
+The NFL has the widest raw spread in every snapshot, but the NBA has the highest ratio to its equal-strength reference. MLB's ratio is not always higher than the NFL's: it is lower in 1990 and almost identical in 2000. The comparisons also move around rather than tracing a steady historical trend. Five snapshots illustrate why the measure and year matter; they are not a complete history or a test of which league's rules work best.
+
 ### Persistence And Regression Toward The Mean
 
 To study whether success persists, follow the same teams through time. A simple approach is to compare each team's win percentage this year with its percentage next year. A positive association means that strong teams tend to remain relatively strong. We can also examine repeated playoff appearances, time spent near the bottom, or how often a club becomes a serious contender.
@@ -142,7 +160,7 @@ The **Herfindahl–Hirschman Index**, or **HHI**, summarizes concentration by sq
 
 If ten different teams win one title each, the ten-title HHI is .10. If one team wins all ten, it is 1.00. The lower limit in this particular ten-title exercise is .10 even if the league contains 30 teams: only ten franchises can possibly win one of those ten championships. A short window cannot establish that every team has had a fair opportunity.
 
-Table 9.2 uses championships decided in the calendar years 2016 through 2025. This convention matters for football: the February 2025 Super Bowl completed the **2024 NFL season**. We use championship years consistently across all three leagues and stop before 2026 so every included calendar year contains a completed title in each league.[^champion-data]
+Table 9.3 uses championships decided in the calendar years 2016 through 2025. This convention matters for football: the February 2025 Super Bowl completed the **2024 NFL season**. We use championship years consistently across all three leagues and stop before 2026 so every included calendar year contains a completed title in each league.[^champion-data]
 
 <div id="tab:ch09-championships">
 
@@ -152,7 +170,7 @@ Table 9.2 uses championships decided in the calendar years 2016 through 2025. Th
 | NFL | 6 | 30% | .20 |
 | NBA | 8 | 30% | .16 |
 
-**Table 9.2: Championship concentration, titles decided in 2016–2025.** Author calculations from league championship records. The measure uses decimal shares. This is a descriptive comparison of title outcomes, not an estimate of the effect of any salary rule.
+**Table 9.3: Championship concentration, titles decided in 2016–2025.** Author calculations from league championship records. The measure uses decimal shares. This is a descriptive comparison of title outcomes, not an estimate of the effect of any salary rule.
 
 </div>
 
@@ -166,7 +184,7 @@ That sensitivity is worth teaching rather than hiding. A ten-year window is tran
 
 ![Championship HHI for MLB, NFL, and NBA in the overlapping 2015–2024 and 2016–2025 title windows.](../figures/ch09-competitive-balance/ch09-championship-concentration.svg)
 
-**Figure 9.2: Moving the window changes the comparison.** Open bars represent titles decided in 2015–2024; filled bars represent 2016–2025. A higher decimal-share HHI means more concentrated championships. The calendar-year convention is the same as in Table 9.2. Source: author calculations from league championship records.[^champion-data]
+**Figure 9.2: Moving the window changes the comparison.** Open bars represent titles decided in 2015–2024; filled bars represent 2016–2025. A higher decimal-share HHI means more concentrated championships. The calendar-year convention is the same as in Table 9.3. Source: author calculations from league championship records.[^champion-data]
 
 </div>
 
@@ -203,6 +221,12 @@ A payroll-versus-wins graph would be a useful descriptive start, provided “pay
 ### The Dodgers Question
 
 Chapter 6 examined the Dodgers' local-media arrangement and the distinction between the headline value of a media contract and the revenue entering a sharing calculation. Here the question is what such a financial advantage allows a team to do. It can support sustained investment, make some risks easier to absorb, and increase the willingness to pay for an improvement. It does not reveal how many wins the team purchased or establish that a particular reform would improve the league.[^dodgers]
+
+A team making expensive acquisitions is a visible example of financial advantage. But that is not enough to establish that baseball is the least balanced major league. Over the 2023–2025 seasons, the average ratio of actual win-percentage dispersion to the equal-strength reference was 1.92 in MLB, compared with 1.58 in the NFL and 2.66 in the NBA. Baseball was between the other two leagues, not an outlier at the unbalanced end. In each of our five historical snapshots, the NBA also had the highest ratio. These are comparisons of regular-season records, not estimates of championship chances.[^balance-comparison]
+
+Championship concentration tells a related but different story. Table 9.3 shows that MLB's championship HHI was .18 for titles decided in 2016–2025, compared with .20 in the NFL and .16 in the NBA. Baseball again fell between them. Moving the window back to 2015–2024 puts MLB lowest at .14, while both the NFL and NBA are at .22. The NBA's recent championship turnover also shows why a league's spread of regular-season records and its distribution of titles need not produce the same ranking.[^champion-data]
+
+The claim that MLB is uniquely or consistently the most imbalanced league is therefore not a good summary of these outcomes. Financial inequality, unequal regular-season performance, and concentrated championships are different things. A salary cap does not automatically put a league first on every measure, and baseball's lack of a hard cap does not automatically put it last. These comparisons do not tell us what MLB would look like under a different rule. They do show why an argument for reform needs more than the size of one team's contracts.
 
 The championship evidence does not dispose of the concern. A financially advantaged club might repeatedly assemble a contender while a lower-revenue club has to get several decisions right at once. Short postseason series can generate enough upsets to conceal that difference if we look only at the final champion. A better evaluation would examine repeated playoff access, expected strength, roster depth, and the ability to recover from mistakes, alongside titles.
 
@@ -338,7 +362,7 @@ The sequence makes both sides of the argument visible. Promotion and relegation 
 
 ## Choosing A Rule Means Choosing A Trade-Off
 
-Table 9.3 summarizes the mechanisms. The final column identifies a question to investigate, not a verdict that the policy is ineffective.
+Table 9.4 summarizes the mechanisms. The final column identifies a question to investigate, not a verdict that the policy is ineffective.
 
 <div id="tab:ch09-policy-mechanisms">
 
@@ -352,7 +376,7 @@ Table 9.3 summarizes the mechanisms. The final column identifies a question to i
 | Playoff expansion | Creates additional paths to a championship | Does it sustain races, change investment, or weaken regular-season rewards? |
 | Expansion or relocation | Changes membership or local revenue opportunities | What happens to talent, demand, incumbent incentives, and affected fans? |
 
-**Table 9.3: A policy's name does not identify its final effect.** Begin with the decision it changes, then follow the behavioral response.
+**Table 9.4: A policy's name does not identify its final effect.** Begin with the decision it changes, then follow the behavioral response.
 
 </div>
 
@@ -411,7 +435,7 @@ That is the connection running from Chapter 7 through this chapter. Teams need o
 
 ### Applications
 
-1. **The cap claim.** Someone uses Table 9.2 to argue that the NFL should eliminate its salary cap because its titles are more concentrated than baseball's. Explain both what the table establishes and why the proposed causal conclusion does not follow.
+1. **The cap claim.** Someone uses Table 9.3 to argue that the NFL should eliminate its salary cap because its titles are more concentrated than baseball's. Explain both what the table establishes and why the proposed causal conclusion does not follow.
 2. **The winning team.** A league proposes to redistribute an exceptional team's players until all clubs have nearly equal expected records. Identify a possible benefit and two possible costs. Do not assume that lower dispersion is itself a complete welfare measure.
 3. **The recipient.** A club receives more shared revenue and leaves payroll unchanged. Give one explanation consistent with profit maximization and one circumstance in which you would have expected a different response. What information would distinguish them?
 4. **The rebuild.** A club outside the playoff race trades a veteran for prospects. Explain why this need not show that its players are intentionally losing. Then identify how a draft rule could add a separate incentive to weaken the current team.
@@ -463,10 +487,10 @@ $$
 
 Franchises with no titles contribute zero. The shares sum to one. Multiplying this decimal-share result by 10,000 gives 1,600 on the alternative percentage-share scale; do not mix the scales in a comparison. Neither scale imports antitrust policy thresholds into sports results.
 
-The companion data preserve the individual championship rows, their sources, both time windows, and all 2025 MLB records. A spreadsheet, R, or an AI-assisted script can reproduce the calculations. Ask the software to show its year convention, team identities, inputs, and formulas. Getting a number quickly does not remove the responsibility to define the question correctly.
+The companion data preserve the individual championship rows, their sources, both time windows, and all 2025 MLB records. The regular-season comparison also preserves all team records for the seven selected seasons, annual measures, and three-season averages. A spreadsheet, R, or an AI-assisted script can reproduce the calculations. Ask the software to show its year convention, team identities, inputs, and formulas. Getting a number quickly does not remove the responsibility to define the question correctly.
 
 ::: aitutor
-This chapter's default assessment level is conceptual interpretation. Ask one question at a time and evaluate the explanation, not merely the chosen label. Do not require manual standard-deviation calculations, square roots, regression, or HHI arithmetic unless the student or instructor explicitly chooses the Optional Measurement Appendix. Supply numerical measures when testing interpretation. Hypothetical examples must be identified as hypothetical. Table 9.1 concerns identical annual distributions with different team persistence. Table 9.2 concerns championships decided in calendar years 2016–2025; the NFL entries correspond to the 2015–2024 seasons. The neighboring-window results are a sensitivity check, not evidence of a policy effect. Do not infer causal cap effects from cross-league comparisons, equality of opportunities from champion counts, an 81-percent fairness interpretation from RSD 1.81, or harmless labor restrictions from invariance. Do not describe the 2027–2029 NBA lottery as already observed as of this chapter's September 29, 2026 verification date. Keep NCAA details for Chapter 15 and future effects of prospect trades as hypotheses.
+This chapter's default assessment level is conceptual interpretation. Ask one question at a time and evaluate the explanation, not merely the chosen label. Do not require manual standard-deviation calculations, square roots, regression, or HHI arithmetic unless the student or instructor explicitly chooses the Optional Measurement Appendix. Supply numerical measures when testing interpretation. Hypothetical examples must be identified as hypothetical. Table 9.1 concerns identical annual distributions with different team persistence. Table 9.2 reports actual SD / reference SD / ratio for five selected regular seasons; interpret supplied values without memorizing them or treating snapshots as a historical trend. Its NBA year is the ending year and its NFL year is the regular-season year. The 2023–2025 comparison averages separate annual ratios, not pooled team records. Table 9.3 concerns championships decided in calendar years 2016–2025; the NFL entries correspond to the 2015–2024 seasons. The neighboring-window results are a sensitivity check, not evidence of a policy effect. Do not infer causal cap effects from cross-league comparisons, equality of opportunities from champion counts, an 81-percent fairness interpretation from RSD 1.81, or harmless labor restrictions from invariance. Do not describe the 2027–2029 NBA lottery as already observed as of this chapter's September 29, 2026 verification date. Keep NCAA details for Chapter 15 and future effects of prospect trades as hypotheses.
 :::
 
 ## Source Notes
@@ -476,6 +500,8 @@ This chapter's default assessment level is conceptual interpretation. Ask one qu
 [^fan-demand]: Jeffery Borland and Robert Macdonald, “Demand for Sport,” *Oxford Review of Economic Policy* 19, no. 4 (2003): 478–502, <https://doi.org/10.1093/oxrep/19.4.478>. A foundational review of demand evidence, not a current estimate for every league. The chapter does not infer one universally optimal home-win probability or claim that every audience responds alike.
 
 [^season-length]: P. Dorian Owen and Nicholas King, “Competitive Balance Measures in Sports Leagues: The Effects of Variation in Season Length,” *Economic Inquiry* 53, no. 1 (2015): 731–744, <https://doi.org/10.1111/ecin.12102>. Their simulation analysis examines the behavior of dispersion measures as season length and underlying team strengths vary. The chapter uses this as a qualification to treating the relative-dispersion measure as a complete cross-sport adjustment.
+
+[^balance-comparison]: Author calculations from official regular-season standings for 1980, 1990, 2000, 2010, 2023, 2024, and 2025, retrieved October 29, 2026: NFL historical standings, including [1980](https://www.nfl.com/standings/league/1980/reg) and [2025](https://www.nfl.com/standings/league/2025/reg); NBA historical standings, including [1979–80](https://www.nba.com/standings?Season=1979-80) and [2024–25](https://www.nba.com/standings?Season=2024-25); and MLB Stats API, including [1980](https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=1980&standingsTypes=regularSeason&hydrate=team) and [2025](https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2025&standingsTypes=regularSeason&hydrate=team). Population SDs use all teams and exact records; NFL ties count as half a win. The conventional no-tie reference uses 16 NFL games before 2021 and 17 thereafter, 82 NBA games, and 162 MLB games. Actual MLB percentages use each team's wins plus losses; a reference based on actual decision counts leaves the displayed two-decimal conclusions unchanged. Reported 2023–2025 averages are means of annual ratios, not calculations from pooled records. NBA seasons are labeled by ending year. All seven NBA win–loss distributions were checked against Basketball Reference. These are descriptive comparisons, not fully schedule-adjusted rankings or policy-effect estimates. Frozen inputs, full historical and recent source links, and results are preserved in `data/ch09/regular-season-comparison/`; `scripts/ch09-build-season-comparison.mjs` reproduces them offline.
 
 [^mlb-standings]: Major League Baseball, final 2025 regular-season standings, <https://www.mlb.com/standings/2025>, and MLB Stats API, <https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2025&standingsTypes=regularSeason&hydrate=team>, accessed September 29, 2026. Author calculations use all 30 clubs, 162 games per club, and the population standard deviation of unrounded win percentages. The source response and calculation script are preserved with the book's Chapter 9 data. These are descriptive records, not a payroll-effect estimate.
 
