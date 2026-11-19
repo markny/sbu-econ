@@ -1,7 +1,7 @@
 {
   "source_repository": "markny/sports-econ-v2",
   "source_revision": {
-    "commit": "39efc8f2afbd3d983da931724172b7636002bdae",
+    "commit": "b88eb5641fd909cbed5cf7cd7550952f109a8423",
     "dirty": false
   },
   "chapters": [
@@ -80,7 +80,7 @@
     {
       "number": 13,
       "slug": "labor-and-performance-in-sports",
-      "status": "forthcoming",
+      "status": "available",
       "title": "Labor and Performance in Sports"
     },
     {
